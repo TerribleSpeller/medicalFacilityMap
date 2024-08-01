@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<!--
+    OVERALL TODO:
+    - Do the Google Maps thing
+    - Fix Postioning of things (Mainly the Submenus in the NavBar when mobile)
+-->
+<header>
+    <title>Sinarmas Facility Map Medical Hub</title>
+    <!-- TODO: CHANGE WITH ACTUAL SINARMAS CSS -->
+    <!--General Bootsrap to Ease Work-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Social Media Buttons CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/vaakash/socializer@master/css/socializer.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <!--Local Files -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--Yoinked-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+
+</header>
+
+<body>
+    <div id="Header">
+        <div class="navbar-wrapper fixed-top ">
+            <div class="navbar-local navbar navbar-expand-lg light is-scrolled">
+                <div class="container position-relative" style="flex-wrap:nowrap">
+                    <a class="navbar-brand" href="/">
+                        <img src="https://www.bsdcity.com/static/logo_bsd-dark-2494e17d28a8cb4bf752adb24904fa4b.png"
+                            class="img-fluid dark" alt="Logo" width="auto">
+                        <!--<img src="img/LightVersion.png" class="img-fluid light" alt="Logo" width="auto">-->
+                    </a>
+                    <div class="navbar-toggler">
+                        <div class="d-block d-md-none">
+                            <button class="nav-link nav-link-icon search-toggler" aria-label="toggler-search-mobile">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <button aria-label="toggler-menu" onclick="openNav()" class="">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="navbar-menu light d-lg-block">
+                        <div class="navbar-menu-bg"></div>
+                        <div class="navbar-menu-content">
+                            <div class="navbar-collapse">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item false">
+                                        <div>
+                                            <a class="nav-link" href="/">Home</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item false">
+                                        <div>
+                                            <button class="nav-link " aria-label="BSDButton"
+                                                onclick="openBSDCity()">About BSD City</button>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item false">
+                                        <div>
+                                            <button class="nav-link " aria-label="DevButton"
+                                                onclick="openDev()">Developments</button>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item false">
+                                        <div>
+                                            <a class="nav-link" href="/facilities/">Facilities</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item false">
+                                        <div>
+                                            <a class="nav-link" href="/news-events/">News &amp; Events</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item false">
+                                        <div>
+                                            <a class="nav-link" href="/access/">Access</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item false">
+                                        <div>
+                                            <button class="nav-link " id="serviceButton"
+                                                aria-label="ServeButton" onclick="openServices()">Services</button>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item false">
+                                        <div>
+                                            <a href="https://digitalhub-bsdcity.com/" class="nav-link"
+                                                target="_blank">Digital Hub</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item false">
+                                        <div>
+                                            <a href="https://ecatalog.sinarmasland.com?utm_source=Website&amp;utm_medium=BSDWebsite&amp;utm_campaign=Digital_e-Catalog_2021&amp;utm_content=ECatalog_BSD_City_Website_Menu"
+                                                class="nav-link" target="_blank">E-Catalog</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div>
+                                            <form action="/search-result" class="form-search false" id="search-bar">
+                                                <input
+                                                    class="form-control" name="key" id="key" type="text"
+                                                    placeholder="Search">
+                                            </form>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div>
+                                            <button class="nav-link nav-link-icon" aria-label="Toggler-search" onClick="openSearch()">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item nav-desktop ml-1 d-flex align-items-center">
+                                        <a class="btn btn-secondary pb-1 pt-1 login text-capitalize"
+                                            href="/login/">Login</a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center">
+                                        <div class="">
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <div class="navbar-submenu light" id="about" style="display: none;">
+                            <div class="navbar-submenu-bg" id="about-bg" style="opacity: 0;"></div>
+                            <div class="navbar-submenu-content" style="">
+                                <div class="navbar-submenu-collapse">
+                                    <div class="navbar-submenu-collapse-content">
+                                        <div class="container">
+                                            <h2>About BSD City</h2>
+                                            <div class="row w-100">
+                                                <div class="col-md-4">
+                                                    <ul class="navbar-nav">
+                                                        <li class="nav-item"><a class="nav-link" href="/about/">About
+                                                                BSD City</a></li>
+                                                        <li class="nav-item"><a class="nav-link"
+                                                                href="/our-partners/">Our Partners</a></li>
+                                                        <li class="nav-item"><a class="nav-link"
+                                                                href="/sustainability/">Sustainability</a></li>
+                                                        <li class="nav-item"><a class="nav-link"
+                                                                href="/investor/">Investor's Area</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h5 class="text-dark">Investor's Area</h5>
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <ul class="about-submenu">
+                                                                <li class="about-submenu-item"><a class="btn-hover"
+                                                                        href="/investor/">General Information</a></li>
+                                                                <li class="about-submenu-item"><a class="btn-hover"
+                                                                        href="/investor/board-of-directors-and-board-commissioners/">Board
+                                                                        of Commissioners and Directors</a></li>
+                                                                <li class="about-submenu-item"><a class="btn-hover"
+                                                                        href="/investor/annual-reports/">Annual
+                                                                        Reports</a></li>
+                                                                <li class="about-submenu-item"><a class="btn-hover"
+                                                                        href="/investor/financial-reports/">Financial
+                                                                        Reports</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <ul class="about-submenu">
+                                                                <li class="about-submenu-item"><a class="btn-hover"
+                                                                        href="/investor/corporate-governance/">Corporate
+                                                                        Governance</a></li>
+                                                                <li class="about-submenu-item"><a class="btn-hover"
+                                                                        href="/investor/press-release/">Press
+                                                                        Release</a></li>
+                                                                <li class="about-submenu-item"><a class="btn-hover"
+                                                                        href="/investor/information-disclosure/">Information
+                                                                        Disclosure</a></li>
+                                                                <li class="about-submenu-item"><a class="btn-hover"
+                                                                        href="/investor/investors-relations/">Investors
+                                                                        Relations</a></li>
+                                                                <li class="about-submenu-item"><a class="btn-hover"
+                                                                        href="/investor/organization-structure/">Organization
+                                                                        Structure</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4"><a class="btn btn-secondary btn-block"
+                                                        href="/contact-us/">Contact Us<!-- --> <i
+                                                            class="fas fa-arrow-right ml-1"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="black-layer-navbar-menu"></div>
+
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <div class="navbar-submenu light" id="devs" style="display: none;">
+                            <div class="navbar-submenu-bg" id="devs-bg" style="opacity: 0;"></div>
+                            <div class="navbar-submenu-content"
+                                style="opacity: 1; transform-origin: 524px 133.219px; transform: translate(0px, 0px);">
+                                <div class="navbar-submenu-collapse">
+                                    <div class="navbar-submenu-collapse-content">
+                                        <div class="row row-3 ">
+                                            <div class="col-md-4">
+                                                <h2>Development</h2>
+                                                <p>Discover BSD City current &amp; future developments</p>
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item">
+                                                        <div><a class="nav-link"
+                                                                href="/development/residential/">Residential</a></div>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <div><a class="nav-link" href="/development/office/">Office</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <div><a class="nav-link"
+                                                                href="/development/commercial/">Commercial</a></div>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <div><a class="nav-link"
+                                                                href="/development/industrial/">Industrial</a></div>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <div><a class="nav-link"
+                                                                href="/development/future-developments/">Future
+                                                                Development</a></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="d-none d-lg-block">
+                                                    <div class="row">
+                                                        <div class="col-md-4"><a
+                                                                class="card card-overlay card-property submenu-property"
+                                                                id=""
+                                                                href="/development/commercial/virginia-arcade-promenade">
+                                                                <div class="row row-0">
+                                                                    <div class="col-bg col-12">
+                                                                        <div class="card-bg ">
+                                                                            <div class="card-bg-img h-ratio-1-1"
+                                                                                style="background: url(&quot;https://www.bsdcity.com/app/uploads/2024/05/frontyard65017bc717c6b-umDjrt9w9vwoophFNJFCATBntMiAn9R6IihZsHUT.jpg&quot;) center center / cover no-repeat;">
+                                                                                <div
+                                                                                    class="bg-overlay bg-overlay-bottom">
+                                                                                </div>
+                                                                                <img class="img-ratio img-ratio-1-1 force-img-in"
+                                                                                    src="img/1x1.png"
+                                                                                    alt="Ratio Placeholder" width="100"
+                                                                                    height="100">
+
+                                                                            </div>
+                                                                            <div class="el-after"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-body col-12">
+                                                                        <div class="card-body ">
+                                                                            <div class="d-flex align-items-center">
+                                                                                <h5 class="card-title">Virginia
+                                                                                    Arcade Promenade</h5>
+                                                                            </div>
+                                                                            <div class="detail-category"
+                                                                                style="display: inline-flex;"><i
+                                                                                    class="fas fa-city"
+                                                                                    style="color: rgb(227, 227, 227); line-height: 1.5;">&nbsp;</i>
+                                                                                <div class="card-text   ">
+                                                                                    <p>Commercial</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </a></div>
+                                                        <div class="col-md-4"><a
+                                                                class="card card-overlay card-property submenu-property"
+                                                                id=""
+                                                                href="/development/commercial/northridge-business-center-ultimate">
+                                                                <div class="row row-0">
+                                                                    <div class="col-bg col-12">
+                                                                        <div class="card-bg ">
+                                                                            <div class="card-bg-img h-ratio-1-1"
+                                                                                style="background: url(&quot;https://www.bsdcity.com/app/uploads/2024/05/06.-Northridge-3-Suasana-Ruko-Kecil-Frontal-scaled.jpg&quot;) center center / cover no-repeat;">
+                                                                                <div
+                                                                                    class="bg-overlay bg-overlay-bottom">
+                                                                                </div><img
+                                                                                    class="img-ratio img-ratio-1-1"
+                                                                                    src="img/1x1.png"
+                                                                                    alt="Ratio Placeholder" width="100"
+                                                                                    height="100">
+                                                                            </div>
+                                                                            <div class="el-after"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-body col-12">
+                                                                        <div class="card-body ">
+                                                                            <div class="d-flex align-items-center">
+                                                                                <h3 class="card-title h5">Northridge
+                                                                                    Business Center Ultimate</h3>
+                                                                            </div>
+                                                                            <div class="detail-category"
+                                                                                style="display: inline-flex;"><i
+                                                                                    class="fas fa-city"
+                                                                                    style="color: rgb(227, 227, 227); line-height: 1.5;">&nbsp;</i>
+                                                                                <div class="card-text   ">
+                                                                                    <p>Commercial</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </a></div>
+                                                        <div class="col-md-4"><a
+                                                                class="card card-overlay card-property submenu-property"
+                                                                id="" href="/development/residential/tresor">
+                                                                <div class="row row-0">
+                                                                    <div class="col-bg col-12">
+                                                                        <div class="card-bg ">
+                                                                            <div class="card-bg-img h-ratio-1-1"
+                                                                                style="background: url(&quot;https://www.bsdcity.com/app/uploads/2024/03/TRESOR_eBrochure-4.jpg&quot;) center center / cover no-repeat;">
+                                                                                <div
+                                                                                    class="bg-overlay bg-overlay-bottom">
+                                                                                </div><img
+                                                                                    class="img-ratio img-ratio-1-1"
+                                                                                    src="img/1x1.png"
+                                                                                    alt="Ratio Placeholder" width="100"
+                                                                                    height="100">
+                                                                            </div>
+                                                                            <div class="el-after"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-body col-12">
+                                                                        <div class="card-body ">
+                                                                            <div class="d-flex align-items-center">
+                                                                                <h3 class="card-title h5">Tresor</h3>
+                                                                            </div>
+                                                                            <div class="detail-category"
+                                                                                style="display: inline-flex;"><i
+                                                                                    class="fal fa-home-lg-alt"
+                                                                                    style="color: rgb(227, 227, 227); line-height: 1.5;">&nbsp;</i>
+                                                                                <div class="card-text   ">
+                                                                                    <p>Residential</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <div class="navbar-submenu light" id="service" style="display: none;">
+                            <div class="navbar-submenu-bg" id="service-bg" style="opacity: 0;"></div>
+                            <div class="navbar-submenu-content" style="">
+                                <div class="navbar-submenu-collapse">
+                                    <div class="navbar-submenu-collapse-content">
+                                        <div class="container">
+                                            <h2>Services</h2>
+                                            <div class="row w-100">
+                                                <div class="col-md-4">
+                                                    <ul class="navbar-nav mb-4">
+                                                        <li class="nav-item"><a class="nav-link"
+                                                                href="/water-ipl-payment/">Water &amp; IPL Payment</a>
+                                                        </li>
+                                                        <li class="nav-item"><a class="nav-link"
+                                                                href="/marketing-gallery/">Marketing Gallery</a></li>
+                                                    </ul><a class="btn btn-secondary btn-block"
+                                                        href="/contact-us/">Contact Us<!-- --> <i
+                                                            class="fas fa-arrow-right ml-1"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-menu light d-lg-none" id="dropdownnavmenu" style="/*display: none;*/">
+                        <div class="black-layer"></div>
+                        <div class="white-layer">
+                            <div class="navbar-menu-content" id="whitesecond"
+                                style="transform-origin: 487px 481px; transform: translate(0px, 0px); height: 100%; width: 100%;">
+                                <div class="navbar-collapse">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <div><a class="nav-link" href="/">Home</a></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div><button class="nav-link"
+                                                    aria-label="About-submenu">About BSD City</button></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div><button class="nav-link " aria-label="Devs-submenu">Developments</button></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div><a class="nav-link" href="/facilities/">Facilities</a></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div><a class="nav-link" href="/news-events/">News &amp; Events</a></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div><a class="nav-link" href="/access/">Access</a></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div><button class="nav-link "
+                                                    aria-label="Service-submenu">Services</button></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div style="transform: translate(0px, 0px);"></div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div style="transform: translate(0px, 0px);"></div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div style="transform: translate(0px, 0px);"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div style="transform: translate(0px, 0px);"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div style="transform: translate(0px, 0px);"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div style="transform: translate(0px, 0px);"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div style="transform: translate(0px, 0px);"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div><a href="https://digitalhub-bsdcity.com/" class="nav-link"
+                                                    target="_blank">Digital Hub</a></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div style="transform: translate(0px, 0px);"><a
+                                                    href="https://ecatalog.sinarmasland.com?utm_source=Website&amp;utm_medium=BSDWebsite&amp;utm_campaign=Digital_e-Catalog_2021&amp;utm_content=ECatalog_BSD_City_Website_Menu"
+                                                    class="nav-link" target="_blank">E-Catalog</a></div>
+                                        </li>
+                                    </ul>
+                                    <div class="social-links-wrapper">
+                                        <div style="transform: translate(0px, 0px);">
+                                            <ul class="social-links ">
+                                                <li class="social-item"><a aria-label="fa-facebook-square social media"
+                                                        href="https://www.facebook.com/bsdcity01" target="_blank"
+                                                        rel="noopener noreferrer" class="social-link"><i
+                                                            class="fab fa-facebook-square"></i></a></li>
+                                                <li class="social-item"><a aria-label="tiktok social media"
+                                                        href="https://twitter.com/bsdcity_?lang=en" target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        class="social-link footer-twitter-icon"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 512 512">
+                                                            <path
+                                                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                                            </path>
+                                                        </svg></a></li>
+                                                <li class="social-item"><a aria-label="fa-instagram social media"
+                                                        href="https://www.instagram.com/bsdcity_official/?hl=en"
+                                                        target="_blank" rel="noopener noreferrer" class="social-link"><i
+                                                            class="fab fa-instagram"></i></a></li>
+                                                <li class="social-item"><a aria-label="fa-youtube social media"
+                                                        href="https://www.youtube.com/@bsdcity_official" target="_blank"
+                                                        rel="noopener noreferrer" class="social-link"><i
+                                                            class="fab fa-youtube"></i></a></li>
+                                                <li class="social-item"><a aria-label="tiktok social media"
+                                                        href="https://www.tiktok.com/@bsdcity_official?lang=en"
+                                                        target="_blank" rel="noopener noreferrer"
+                                                        class="social-link footer-tiktok-icon"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                            <path
+                                                                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
+                                                            </path>
+                                                        </svg></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="toggle-dual-languages">
+                                            <div class="toggle-item active">
+                                                <p>ENG</p>
+                                            </div>
+                                            <div class="toggle-item false">
+                                                <p>IND</p>
+                                            </div>
+                                        </div>
+                                    </div><a class="btn btn-secondary btn-block btn-mobile-login text-capitalize"
+                                        href="/login">Login</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="light d-lg-none" id="navbar-submenu-aboutus">
+                        <div class="navbar-submenu-submenu light" id="aboutus-submenu" style="display: none">
+                            <div class="navbar-submenu-bg-submenu" id="aboutus-bg-submenu" style="">
+                            </div>
+                            <div class="navbar-submenu-content-submenu" style="">
+                                <div class="navbar-submenu-collapse-submenu">
+                                    <div class="navbar-submenu-collapse-header-submenu">
+                                        <div class="container">
+                                            <button class="btn btn-link"
+                                                aria-label="aboutus-submenu-button">Back</button>
+                                        </div>
+                                    </div>
+                                    <div class="navbar-submenu-collapse-content-submenu d-block">
+                                        <div class="container" style="flex-direction: column; align-items:start">
+                                            <ul class="navbar-nav mb-3">
+                                                <li class="nav-item">
+                                                    <div><a class="nav-link" href="/about/">About BSD City</a></div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div><a class="nav-link" href="/our-partners/">Our Partners</a>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div><a class="nav-link" href="/sustainability/">Sustainability</a>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div><a class="nav-link" href="/investor/">Investor's Area</a></div>
+                                                </li>
+                                            </ul>
+                                            <h5 style="text-transform: capitalize">Investor's Area</h5>
+                                            <ul class="about-submenu">
+                                                <li class="about-submenu-item"><a href="/investor/">General
+                                                        Information</a>
+                                                </li>
+                                                <li class="about-submenu-item"><a
+                                                        href="/investor/board-of-directors-and-board-commissioners/">Board
+                                                        of Commissioners and Directors</a></li>
+                                                <li class="about-submenu-item"><a
+                                                        href="/investor/annual-reports/">Annual
+                                                        Reports</a></li>
+                                                <li class="about-submenu-item"><a
+                                                        href="/investor/financial-reports/">Financial Reports</a></li>
+                                                <li class="about-submenu-item"><a
+                                                        href="/investor/corporate-governance/">Corporate Governance</a>
+                                                </li>
+                                                <li class="about-submenu-item"><a href="/investor/press-release/">Press
+                                                        Release</a></li>
+                                                <li class="about-submenu-item"><a
+                                                        href="/investor/information-disclosure/">Information
+                                                        Disclosure</a>
+                                                </li>
+                                                <li class="about-submenu-item"><a
+                                                        href="/investor/investors-relations/">Investors Relations</a>
+                                                </li>
+                                                <li class="about-submenu-item"><a
+                                                        href="/investor/organization-structure/">Organization
+                                                        Structure</a>
+                                                </li>
+                                            </ul><button class="btn btn-secondary btn-block  ">Contact Us <i
+                                                    class="fas fa-arrow-right ml-1"></i></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light d-lg-none" id="navbar-submenu-devs">
+                        <div class="navbar-submenu-submenu light" id="devs-submenu" style="display: none;">
+                            <div class="navbar-submenu-bg-submenu" id="devs-bg-submenu" style="opacity: 0;"></div>
+                            <div class="navbar-submenu-content-submenu"
+                                style="transform-origin: 450px 481px; transform: translate(0px, 0px); height: 100%; width: 100%;">
+                                <div class="navbar-submenu-collapse-submenu">
+                                    <div class="navbar-submenu-collapse-header-submenu">
+                                        <div class="container">
+                                            <button
+                                            class="btn btn-link" aria-label="dev-submenu-button">Back</button>
+                                        </div>
+                                    </div>
+                                    <div class="navbar-submenu-collapse-content d-block">
+                                        <div class="container" style="flex-direction: column; align-items:start">
+                                            <div class="overflow-hidden">
+                                                <h2>Development</h2>
+                                            </div>
+                                            <div class="overflow-hidden">
+                                                <p>Discover BSD City current &amp; future developments</p>
+                                            </div>
+                                            <ul class="navbar-nav mb-3">
+                                                <li class="nav-item">
+                                                    <div><a class="nav-link"
+                                                            href="/development/residential/" style="font-size: .9rem">Residential</a></div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div><a class="nav-link" href="/development/office/" style="font-size: .9rem">Office</a></div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div><a class="nav-link" href="/development/commercial/"style="font-size: .9rem">Commercial</a>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div><a class="nav-link" href="/development/industrial/"style="font-size: .9rem">Industrial</a>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div><a class="nav-link" href="/development/future-developments/"style="font-size: .9rem">Future
+                                                            Development</a></div>
+                                                </li>
+                                            </ul>
+                                            <div class="submenu-card-list"><a
+                                                    class="card card-overlay card-property submenu-property mb-3" id=""
+                                                    href="/development/commercial/virginia-arcade-promenade/">
+                                                    <div class="row row-0">
+                                                        <div class="col-bg col-12">
+                                                            <div class="card-bg ">
+                                                                <div class="card-bg-img h-ratio-2-1"
+                                                                    style="background:url(https://www.bsdcity.com/app/uploads/2024/05/frontyard65017bc717c6b-umDjrt9w9vwoophFNJFCATBntMiAn9R6IihZsHUT.jpg) center center / cover no-repeat">
+                                                                    <div class="bg-overlay bg-overlay-bottom"></div>
+                                                                    <!-- <img
+                                                                        class="img-ratio img-ratio-1-1"
+                                                                        src="img/1x1.png"
+                                                                        alt="Ratio Placeholder" width="100"
+                                                                        height="100"> -->
+                                                                        <img class="img-ratio img-ratio-2-1"
+                                                                        src="img/100x30.png"
+                                                                        alt="Ratio Placeholder" width="100%"
+                                                                        height="100">
+                                                                        <!-- <img class="img-ratio img-ratio-3-2"
+                                                                        src="img/100x60.png"
+                                                                        alt="Ratio Placeholder" width="100" height="100"> -->
+                                                                </div>
+                                                                <div class="el-after"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-body col-12">
+                                                            <div class="card-body ">
+                                                                <div class="d-flex align-items-center">
+                                                                    <h3 class="card-title h5">Virginia Arcade Promenade</h3>
+                                                                </div>
+                                                                <div class="detail-category" style="display:inline-flex"><i
+                                                                        class="fas fa-city"
+                                                                        style="color:#e3e3e3;line-height:1.5">&nbsp;</i>
+                                                                    <div class="card-text   ">
+                                                                        <p>Commercial</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a><a class="card card-overlay card-property submenu-property mb-3" id=""
+                                                    href="/development/commercial/northridge-business-center-ultimate/">
+                                                    <div class="row row-0">
+                                                        <div class="col-bg col-12">
+                                                            <div class="card-bg ">
+                                                                <div class="card-bg-img h-ratio-2-1"
+                                                                    style="background:url(https://www.bsdcity.com/app/uploads/2024/05/06.-Northridge-3-Suasana-Ruko-Kecil-Frontal-scaled.jpg) center center / cover no-repeat">
+                                                                    <div class="bg-overlay bg-overlay-bottom"></div>
+                                                                    <!-- <img
+                                                                        class="img-ratio img-ratio-1-1"
+                                                                        src="img/1x1.png"
+                                                                        alt="Ratio Placeholder" width="100"
+                                                                        height="100"> -->
+                                                                        <img class="img-ratio img-ratio-2-1"
+                                                                        src="img/100x30.png"
+                                                                        alt="Ratio Placeholder" width="100"
+                                                                        height="100">
+                                                                        <!-- <img class="img-ratio img-ratio-3-2"
+                                                                        src="img/100x60.png"
+                                                                        alt="Ratio Placeholder" width="100" height="100"> -->
+                                                                </div>
+                                                                <div class="el-after"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-body col-12">
+                                                            <div class="card-body ">
+                                                                <div class="d-flex align-items-center">
+                                                                    <h3 class="card-title h5">Northridge Business Center
+                                                                        Ultimate</h3>
+                                                                </div>
+                                                                <div class="detail-category" style="display:inline-flex"><i
+                                                                        class="fas fa-city"
+                                                                        style="color:#e3e3e3;line-height:1.5">&nbsp;</i>
+                                                                    <div class="card-text   ">
+                                                                        <p>Commercial</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a><a class="card card-overlay card-property submenu-property mb-3" id=""
+                                                    href="/development/residential/tresor/">
+                                                    <div class="row row-0">
+                                                        <div class="col-bg col-12">
+                                                            <div class="card-bg ">
+                                                                <div class="card-bg-img h-ratio-2-1"
+                                                                    style="background:url(https://www.bsdcity.com/app/uploads/2024/03/TRESOR_eBrochure-4.jpg) center center / cover no-repeat">
+                                                                    <div class="bg-overlay bg-overlay-bottom"></div>
+                                                                    <!-- <img class="img-ratio img-ratio-2-1"
+                                                                    src="img/100x30.png"
+                                                                    alt="Ratio Placeholder" width="100"
+                                                                    height="100"> -->
+                                                                   <img class="img-ratio img-ratio-2-1"
+                                                                    src="img/100x60.png"
+                                                                    alt="Ratio Placeholder" width="100"
+                                                                    height="100">
+                                                                </div>
+                                                                <div class="el-after"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-body col-12">
+                                                            <div class="card-body ">
+                                                                <div class="d-flex align-items-center">
+                                                                    <h3 class="card-title h5">Tresor</h3>
+                                                                </div>
+                                                                <div class="detail-category" style="display:inline-flex"><i
+                                                                        class="fal fa-home-lg-alt"
+                                                                        style="color:#e3e3e3;line-height:1.5">&nbsp;</i>
+                                                                    <div class="card-text   ">
+                                                                        <p>Residential</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light d-lg-none" id="navbar-submenu-service">
+                        <div class="navbar-submenu-submenu light" id="service-submenu" style="display: none;">
+                            <div class="navbar-submenu-bg-submenu" id="service-bg-submenu" style="opacity: 0;"></div>
+                            <div class="navbar-submenu-content-submenu"
+                                style="transform-origin: 487px 481px; transform: translate(0px, 0px); height: 100%; width: 100%;">
+                                <div class="navbar-submenu-collapse-submenu navbar-collapse">
+                                    <div class="navbar-collapse">
+                                        <div
+                                            class="navbar-submenu-collapse-header-submenu navbar-submenu-collapse-header">
+                                            <div class="container">
+                                                <button class="btn btn-link"
+                                                    aria-label="service-submenu-button">Back</button>
+                                            </div>
+                                        </div>
+                                        <div class="navbar-submenu-collapse-content-submenu">
+                                            <div class="container">
+                                                <h2>Services</h2>
+                                                <div class="row w-100">
+                                                    <div class="col-md-4">
+                                                        <ul class="navbar-nav mb-4">
+                                                            <li class="nav-item"><a class="nav-link"
+                                                                    href="/water-ipl-payment/">Water &amp; IPL
+                                                                    Payment</a>
+                                                            </li>
+                                                            <li class="nav-item"><a class="nav-link"
+                                                                    href="/marketing-gallery/">Marketing Gallery</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <a class="btn btn-secondary btn-block" href="/contact-us/">Contact
+                                                        Us<!-- --> <i class="fas fa-arrow-right ml-1"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form action="/search-result" id = "search-bar-mobile" class="form-search-mobile false">
+                    <input class="form-control-mobile" name="key" id="key" type="text" placeholder="Type to search">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <main class="" id="Body">
+        <div class="container main-padding" style="">
+            <div class="searchbox">
+                    <input type="text" class="searchboxInput" id="locationInput" placeholder="Enter a location in BSD">
+                    <button onclick="updateMap()" class="btn-secondary">Search</button>
+            </div>
+            <iframe id ="maptesttwo" src="https://maps.google.com/maps?t=&z=14&ie=UTF8&iwloc=&output=embed&ll=-6.29447675559863, 106.67423599242338" width="100%" height="600" style="border:0;" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- <p>
+                Aliquid quia natus sit repellendus. Quod harum totam expedita exercitationem est inventore. Ut minima
+                tempore qui et quibusdam eveniet. Et porro et dicta vel deleniti enim incidunt quam. Provident qui
+                doloremque itaque et. Mollitia officiis accusantium sit suscipit ratione dolores quos.
+
+                Voluptas exercitationem dolorem qui autem. Corrupti laborum optio perspiciatis. Suscipit iste non
+                officia autem soluta tempora minima cupiditate. Molestiae rerum amet vero sapiente. Id dolorum quis
+                perspiciatis inventore incidunt.
+
+                Reiciendis unde aut veniam maxime molestiae quisquam. Voluptas tenetur qui nisi. Nesciunt occaecati esse
+                quo error officiis consequatur officiis delectus. Vero nihil et vero officiis eos. Quam inventore id sed
+                magnam enim sit cumque illo. Rerum error unde fuga harum in.
+
+                Consequatur autem illo consequatur saepe voluptas accusantium. Perspiciatis esse deserunt velit id.
+                Eligendi ullam tenetur vero quia sint. Deserunt nihil maiores rerum praesentium non quos et earum.
+
+                Consequuntur veritatis blanditiis veritatis mollitia occaecati accusantium provident ea. Sunt corporis
+                hic omnis ullam rerum corporis. Unde consectetur ducimus voluptas labore aperiam optio at.
+            </p>
+            <p>
+                Aliquid quia natus sit repellendus. Quod harum totam expedita exercitationem est inventore. Ut minima
+                tempore qui et quibusdam eveniet. Et porro et dicta vel deleniti enim incidunt quam. Provident qui
+                doloremque itaque et. Mollitia officiis accusantium sit suscipit ratione dolores quos.
+
+                Voluptas exercitationem dolorem qui autem. Corrupti laborum optio perspiciatis. Suscipit iste non
+                officia autem soluta tempora minima cupiditate. Molestiae rerum amet vero sapiente. Id dolorum quis
+                perspiciatis inventore incidunt.
+
+                Reiciendis unde aut veniam maxime molestiae quisquam. Voluptas tenetur qui nisi. Nesciunt occaecati esse
+                quo error officiis consequatur officiis delectus. Vero nihil et vero officiis eos. Quam inventore id sed
+                magnam enim sit cumque illo. Rerum error unde fuga harum in.
+
+                Consequatur autem illo consequatur saepe voluptas accusantium. Perspiciatis esse deserunt velit id.
+                Eligendi ullam tenetur vero quia sint. Deserunt nihil maiores rerum praesentium non quos et earum.
+
+                Consequuntur veritatis blanditiis veritatis mollitia occaecati accusantium provident ea. Sunt corporis
+                hic omnis ullam rerum corporis. Unde consectetur ducimus voluptas labore aperiam optio at.
+            </p>
+            <p>
+                Aliquid quia natus sit repellendus. Quod harum totam expedita exercitationem est inventore. Ut minima
+                tempore qui et quibusdam eveniet. Et porro et dicta vel deleniti enim incidunt quam. Provident qui
+                doloremque itaque et. Mollitia officiis accusantium sit suscipit ratione dolores quos.
+
+                Voluptas exercitationem dolorem qui autem. Corrupti laborum optio perspiciatis. Suscipit iste non
+                officia autem soluta tempora minima cupiditate. Molestiae rerum amet vero sapiente. Id dolorum quis
+                perspiciatis inventore incidunt.
+
+                Reiciendis unde aut veniam maxime molestiae quisquam. Voluptas tenetur qui nisi. Nesciunt occaecati esse
+                quo error officiis consequatur officiis delectus. Vero nihil et vero officiis eos. Quam inventore id sed
+                magnam enim sit cumque illo. Rerum error unde fuga harum in.
+
+                Consequatur autem illo consequatur saepe voluptas accusantium. Perspiciatis esse deserunt velit id.
+                Eligendi ullam tenetur vero quia sint. Deserunt nihil maiores rerum praesentium non quos et earum.
+
+                Consequuntur veritatis blanditiis veritatis mollitia occaecati accusantium provident ea. Sunt corporis
+                hic omnis ullam rerum corporis. Unde consectetur ducimus voluptas labore aperiam optio at.
+            </p> -->
+
+           
+        </div>
+        <div id="buffer-text" class="pb-5">
+            <span></span>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top py-main pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-12 footer-col mb-3">
+                        <div class="col-12">
+                            <h5>Sinar Mas Land Plaza</h5>
+                            <p class="m-0">Sinar Mas Land Plaza</p>
+                            <p class="mb-3">Jl. Grand Boulevard BSD City, Sampora, Kec. Cisauk,<br>Tangerang, Banten
+                                15345</p>
+                            <p><a href="tel:+6221-50368368">+6221 - 5036 8368</a></p>
+                        </div>
+                        <div class="col-12">
+                            <h5>BSD City Marketing Office</h5>
+                            <p class="mb-3">Jl. Grand Boulevard BSD City, Sampora, Kec. Cisauk,<br>Tangerang, Banten
+                                15345</p>
+                            <p><a href="tel:+6221-53159000">+6221 - 5315 9000</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-12 mb-3">
+                        <div class="footer-col">
+                            <h5>Quick Links</h5>
+                            <ul class="footer-nav">
+                                <li class="footer-item">
+                                    <a class="footer-link" href="/about/">About Us <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </li>
+                                <li class="footer-item"><a class="footer-link" href="/investor/">Investor Area <i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                                <li class="footer-item"><a class="footer-link" href="/access/">Access <i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                                <li class="footer-item"><a class="footer-link" href="/news-events/blog/">Blog <i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                                <li class="footer-item"><a href="https://digitalhub-bsdcity.com/" class="footer-link"
+                                        target="_blank">Digital Hub <i class="fa-solid fa-arrow-right"></i></a></li>
+                                <li class="footer-item"><a
+                                        href="https://ecatalog.sinarmasland.com?utm_source=Website&amp;utm_medium=BSDWebsite&amp;utm_campaign=Digital_e-Catalog_2021&amp;utm_content=ECatalog_BSD_City_Website_Menu_Footer"
+                                        class="footer-link" target="_blank">E-Catalog <i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-12 mb-3">
+                        <div class="footer-col">
+                            <h5>Our E-Store</h5>
+                            <ul class="footer-nav">
+                                <li class="footer-item"><a
+                                        href="https://www.blibli.com/merchant/sinar-mas-land-official-store/SIM-70041?utm_source=Website&amp;utm_medium=BSDWebsite&amp;utm_campaign=Digital_2021&amp;utm_content=Blibli_Footer_Website_BSDCity"
+                                        class="footer-link" target="_blank">Blibli <i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                                <li class="footer-item"><a
+                                        href="https://www.tokopedia.com/sinarmasland?utm_source=Website&amp;utm_medium=BSDWebsite&amp;utm_campaign=Digital_2021&amp;utm_content=Tokopedia_Footer_Website_BSDCity"
+                                        class="footer-link" target="_blank">Tokopedia <i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 mb-3">
+                        <div class="footer-col footer-newsletter">
+                            <h5>Follow Us On</h5>
+                            <ul class="social-links mt-3">
+
+                                <li class="social-item">
+                                    <a aria-label="fa-facebook-square social media"
+                                        href="https://www.facebook.com/bsdcity01" target="_blank"
+                                        rel="noopener noreferrer" class="social-link"><i
+                                            class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="social-item">
+                                    <a aria-label="tiktok social media" href="https://twitter.com/bsdcity_?lang=en"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="social-link footer-twitter-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                            height="1em" viewBox="0 0 512 512">
+                                            <path
+                                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                            </path>
+                                        </svg></a>
+                                </li>
+                                <li class="social-item">
+                                    <a aria-label="fa-instagram social media"
+                                        href="https://www.instagram.com/bsdcity_official/?hl=en" target="_blank"
+                                        rel="noopener noreferrer" class="social-link"><i
+                                            class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="social-item">
+                                    <a aria-label="fa-youtube social media"
+                                        href="https://www.youtube.com/@bsdcity_official" target="_blank"
+                                        rel="noopener noreferrer" class="social-link"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="social-item">
+                                    <a aria-label="tiktok social media"
+                                        href="https://www.tiktok.com/@bsdcity_official?lang=en" target="_blank"
+                                        rel="noopener noreferrer" class="social-link footer-tiktok-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
+                                            </path>
+                                        </svg></a>
+                                </li>
+                            </ul>
+                            <div class="footer-copyright d-none d-md-block">
+                                © 2024 BSD City. &nbsp;<a href="/privacy-policy/">Privacy Policy</a><span
+                                    class="divider">|</span><a href="/terms-conditions/">Terms &amp; Conditions</a>
+                            </div>
+                            <div class="toggle-dual-languages mt-3">
+                                <div class="toggle-item py-2 active">
+                                    <p>ENG</p>
+                                </div>
+                                <div class="toggle-item py-2 false" id ="IndoPage">
+                                    <p class="text-gray-400">IND</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="red-ribbon">
+            <div class="ribbon red"></div>
+            <div class="ribbon black"></div>
+            <div class="ribbon black-bottom"></div>
+            <img src="https://www.bsdcity.com/static/img_red-ribbon-9eae7e21a25fa0919f9c8a20c4638682.png"
+                class="img-fluid" alt="Red Ribbon">
+        </div>
+    </footer>
+
+
+
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta" defer></script>-->
+    <script src="js/index.js" type="text/javascript"></script>
+
+</body>
