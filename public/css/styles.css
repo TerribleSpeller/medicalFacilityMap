@@ -1,5 +1,7 @@
 /* Container Madness */
 
+
+
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .cover .breadcrumb-wrapper .breadcrumb, .navbar-submenu .navbar-submenu-content .navbar-submenu-collapse-content, .navbar-submenu .navbar-submenu-content .navbar-submenu-collapse-header {
     width: 100%;
     padding-right: 10px;
@@ -1617,3 +1619,16 @@ about-submenu .about-submenu-item a:before, .breadcrumb .breadcrumb-item a:befor
 .margin-maker {
     margin-bottom: 4%;
 }
+
+/* GOogle maps */
+#map {
+    height: 800px;
+
+  }
+  
+  @media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
+    }
+}
+
