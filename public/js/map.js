@@ -162,9 +162,76 @@ function createCenterControl(map) {
     controlButton.title = "Click to find places";
     controlButton.type = "button";
 
+    //Category Stuff
+    const dropdownCategory = document.createElement("div");
+    dropdownCategory.id = "Category Dropdown";
+    dropdownCategory.classList.add("px-2");
+    dropdownCategory.classList.add("flex-column");
+    dropdownCategory.classList.add("d-flex")
+    dropdownCategory.style.margin = "8px 0 22px";
+    dropdownCategory.style.padding = "0 5px";
+    dropdownCategory.style.fontSize = "16px";
+    dropdownCategory.style.lineHeight = "38px";
 
+    const revealButtonCateogyr = document.createElement("button");
+    revealButtonCateogyr.classList.add("dropbtn");
+    revealButtonCateogyr.innerHTML = "Categories";
+    dropdownCategory.appendChild(revealButtonCateogyr);
 
+    const categoryOptions = [
+        { value: 'medical', text: 'Medical' },
+        { value: 'beauty', text: 'Beauty' },
+        { value: 'wellness', text: 'Wellness' }
+    ];
+
+    const dropdownContentCategory = document.createElement("div");
+    dropdownContentCategory.id = "Dropdown Category";
+    dropdownContentCategory.classList.add("vertical-menu");
+    dropdownContentCategory.style.display = "none";
+    dropdownCategory.appendChild(dropdownContentCategory);
+
+    revealButtonCateogyr.addEventListener("click", () => {
+        if (dropdownContentCategory.style.display === "none") {
+            dropdownContentCategory.style.display = "block";
+        } else {
+            dropdownContentCategory.style.display = "none";
+        }
+    });
+
+    categoryOptions.forEach(option => {
+        const button = document.createElement("button");
+        button.value = option.value;
+        button.textContent = option.text;
+        button.classList.add("vertical-menu-long")
+        button.style.margin = "5px";
+        button.style.padding = "10px";
+        button.style.fontSize = "16px";
+        button.style.cursor = "pointer";
+
+        button.addEventListener("click", () => {
+            //findPlace(button.value);
+            var targetMenu = document.getElementById(button.value + "Dropdown");
+            console.log(targetMenu)
+            if (targetMenu.classList.contains("active")) {
+                targetMenu.classList.remove("active");
+            } else {
+                categoryOptions.forEach(option => {
+                    var targetMenu = document.getElementById(option.value + "Dropdown");
+                    targetMenu.classList.remove("active");
+                    targetMenu.style.display = "none";
+                });
+                targetMenu.classList.add("active");
+                targetMenu.style.display = "block";
+            }
+        });
+
+        dropdownContentCategory.appendChild(button);
+    });
+    
+
+    //Subcategory Function 
     const dropdown = document.createElement("div");
+    dropdown.id = "Subcategory Dropdown";
     dropdown.classList.add("px-2");
     dropdown.classList.add("flex-column");
     dropdown.classList.add("d-flex")
@@ -180,25 +247,72 @@ function createCenterControl(map) {
 
     const options = [
         { value: 'hospital', text: 'Hospital' },
-        { value: 'medical clinc', text: 'Clinic' },
+        // { value: 'medical clinc', text: 'Clinic' },
         { value: 'dentist', text: 'Dental Clinic' },
         { value: 'pharmacy', text: 'Pharmacy' },
         { value: 'doctor', text: 'Doctor' }
+    ];
 
+    const options2well = [
+        { value: 'gym', text: 'Gym' },
+        // { value: 'massage therapist', text: 'Massage' },
+        // { value: 'reflexology', text: 'Reflexology' },
+        { value: 'spa', text: 'Spa' },
+        // { value: 'yoga', text: 'Yoga' }
+    ];
+
+    const options3beauty = [
+        { value: 'hair_care', text: 'Barber' },
+        // { value: 'cosmetics store', text: 'Cosmetics' },
+        { value: 'beauty_salon', text: 'salon' },
+        // { value: 'skincare', text: 'skincare' },
     ];
 
     const dropdownContent = document.createElement("div");
-    dropdownContent.id = "myDropdown";
+    dropdownContent.id = "medicalDropdown";
     dropdownContent.classList.add("vertical-menu");
     dropdownContent.style.display = "none";
     dropdown.appendChild(dropdownContent);
 
+    const dropdownContent2 = document.createElement("div");
+    dropdownContent2.id = "wellnessDropdown";
+    dropdownContent2.classList.add("vertical-menu");
+    dropdownContent2.style.display = "none";
+    dropdown.appendChild(dropdownContent2);
+
+
+    const dropdownContent3 = document.createElement("div");
+    dropdownContent3.id = "beautyDropdown";
+    dropdownContent3.classList.add("vertical-menu");
+    dropdownContent3.style.display = "none";
+    dropdown.appendChild(dropdownContent3);
+
+
     revealButton.addEventListener("click", () => {
-        if (dropdownContent.style.display === "none") {
-            dropdownContent.style.display = "block";
+        if (dropdownContent.classList.contains("active")) {
+            if (dropdownContent.style.display === "none") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        } else if (dropdownContent2.classList.contains("active")) {
+            if (dropdownContent2.style.display === "none") {
+                dropdownContent2.style.display = "block";
+            } else {
+                dropdownContent2.style.display = "none";
+            }
+        } else if (dropdownContent3.classList.contains("active")) {
+            if (dropdownContent3.style.display === "none") {
+                dropdownContent3.style.display = "block";
+            } else {
+                dropdownContent3.style.display = "none";
+            }
         } else {
             dropdownContent.style.display = "none";
+            dropdownContent2.style.display = "none";
+            dropdownContent3.style.display = "none";
         }
+
     });
 
     options.forEach(option => {
@@ -218,7 +332,216 @@ function createCenterControl(map) {
         dropdownContent.appendChild(button);
     });
 
+    options2well.forEach(option => {
+        const button = document.createElement("button");
+        button.value = option.value;
+        button.textContent = option.text;
+        button.classList.add("vertical-menu-long")
+        button.style.margin = "5px";
+        button.style.padding = "10px";
+        button.style.fontSize = "16px";
+        button.style.cursor = "pointer";
+
+        button.addEventListener("click", () => {
+            findPlace(button.value);
+        });
+
+        dropdownContent2.appendChild(button);
+    });
+
+    options3beauty.forEach(option => {
+        const button = document.createElement("button");
+        button.value = option.value;
+        button.textContent = option.text;
+        button.classList.add("vertical-menu-long")
+        button.style.margin = "5px";
+        button.style.padding = "10px";
+        button.style.fontSize = "16px";
+        button.style.cursor = "pointer";
+
+        button.addEventListener("click", () => {
+            findPlace(button.value);
+        });
+
+        dropdownContent3.appendChild(button);
+    });
+
+    //The Rest
+    const moreFiltersContainer = document.createElement("div");
+    const moreFilters = document.createElement("div");
+    moreFilters.id = "moreFilters";
+    moreFilters.classList.add("px-2");
+    moreFilters.classList.add("flex-column");
+    moreFilters.classList.add("d-flex")
+    moreFilters.style.margin = "8px 0 22px";
+    moreFilters.style.padding = "0 5px";
+    moreFilters.style.fontSize = "16px";
+    moreFilters.style.lineHeight = "38px";
+    moreFilters.style.position = "relative";
+    
+    const moreFiltersButton = document.createElement("button");
+    moreFiltersButton.classList.add("dropbtn");
+    moreFiltersButton.innerHTML = "More Filters";
+    moreFiltersButton.addEventListener("click", () => {
+        const lessFilters = document.getElementById("lessFilters");
+        const promoFilter = document.getElementById("promoFilter");
+        const ratingFilter = document.getElementById("ratingFilter");
+        const hourFilter = document.getElementById("hourFilter");
+
+        lessFilters.style.zIndex = "2";
+        lessFilters.style.width = "100%";
+        lessFilters.style.padding = "0 5px";
+        lessFilters.classList.add("px-2");
+        promoFilter.style.zIndex = "2";
+        promoFilter.style.width = "100%";
+        promoFilter.style.padding = "0 5px";
+        promoFilter.classList.add("px-2");
+        ratingFilter.style.zIndex = "2";
+        ratingFilter.style.width = "100%";
+        ratingFilter.style.padding = "0 5px";
+        ratingFilter.classList.add("px-2");
+        hourFilter.style.zIndex = "2";
+        hourFilter.style.width = "100%";    
+        hourFilter.style.padding = "0 5px";
+        hourFilter.classList.add("px-2");
+        moreFilters.style.zIndex = -1000;
+        moreFilters.style.width = "0px";
+        moreFilters.style.padding = "0px";
+        moreFilters.classList.remove("px-2");
+    });
+
+    moreFilters.appendChild(moreFiltersButton);
+    moreFiltersContainer.appendChild(moreFilters);
+
+    //Promo
+    const promoFilterContainer = document.createElement("div");
+    const promoFilter = document.createElement("div");
+    promoFilter.id = "promoFilter";
+    //promoFilter.classList.add("px-2");
+    promoFilter.classList.add("flex-column");
+    promoFilter.classList.add("d-flex")
+    promoFilter.style.margin = "8px 0 22px";
+    // promoFilter.style.padding = "0 5px";
+    promoFilter.style.fontSize = "16px";
+    promoFilter.style.lineHeight = "38px";
+    promoFilter.style.display = "none"; 
+    promoFilter.style.zIndex = -1000;
+    promoFilter.style.position = "relative";
+    promoFilter.style.width = "0px";
+
+    const PromosButton = document.createElement("button");
+    PromosButton.classList.add("dropbtn");
+    PromosButton.innerHTML = "Promos";
+    promoFilter.appendChild(PromosButton);
+    promoFilterContainer.appendChild(promoFilter);
+
+    //Rating
+    const ratingFilterContainer = document.createElement("div");
+    const ratingFilter = document.createElement("div");
+    ratingFilter.id = "ratingFilter";
+    //ratingFilter.classList.add("px-2");
+    ratingFilter.classList.add("flex-column");
+    ratingFilter.classList.add("d-flex")
+    ratingFilter.style.margin = "8px 0 22px";
+    // ratingFilter.style.padding = "0 5px";
+    ratingFilter.style.fontSize = "16px";
+    ratingFilter.style.lineHeight = "38px";
+    ratingFilter.style.display = "none"; 
+    ratingFilter.style.zIndex = -1000;
+    ratingFilter.style.position = "relative";
+    ratingFilter.style.width = "0px";
+
+    const RatingButton = document.createElement("button");
+    RatingButton.classList.add("dropbtn");
+    RatingButton.innerHTML = "Rating";
+    ratingFilter.appendChild(RatingButton);
+    ratingFilterContainer.appendChild(ratingFilter);
+
+    //Open Hours
+    const hourFilterContainer = document.createElement("div");
+    const hourFilter = document.createElement("div");
+    hourFilter.id = "hourFilter";
+   // hourFilter.classList.add("px-2");
+    hourFilter.classList.add("flex-column");
+    hourFilter.classList.add("d-flex")
+    hourFilter.style.margin = "8px 0 22px";
+    // hourFilter.style.padding = "0 5px";
+    hourFilter.style.fontSize = "16px";
+    hourFilter.style.lineHeight = "38px";
+    hourFilter.style.display = "none"; 
+    hourFilter.style.zIndex = -1000;
+    hourFilter.style.position = "relative";
+    hourFilter.style.width = "0px";
+
+    const hourButton = document.createElement("button");
+    hourButton.classList.add("dropbtn");
+    hourButton.innerHTML = "Opening Hours";
+    hourFilter.appendChild(hourButton);
+    hourFilterContainer.appendChild(hourFilter);
+
+    //Social???
+
+    //Less Filter More Filter Button
+    const lessFiltersContainer = document.createElement("div");
+    const lessFilters = document.createElement("div");
+    lessFilters.id = "lessFilters";
+    //lessFilters.classList.add("px-2");
+    lessFilters.classList.add("flex-column");
+    lessFilters.classList.add("d-flex")
+    lessFilters.style.margin = "8px 0 22px";
+    // lessFilters.style.padding = "0 5px";
+    lessFilters.style.fontSize = "16px";
+    lessFilters.style.lineHeight = "38px";
+    lessFilters.style.display = "none"; //Because intiially they be moreFilters
+    lessFilters.style.zIndex = -1000;
+    lessFilters.style.position = "relative";
+    lessFilters.style.width = "0px";
+
+
+    const lessFiltersButton = document.createElement("button");
+    lessFiltersButton.classList.add("dropbtn");
+    lessFiltersButton.innerHTML = "Less Filters";
+
+    lessFiltersButton.addEventListener("click", () => {
+        const promoFilter = document.getElementById("promoFilter");
+        const ratingFilter = document.getElementById("ratingFilter");
+        const hourFilter = document.getElementById("hourFilter");
+        const moreFilters = document.getElementById("moreFilters");
+
+
+        moreFilters.style.zIndex = "2";
+        moreFilters.style.width = "100%";
+        moreFilters.style.padding = "0 5px";
+        moreFilters.classList.add("px-2");
+        promoFilter.style.zIndex = -1000;
+        promoFilter.style.width = "0px";
+        promoFilter.style.padding = "0px";
+        promoFilter.classList.remove("px-2");
+        ratingFilter.style.zIndex = -1000;
+        ratingFilter.style.width = "0px";
+        ratingFilter.style.padding = "0px";
+        ratingFilter.classList.remove("px-2");
+        hourFilter.style.zIndex = -1000;
+        hourFilter.style.width = "0px";
+        hourFilter.style.padding = "0px";
+        hourFilter.classList.remove("px-2");
+        lessFilters.style.zIndex = -1000;
+        lessFilters.style.width = "0px";
+        lessFilters.style.padding = "0px";
+        lessFilters.classList.remove("px-2");
+    });
+    lessFilters.appendChild(lessFiltersButton);
+    lessFiltersContainer.appendChild(lessFilters);
+    
+
+    controlDiv.appendChild(dropdownCategory);
     controlDiv.appendChild(dropdown);
+    controlDiv.appendChild(moreFiltersContainer);
+    controlDiv.appendChild(promoFilterContainer);
+    controlDiv.appendChild(ratingFilterContainer);
+    controlDiv.appendChild(hourFilterContainer);
+    controlDiv.appendChild(lessFiltersContainer);
+
 
     return controlDiv;
 }
@@ -281,42 +604,67 @@ async function processResults(type, results, service, map, polygon) {
         } else {
             console.log("Type Match: ", currentPlace.types[0], " vs ", type)
             if (google.maps.geometry.poly.containsLocation(currentPlace.geometry.location, polygon)) {
-                const detailsRequest = {
-                    placeId: currentPlace.place_id,
-                    fields: ['website']
-                };
+                const placeId = currentPlace.place_id;
+                const cachedDetails = localStorage.getItem(placeId); //Fuck it we cache
 
-                service.getDetails(detailsRequest, (placeDetails, detailsStatus) => {
-                    if (detailsStatus === google.maps.places.PlacesServiceStatus.OK) {
-                        currentPlace.website = placeDetails.website;
+                if (cachedDetails) {
+                    const placeDetails = JSON.parse(cachedDetails);
+                    currentPlace.website = placeDetails.website; //THESE TWO, cost the most. 0.020 USD per call! THats like, 1.2 Dollars per click!
+                    currentPlace.photoUrl = placeDetails.photoUrl; 
+                    const marker = new AdvancedMarkerElement({
+                        map: map,
+                        content: buildContent(currentPlace, type),
+                        position: currentPlace.geometry.location
+                    });
+                    marker.addListener("click", () => {
+                        toggleHighlight(marker, currentPlace);
+                    });
+                    markers.push(marker);
+                } else {
+                    const detailsRequest = {
+                        placeId: placeId,
+                        fields: ['website', 'photos'] //Because of course we do. 
+                    };
+                    // Note: PREV photos was called this way, but to store it easier and since we're alreayd calling the api. Might as well call it along with the website.
+                    // if (currentPlace.photos && currentPlace.photos.length > 0) {
+                    //     const photoUrl = currentPlace.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
+                    //     //console.log('Photo URL:', photoUrl);
+                    // }
 
-                        const marker = new AdvancedMarkerElement({
-                            map: map,
-                            content: buildContent(currentPlace, type),
-                            position: currentPlace.geometry.location
-                        });
+                    service.getDetails(detailsRequest, (placeDetails, detailsStatus) => {
+                        if (detailsStatus === google.maps.places.PlacesServiceStatus.OK) {
+                            currentPlace.website = placeDetails.website;
+                            if (placeDetails.photos && placeDetails.photos.length > 0) {
+                                currentPlace.photoUrl = placeDetails.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
+                            } else {
+                                currentPlace.photoUrl = null;
+                            }
+                            const marker = new AdvancedMarkerElement({
+                                map: map,
+                                content: buildContent(currentPlace, type),
+                                position: currentPlace.geometry.location
+                            });
 
-                        //console.log(currentPlace)
+                            marker.addListener("click", () => {
+                                toggleHighlight(marker, currentPlace);
+                            });
 
-                        marker.addListener("click", () => {
-                            toggleHighlight(marker, currentPlace);
-                        });
+                            // TODO: Cache the details in localStorage, easiest method (Change to Gatsby later)
+                            const detailsToCache = {
+                                website: placeDetails.website,
+                                photoUrl: currentPlace.photoUrl
+                            };
+                            localStorage.setItem(placeId, JSON.stringify(detailsToCache)); //Probably violates the Google Maps Terms of Service
 
-                        // Check if the place has photos
-                        if (currentPlace.photos && currentPlace.photos.length > 0) {
-                            const photoUrl = currentPlace.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
-                            //console.log('Photo URL:', photoUrl);
+                            markers.push(marker);
+                        } else {
+                            console.error('Details request failed:', detailsStatus);
                         }
-
-                        markers.push(marker);
-                    } else {
-                        console.error('Details request failed:', detailsStatus);
-                    }
-                });
+                    });
+                }
             }
         }
         //currentPlace.moreDetails = new google.maps.places.Place(currentPlace.id);
-
     }
 
     if (results.length > 0) {
@@ -326,42 +674,17 @@ async function processResults(type, results, service, map, polygon) {
     }
 }
 
-// Function to clear existing markers
-function clearMarkers() {
-    markers.forEach(marker => marker.setMap(null));
-    markers = [];
-}
-
-function toggleHighlight(markerView, property) {
-    const innerDiv = markerView.content.querySelector('.details-container');
-    const iconDiv = markerView.content.querySelector('.icon');
-    //console.log(innerDiv)
-    if (markerView.content.classList.contains("highlight")) {
-        markerView.content.classList.remove("highlight");
-        markerView.zIndex = null;
-        innerDiv.style.opacity = 0;
-        iconDiv.style.opacity = 1;
-
-    } else {
-        markerView.content.classList.add("highlight");
-        markerView.zIndex = 100;
-        innerDiv.style.opacity = 1;
-        iconDiv.style.opacity = 0;
-
-    }
-}
-
 function buildContent(property, type) {
     const content = document.createElement("div");
     //console.log(property)
     content.classList.add("property");
     content.classList.add("rounded-3");
-    if (property.photos && property.photos.length > 0) {
-        const photoUrl = property.photos[0].getUrl({ maxWidth: 300, maxHeight: 300 });
-        //console.log('Photo URL:', photoUrl);
-        content.style.backgroundImage = `url(${photoUrl})`;
-    }
+    if (property.photoUrl) {
+        content.style.backgroundImage = `url(${property.photoUrl})`;
+    } else {
+        content.style.backgroundImage = `url("../img/noImage.png")`;
 
+    }
     content.innerHTML = `
         <div class="icon rounded-3">
             <i aria-hidden="true" class="fa fa-icon fa-house-medical" title="${property.name}"></i>
@@ -394,6 +717,32 @@ function buildContent(property, type) {
     `;
     return content;
 }
+
+// Function to clear existing markers
+function clearMarkers() {
+    markers.forEach(marker => marker.setMap(null));
+    markers = [];
+}
+
+function toggleHighlight(markerView, property) {
+    const innerDiv = markerView.content.querySelector('.details-container');
+    const iconDiv = markerView.content.querySelector('.icon');
+    //console.log(innerDiv)
+    if (markerView.content.classList.contains("highlight")) {
+        markerView.content.classList.remove("highlight");
+        markerView.zIndex = null;
+        innerDiv.style.opacity = 0;
+        iconDiv.style.opacity = 1;
+
+    } else {
+        markerView.content.classList.add("highlight");
+        markerView.zIndex = 100;
+        innerDiv.style.opacity = 1;
+        iconDiv.style.opacity = 0;
+
+    }
+}
+
 
 function generateStars(rating) {
     const fullStar = '<span class="gold-star">★</span>';
