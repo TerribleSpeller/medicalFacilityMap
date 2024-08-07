@@ -1,3 +1,4 @@
+import knownWebsites from './placesWithWebsites.js'
 
 const mapBounds = [
     { lat: -6.3014897268225445, lng: 106.69998806230103 }, //TOll
@@ -92,6 +93,7 @@ let infowindow;
 let currentSelection;
 let markers = [];
 const mapCenter = { lat: -6.302630388, lng: 106.6505807 };
+console.log(knownWebsites)
 
 function loadGoogleMapsAPI(apiKey, callback) {
     const script = document.createElement('script');
@@ -137,7 +139,6 @@ async function initMap() {
     centerControlDiv.appendChild(centerControl);
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(centerControlDiv);
 }
-
 function createCenterControl(map) {
     const controlDiv = document.createElement("div");
     controlDiv.classList.add("px-2");
@@ -545,9 +546,6 @@ function createCenterControl(map) {
 
     return controlDiv;
 }
-
-
-
 // Function to find places based on the type
 async function findPlace(type) {
 
@@ -593,7 +591,6 @@ async function findPlace(type) {
         }
     });
 }
-
 async function processResults(type, results, service, map, polygon) {
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
@@ -632,65 +629,28 @@ async function processResults(type, results, service, map, polygon) {
                         placeId: placeId,
                         fields: ['website'] //Because of course we do. 
                     };
-                    // Note: PREV photos was called this way, but to store it easier and since we're alreayd calling the api. Might as well call it along with the website.
-                    // if (currentPlace.photos && currentPlace.photos.length > 0) {
-                    //     const photoUrl = currentPlace.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
-                    //     //console.log('Photo URL:', photoUrl);
-                    // }
                     const marker = new AdvancedMarkerElement({
                         map: map,
                         content: buildContent(currentPlace, type),
                         position: currentPlace.geometry.location
                     });
-
                     marker.addListener("click", async () => {
                         console.log("Getting Data!")
-                        if (!localStorage.getItem(placeId)) {
-                            await service.getDetails(detailsRequest, (placeDetails, detailsStatus) => {
-                                if (detailsStatus === google.maps.places.PlacesServiceStatus.OK) {
-                                    console.log(placeDetails.website)
-                                    currentPlace.website = placeDetails.website;
-                                    // if (currentPlace.photos && currentPlace.photos.length > 0) {
-                                    //     currentPlace.photoUrl = currentPlace.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
-                                    //     marker.content.style.backgroundImage = `url(${currentPlace.photoUrl})`;
-                                    // } else {
-                                    //     currentPlace.photoUrl = null;
-                                    // }
-                                    console.log(marker.content)
-                                    if (placeDetails.website) {
-                                        const websiteContainer = document.getElementById(`${placeId}-website`);
-                                        websiteContainer.innerHTML = `
+                        const choseNamed = currentPlace.name.toLowerCase();
+                        //console.log(choseNamed)
+                        for (i in knownWebsites) {
+                            //console.log(knownWebsites[i][0].toLowerCase())
+                            if (choseNamed == knownWebsites[i][0].toLowerCase()) {
+                                const websiteContainer = document.getElementById(`${placeId}-website`);
+                                websiteContainer.innerHTML = `
                                             <div>
                                                  <a href="${websiteContainer.website}" target="_blank">Website</a>               
                                              </div>
-                                        `
-                                    }
-
-                                    // TODO: Cache the details in localStorage, easiest method (Change to Gatsby later)
-                                    const detailsToCache = {
-                                        website: placeDetails.website,
-                                        photoUrl: currentPlace.photoUrl
-                                    };
-                                    localStorage.setItem(placeId, JSON.stringify(detailsToCache)); //Probably violates the Google Maps Terms of Service
-
-                                    markers.push(marker);
-                                } else {
-                                    console.error('Details request failed:', detailsStatus);
-                                }
-                            });
-
+                                         `
+                            }
                         }
-
                         toggleHighlight(marker, currentPlace);
-
-
-                        // setTimeout(() => {
-                        //     console.log("Data GOT! FIRING!")
-                        // }, 500); //2 Seconds delay
-
                     });
-
-
                 }
             }
         }
@@ -703,7 +663,6 @@ async function processResults(type, results, service, map, polygon) {
         map.setZoom(14);
     }
 }
-
 function buildContent(property, type) {
     const content = document.createElement("div");
     //console.log(property)
@@ -750,13 +709,11 @@ function buildContent(property, type) {
     `;
     return content;
 }
-
 // Function to clear existing markers
 function clearMarkers() {
     markers.forEach(marker => marker.setMap(null));
     markers = [];
 }
-
 function toggleHighlight(markerView, property) {
     const innerDiv = markerView.content.querySelector('.details-container');
     const iconDiv = markerView.content.querySelector('.icon');
@@ -775,8 +732,6 @@ function toggleHighlight(markerView, property) {
 
     }
 }
-
-
 function generateStars(rating) {
     const fullStar = '<span class="gold-star">★</span>';
     const emptyStar = '<span>☆</span>';
@@ -788,8 +743,7 @@ function generateStars(rating) {
 
     return stars;
 }
-
-
 loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
 
 //Add KEKA 
+window.initMap = initMap;

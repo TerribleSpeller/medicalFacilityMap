@@ -1,10 +1,16 @@
-require('dotenv').config(); // Load environment variables from .env file
+import dotenv from 'dotenv';
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
-const express = require('express');
+dotenv.config();
+
 const app = express();
-const path = require('path');
-const port = process.env.PORT || 3000; // Use environment variable or default to 3000
+const port = process.env.PORT || 3000; 
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -13,8 +19,7 @@ app.listen(port, () => {
 });
 
 app.get('/config', (req, res) => {
-    res.json({
-      "mapKey": process.env.GOOGLE_MAP_API_KEY    
-    });
+  res.json({
+    "mapKey": process.env.GOOGLE_MAP_API_KEY    
   });
-
+});
