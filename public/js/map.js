@@ -86,20 +86,21 @@ const mapBounds = [
 
 ];
 
-
 let map;
 let service;
 let infowindow;
 let currentSelection;
+let ratingFilterNumber = 0; //At the start they want it to be anywhere
+let openingHoursFilter = "Anytime"; //And anytime
 let markers = [];
 const mapCenter = { lat: -6.302630388, lng: 106.6505807 };
-console.log(knownWebsites)
 
 function loadGoogleMapsAPI(apiKey, callback) {
     const script = document.createElement('script');
     script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&callback=${callback}`;
     script.async = true;
     script.defer = true;
+
     document.head.appendChild(script);
 }
 async function initMap() {
@@ -436,6 +437,29 @@ function createCenterControl(map) {
     promoFilter.appendChild(PromosButton);
     promoFilterContainer.appendChild(promoFilter);
 
+    const PromoDiv = document.createElement("div");
+    PromoDiv.classList.add("vertical-menu-long");
+    PromoDiv.style.margin = "5px";
+    PromoDiv.style.padding = "10px";
+    PromoDiv.style.fontSize = "16px";
+    PromoDiv.style.cursor = "pointer";
+    PromoDiv.style.display = "none";
+    PromoDiv.style.position = "relative";
+    PromoDiv.innerHTML = `
+        <div class="checkbox-wrapper-1">
+            <input id="example-1" class="substituted" type="checkbox" aria-hidden="true" />
+            <label for="example-1">Show?</label>
+        </div>
+        `
+    promoFilter.appendChild(PromoDiv);
+    PromosButton.addEventListener("click", () => {
+        if (PromoDiv.style.display === "none") {
+            PromoDiv.style.display = "block";
+        } else {
+            PromoDiv.style.display = "none";
+        }
+    });
+
     //Rating
     const ratingFilterContainer = document.createElement("div");
     const ratingFilter = document.createElement("div");
@@ -458,6 +482,29 @@ function createCenterControl(map) {
     ratingFilter.appendChild(RatingButton);
     ratingFilterContainer.appendChild(ratingFilter);
 
+    const RatingDiv = document.createElement("div");
+    RatingDiv.classList.add("vertical-menu-long")
+    RatingDiv.style.margin = "5px";
+    RatingDiv.style.padding = "10px";
+    RatingDiv.style.fontSize = "16px";
+    RatingDiv.style.cursor = "pointer";
+    RatingDiv.style.display = "none";
+    RatingDiv.style.position = "relative";
+    RatingDiv.innerHTML = `
+        <div class="slidecontainer">
+            <input type="range" min="0" max="5" value="0" class="slider" id="ratingRange">
+            <p>Value: <span id="result" >0</span></p>
+        </div>`
+    ratingFilter.appendChild(RatingDiv);
+
+    RatingButton.addEventListener("click", () => {
+        if (RatingDiv.style.display === "none") {
+            RatingDiv.style.display = "block";
+        } else {
+            RatingDiv.style.display = "none";
+        }
+    });
+
     //Open Hours
     const hourFilterContainer = document.createElement("div");
     const hourFilter = document.createElement("div");
@@ -479,9 +526,86 @@ function createCenterControl(map) {
     hourButton.innerHTML = "Opening Hours";
     hourFilter.appendChild(hourButton);
     hourFilterContainer.appendChild(hourFilter);
+    //For specific times
+    const openingHourstContainerContainer = document.createElement("div");
+    openingHourstContainerContainer.id = "openingHourstContainerContainer";
 
+    const openingHoursContainer = document.createElement("div");
+    openingHoursContainer.id = "openingHoursContainer";
+    openingHoursContainer.classList.add("flex-column", "d-flex");
+    openingHoursContainer.style.margin = "8px 0 22px";
+    openingHoursContainer.style.fontSize = "16px";
+    openingHoursContainer.style.lineHeight = "38px";
+    openingHoursContainer.style.display = "none";
+    //openingHoursContainer.style.zIndex = -1000;
+    openingHoursContainer.style.position = "relative";
+    openingHoursContainer.style.width = "0px";
+
+    const anytimeOption = document.createElement("button");
+    anytimeOption.id = "anytimeOptionButton";
+    anytimeOption.innerHTML = "Anytime";
+    anytimeOption.classList.add("openingHourSize")
+    openingHoursContainer.appendChild(anytimeOption);
+
+    const nowOption = document.createElement("button");
+    nowOption.id = "nowOptionButton";
+    nowOption.innerHTML = "Now";
+    nowOption.classList.add("openingHourSize")
+    openingHoursContainer.appendChild(nowOption);
+
+    const hours24Option = document.createElement("button");
+    hours24Option.id = "hours24OptionButton";
+    hours24Option.innerHTML = "24 Hours";
+    hours24Option.classList.add("openingHourSize")
+    openingHoursContainer.appendChild(hours24Option);
+
+    const specificDayOption = document.createElement("button");
+    specificDayOption.id = "specificDayOptionButton";
+    specificDayOption.innerHTML = "Specific";
+    specificDayOption.classList.add("openingHourSize")
+    openingHoursContainer.appendChild(specificDayOption);
+
+
+    //the more specific selection
+    const specificSelectionContainer = document.createElement("div");
+    specificSelectionContainer.classList.add("specific-selection");
+
+    const daySelect = document.createElement("select");
+    daySelect.disabled = true;
+    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    days.forEach(day => {
+        const option = document.createElement("option");
+        option.value = day;
+        option.innerHTML = day;
+        daySelect.appendChild(option);
+    });
+    specificSelectionContainer.appendChild(daySelect);
+
+    const openingTimeInput = document.createElement("input");
+    openingTimeInput.disabled = true;
+    openingTimeInput.id = "openingTimeInput";
+    openingTimeInput.type = "time";
+    openingTimeInput.classList.add("openingHourSize")
+    specificSelectionContainer.appendChild(openingTimeInput);
+
+    const closingTimeInput = document.createElement("input");
+    closingTimeInput.disabled = true;
+    closingTimeInput.id = "closingTimeInput";
+    closingTimeInput.type = "time";
+    closingTimeInput.classList.add("openingHourSize")
+    specificSelectionContainer.appendChild(closingTimeInput);
+
+    openingHoursContainer.appendChild(specificSelectionContainer);
+    openingHourstContainerContainer.appendChild(openingHoursContainer);
+    hourFilter.appendChild(openingHourstContainerContainer);
+
+    hourButton.addEventListener("click", () => {
+        if (openingHourstContainerContainer.style.display === "none") {
+            openingHourstContainerContainer.style.display = "block";
+        } else {
+            openingHourstContainerContainer.style.display = "none";
+    }});
     //Social???
-
     //Less Filter More Filter Button
     const lessFiltersContainer = document.createElement("div");
     const lessFilters = document.createElement("div");
@@ -497,19 +621,14 @@ function createCenterControl(map) {
     lessFilters.style.zIndex = -1000;
     lessFilters.style.position = "relative";
     lessFilters.style.width = "0px";
-
-
     const lessFiltersButton = document.createElement("button");
     lessFiltersButton.classList.add("dropbtn");
     lessFiltersButton.innerHTML = "Less Filters";
-
     lessFiltersButton.addEventListener("click", () => {
         const promoFilter = document.getElementById("promoFilter");
         const ratingFilter = document.getElementById("ratingFilter");
         const hourFilter = document.getElementById("hourFilter");
         const moreFilters = document.getElementById("moreFilters");
-
-
         moreFilters.style.zIndex = "2";
         moreFilters.style.width = "100%";
         moreFilters.style.padding = "0 5px";
@@ -533,8 +652,6 @@ function createCenterControl(map) {
     });
     lessFilters.appendChild(lessFiltersButton);
     lessFiltersContainer.appendChild(lessFilters);
-
-
     controlDiv.appendChild(dropdownCategory);
     controlDiv.appendChild(dropdown);
     controlDiv.appendChild(moreFiltersContainer);
@@ -549,11 +666,12 @@ function createCenterControl(map) {
 // Function to find places based on the type
 async function findPlace(type) {
 
-    if (currentSelection === type) {
-
+    if (currentSelection == type) {
+        console.log("Same Selection as Before.")
     } else {
+        console.log("Diff Cateogry")
         currentSelection = type;
-        clearMarkers();
+        deleteMarkers();
     }
 
 
@@ -575,9 +693,10 @@ async function findPlace(type) {
     const request = {
         bounds: bounds,
         type: [type],
+        fields: ['name', 'geometry', 'rating', 'vicinity', 'photos', 'place_id', 'website', 'business_status', 'plus_code', 'reference', 'place_id', 'photoUrl', 'current_opening_hours', 'opening_hours']
     };
 
-    service.nearbySearch(request, (results, status, pagination) => { //Apparenrtly doesn't provide a lot of details i.e Website 
+    service.nearbySearch(request, (results, status, pagination) => { //Apparenrtly doesn't provide a lot of details i.e Website //Nevermind I suck, yes they do
         if (status === google.maps.places.PlacesServiceStatus.OK) {
             processResults(request.type, results, service, map, BSDPolygon);
             if (pagination && pagination.hasNextPage) {
@@ -613,7 +732,7 @@ async function processResults(type, results, service, map, polygon) {
                 if (cachedDetails) {
                     console.log("Cache Data present")
                     const placeDetails = JSON.parse(cachedDetails);
-                    currentPlace.website = placeDetails.website; //THESE TWO, cost the most. 0.020 USD per call! THats like, 1.2 Dollars per click!
+                    currentPlace.website = placeDetails.website; //THESE TWO, cost the most. 0.020 USD per call! THats like, 1.2 Dollars per click! So DONT use PLACE DETAILS AHHHH
                     currentPlace.photoUrl = placeDetails.photoUrl;
                     const marker = new AdvancedMarkerElement({
                         map: map,
@@ -623,12 +742,10 @@ async function processResults(type, results, service, map, polygon) {
                     marker.addListener("click", () => {
                         toggleHighlight(marker, currentPlace);
                     });
+                    marker.rating = currentPlace.rating;
+                    marker.openingHours = currentPlace.opening_hours;
                     markers.push(marker);
                 } else {
-                    const detailsRequest = {
-                        placeId: placeId,
-                        fields: ['website'] //Because of course we do. 
-                    };
                     const marker = new AdvancedMarkerElement({
                         map: map,
                         content: buildContent(currentPlace, type),
@@ -651,6 +768,10 @@ async function processResults(type, results, service, map, polygon) {
                         }
                         toggleHighlight(marker, currentPlace);
                     });
+                    marker.rating = currentPlace.rating;
+                    marker.openingHours = currentPlace.opening_hours;
+                    //console.log(currentPlace.opening_hours.isOpen.length)
+                    markers.push(marker);
                 }
             }
         }
@@ -658,10 +779,11 @@ async function processResults(type, results, service, map, polygon) {
     }
 
     if (results.length > 0) {
-        console.log(results.length)
+        //console.log(results.length)
         // map.setCenter(-6.2926352615305315, 106.64603487500078);
         map.setZoom(14);
     }
+
 }
 function buildContent(property, type) {
     const content = document.createElement("div");
@@ -709,9 +831,17 @@ function buildContent(property, type) {
     `;
     return content;
 }
-// Function to clear existing markers
-function clearMarkers() {
-    markers.forEach(marker => marker.setMap(null));
+function setMapOnAll(map) {
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+    }
+}
+function hideMarkers() {
+    setMapOnAll(null);
+}
+function deleteMarkers() {
+    console.log(markers)
+    hideMarkers();
     markers = [];
 }
 function toggleHighlight(markerView, property) {
@@ -743,7 +873,99 @@ function generateStars(rating) {
 
     return stars;
 }
+function filterMarkers(markers) {
+    markers.forEach(marker => {
+        const rating = marker.rating;
+        const openingHours = marker.openingHours;
+
+        let showMarker = true;
+        // Filter by rating (This is tdumb but it works)
+        if (ratingFilterNumber > 0 && rating < ratingFilterNumber) {
+            showMarker = false;
+        }
+
+        if(ratingFilterNumber > 0 && !rating) {
+            showMarker = false;
+        }
+
+        if (openingHoursFilter !== "Anytime") {
+            const now = new Date();
+            const day = now.getDay(); // 0 (Sunday) to 6 (Saturday)
+            const time = now.getHours() * 60 + now.getMinutes(); // Minutes since midnight
+
+            if(marker.openingHours != null) {
+                if (openingHoursFilter === "Now") {
+                    if (marker.openingHours.open_now == false) {
+                        showMarker = false;
+                    }
+                } else if (openingHoursFilter === "24 Hours") {
+                    if (!marker.openingHours.isOpen.length) {
+                        showMarker = false;
+                    }
+                    if(marker.openingHours.isOpen.length != 1) {
+                        showMarker = false;
+                    }
+                } else {
+                    const [filterDay, filterOpeningTime, filterClosingTime] = openingHoursFilter.split(",");
+                    const filterDayIndex = days.indexOf(filterDay); //I hate this
+                    const filterOpeningMinutes = convertTimeToMinutes(filterOpeningTime);
+                    const filterClosingMinutes = convertTimeToMinutes(filterClosingTime);
+    
+                    if (!isOpenDuringSpecificTime(openingHours, filterDayIndex, filterOpeningMinutes, filterClosingMinutes)) {
+                        showMarker = false;
+                    }
+                }
+            } else {
+                showMarker = false;
+            }
+
+            
+        }
+
+        if (showMarker) {
+            marker.setMap(map);
+        } else {
+            marker.setMap(null); //Why is it like this? IDK
+        }
+    });
+}
+
+
+
+function convertTimeToMinutes(time) {
+    const [hours, minutes] = time.split(":").map(Number);
+    return hours * 60 + minutes;
+}
+
+
 loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
 
 //Add KEKA 
 window.initMap = initMap;
+
+
+setTimeout(() => {
+    document.getElementById("ratingRange").addEventListener("input", () => {
+        document.getElementById("result").textContent = document.getElementById("ratingRange").value;
+        ratingFilterNumber = document.getElementById("ratingRange").value;
+        filterMarkers(markers, ratingFilterNumber);
+    });
+
+    document.getElementById("anytimeOptionButton").addEventListener("click", () => {
+        openingHoursFilter = "Anytime";
+        filterMarkers(markers);
+    });
+    document.getElementById("nowOptionButton").addEventListener("click", () => {
+        openingHoursFilter = "Now";
+        filterMarkers(markers);
+    });
+    document.getElementById("hours24OptionButton").addEventListener("click", () => {
+        openingHoursFilter = "24 Hours";
+        filterMarkers(markers);
+    });
+    document.getElementById("specificDayOptionButton").addEventListener("click", () => {
+        openingHoursFilter = "Specific";
+        filterMarkers(markers);
+    });
+}, 7000);
+
