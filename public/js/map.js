@@ -227,7 +227,7 @@ function createCenterControl(map) {
 
         dropdownContentCategory.appendChild(button);
     });
-    
+
 
     //Subcategory Function 
     const dropdown = document.createElement("div");
@@ -378,7 +378,7 @@ function createCenterControl(map) {
     moreFilters.style.fontSize = "16px";
     moreFilters.style.lineHeight = "38px";
     moreFilters.style.position = "relative";
-    
+
     const moreFiltersButton = document.createElement("button");
     moreFiltersButton.classList.add("dropbtn");
     moreFiltersButton.innerHTML = "More Filters";
@@ -401,7 +401,7 @@ function createCenterControl(map) {
         ratingFilter.style.padding = "0 5px";
         ratingFilter.classList.add("px-2");
         hourFilter.style.zIndex = "2";
-        hourFilter.style.width = "100%";    
+        hourFilter.style.width = "100%";
         hourFilter.style.padding = "0 5px";
         hourFilter.classList.add("px-2");
         moreFilters.style.zIndex = -1000;
@@ -424,7 +424,7 @@ function createCenterControl(map) {
     // promoFilter.style.padding = "0 5px";
     promoFilter.style.fontSize = "16px";
     promoFilter.style.lineHeight = "38px";
-    promoFilter.style.display = "none"; 
+    promoFilter.style.display = "none";
     promoFilter.style.zIndex = -1000;
     promoFilter.style.position = "relative";
     promoFilter.style.width = "0px";
@@ -446,7 +446,7 @@ function createCenterControl(map) {
     // ratingFilter.style.padding = "0 5px";
     ratingFilter.style.fontSize = "16px";
     ratingFilter.style.lineHeight = "38px";
-    ratingFilter.style.display = "none"; 
+    ratingFilter.style.display = "none";
     ratingFilter.style.zIndex = -1000;
     ratingFilter.style.position = "relative";
     ratingFilter.style.width = "0px";
@@ -461,14 +461,14 @@ function createCenterControl(map) {
     const hourFilterContainer = document.createElement("div");
     const hourFilter = document.createElement("div");
     hourFilter.id = "hourFilter";
-   // hourFilter.classList.add("px-2");
+    // hourFilter.classList.add("px-2");
     hourFilter.classList.add("flex-column");
     hourFilter.classList.add("d-flex")
     hourFilter.style.margin = "8px 0 22px";
     // hourFilter.style.padding = "0 5px";
     hourFilter.style.fontSize = "16px";
     hourFilter.style.lineHeight = "38px";
-    hourFilter.style.display = "none"; 
+    hourFilter.style.display = "none";
     hourFilter.style.zIndex = -1000;
     hourFilter.style.position = "relative";
     hourFilter.style.width = "0px";
@@ -532,7 +532,7 @@ function createCenterControl(map) {
     });
     lessFilters.appendChild(lessFiltersButton);
     lessFiltersContainer.appendChild(lessFilters);
-    
+
 
     controlDiv.appendChild(dropdownCategory);
     controlDiv.appendChild(dropdown);
@@ -599,6 +599,7 @@ async function processResults(type, results, service, map, polygon) {
 
     for (let i = results.length - 1; i >= 0; i--) {
         const currentPlace = results[i]
+        console.log(results[i])
         if (currentPlace.types[0] !== type[0]) {
             console.log("Type Mismatch: ", currentPlace.types[0], " vs ", type)
         } else {
@@ -606,11 +607,17 @@ async function processResults(type, results, service, map, polygon) {
             if (google.maps.geometry.poly.containsLocation(currentPlace.geometry.location, polygon)) {
                 const placeId = currentPlace.place_id;
                 const cachedDetails = localStorage.getItem(placeId); //Fuck it we cache
-
+                if (currentPlace.photos && currentPlace.photos.length > 0) {
+                    currentPlace.photoUrl = currentPlace.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
+                    //marker.content.style.backgroundImage = `url(${currentPlace.photoUrl})`;
+                } else {
+                    currentPlace.photoUrl = null;
+                }
                 if (cachedDetails) {
+                    console.log("Cache Data present")
                     const placeDetails = JSON.parse(cachedDetails);
                     currentPlace.website = placeDetails.website; //THESE TWO, cost the most. 0.020 USD per call! THats like, 1.2 Dollars per click!
-                    currentPlace.photoUrl = placeDetails.photoUrl; 
+                    currentPlace.photoUrl = placeDetails.photoUrl;
                     const marker = new AdvancedMarkerElement({
                         map: map,
                         content: buildContent(currentPlace, type),
@@ -623,44 +630,67 @@ async function processResults(type, results, service, map, polygon) {
                 } else {
                     const detailsRequest = {
                         placeId: placeId,
-                        fields: ['website', 'photos'] //Because of course we do. 
+                        fields: ['website'] //Because of course we do. 
                     };
                     // Note: PREV photos was called this way, but to store it easier and since we're alreayd calling the api. Might as well call it along with the website.
                     // if (currentPlace.photos && currentPlace.photos.length > 0) {
                     //     const photoUrl = currentPlace.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
                     //     //console.log('Photo URL:', photoUrl);
                     // }
-
-                    service.getDetails(detailsRequest, (placeDetails, detailsStatus) => {
-                        if (detailsStatus === google.maps.places.PlacesServiceStatus.OK) {
-                            currentPlace.website = placeDetails.website;
-                            if (placeDetails.photos && placeDetails.photos.length > 0) {
-                                currentPlace.photoUrl = placeDetails.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
-                            } else {
-                                currentPlace.photoUrl = null;
-                            }
-                            const marker = new AdvancedMarkerElement({
-                                map: map,
-                                content: buildContent(currentPlace, type),
-                                position: currentPlace.geometry.location
-                            });
-
-                            marker.addListener("click", () => {
-                                toggleHighlight(marker, currentPlace);
-                            });
-
-                            // TODO: Cache the details in localStorage, easiest method (Change to Gatsby later)
-                            const detailsToCache = {
-                                website: placeDetails.website,
-                                photoUrl: currentPlace.photoUrl
-                            };
-                            localStorage.setItem(placeId, JSON.stringify(detailsToCache)); //Probably violates the Google Maps Terms of Service
-
-                            markers.push(marker);
-                        } else {
-                            console.error('Details request failed:', detailsStatus);
-                        }
+                    const marker = new AdvancedMarkerElement({
+                        map: map,
+                        content: buildContent(currentPlace, type),
+                        position: currentPlace.geometry.location
                     });
+
+                    marker.addListener("click", async () => {
+                        console.log("Getting Data!")
+                        if (!localStorage.getItem(placeId)) {
+                            await service.getDetails(detailsRequest, (placeDetails, detailsStatus) => {
+                                if (detailsStatus === google.maps.places.PlacesServiceStatus.OK) {
+                                    console.log(placeDetails.website)
+                                    currentPlace.website = placeDetails.website;
+                                    // if (currentPlace.photos && currentPlace.photos.length > 0) {
+                                    //     currentPlace.photoUrl = currentPlace.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
+                                    //     marker.content.style.backgroundImage = `url(${currentPlace.photoUrl})`;
+                                    // } else {
+                                    //     currentPlace.photoUrl = null;
+                                    // }
+                                    console.log(marker.content)
+                                    if (placeDetails.website) {
+                                        const websiteContainer = document.getElementById(`${placeId}-website`);
+                                        websiteContainer.innerHTML = `
+                                            <div>
+                                                 <a href="${websiteContainer.website}" target="_blank">Website</a>               
+                                             </div>
+                                        `
+                                    }
+
+                                    // TODO: Cache the details in localStorage, easiest method (Change to Gatsby later)
+                                    const detailsToCache = {
+                                        website: placeDetails.website,
+                                        photoUrl: currentPlace.photoUrl
+                                    };
+                                    localStorage.setItem(placeId, JSON.stringify(detailsToCache)); //Probably violates the Google Maps Terms of Service
+
+                                    markers.push(marker);
+                                } else {
+                                    console.error('Details request failed:', detailsStatus);
+                                }
+                            });
+
+                        }
+
+                        toggleHighlight(marker, currentPlace);
+
+
+                        // setTimeout(() => {
+                        //     console.log("Data GOT! FIRING!")
+                        // }, 500); //2 Seconds delay
+
+                    });
+
+
                 }
             }
         }
@@ -707,10 +737,13 @@ function buildContent(property, type) {
                     </div>
 
                 </div>
-                ${property.website ? `
+                <div id="${property.place_id}-website">
+                    ${property.website ? `
                     <div>
                         <a href="${property.website}" target="_blank">Website</a>               
                     </div>` : ''} 
+                </div>
+
             </div>
         </div>
 
