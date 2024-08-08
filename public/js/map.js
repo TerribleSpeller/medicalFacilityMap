@@ -529,6 +529,7 @@ function createCenterControl(map) {
     //For specific times
     const openingHourstContainerContainer = document.createElement("div");
     openingHourstContainerContainer.id = "openingHourstContainerContainer";
+    openingHourstContainerContainer.style.display = "none";
 
     const openingHoursContainer = document.createElement("div");
     openingHoursContainer.id = "openingHoursContainer";
@@ -563,7 +564,7 @@ function createCenterControl(map) {
     specificDayOption.id = "specificDayOptionButton";
     specificDayOption.innerHTML = "Specific";
     specificDayOption.classList.add("openingHourSize")
-    openingHoursContainer.appendChild(specificDayOption);
+    // openingHoursContainer.appendChild(specificDayOption);
 
 
     //the more specific selection
@@ -595,7 +596,7 @@ function createCenterControl(map) {
     closingTimeInput.classList.add("openingHourSize")
     specificSelectionContainer.appendChild(closingTimeInput);
 
-    openingHoursContainer.appendChild(specificSelectionContainer);
+    // openingHoursContainer.appendChild(specificSelectionContainer);
     openingHourstContainerContainer.appendChild(openingHoursContainer);
     hourFilter.appendChild(openingHourstContainerContainer);
 
@@ -798,7 +799,7 @@ function buildContent(property, type) {
     }
     content.innerHTML = `
         <div class="icon rounded-3">
-            <i aria-hidden="true" class="fa fa-icon fa-house-medical" title="${property.name}"></i>
+            <i aria-hidden="true" class="fa fa-icon ${typeIconProcessor(property.types[0])}" title="${property.name}"></i>
             <span class="fa-sr-only">${property.name}</span>
         </div>
         <div class="details-container">
@@ -929,12 +930,31 @@ function filterMarkers(markers) {
         }
     });
 }
-
-
-
 function convertTimeToMinutes(time) {
     const [hours, minutes] = time.split(":").map(Number);
     return hours * 60 + minutes;
+}
+function typeIconProcessor(type) {
+    switch (type) {
+        case "hospital":
+            return "fa-house-medical";
+        case "dentist":
+            return "fa-tooth";
+        case "pharmacy":
+            return "fa-prescription-bottle";
+        case "doctor":
+            return "fa-user-doctor";
+        case "gym":
+            return "fa-dumbbell";
+        case "spa":
+            return "fa-spa";
+        case "hair_care":
+            return "fa-scissors";
+        case "beauty_salon":
+            return "fa-scissors";
+        default:
+            return "fa-question";
+    }
 }
 
 
@@ -963,9 +983,9 @@ setTimeout(() => {
         openingHoursFilter = "24 Hours";
         filterMarkers(markers);
     });
-    document.getElementById("specificDayOptionButton").addEventListener("click", () => {
-        openingHoursFilter = "Specific";
-        filterMarkers(markers);
-    });
+    // document.getElementById("specificDayOptionButton").addEventListener("click", () => {
+    //     openingHoursFilter = "Specific";
+    //     filterMarkers(markers);
+    // });
 }, 7000);
 
