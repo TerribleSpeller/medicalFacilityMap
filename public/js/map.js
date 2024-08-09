@@ -1,4 +1,6 @@
-import knownWebsites from './placesWithWebsites.js'
+import detailsMedical from "./detailsMedical.js";
+import detailsBeauty from "./detailsBeauty.js";
+import detailsWellness from "./detailsWellness.js";
 
 const mapBounds = [
     { lat: -6.3014897268225445, lng: 106.69998806230103 }, //TOll
@@ -156,7 +158,7 @@ function createCenterControl(map) {
     controlButton.style.cursor = "pointer";
     controlButton.style.fontFamily = "Roboto,Arial,sans-serif";
     controlButton.style.fontSize = "16px";
-    controlButton.style.lineHeight = "38px";
+    controlButton.style.lineHeight = "12px";
     controlButton.style.margin = "8px 0 22px";
     controlButton.style.padding = "0 5px";
     controlButton.style.textAlign = "center";
@@ -173,7 +175,7 @@ function createCenterControl(map) {
     dropdownCategory.style.margin = "8px 0 22px";
     dropdownCategory.style.padding = "0 5px";
     dropdownCategory.style.fontSize = "16px";
-    dropdownCategory.style.lineHeight = "38px";
+    dropdownCategory.style.lineHeight = "12px";
 
     const revealButtonCateogyr = document.createElement("button");
     revealButtonCateogyr.classList.add("dropbtn");
@@ -205,8 +207,8 @@ function createCenterControl(map) {
         button.value = option.value;
         button.textContent = option.text;
         button.classList.add("vertical-menu-long")
-        button.style.margin = "5px";
-        button.style.padding = "10px";
+        button.style.margin = "2.5px auto";
+        button.style.padding = "px";
         button.style.fontSize = "16px";
         button.style.cursor = "pointer";
 
@@ -240,7 +242,7 @@ function createCenterControl(map) {
     dropdown.style.margin = "8px 0 22px";
     dropdown.style.padding = "0 5px";
     dropdown.style.fontSize = "16px";
-    dropdown.style.lineHeight = "38px";
+    dropdown.style.lineHeight = "12px";
 
     const revealButton = document.createElement("button");
     revealButton.classList.add("dropbtn");
@@ -248,26 +250,34 @@ function createCenterControl(map) {
     dropdown.appendChild(revealButton);
 
     const options = [
-        { value: 'hospital', text: 'Hospital' },
-        // { value: 'medical clinc', text: 'Clinic' },
-        { value: 'dentist', text: 'Dental Clinic' },
-        { value: 'pharmacy', text: 'Pharmacy' },
-        { value: 'doctor', text: 'Doctor' }
+        { value: 'Rumah Sakit', text: 'Hospital' },
+        { value: 'klinik medical', text: 'Medical Clinic' },
+        { value: 'klinik ibu & anak', text: 'Maternity Clinic' },
+        { value: 'klinik gigi', text: 'Dentist' },
+        { value: 'Klinik Fisioterapi', text: 'Fisioterapi' },
+        { value: 'Klinik Tumbuh Kembang Anak', text: 'Klinik Tumbuh Kembang Anak' },
+        { value: 'Laboratorium', text: 'Laboratorium' },
+
     ];
 
     const options2well = [
-        { value: 'gym', text: 'Gym' },
-        // { value: 'massage therapist', text: 'Massage' },
-        // { value: 'reflexology', text: 'Reflexology' },
-        { value: 'spa', text: 'Spa' },
-        // { value: 'yoga', text: 'Yoga' }
+        { value: 'Basket Ball Court', text: 'Basketball Court' },
+        { value: 'Club House', text: 'Club House' },
+        { value: 'Gym', text: 'Gym' },
+        { value: 'Pilates Studio', text: 'Pilates Studio' },
+        { value: 'Stadion', text: 'Stadion' },
+        { value: 'Swimming Pool', text: 'Swimming Pool' },
+        { value: 'Tennis Court', text: 'Tennis Court' },
+        { value: 'Yoga Studio', text: 'Yoga Studio' },
+        { value: 'Massage &/ Spa', text: 'Massage & Spa' },
+        { value: 'Massage sakit & cedera', text: 'Massage sakit & cedera' },
+        { value: 'Massage &/ Spa Baby', text: 'Massage & Spa Baby' },
+
     ];
 
     const options3beauty = [
-        { value: 'hair_care', text: 'Barber' },
-        // { value: 'cosmetics store', text: 'Cosmetics' },
-        { value: 'beauty_salon', text: 'salon' },
-        // { value: 'skincare', text: 'skincare' },
+        { value: 'klinik gigi & kecantikan', text: 'Klinik Kecantikan & Gigi' },
+        { value: 'Klinik Kulit & Kecantikan', text: 'Skincare' },
     ];
 
     const dropdownContent = document.createElement("div");
@@ -322,9 +332,8 @@ function createCenterControl(map) {
         button.value = option.value;
         button.textContent = option.text;
         button.classList.add("vertical-menu-long")
-        button.style.margin = "5px";
-        button.style.padding = "10px";
-        button.style.fontSize = "16px";
+        button.style.margin = "2.5px auto";
+        button.style.fontSize = "14px";
         button.style.cursor = "pointer";
 
         button.addEventListener("click", () => {
@@ -339,9 +348,8 @@ function createCenterControl(map) {
         button.value = option.value;
         button.textContent = option.text;
         button.classList.add("vertical-menu-long")
-        button.style.margin = "5px";
-        button.style.padding = "10px";
-        button.style.fontSize = "16px";
+        button.style.margin = "2.5px auto";
+        button.style.fontSize = "14px";
         button.style.cursor = "pointer";
 
         button.addEventListener("click", () => {
@@ -356,9 +364,8 @@ function createCenterControl(map) {
         button.value = option.value;
         button.textContent = option.text;
         button.classList.add("vertical-menu-long")
-        button.style.margin = "5px";
-        button.style.padding = "10px";
-        button.style.fontSize = "16px";
+        button.style.margin = "2.5px auto";
+        button.style.fontSize = "14px";
         button.style.cursor = "pointer";
 
         button.addEventListener("click", () => {
@@ -378,7 +385,7 @@ function createCenterControl(map) {
     moreFilters.style.margin = "8px 0 22px";
     moreFilters.style.padding = "0 5px";
     moreFilters.style.fontSize = "16px";
-    moreFilters.style.lineHeight = "38px";
+    moreFilters.style.lineHeight = "12px";
     moreFilters.style.position = "relative";
 
     const moreFiltersButton = document.createElement("button");
@@ -425,7 +432,7 @@ function createCenterControl(map) {
     promoFilter.style.margin = "8px 0 22px";
     // promoFilter.style.padding = "0 5px";
     promoFilter.style.fontSize = "16px";
-    promoFilter.style.lineHeight = "38px";
+    promoFilter.style.lineHeight = "12px";
     promoFilter.style.display = "none";
     promoFilter.style.zIndex = -1000;
     promoFilter.style.position = "relative";
@@ -439,7 +446,7 @@ function createCenterControl(map) {
 
     const PromoDiv = document.createElement("div");
     PromoDiv.classList.add("vertical-menu-long");
-    PromoDiv.style.margin = "5px";
+    PromoDiv.style.margin = "2.5px auto";
     PromoDiv.style.padding = "10px";
     PromoDiv.style.fontSize = "16px";
     PromoDiv.style.cursor = "pointer";
@@ -470,7 +477,7 @@ function createCenterControl(map) {
     ratingFilter.style.margin = "8px 0 22px";
     // ratingFilter.style.padding = "0 5px";
     ratingFilter.style.fontSize = "16px";
-    ratingFilter.style.lineHeight = "38px";
+    ratingFilter.style.lineHeight = "12px";
     ratingFilter.style.display = "none";
     ratingFilter.style.zIndex = -1000;
     ratingFilter.style.position = "relative";
@@ -484,7 +491,7 @@ function createCenterControl(map) {
 
     const RatingDiv = document.createElement("div");
     RatingDiv.classList.add("vertical-menu-long")
-    RatingDiv.style.margin = "5px";
+    RatingDiv.style.margin = "2.5px auto";
     RatingDiv.style.padding = "10px";
     RatingDiv.style.fontSize = "16px";
     RatingDiv.style.cursor = "pointer";
@@ -515,7 +522,7 @@ function createCenterControl(map) {
     hourFilter.style.margin = "8px 0 22px";
     // hourFilter.style.padding = "0 5px";
     hourFilter.style.fontSize = "16px";
-    hourFilter.style.lineHeight = "38px";
+    hourFilter.style.lineHeight = "12px";
     hourFilter.style.display = "none";
     hourFilter.style.zIndex = -1000;
     hourFilter.style.position = "relative";
@@ -536,7 +543,7 @@ function createCenterControl(map) {
     openingHoursContainer.classList.add("flex-column", "d-flex");
     openingHoursContainer.style.margin = "8px 0 22px";
     openingHoursContainer.style.fontSize = "16px";
-    openingHoursContainer.style.lineHeight = "38px";
+    openingHoursContainer.style.lineHeight = "12px";
     openingHoursContainer.style.display = "none";
     //openingHoursContainer.style.zIndex = -1000;
     openingHoursContainer.style.position = "relative";
@@ -545,19 +552,22 @@ function createCenterControl(map) {
     const anytimeOption = document.createElement("button");
     anytimeOption.id = "anytimeOptionButton";
     anytimeOption.innerHTML = "Anytime";
-    anytimeOption.classList.add("openingHourSize")
+    anytimeOption.classList.add("openingHourSize");
+    anytimeOption.style.margin = "2.5px auto";
     openingHoursContainer.appendChild(anytimeOption);
 
     const nowOption = document.createElement("button");
     nowOption.id = "nowOptionButton";
     nowOption.innerHTML = "Now";
     nowOption.classList.add("openingHourSize")
+    nowOption.style.margin = "2.5px auto";
     openingHoursContainer.appendChild(nowOption);
 
     const hours24Option = document.createElement("button");
     hours24Option.id = "hours24OptionButton";
     hours24Option.innerHTML = "24 Hours";
     hours24Option.classList.add("openingHourSize")
+    hours24Option.style.margin = "2.5px auto";
     openingHoursContainer.appendChild(hours24Option);
 
     const specificDayOption = document.createElement("button");
@@ -617,7 +627,7 @@ function createCenterControl(map) {
     lessFilters.style.margin = "8px 0 22px";
     // lessFilters.style.padding = "0 5px";
     lessFilters.style.fontSize = "16px";
-    lessFilters.style.lineHeight = "38px";
+    lessFilters.style.lineHeight = "12px";
     lessFilters.style.display = "none"; //Because intiially they be moreFilters
     lessFilters.style.zIndex = -1000;
     lessFilters.style.position = "relative";
@@ -697,92 +707,175 @@ async function findPlace(type) {
         fields: ['name', 'geometry', 'rating', 'vicinity', 'photos', 'place_id', 'website', 'business_status', 'plus_code', 'reference', 'place_id', 'photoUrl', 'current_opening_hours', 'opening_hours']
     };
 
-    service.nearbySearch(request, (results, status, pagination) => { //Apparenrtly doesn't provide a lot of details i.e Website //Nevermind I suck, yes they do
-        if (status === google.maps.places.PlacesServiceStatus.OK) {
-            processResults(request.type, results, service, map, BSDPolygon);
-            if (pagination && pagination.hasNextPage) {
-                setTimeout(() => {
-                    pagination.nextPage();
-                }, 2000); //2 Seconds delay
-            }
+    // service.nearbySearch(request, (results, status, pagination) => { //Apparenrtly doesn't provide a lot of details i.e Website //Nevermind I suck, yes they do
+    //     if (status === google.maps.places.PlacesServiceStatus.OK) {
+    //         processResults(request.type, results, service, map, BSDPolygon);
+    //         if (pagination && pagination.hasNextPage) {
+    //             setTimeout(() => {
+    //                 pagination.nextPage();
+    //             }, 2000); //2 Seconds delay
+    //         }
 
-        } else {
-            console.error('Place search failed:', status);
-        }
-    });
+    //     } else {
+    //         console.error('Place search failed:', status);
+    //     }
+    // });
+    processResultsLocal(type, map);
 }
-async function processResults(type, results, service, map, polygon) {
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+// async function processResults(type, map, polygon) {
+//     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-    for (let i = results.length - 1; i >= 0; i--) {
-        const currentPlace = results[i]
-        console.log(results[i])
-        if (currentPlace.types[0] !== type[0]) {
-            console.log("Type Mismatch: ", currentPlace.types[0], " vs ", type)
-        } else {
-            console.log("Type Match: ", currentPlace.types[0], " vs ", type)
-            if (google.maps.geometry.poly.containsLocation(currentPlace.geometry.location, polygon)) {
-                const placeId = currentPlace.place_id;
-                const cachedDetails = localStorage.getItem(placeId); //Fuck it we cache
-                if (currentPlace.photos && currentPlace.photos.length > 0) {
-                    currentPlace.photoUrl = currentPlace.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
-                    //marker.content.style.backgroundImage = `url(${currentPlace.photoUrl})`;
-                } else {
-                    currentPlace.photoUrl = null;
-                }
-                if (cachedDetails) {
-                    console.log("Cache Data present")
-                    const placeDetails = JSON.parse(cachedDetails);
-                    currentPlace.website = placeDetails.website; //THESE TWO, cost the most. 0.020 USD per call! THats like, 1.2 Dollars per click! So DONT use PLACE DETAILS AHHHH
-                    currentPlace.photoUrl = placeDetails.photoUrl;
+//     for (let i = results.length - 1; i >= 0; i--) {
+//         const currentPlace = results[i]
+//         console.log(results[i])
+//         if (currentPlace.types[0] !== type[0]) {
+//             console.log("Type Mismatch: ", currentPlace.types[0], " vs ", type)
+//         } else {
+//             console.log("Type Match: ", currentPlace.types[0], " vs ", type)
+//             if (google.maps.geometry.poly.containsLocation(currentPlace.geometry.location, polygon)) {
+//                 const placeId = currentPlace.place_id;
+//                 const cachedDetails = localStorage.getItem(placeId); //Fuck it we cache
+//                 if (currentPlace.photos && currentPlace.photos.length > 0) {
+//                     currentPlace.photoUrl = currentPlace.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
+//                     //marker.content.style.backgroundImage = `url(${currentPlace.photoUrl})`;
+//                 } else {
+//                     currentPlace.photoUrl = null;
+//                 }
+//                 if (cachedDetails) {
+//                     console.log("Cache Data present")
+//                     const placeDetails = JSON.parse(cachedDetails);
+//                     currentPlace.website = placeDetails.website; //THESE TWO, cost the most. 0.020 USD per call! THats like, 1.2 Dollars per click! So DONT use PLACE DETAILS AHHHH
+//                     currentPlace.photoUrl = placeDetails.photoUrl;
+//                     const marker = new AdvancedMarkerElement({
+//                         map: map,
+//                         content: buildContent(currentPlace, type),
+//                         position: currentPlace.geometry.location
+//                     });
+//                     marker.addListener("click", () => {
+//                         toggleHighlight(marker, currentPlace);
+//                     });
+//                     marker.rating = currentPlace.rating;
+//                     marker.openingHours = currentPlace.opening_hours;
+//                     markers.push(marker);
+//                 } else {
+//                     const marker = new AdvancedMarkerElement({
+//                         map: map,
+//                         content: buildContent(currentPlace, type),
+//                         position: currentPlace.geometry.location
+//                     });
+//                     marker.addListener("click", async () => {
+//                         console.log("Getting Data!")
+//                         const choseNamed = currentPlace.name.toLowerCase();
+//                         //console.log(choseNamed)
+//                         for (i in knownWebsites) {
+//                             //console.log(knownWebsites[i][0].toLowerCase())
+//                             if (choseNamed == knownWebsites[i][0].toLowerCase()) {
+//                                 const websiteContainer = document.getElementById(`${placeId}-website`);
+//                                 websiteContainer.innerHTML = `
+//                                             <div>
+//                                                  <a href="${websiteContainer.website}" target="_blank">Website</a>               
+//                                              </div>
+//                                          `
+//                             }
+//                         }
+//                         toggleHighlight(marker, currentPlace);
+//                     });
+//                     marker.rating = currentPlace.rating;
+//                     marker.openingHours = currentPlace.opening_hours;
+//                     //console.log(currentPlace.opening_hours.isOpen.length)
+//                     markers.push(marker);
+//                 }
+//             }
+//         }
+//         //currentPlace.moreDetails = new google.maps.places.Place(currentPlace.id);
+//     }
+
+//     if (results.length > 0) {
+//         //console.log(results.length)
+//         // map.setCenter(-6.2926352615305315, 106.64603487500078);
+//         map.setZoom(14);
+//     }
+
+// }
+
+async function processResultsLocal(type, map) {
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    deleteMarkers();
+    if( type == "Rumah Sakit"|| type == "klinik medical" || type == "klinik ibu & anak" || type == "klinik gigi" || type == "Klinik Fisioterapi" || type == "Klinik Tumbuh Kembang Anak" || type == "Laboratorium"){ 
+        for (let i = 0; i < detailsMedical.info.length; i++) {
+            const currentPlace = detailsMedical.info[i];
+            if (currentPlace.subcategory !== type) {
+                console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type)
+            } else {
+                console.log("Type Match: ", currentPlace.subcategory, " vs ", type)
                     const marker = new AdvancedMarkerElement({
                         map: map,
                         content: buildContent(currentPlace, type),
-                        position: currentPlace.geometry.location
+                        position: { lat: currentPlace.Lat, lng: currentPlace.Long }
                     });
                     marker.addListener("click", () => {
                         toggleHighlight(marker, currentPlace);
                     });
+                    marker.name = currentPlace.Nama;
                     marker.rating = currentPlace.rating;
-                    marker.openingHours = currentPlace.opening_hours;
+                    marker.openingHours = currentPlace.openingHours;
+                    marker.closingHours = currentPlace.closingHours;
+                    marker.allDay = currentPlace.allDay;
+                    marker.IGFollowers = currentPlace.IGFollowers;
                     markers.push(marker);
-                } else {
+
+            }
+        }
+    }
+
+    if ( type == "Basket Ball Court" || type == "Club House" || type == "Gym" || type == "Pilates Studio" || type == "Stadion" || type == "Swimming Pool" || type == "Tennis Court" || type == "Yoga Studio" || type == "Massage &/ Spa" || type == "Massage sakit & cedera" || type == "Massage &/ Spa Baby") {
+        for (let i = 0; i < detailsWellness.info.length; i++) {
+            const currentPlace = detailsWellness.info[i];
+            if (currentPlace.subcategory !== type) {
+                console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type)
+            } else {
+                console.log("Type Match: ", currentPlace.subcategory, " vs ", type)
                     const marker = new AdvancedMarkerElement({
                         map: map,
                         content: buildContent(currentPlace, type),
-                        position: currentPlace.geometry.location
+                        position: { lat: currentPlace.Lat, lng: currentPlace.Long }
                     });
-                    marker.addListener("click", async () => {
-                        console.log("Getting Data!")
-                        const choseNamed = currentPlace.name.toLowerCase();
-                        //console.log(choseNamed)
-                        for (i in knownWebsites) {
-                            //console.log(knownWebsites[i][0].toLowerCase())
-                            if (choseNamed == knownWebsites[i][0].toLowerCase()) {
-                                const websiteContainer = document.getElementById(`${placeId}-website`);
-                                websiteContainer.innerHTML = `
-                                            <div>
-                                                 <a href="${websiteContainer.website}" target="_blank">Website</a>               
-                                             </div>
-                                         `
-                            }
-                        }
+                    marker.addListener("click", () => {
                         toggleHighlight(marker, currentPlace);
                     });
+                    marker.name = currentPlace.Nama;
                     marker.rating = currentPlace.rating;
-                    marker.openingHours = currentPlace.opening_hours;
-                    //console.log(currentPlace.opening_hours.isOpen.length)
-                    markers.push(marker);
-                }
-            }
+                    marker.openingHours = currentPlace.openingHours;
+                    marker.closingHours = currentPlace.closingHours;
+                    marker.allDay = currentPlace.allDay;
+                    marker.IGFollowers = currentPlace.IGFollowers;
+                    markers.push(marker);            }
         }
-        //currentPlace.moreDetails = new google.maps.places.Place(currentPlace.id);
     }
 
-    if (results.length > 0) {
-        //console.log(results.length)
-        // map.setCenter(-6.2926352615305315, 106.64603487500078);
-        map.setZoom(14);
+    if (type == "klinik gigi & kecantikan" || type == "Klinik Kulit & Kecantikan") {
+        for (let i = 0; i < detailsBeauty.info.length; i++) {
+            const currentPlace = detailsBeauty.info[i];
+            if (currentPlace.subcategory !== type) {
+                console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type)
+            } else {
+                console.log("Type Match: ", currentPlace.subcategory, " vs ", type)
+                    const marker = new AdvancedMarkerElement({
+                        map: map,
+                        content: buildContent(currentPlace, type),
+                        position: { lat: currentPlace.Lat, lng: currentPlace.Long }
+                    });
+                    marker.addListener("click", () => {
+                        toggleHighlight(marker, currentPlace);
+                    });                    
+                    marker.name = currentPlace.Nama;
+                    marker.rating = currentPlace.rating;
+                    marker.openingHours = currentPlace.openingHours;
+                    marker.closingHours = currentPlace.closingHours;
+                    marker.allDay = currentPlace.allDay;
+                    marker.IGFollowers = currentPlace.IGFollowers;
+                    markers.push(marker);            }
+        }
     }
 
 }
@@ -791,21 +884,21 @@ function buildContent(property, type) {
     //console.log(property)
     content.classList.add("property");
     content.classList.add("rounded-3");
-    if (property.photoUrl) {
-        content.style.backgroundImage = `url(${property.photoUrl})`;
+    if (property.photoURL) {
+        content.style.backgroundImage = `url(${property.photoURL})`;
     } else {
         content.style.backgroundImage = `url("../img/noImage.png")`;
 
     }
     content.innerHTML = `
         <div class="icon rounded-3">
-            <i aria-hidden="true" class="fa fa-icon ${typeIconProcessor(property.types[0])}" title="${property.name}"></i>
-            <span class="fa-sr-only">${property.name}</span>
+            <i aria-hidden="true" class="fa fa-icon ${typeIconProcessor(property.subcategory)}" title="${property.Nama}"></i>
+            <span class="fa-sr-only">${property.Nama}</span>
         </div>
         <div class="details-container">
             <div class="details">
-                <div class="price">${property.name}</div>
-                <div class="address">${property.vicinity}</div>
+                <div class="price">${property.Nama}</div>
+                <div class="address">${property.Address}</div>
                 <div class="features">
                      <div>
                         <i aria-hidden="true" class="fa fa-star fa-lg star" title="size"></i>
@@ -815,14 +908,14 @@ function buildContent(property, type) {
                     <div>
                         <i aria-hidden="true" class="fa fa-bed fa-lg bed" title="bedroom"></i>
                         <span class="fa-sr-only">bedroom</span>
-                        <span>${property.types[0]}</span>
+                        <span>${property.subcategory}</span>
                     </div>
 
                 </div>
-                <div id="${property.place_id}-website">
-                    ${property.website ? `
+                <div id="${property.Nama}-website">
+                    ${property.Website ? `
                     <div>
-                        <a href="${property.website}" target="_blank">Website</a>               
+                        <a href="${property.Website}" target="_blank">Website</a>               
                     </div>` : ''} 
                 </div>
 
@@ -846,6 +939,17 @@ function deleteMarkers() {
     markers = [];
 }
 function toggleHighlight(markerView, property) {
+
+    markers.forEach(view => {
+        if(view.name != markerView.name) {
+            const otherInnerDiv = view.content.querySelector('.details-container');
+            const otherIconDiv =  view.content.querySelector('.icon');
+            view.content.classList.remove("highlight");
+            view.zIndex = null;
+            otherInnerDiv.style.opacity = 0;
+            otherIconDiv.style.opacity = 1;
+        }
+    });
     const innerDiv = markerView.content.querySelector('.details-container');
     const iconDiv = markerView.content.querySelector('.icon');
     //console.log(innerDiv)
@@ -896,16 +1000,62 @@ function filterMarkers(markers) {
 
             if(marker.openingHours != null) {
                 if (openingHoursFilter === "Now") {
-                    if (marker.openingHours.open_now == false) {
-                        showMarker = false;
+                    if (marker.allDay == true) {
+                        showMarker = true;
+                    } else {
+                        const d = new Date();
+                        const day = d.getDay();
+                        console.log(day)
+                        switch(day) {
+                            case 1:
+                                if (marker.openingHours.Mon > d.getHours() || marker.closingHours.Mon < d.getHours()) {
+                                    
+                                    showMarker = false;
+                                }
+                                break;
+                            case 2:
+                                if (marker.openingHours.Tue > d.getHours() || marker.closingHours.Tue < d.getHours()) {
+                                    showMarker = false;
+                                }
+                                break;
+                            case 3:
+                                if (marker.openingHours.Wed > d.getHours() || marker.closingHours.Wed < d.getHours()) {
+                                    showMarker = false;
+                                }
+                                break;
+                            case 4:
+                                if (marker.openingHours.Thu > d.getHours() || marker.closingHours.Thu < d.getHours()) {
+                                    showMarker = false;
+                                }
+                                break;
+                            case 5:
+                                if (marker.openingHours.Fri > d.getHours() || marker.closingHours.Fri < d.getHours()) {
+                                    console.log("Current Time: ", d.getHours(), " Opening Times: ", marker.openingHours.Fri, " Closing Hours: ", marker.openingHours.Fri)
+    
+                                    showMarker = false;
+                                }
+                                break;
+                            case 6:
+                                if (marker.openingHours.Sat > d.getHours() || marker.closingHours.Sat < d.getHours()) {
+                                    showMarker = false;
+                                }
+                                break;
+                            case 0:
+                                if (marker.openingHours.Sun > d.getHours() || marker.closingHours.Sun < d.getHours()) {
+                                    showMarker = false;
+                                }
+                                break;
+                            default:
+                                showMarker = false;
+                        }
                     }
+                    
+
                 } else if (openingHoursFilter === "24 Hours") {
-                    if (!marker.openingHours.isOpen.length) {
+                    if (!marker.allDay) {
                         showMarker = false;
                     }
-                    if(marker.openingHours.isOpen.length != 1) {
-                        showMarker = false;
-                    }
+
                 } else {
                     const [filterDay, filterOpeningTime, filterClosingTime] = openingHoursFilter.split(",");
                     const filterDayIndex = days.indexOf(filterDay); //I hate this
@@ -919,10 +1069,7 @@ function filterMarkers(markers) {
             } else {
                 showMarker = false;
             }
-
-            
         }
-
         if (showMarker) {
             marker.setMap(map);
         } else {
@@ -936,22 +1083,46 @@ function convertTimeToMinutes(time) {
 }
 function typeIconProcessor(type) {
     switch (type) {
-        case "hospital":
-            return "fa-house-medical";
-        case "dentist":
+        case "Rumah Sakit":
+            return "fa-hospital";
+        case "klinik medical":
+            return "fa-notes-medical";
+        case "klinik ibu & anak":
+            return "fa-house-chimney-medical";
+        case "klinik gigi":
             return "fa-tooth";
-        case "pharmacy":
-            return "fa-prescription-bottle";
-        case "doctor":
-            return "fa-user-doctor";
-        case "gym":
-            return "fa-dumbbell";
-        case "spa":
+        case "Klinik Fisioterapi":
+            return  "fa-crutch";
+        case "Klinik Tumbuh Kembang Anak":
+            return "fa-child";
+        case "Laboratorium":
+            return "fa-flask";
+        case "klinik gigi & kecantikan":
+            return "fa-bottle-droplet";
+        case "Klinik Kulit & Kecantikan":
+            return "fa-bottle-droplet";
+        case "Basket Ball Court":
+            return "fa-basketball";
+        case "Club House":
+            return "fa-house";
+        case "Gym":
+            return "fa-dumbbell"; ;
+        case "Pilates Studio":
+            return "fa-person-walking";
+        case "Stadion":
+            return "fa-champagne-glasses";
+        case "Swimming Pool":
+            return "fa-person-swimming";
+        case "Tennis Court":
+            return "fatable-tennis-paddle-ball";
+        case "Yoga Studio":
+            return "fa-person";
+        case "Massage &/ Spa":
             return "fa-spa";
-        case "hair_care":
-            return "fa-scissors";
-        case "beauty_salon":
-            return "fa-scissors";
+        case "Massage sakit & cedera":
+            return "fa-user-injured";
+        case "Massage &/ Spa Baby":
+            return "fa-spa";
         default:
             return "fa-question";
     }
@@ -970,7 +1141,6 @@ setTimeout(() => {
         ratingFilterNumber = document.getElementById("ratingRange").value;
         filterMarkers(markers, ratingFilterNumber);
     });
-
     document.getElementById("anytimeOptionButton").addEventListener("click", () => {
         openingHoursFilter = "Anytime";
         filterMarkers(markers);

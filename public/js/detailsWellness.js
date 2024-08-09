@@ -2,7 +2,7 @@ const detailsWellness = {
     category: 'wellness',
     info: [
         {
-            Name: "Basketball Court The Icon BSD",
+            Nama: "Basketball Court The Icon BSD",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "MJPX+J86, Sampora, Cisauk, Tangerang Regency, Banten 15345, Indonesia",
@@ -11,7 +11,8 @@ const detailsWellness = {
             Long: 106.6482970122224,
             rating: "3.8",
             reviews: "4",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMHH1-Xuw-lwjdgvUX6hUNjt8rJs3RCDVJgbPH0=w408-h544-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -33,7 +34,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Celebrity Fitness",
+            Nama: "Celebrity Fitness",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "Jl. Pahlawan Seribu CBD Lot VII B Serpong, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15321",
@@ -41,8 +42,9 @@ const detailsWellness = {
             Lat: -6.294893742722722,
             Long: 106.66367333271967,
             rating: "4.2",
-            reviews: "2623",
-            IGFollowers: "IGFollowers"
+            reviews: "262",
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOBhW--J6C2JSf6OMOj98Aeg7sy_qznaZbDqFft=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -64,7 +66,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Elite Basketball",
+            Nama: "Elite Basketball",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "MMX3+GXX, Sampora, Cisauk, Tangerang Regency, Banten 15345, Indonesia",
@@ -73,7 +75,8 @@ const detailsWellness = {
             Long: 106.6548969661909,
             rating: "4.8",
             reviews: "27",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPaxCZJ1kuSjNKyLRpfhSy5IX_SLg8-NrWdKv00=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -95,7 +98,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Greencove Sport Club",
+            Nama: "Greencove Sport Club",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "Jl. Green Cove, Cilenggang, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -104,7 +107,8 @@ const detailsWellness = {
             Long: 106.6581212238628,
             rating: "4.6",
             reviews: "79",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAIaZbQcJh9XmHhLu3H0ZoRPJl6Vd4s9EA2qt5=w408-h307-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -126,7 +130,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "KYZN BSD @ Quantis Clubhouse",
+            Nama: "KYZN BSD @ Quantis Clubhouse",
             subcategory: "Basket Ball Court",
             Website: "https://bio.kyzn.life/bsd",
             Address: "The Quantis Club, Jl. Majorie Ave No.1, Kunciran Indah, Pagedangan, Tangerang Regency, Banten 15339",
@@ -135,7 +139,8 @@ const detailsWellness = {
             Long: 106.63370607359805,
             rating: "4.1",
             reviews: "414",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -157,7 +162,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Lapangan Basket 12.5",
+            Nama: "Lapangan Basket 12.5",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "MMFV+C86, Ciater, Serpong Sub-District, South Tangerang City, Banten 15310, Indonesia",
@@ -166,7 +171,8 @@ const detailsWellness = {
             Long: 106.69310581214314,
             rating: "5.0",
             reviews: "2",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMq2ifFqfBZc9N32PLkyvWwg5am_IFbIDqNM-G7=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -188,7 +194,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Lapangan Basket Carribean Islands deLatinos BSD",
+            Nama: "Lapangan Basket Carribean Islands deLatinos BSD",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "MMFM+H33, Ciater, Serpong Sub-District, South Tangerang City, Banten 15310",
@@ -197,7 +203,8 @@ const detailsWellness = {
             Long: 106.68263698153481,
             rating: "4.0",
             reviews: "12",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOb0IO6LMJY3xdkYprl97H63kvuuotYY4ArsQi9=w408-h544-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -219,7 +226,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Lapangan Basket Studento",
+            Nama: "Lapangan Basket Studento",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "PJ3R+PQF, Jl. Foresta Raya, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339",
@@ -228,7 +235,8 @@ const detailsWellness = {
             Long: 106.64222417544995,
             rating: "4.6",
             reviews: "5",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMVLVCqt_siscqRP2fwu9XqIgQtEmtD9yD5H2nu=w408-h408-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -250,7 +258,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Meadow Terrace Basket Ball Court",
+            Nama: "Meadow Terrace Basket Ball Court",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "Blok, Jl. Cilenggang 1 Blok E2 No.18, Cilenggang, Serpong Sub-District, South Tangerang City, Banten 15310",
@@ -259,7 +267,8 @@ const detailsWellness = {
             Long: 106.67070060851876,
             rating: "5.0",
             reviews: "5",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -281,7 +290,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Navapark Country Club - Basket Ball Court",
+            Nama: "Navapark Country Club - Basket Ball Court",
             subcategory: "Basket Ball Court",
             Website: "http://www.navapark.id/site/countryclub",
             Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia",
@@ -290,7 +299,8 @@ const detailsWellness = {
             Long: 106.65285773735468,
             rating: "4.6",
             reviews: "442",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -312,7 +322,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Puspita Loka Sports Center",
+            Nama: "Puspita Loka Sports Center",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "Jl. Lantana II No.15, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15310, Indonesia",
@@ -321,7 +331,8 @@ const detailsWellness = {
             Long: 106.6752354968785,
             rating: "4,8",
             reviews: "66",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMflOSuEMXKswoQl-zifQLQp9CHi2yMB_KZ4pZ7=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -343,7 +354,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Serpong Green Park Basketball Court",
+            Nama: "Serpong Green Park Basketball Court",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "Jl. Palapa, Serua, Kec. Ciputat, Kota Tangerang Selatan, Banten 15414",
@@ -352,7 +363,8 @@ const detailsWellness = {
             Long: 106.70666529820116,
             rating: "4.7",
             reviews: "64",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNaqayrNaVAK3-sf15V2ORoU2kTtg0puUsyjtnv=w408-h725-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -374,7 +386,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Serpong Jaya Basketball Court",
+            Nama: "Serpong Jaya Basketball Court",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "Buaran, Serpong Sub-District, South Tangerang City, Banten 15310, Indonesia",
@@ -383,7 +395,8 @@ const detailsWellness = {
             Long: 106.69939345640263,
             rating: "4.8",
             reviews: "22",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMNfJle1uc1NK_TvkGxxuOYMM8KKgPmwP3DCdxv=w408-h299-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -405,7 +418,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "The Hawk Basketball at Expindo Center",
+            Nama: "The Hawk Basketball at Expindo Center",
             subcategory: "Basket Ball Court",
             Website: "",
             Address: "Jl. BSD Raya Utama, Blok I No. 8, BSD City, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15310",
@@ -414,7 +427,8 @@ const detailsWellness = {
             Long: 106.6392229140742,
             rating: "4.5",
             reviews: "271",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMnAEUgnpH3jNsQZ28oJxbgqaDghYiiFk67r42Z=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -436,7 +450,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Arora Puspita",
+            Nama: "Arora Puspita",
             subcategory: "Club House",
             Website: "",
             Address: "Jl. Amarilis, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15321, Indonesia",
@@ -445,7 +459,8 @@ const detailsWellness = {
             Long: 106.67596731222243,
             rating: "5.0",
             reviews: "17",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipP3VwC12RnOsUa_UNvj9PsFrOX-XZdy_DOvGrQC=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -467,7 +482,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Atlantis Sport Club",
+            Nama: "Atlantis Sport Club",
             subcategory: "Club House",
             Website: "",
             Address: "MMHG+7Q5, BSD City De Latinos, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
@@ -476,7 +491,8 @@ const detailsWellness = {
             Long: 106.67712137174642,
             rating: "4.2",
             reviews: "166",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNf1zSfX33zDhU9cL1XrW9YzyCC6hreFm1GANb6=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6.5,
@@ -498,7 +514,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Avani Sports Club",
+            Nama: "Avani Sports Club",
             subcategory: "Club House",
             Website: "",
             Address: "Sampora, Cisauk, Tangerang Regency, Banten 15345",
@@ -507,7 +523,8 @@ const detailsWellness = {
             Long: 106.65828118153499,
             rating: "4.4",
             reviews: "213",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNo75KnT9KeOk2BNDyGFejViv41NcGKoDWDehtO=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -529,7 +546,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Club House Bora Bora",
+            Nama: "Club House Bora Bora",
             subcategory: "Club House",
             Website: "",
             Address: "PJFF+47W, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331",
@@ -538,7 +555,8 @@ const detailsWellness = {
             Long: 106.62328842756618,
             rating: "4.8",
             reviews: "64",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNcSl3y-PNfxSBLElvjzaSGcrRinEKlUBiQB5Ud=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -560,7 +578,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Club House Sportivo",
+            Nama: "Club House Sportivo",
             subcategory: "Club House",
             Website: "http://www.bsdcity.com/",
             Address: "PJ3W+CF4, Foresta, BSD CITY,, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345",
@@ -569,7 +587,8 @@ const detailsWellness = {
             Long: 106.6461077760225,
             rating: "4.4",
             reviews: "83",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -591,7 +610,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Club House Vanya Park",
+            Nama: "Club House Vanya Park",
             subcategory: "Club House",
             Website: "https://www.anartahouse.com/club-house-bsd/",
             Address: "Cicalengka, Pagedangan, Tangerang Regency, Banten 15336",
@@ -600,7 +619,8 @@ const detailsWellness = {
             Long: 106.6197190661908,
             rating: "4.1",
             reviews: "18",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPa8QifE7HAfsA6qRTCI1UdthfYF9EjnwL0aQWr=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -622,7 +642,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "De Park Sports Club",
+            Nama: "De Park Sports Club",
             subcategory: "Club House",
             Website: "",
             Address: "Jl. Lengkong Kulon No.18, Lengkong Kulon, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331, Indonesia",
@@ -631,7 +651,8 @@ const detailsWellness = {
             Long: 106.64099099687849,
             rating: "4.6",
             reviews: "77",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -653,16 +674,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Giardina Club House Foresta BSD city",
+            Nama: "Giardina Club House Foresta BSD city",
             subcategory: "Club House",
             Website: "",
-            Address: "PJ4X+833, Unnamed Road, Sampora, Cisauk, Tangerang Regency, Banten 15345",
+            Address: "PJ4X+833, UnNamad Road, Sampora, Cisauk, Tangerang Regency, Banten 15345",
             phoneNo: "",
             Lat: -6.294094695429448,
             Long: 106.64786498015938,
             rating: "4.9",
             reviews: "14",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipORUATnGc0aItwoAeAGdjSxy1h4MXcH9JMbfUjL=w533-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -684,7 +706,7 @@ const detailsWellness = {
             }
         },
         // {
-        //     Name: "Icon Club Sporthouse",
+        //     Nama: "Icon Club Sporthouse",
         //     subcategory: "Club House",
         //     Website: "",
         //     Address: "MJJV+RQR, THE ICON BSD CITY Jl. BSD Raya Bar., Sampora, Cisauk, Tangerang Regency, Banten 15345, Indonesia",
@@ -715,7 +737,7 @@ const detailsWellness = {
         //     }
         // },
         {
-            Name: "KYZN BSD @ Quantis Clubhouse",
+            Nama: "KYZN BSD @ Quantis Clubhouse",
             subcategory: "Club House",
             Website: "",
             Address: "The Quantis Club, Jl. Majorie Ave No.1, Kunciran Indah, Pagedangan, Tangerang Regency, Banten 15339, Indonesia",
@@ -724,7 +746,8 @@ const detailsWellness = {
             Long: 106.63370607359805,
             rating: "4.1",
             reviews: "414",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -746,7 +769,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Les Belles Maisons - Club House",
+            Nama: "Les Belles Maisons - Club House",
             subcategory: "Club House",
             Website: "",
             Address: "Jl. Raya Serpong, Pd. Jagung, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15337",
@@ -755,7 +778,8 @@ const detailsWellness = {
             Long: 106.6514857813461,
             rating: "4.6",
             reviews: "19",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOpgylqAQ1JDORLQ1LuZF-NXzhCAzsFY7IsE8em=w408-h544-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -777,7 +801,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Meadow Terrace Sport Club - The Green BSD City",
+            Nama: "Meadow Terrace Sport Club - The Green BSD City",
             subcategory: "Club House",
             Website: "http://www.bsdcity.com/",
             Address: "MMPC+XHM, The Green BSD City, Cilenggang, Serpong Sub-District, South Tangerang City, Banten 15310",
@@ -786,7 +810,8 @@ const detailsWellness = {
             Long: 106.67178037708607,
             rating: "4.5",
             reviews: "359",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7kJkC1fFZciV=w408-h312-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -808,21 +833,22 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Navapark Country Club",
+            Nama: "Navapark Country Club",
             subcategory: "Club House",
-            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
+            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no",allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
         },
         {
-            Name: "Palazetto Sport Club Foresta BSD City",
+            Nama: "Palazetto Sport Club Foresta BSD City",
             subcategory: "Club House",
             Website: "",
             Address: "PJ5V+MQF, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331",
             phoneNo: "",
-            Lat: -6.29060903747203, 
+            Lat: -6.29060903747203,
             Long: 106.64443532552255,
             rating: "4.5",
             reviews: "reviews",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -844,16 +870,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Samasana Clubhouse at The Zora BSD City",
+            Nama: "Samasana Clubhouse at The Zora BSD City",
             subcategory: "Club House",
             Website: "",
             Address: "Clubhouse The Zora at BSD City, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331",
             phoneNo: "08881020888",
-            Lat: -6.279857878058681, 
+            Lat: -6.279857878058681,
             Long: 106.62962177893274,
             rating: "4.9",
             reviews: "96",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNR8y2Wvnq3qRpG5UYAm0x3iHPzdLQNB1q-vAvy=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -875,16 +902,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "The Avani Club House",
+            Nama: "The Avani Club House",
             subcategory: "Club House",
             Website: "",
             Address: "Sampora, Cisauk, Tangerang Regency, Banten 15345, Indonesia",
             phoneNo: "",
             Lat: -6.316892788634133,
-            Long:  106.65820396528801,
-            rating: "",
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
+            Long: 106.65820396528801,
+            rating: "4.4",
+            reviews: "213",
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNo75KnT9KeOk2BNDyGFejViv41NcGKoDWDehtO=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -906,16 +934,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Vermont parkland sportshall",
+            Nama: "Vermont parkland sportshall",
             subcategory: "Club House",
             Website: "",
             Address: "PM54+8GH, Lengkong Gudang, Serpong Sub-District, South Tangerang City, Banten 15321",
             phoneNo: "",
             Lat: -6.291502702015834,
-            Long: 106.6562946236758, 
+            Long: 106.6562946236758,
             rating: "4.5",
             reviews: "20",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipP07E9Adfo3XztG3jVSKPb4NGXwenBjlFZiIGlh=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 7,
@@ -937,16 +966,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Amigo Gym",
+            Nama: "Amigo Gym",
             subcategory: "Gym",
             Website: "http://instagram.com/amigogym",
             Address: "Ruko Griya Loka Blok RC3/17 Sektor 1.2 BSD, Rawa Buntu, Serpong",
             phoneNo: "08111342233",
-            Lat: -6.304064658698819, 
+            Lat: -6.304064658698819,
             Long: 106.68213214086366,
             rating: "3.4",
             reviews: "26",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipN9Ax6F-Nxyd3I_OsBAUxQLvYePIOCzI0ZnYIbp=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -968,16 +998,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Bush Container Gym",
+            Nama: "Bush Container Gym",
             subcategory: "Gym",
             Website: "",
             Address: "Jl. Al-Amien, Ciater, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "087789228542",
-            Lat: -6.319019502556369, 
+            Lat: -6.319019502556369,
             Long: 106.69516224455735,
             rating: "4.9",
             reviews: "64",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMjdH-rA0wMfbUNkDb7kNPSd7b7gyQEwoJzr0Qt=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -999,7 +1030,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Celebrity Fitness",
+            Nama: "Celebrity Fitness",
             subcategory: "Gym",
             Website: "",
             Address: "Jl. Pahlawan Seribu CBD Lot VII B Serpong, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15321",
@@ -1008,7 +1039,8 @@ const detailsWellness = {
             Long: 106.66367333271967,
             rating: "4.2",
             reviews: "2623",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOBhW--J6C2JSf6OMOj98Aeg7sy_qznaZbDqFft=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1030,16 +1062,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Curves BSD",
+            Nama: "Curves BSD",
             subcategory: "Gym",
             Website: "http://www.curvesindonesia.com/",
             Address: "Jl. Pahlawan Seribu No.7, Lengkong Wetan",
             phoneNo: "08112111216",
             Lat: -6.283500399233847,
-            Long:  106.66455756969877 ,
+            Long: 106.66455756969877,
             rating: "5.0",
             reviews: "278",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOnvXSewtUe2MWfHz-y5LLEc0go3ak3scrF0tPO=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10.5,
@@ -1061,16 +1094,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Duo Shine Fitness",
+            Nama: "Duo Shine Fitness",
             subcategory: "Gym",
             Website: "",
             Address: "Diatas Indomaret, Deretan Perumahan, Jl. Raya Rawa Buntu Jl. De Latinos No.23, Rawa Buntu, Serpong Sub-District, South Tangerang City, Banten 15318",
             phoneNo: "",
-            Lat: -6.314474890759918, 
+            Lat: -6.314474890759918,
             Long: 106.6818134119665,
             rating: "4.8",
             reviews: "681",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPsF4lMpAo4VwP55CbslII52GiFZAw9BSRucADD=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7.5,
@@ -1092,16 +1126,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "FIT HUB BSD",
+            Nama: "FIT HUB BSD",
             subcategory: "Gym",
             Website: "https://fithub.id/free-trial/fit-hub-bsd/?source=Google%20Maps",
             Address: "Jl. Pahlawan Seribu, Lengkong Karya, BSD City, Kota Tangerang Selatan, Banten 15301",
             phoneNo: "0812993023609",
-            Lat: -6.274807986103797, 
+            Lat: -6.274807986103797,
             Long: 106.65905816969868,
             rating: "4.5",
             reviews: "134",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipO_9BPs62b08JqUwRae6rCjjgxTxj_fwuhastra=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1123,16 +1158,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Fitness Plus Intermark",
+            Nama: "Fitness Plus Intermark",
             subcategory: "Gym",
             Website: "",
             Address: "Jl. Lkr. Tim. No.9, Rw. Mekar Jaya, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "082122067611",
             Lat: -6.309379389009396,
-            Long:  106.68981662552267,
+            Long: 106.68981662552267,
             rating: "4.8",
             reviews: "50",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipO1_r170T_rXZXxM_sHkEg2FtOB3YkhXKhsI6fF=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1154,16 +1190,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Gold's Gym",
+            Nama: "Gold's Gym",
             subcategory: "Gym",
             Website: "http://www.goldsgym.co.id/",
             Address: "The Breeze BSD City, Jalan BSD Green Office Park Jl. Boulevard Raya No.76, Unit L75, Sampora, Cisauk, Tangerang Regency, Banten 15345",
             phoneNo: "02129580018",
             Lat: -6.301122869382166,
-            Long:  106.65488748503986,
+            Long: 106.65488748503986,
             rating: "4.2",
             reviews: "232",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOUPIw9yus6E-ScVts8mA2RyRgf5G15jWxyR2L4=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1185,21 +1222,22 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Navapark Country Club - Gym",
+            Nama: "Navapark Country Club - Gym",
             subcategory: "Gym",
-            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
+            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no" ,allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
         },
         {
-            Name: "Palazetto Sport Club, Foresta BSD City Gym",
+            Nama: "Palazetto Sport Club, Foresta BSD City Gym",
             subcategory: "Gym",
             Website: "",
             Address: "PJ5V+MQF, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331",
             phoneNo: "",
-            Lat: -6.29060903747203, 
+            Lat: -6.29060903747203,
             Long: 106.64443532552255,
             rating: "4.5",
             reviews: "reviews",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1221,16 +1259,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Ronin Strength Gym",
+            Nama: "Ronin Strength Gym",
             subcategory: "Gym",
             Website: "",
             Address: "Ruko ICE Business Park, B/9, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339",
             phoneNo: "",
-            Lat: -6.304887750919802, 
+            Lat: -6.304887750919802,
             Long: 106.6332625371699,
             rating: "4.9",
             reviews: "46",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOwqX87DinYxEthFVfVig8z9dvg1gqcjf21YDIO=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1252,16 +1291,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Total Fitness BSD",
+            Nama: "Total Fitness BSD",
             subcategory: "Gym",
             Website: "https://www.instagram.com/happy_fit.id/",
             Address: "APARTEMENT B RESIDENCE (UNIT GROUND FLOOR Kavling 3 Jalan BSD Raya Barat Jl. Edutown No.I, Pagedangan, Kec. Pagedangan, TANGERANG, Kabupaten Tangerang, Banten 15339",
             phoneNo: "+62 812-1666-6877",
             Lat: -6.3028274500322015,
-            Long:  106.63895465066416,
+            Long: 106.63895465066416,
             rating: "3.9",
             reviews: "19",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbUJhs_X1J-IKXlunrkoITr5cvM6ud_eQ-9fiW=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1283,16 +1323,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Code Pilates Studio BSD",
+            Nama: "Code Pilates Studio BSD",
             subcategory: "Pilates Studio",
             Website: "https://codepilatesid.com/",
             Address: "Jl. BSD Raya Pusat, Lengkong Kulon, Kec. Pagedangan",
             phoneNo: "081112544888",
             Lat: -6.290600811284537,
-            Long:  106.6229555211709,
+            Long: 106.6229555211709,
             rating: "5.0",
             reviews: "10",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTEc4dfXXrRq2QSzW2X1fb9SbohjTepiC0G-BJ=w408-h408-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1314,16 +1355,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Flow Pilates",
+            Nama: "Flow Pilates",
             subcategory: "Pilates Studio",
             Website: "https://instagram.com/flow_pilatesbarre?igshid=1hzqzhntmcad",
             Address: "Jl. Springs Boulevard No.26, Cihuni, Kec. Serpong, Kabupaten Tangerang, Banten 15332",
             phoneNo: "08111080910",
             Lat: -6.273640102069517,
-            Long:  106.64036604271034,
+            Long: 106.64036604271034,
             rating: "5.0",
             reviews: "8",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTrf1NsXANYbExVLQmCB6fHPaDKN517SlEHdPd=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -1345,16 +1387,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Khing Studio",
+            Nama: "Khing Studio",
             subcategory: "Pilates Studio",
             Website: "https://instagram.com/khingstudiopilates?igshid=YmMyMTA2M2Y=",
             Address: "Jalan Melinjo C3/14 BSD City Sektor 1.6, Rawa Buntu, Serpong Sub-District, South Tangerang City, Banten 15318",
             phoneNo: "081514205000",
-            Lat: -6.31053623629451, 
+            Lat: -6.31053623629451,
             Long: 106.67733237339266,
             rating: "5.0",
             reviews: "8",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipO2qM1v5vaLyRacng9lyD9JKxAWoee1J8cgLRGa=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1376,16 +1419,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Mossa Studio",
+            Nama: "Mossa Studio",
             subcategory: "Pilates Studio",
             Website: "",
             Address: "Jl. Horizon Broadway M6 No.6, Sampora, Cisauk, Tangerang Regency, Banten 15345",
             phoneNo: "081905380146",
-            Lat: -6.313324037152685, 
+            Lat: -6.313324037152685,
             Long: 106.65097006969889,
             rating: "4.8",
             reviews: "5",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQqmXZo2E1hGVbvpD3gPBUr5DZfGb2FM8bvnjl=w426-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1407,10 +1451,10 @@ const detailsWellness = {
             }
         },
         // {
-        //     Name: "MP KOLAT Carin Studio",
+        //     Nama: "MP KOLAT Carin Studio",
         //     subcategory: "Pilates Studio",
         //     Website: "",
-        //     Address: "",
+        //     Address: "
         //     phoneNo: "",
         //     Lat: ,
         //     Long: ,
@@ -1438,16 +1482,17 @@ const detailsWellness = {
         //     }
         // },
         {
-            Name: "Pilates 2021 BSD",
+            Nama: "Pilates 2021 BSD",
             subcategory: "Pilates Studio",
             Website: "https://pilates2021.com/",
             Address: "Ruko Casa De Parco 19, BSD, Cisauk, Tangerang Regency, Banten 15345",
             phoneNo: "081388877321",
-            Lat:-6.297191288813298, 
-            Long: 106.65653696197761 ,
+            Lat: -6.297191288813298,
+            Long: 106.65653696197761,
             rating: "4.8",
             reviews: "96",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNCf48qz2K4N56CTOzymSGwsNh7NUoYyXlS8SdA=w408-h906-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1469,16 +1514,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Pilates Re Bar DOOspace Quantis BSD",
+            Nama: "Pilates Re Bar DOOspace Quantis BSD",
             subcategory: "Pilates Studio",
             Website: "",
             Address: "PJ4M+P97, Pagedangan, Tangerang Regency, Banten 15339",
             phoneNo: "08118870772",
-            Lat: -6.293029880206354, 
+            Lat: -6.293029880206354,
             Long: 106.63406143901678,
             rating: "5.0",
             reviews: "58",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPZ0yk_tIu9Vp4oYMYzXAbC4KWbanlNT8kOv-Yq=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -1500,16 +1546,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Stadion Cisauk",
+            Nama: "Stadion Cisauk",
             subcategory: "Stadion",
             Website: "",
             Address: "Suradita, Cisauk, Tangerang Regency, Banten 15341",
             phoneNo: "",
             Lat: -6.322795395076553,
-            Long:  106.64156462552273,
+            Long: 106.64156462552273,
             rating: "4.4",
             reviews: "440",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNO40e4rolWcNDGmB_M0pP2ff4W8EHg5YWWQzIj=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1531,16 +1578,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Stadion mini Pagedangan",
+            Nama: "Stadion mini Pagedangan",
             subcategory: "Stadion",
             Website: "",
-            Address: "MJW7+8HC, Unnamed Road, Cicalengka, Kec. Pagedangan, Kabupaten Tangerang, Banten 15338",
+            Address: "MJW7+8HC, UnNamad Road, Cicalengka, Kec. Pagedangan, Kabupaten Tangerang, Banten 15338",
             phoneNo: "",
-            Lat: -6.304001142410083, 
+            Lat: -6.304001142410083,
             Long: 106.61386553901686,
             rating: "4,7",
             reviews: "62",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMgQB-Fq-AqN63X0a74b0TYfqdnHV5A3Jv0bKL7=w426-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1562,7 +1610,7 @@ const detailsWellness = {
             }
         },
         // {
-        //     Name: "Std.Mini Taman Tekno BSD",
+        //     Nama: "Std.Mini Taman Tekno BSD",
         //     subcategory: "Stadion",
         //     Website: "",
         //     Address: "MM6G+3H2, Setu, South Tangerang City, Banten 15314, Indonesia",
@@ -1593,16 +1641,17 @@ const detailsWellness = {
         //     }
         // },
         {
-            Name: "Alesha House Vanya Park",
+            Nama: "Alesha House Vanya Park",
             subcategory: "Swimming Pool",
             Website: "https://www.bsdcity-development.com/alesha-house-bsd-city/",
             Address: "Jl. Raya Pagedangan No.67, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339, Indonesia",
             phoneNo: "",
-            Lat: -6.292192366456418, 
+            Lat: -6.292192366456418,
             Long: 106.6169007083347,
             rating: "4.6",
             reviews: "190",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOLcsf9EB-MGkFMqSBXkwf0nCZd9GN36vh9xyuD=w426-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1624,7 +1673,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "De Park Sports Club - Swimming Pool",
+            Nama: "De Park Sports Club - Swimming Pool",
             subcategory: "Swimming Pool",
             Website: "",
             Address: "Jl. Lengkong Kulon No.18, Lengkong Kulon, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331, Indonesia",
@@ -1633,7 +1682,8 @@ const detailsWellness = {
             Long: 106.64099099687849,
             rating: "4.6",
             reviews: "77",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1655,16 +1705,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Elsa Nasution Swimming School (ENSS) BSD 1",
+            Nama: "Elsa Nasution Swimming School (ENSS) BSD 1",
             subcategory: "Swimming Pool",
             Website: "",
             Address: "Jl. Bukit Golf I No.17 Blok P, Lengkong Karya, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "08111715173",
-            Lat: -6.281732449530395, 
-            Long:106.65298182921606 ,
+            Lat: -6.281732449530395,
+            Long: 106.65298182921606,
             rating: "4.2",
             reviews: "12",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNfwyNUrPtb1tr4acYIiht432HlovL-rc4pb1rR=w417-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1686,16 +1737,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Giardina Club House Foresta BSD city",
+            Nama: "Giardina Club House Foresta BSD city",
             subcategory: "Swimming Pool",
             Website: "",
-            Address: "PJ4X+833, Unnamed Road, Sampora, Cisauk, Tangerang Regency, Banten 15345, Indonesia",
+            Address: "PJ4X+833, UnNamad Road, Sampora, Cisauk, Tangerang Regency, Banten 15345, Indonesia",
             phoneNo: "",
             Lat: -6.294094695429448,
             Long: 106.64786498015938,
             rating: "4.9",
             reviews: "14",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipORUATnGc0aItwoAeAGdjSxy1h4MXcH9JMbfUjL=w533-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1717,16 +1769,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Greencove Sport Club Swimming Pool",
+            Nama: "Greencove Sport Club Swimming Pool",
             subcategory: "Swimming Pool",
             Website: "",
             Address: "Jl. Green Cove, Cilenggang, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "",
             Lat: -6.302794802150261,
-            Long:  106.65814268134628,
-            rating:"4.6" ,
+            Long: 106.65814268134628,
+            rating: "4.6",
             reviews: "79",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAIaZbQcJh9XmHhLu3H0ZoRPJl6Vd4s9EA2qt5=w408-h307-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1748,16 +1801,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Kolam Renang Damai Indah Golf BSD",
+            Nama: "Kolam Renang Damai Indah Golf BSD",
             subcategory: "Swimming Pool",
             Website: "http://www.damaiindahgolf.com/bsd/index.asp?fuseaction=swimming",
             Address: "Jl. Bukit Golf I No.17 Blok P, Lengkong Karya, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "0215370290",
-            Lat: -6.281596078341787, 
-            Long:106.65275979668722,
-            rating:"4.5" ,
+            Lat: -6.281596078341787,
+            Long: 106.65275979668722,
+            rating: "4.5",
             reviews: "560",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNI0Gr7LVcasO4vz4AgYdicy7mcRb8UG-dHpLLm=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 12,
@@ -1779,16 +1833,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Kolam renang DE LATINOS",
+            Nama: "Kolam renang DE LATINOS",
             subcategory: "Swimming Pool",
             Website: "",
             Address: "MMJH+47J, Rawa Buntu, Serpong Sub-District, South Tangerang City, Banten 15318",
             phoneNo: "",
             Lat: -6.319404166262629,
-            Long: 106.6785254059215 ,
+            Long: 106.6785254059215,
             rating: "4.5",
             reviews: "31",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-lpff5IbxwkYiWN_2hRkr43qKOC9698tMDnHM=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1810,16 +1865,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Kolam Renang Komplek Panorama Serpong",
+            Nama: "Kolam Renang Komplek Panorama Serpong",
             subcategory: "Swimming Pool",
             Website: "",
-            Address: "Unnamed Road No.15310, Buaran, Serpong Sub-District, South Tangerang City, Banten 15316",
+            Address: "UnNamad Road No.15310, Buaran, Serpong Sub-District, South Tangerang City, Banten 15316",
             phoneNo: "",
             Lat: -6.348002154217284,
-            Long:  106.70589607082843,
+            Long: 106.70589607082843,
             rating: "4.2",
             reviews: "90",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPiTjImUvHni7Z4Ixes8hK638uGFeAsENyHW2mk=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -1841,16 +1897,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Kolam Renang Serpong Terrace",
+            Nama: "Kolam Renang Serpong Terrace",
             subcategory: "Swimming Pool",
             Website: "",
             Address: "MM7Q+GW6, Perumahan Serpong Terrace Jalan Ciater, Rw, Buaran, Kec. Serpong, Kota Tangerang Selatan, Banten 15310, Indonesia",
             phoneNo: "",
-            Lat: -6.335954711146501, 
-            Long:106.69003058873366 ,
-            rating: "4.1" ,
+            Lat: -6.335954711146501,
+            Long: 106.69003058873366,
+            rating: "4.1",
             reviews: "81",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPe882ilxDqYV2Nqjoni7LA_yXgxqtNKOnumnj4=w426-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1872,7 +1929,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "KYZN BSD @ Quantis Clubhouse",
+            Nama: "KYZN BSD @ Quantis Clubhouse",
             subcategory: "Swimming Pool",
             Website: "",
             Address: "The Quantis Club, Jl. Majorie Ave No.1, Kunciran Indah, Pagedangan, Tangerang Regency, Banten 15339, Indonesia",
@@ -1881,7 +1938,8 @@ const detailsWellness = {
             Long: 106.63370607359805,
             rating: "4.1",
             reviews: "414",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1903,7 +1961,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Meadow Terrace - Swimming Pool",
+            Nama: "Meadow Terrace - Swimming Pool",
             subcategory: "Swimming Pool",
             Website: "http://www.bsdcity.com/",
             Address: "MMPC+XHM, The Green BSD City, Cilenggang, Serpong Sub-District, South Tangerang City, Banten 15310",
@@ -1912,7 +1970,8 @@ const detailsWellness = {
             Long: 106.67178037708607,
             rating: "4.5",
             reviews: "359",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7kJkC1fFZciV=w408-h312-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1934,21 +1993,22 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Navapark Country Club - Swimming Pool",
+            Nama: "Navapark Country Club - Swimming Pool",
             subcategory: "Swimming Pool",
             Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
         },
         {
-            Name: "Palazetto Sport Club Foresta BSD City  Swimming Pool",
+            Nama: "Palazetto Sport Club Foresta BSD City  Swimming Pool",
             subcategory: "Swimming Pool",
             Website: "",
             Address: "PJ5V+MQF, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia",
             phoneNo: "",
-            Lat: -6.29060903747203, 
+            Lat: -6.29060903747203,
             Long: 106.64443532552255,
             rating: "4.5",
             reviews: "reviews",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1970,16 +2030,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Phi Phi Club - Swimming Pool",
+            Nama: "Phi Phi Club - Swimming Pool",
             subcategory: "Swimming Pool",
             Website: "http://www.bsdcity.com/",
             Address: "PJFH+JGJ, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia",
             phoneNo: "",
             Lat: -6.275752425619143,
-            Long:  106.62883356969881,
+            Long: 106.62883356969881,
             rating: "4.3",
             reviews: "49",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPWyf-xxDMV3GoHfp5OCZA0mZ0XTfTV_mdkgkEN=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -2001,16 +2062,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Blossomvile Tennis Court",
+            Nama: "Blossomvile Tennis Court",
             subcategory: "Tennis Court",
             Website: "",
             Address: "Blok, Jl. Cilenggang 1 Blok E2 No.18, Cilenggang, Serpong Sub-District, South Tangerang City, Banten 15310",
             phoneNo: "",
-            Lat: -6.310687678841913, 
+            Lat: -6.310687678841913,
             Long: 106.67070061131109,
             rating: "5.0",
             reviews: "5",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOI5bJfcRnLJbggMUnRZbHPTGvcpyvN0QtD5moQ=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2032,7 +2094,7 @@ const detailsWellness = {
             }
         },
         // {
-        //     Name: "Carribean Island",
+        //     Nama: "Carribean Island",
         //     subcategory: "Tennis Court",
         //     Website: "",
         //     Address: "South Tangerang City, Banten, Indonesia",
@@ -2063,7 +2125,7 @@ const detailsWellness = {
         //     }
         // },
         {
-            Name: "De Park Sports Club - Tennis Court",
+            Nama: "De Park Sports Club - Tennis Court",
             subcategory: "Tennis Court",
             Website: "",
             Address: "Jl. Lengkong Kulon No.18, Lengkong Kulon, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331",
@@ -2072,7 +2134,8 @@ const detailsWellness = {
             Long: 106.64099099687849,
             rating: "4.6",
             reviews: "77",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -2094,16 +2157,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "DeLatinos Tennis Court",
+            Nama: "DeLatinos Tennis Court",
             subcategory: "Tennis Court",
             Website: "",
             Address: "MMFM+H33, Ciater, Serpong Sub-District, South Tangerang City, Banten 15310",
             phoneNo: "",
             Lat: -6.3225268494596465,
-            Long:  106.6809632809777,
+            Long: 106.6809632809777,
             rating: "4.0",
             reviews: "12",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOb0IO6LMJY3xdkYprl97H63kvuuotYY4ArsQi9=w408-h544-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2125,16 +2189,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Greencove Sport Club Tennis Court",
+            Nama: "Greencove Sport Club Tennis Court",
             subcategory: "Tennis Court",
             Website: "",
             Address: "Jl. Green Cove, Cilenggang, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "",
             Lat: -6.302794802150261,
-            Long:  106.65814268134628,
-            rating:"4.6" ,
+            Long: 106.65814268134628,
+            rating: "4.6",
             reviews: "79",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipO-ns4uF9VJWBxAupA3T3bxCaxsCbGVJr3os-5r=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2156,16 +2221,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Lapangan Tenis Setu",
+            Nama: "Lapangan Tenis Setu",
             subcategory: "Tennis Court",
             Website: "",
             Address: "MMCF+RVR, Setu, South Tangerang City, Banten 15314",
             phoneNo: "",
             Lat: -6.327630370326503,
-            Long:  106.67465105435811,
-            rating: "4.8" ,
+            Long: 106.67465105435811,
+            rating: "4.8",
             reviews: "5",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPigFnzLBZYtlkWgB3LcnGFCYYmFUK9r2Fr_eoe=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2187,16 +2253,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Lapangan Tennis Basket Puspita Loka",
+            Nama: "Lapangan Tennis Basket Puspita Loka",
             subcategory: "Tennis Court",
             Website: "",
             Address: "PM3G+82V, Lengkong Gudang, Serpong Sub-District, South Tangerang City, Banten 15321",
             phoneNo: "",
-            Lat: -6.296489531976357, 
+            Lat: -6.296489531976357,
             Long: 106.67503903901674,
             rating: "4.6",
             reviews: "135",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2218,7 +2285,7 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Meadow Terrace - Tennis Court",
+            Nama: "Meadow Terrace - Tennis Court",
             subcategory: "Tennis Court",
             Website: "http://www.bsdcity.com/",
             Address: "MMPC+XHM, The Green BSD City, Cilenggang, Serpong Sub-District, South Tangerang City, Banten 15310",
@@ -2227,7 +2294,8 @@ const detailsWellness = {
             Long: 106.67178037708607,
             rating: "4.5",
             reviews: "359",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2249,12 +2317,14 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Navapark Country Club - Tennis Court",
+            Nama: "Navapark Country Club - Tennis Court",
             subcategory: "Tennis Court",
-            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
+            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", 
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no",
+            allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
         },
         {
-            Name: "Quantis Clubhouse",
+            Nama: "Quantis Clubhouse",
             subcategory: "Tennis Court",
             Website: "",
             Address: "The Quantis Club, Jl. Majorie Ave No.1, Kunciran Indah, Pagedangan, Tangerang Regency, Banten 15339, Indonesia",
@@ -2263,7 +2333,8 @@ const detailsWellness = {
             Long: 106.63370607359805,
             rating: "4.1",
             reviews: "414",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2285,16 +2356,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Sevilla",
+            Nama: "Sevilla",
             subcategory: "Tennis Court",
             Website: "",
             Address: "Lap. Tenis Cluster Sevilla, Ciater, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "",
             Lat: -6.316646837509775,
-            Long:  106.69167228504013,
+            Long: 106.69167228504013,
             rating: "4.5",
             reviews: "88",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipN8nF4xDNtnRY_DSuTpZMj0KLrwR0rAGtqzj-Fz=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2316,16 +2388,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Tennis Court Foresta",
+            Nama: "Tennis Court Foresta",
             subcategory: "Tennis Court",
             Website: "",
             Address: "PJ3W+9H8, Sampora, Cisauk, Tangerang Regency, Banten 15345, Indonesia",
             phoneNo: "",
-            Lat: -6.296368547251613, 
+            Lat: -6.296368547251613,
             Long: 106.64620776231153,
             rating: "3.0",
             reviews: "2",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=zk9ADTc1Zp_jxIohifZDvw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=284.63217&pitch=0&thumbfov=100"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2347,16 +2420,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Tennis Court The Icon BSD",
+            Nama: "Tennis Court The Icon BSD",
             subcategory: "Tennis Court",
             Website: "",
             Address: "MJPX+J5P, Sampora, Cisauk, Tangerang Regency, Banten 15345",
             phoneNo: "",
-            Lat: -6.3132154458137615, 
+            Lat: -6.3132154458137615,
             Long: 106.64827376174519,
             rating: "3.5",
             reviews: "8",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNXGntF4oSA0lR09u1Nv4WYU-UoA2SRqL7tTg6G=w408-h725-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2378,16 +2452,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "The Green Arena BSD",
+            Nama: "The Green Arena BSD",
             subcategory: "Tennis Court",
             Website: "",
             Address: "Manhattan Forum, Cilenggang, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "085797248331",
             Lat: -6.310841421320859,
-            Long:  106.6708633255226,
+            Long: 106.6708633255226,
             rating: "4.6",
             reviews: "62",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQ2jyZHosx2s00HuDFAnoI-8mpw6YVl8rKHgkp=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2409,16 +2484,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Vineyard",
+            Nama: "Vineyard",
             subcategory: "Tennis Court",
             Website: "",
             Address: "MMR7+4R6, Vineyard, The Green, BSD City, Cilenggang, Serpong Sub-District, South Tangerang City, Banten 15310",
             phoneNo: "",
             Lat: -6.309396084577214,
-            Long:  106.66435776747112,
+            Long: 106.66435776747112,
             rating: "4.1",
             reviews: "8",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNzJGGzZ6naPe_essSLmFra9grJoCiT3mzIg5zH=w408-h544-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2440,16 +2516,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Adya Yoga Paramhansa",
+            Nama: "Adya Yoga Paramhansa",
             subcategory: "Yoga Studio",
             Website: "https://adyayoga.id/",
             Address: "Foresta Business Loft 6. 1, Pagedangan, BSD, Kabupaten Tangerang, Banten 15331",
             phoneNo: "081319996060",
-            Lat: -6.286614698101103, 
+            Lat: -6.286614698101103,
             Long: 106.654487134717,
             rating: "5.0",
             reviews: "115",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPrsccb8A-nFA7_bhBoeBJGO0juRLJ4hQypi1-2=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -2471,16 +2548,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Carin Studio Villa Melati",
+            Nama: "Carin Studio Villa Melati",
             subcategory: "Yoga Studio",
             Website: "",
             Address: "Ruko Villa Melati Mas Blok SR 15 No 39 Lengkong Karya Kecamatan Serpong Utara, Lengkong Karya, Kec. Serpong, Kota Tangerang Selatan, Banten 15310, Indonesia",
             phoneNo: "081284687877",
             Lat: -6.272126655351971,
-            Long:  106.65656006415824,
+            Long: 106.65656006415824,
             rating: "4.4",
             reviews: "7",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPSh3pyHUVZVtKdwJQs1jkdQUnr5q8hhFpRM4Pd=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2502,16 +2580,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Fit Soul Studio",
+            Nama: "Fit Soul Studio",
             subcategory: "Yoga Studio",
             Website: "",
             Address: "PJ6Q+FVC, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia",
             phoneNo: "",
-            Lat: -6.288647565296252, 
+            Lat: -6.288647565296252,
             Long: 106.63979975805148,
-            rating: "4.2" ,
+            rating: "4.2",
             reviews: "12",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipM0NDfW7C88rm-nDj07ML1vmO5WMwQ7adw6D8HO=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -2533,16 +2612,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "INDIGO yoga",
+            Nama: "INDIGO yoga",
             subcategory: "Yoga Studio",
             Website: "https://www.instagram.com/rumah_u11/",
             Address: "Taman Galunggung No. U11, Taman Giri Loka, Lengkong Gudang Tim., Kec. Serpong, Bumi Serpong Damai, Banten 15310",
             phoneNo: "",
-            Lat: -6.287526118492511, 
-            Long: 106.68209481734738, 
+            Lat: -6.287526118492511,
+            Long: 106.68209481734738,
             rating: "4.2",
             reviews: "5",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=bHl1193oUC9UnVDd0mhi-w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=188.95705&pitch=0&thumbfov=100"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2564,16 +2644,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Kencana Yoga Space",
+            Nama: "Kencana Yoga Space",
             subcategory: "Yoga Studio",
             Website: "",
             Address: "Sektor XII, BSD, Jalan Garuda Kencana, J3/6, Ciater, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "085920106828",
-            Lat: -6.320404721431029, 
+            Lat: -6.320404721431029,
             Long: 106.68698814455745,
             rating: "4.8",
             reviews: "22",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMQA_Cy9i_SgzBF0awCk7v0JIcEH6fp2ngnuzI=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -2595,16 +2676,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Nala Studio BSD",
+            Nama: "Nala Studio BSD",
             subcategory: "Yoga Studio",
             Website: "",
             Address: "Ruko Barcelona, Jl. Letnan Sutopo, Rw. Mekar Jaya, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "08164721718",
-            Lat: -6.302593755795082, 
+            Lat: -6.302593755795082,
             Long: 106.68574056772046,
             rating: "5.0",
             reviews: "14",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipN0EXlglPCCzVk_2NZlEKZhVJgXEb83Z6D33Cul=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2626,16 +2708,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Treehaus Studio",
+            Nama: "Treehaus Studio",
             subcategory: "Yoga Studio",
             Website: "https://www.instagram.com/treehausyogastudio?igsh=MW8wY2xlNzhqYWZ2Mw==",
             Address: "Jl. Teras Golf 1, Lengkong Wetan, Serpong Sub-District, South Tangerang City, Banten 15310, Indonesia",
             phoneNo: "081317636963",
-            Lat: -6.281732140961109, 
+            Lat: -6.281732140961109,
             Long: 106.66168849058015,
-            rating: "5.0" ,
+            rating: "5.0",
             reviews: "42",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipO-jE2JOcZqXIeACJ_-pi3yU4r8edGqVtPExULP=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7.5,
@@ -2657,16 +2740,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "YOGALIU",
+            Nama: "YOGALIU",
             subcategory: "Yoga Studio",
             Website: "https://www.instagram.com/yogaliu.id",
             Address: "Jl. Vinca No.31, Lengkong Gudang Tim., Kec. Serpong, Kota Tangerang Selatan, Banten 15310, Indonesia",
             phoneNo: "+62 815-1415-6162",
             Lat: -6.298368291822533,
-            Long:  106.67689420038103,
+            Long: 106.67689420038103,
             rating: "4.9",
             reviews: "39",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMpkz4m7o4YTOB9WwULqEVF0h8hr5KqL6koidE=w427-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2688,16 +2772,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Ikigai",
+            Nama: "Ikigai",
             subcategory: "Massage &/ Spa",
             Website: "http://www.ikigaifamilymassage.com/",
             Address: "Ruko Tol Boulevard Blok D no 18, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "081196002220",
-            Lat: -6.3026595299121215, 
+            Lat: -6.3026595299121215,
             Long: 106.6709342713803,
             rating: "4.9",
             reviews: "2392",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMD1PXPLj6lHCf99JJfMACPLYfJKVvUDFPw1nXF=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -2719,16 +2804,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "PH Remedial Massage",
+            Nama: "PH Remedial Massage",
             subcategory: "Massage sakit & cedera",
             Website: "",
             Address: "R1, Akasa Pure Living Apt. Unit retail, Jl. Lengkong Gudang Timur Raya No.37, Kec. Serpong, BSD City, Banten 15310",
             phoneNo: "08111338137",
-            Lat: -6.296539039657287, 
+            Lat: -6.296539039657287,
             Long: 106.68649397339229,
             rating: "4.9",
             reviews: "171",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNjPqm_6dXcwhkjoH4DU9z8MABT8QrywnnhxwZ5=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 0,
@@ -2750,16 +2836,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Cendana Sehat Reflexy & Healthy Masssage BSD",
+            Nama: "Cendana Sehat Reflexy & Healthy Masssage BSD",
             subcategory: "Massage &/ Spa",
             Website: "",
             Address: "BSD City, Jalan BSD Raya Barat The Icon Business Park Block G-8, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345",
             phoneNo: "081295708979",
-            Lat: -6.31643873811186, 
-            Long: 106.65178005435783 ,
-            rating: "5.0" ,
+            Lat: -6.31643873811186,
+            Long: 106.65178005435783,
+            rating: "5.0",
             reviews: "60",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOuSgMTRZOp4FFeN8aCDxPZNJM41wqWEwGMqK5Q=w408-h631-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -2781,16 +2868,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Fun & Healthy Pijat & Refleksi keluarga BSD",
+            Nama: "Fun & Healthy Pijat & Refleksi keluarga BSD",
             subcategory: "Massage &/ Spa",
             Website: "",
             Address: "Jl. Ciater Bar. No.9B, RT.011/RW.001, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "081211145670",
-            Lat: -6.322568706432991, 
+            Lat: -6.322568706432991,
             Long: 106.68265684036609,
             rating: "4.7",
             reviews: "441",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMF7JtysHZThH2ae3v4jK5IMjds1uxtrIerPph4=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -2812,16 +2900,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Poetre Spa",
+            Nama: "Poetre Spa",
             subcategory: "Massage &/ Spa",
             Website: "",
             Address: "jalan ciater raya, blok B1 nomer 13 sektor 1.6, Griya Loka, BSD City, Rw. Buntu, Tanggerang Selatan, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "087808550355",
-            Lat: -6.307908099999985, 
+            Lat: -6.307908099999985,
             Long: 106.68070031484609,
             rating: "4.8",
             reviews: "170",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNbX1sc8zRf09uYtedr0FkK-gDwz86sTX7mrR3I=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9.5,
@@ -2843,16 +2932,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Segar Sehat BSD",
+            Nama: "Segar Sehat BSD",
             subcategory: "Massage &/ Spa",
             Website: "",
             Address: "Ruko Tol Boulevard Blok F 15-16, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "02153158215",
             Lat: -6.302115009777592,
-            Long:  106.6690304427104,
+            Long: 106.6690304427104,
             rating: "4.5",
             reviews: "157",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPI8tuCQ_3WCXtw1URzq6Gx9wjPuRk3hXiAmIg7=w408-h305-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -2874,16 +2964,17 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Mom n Jo BSD",
+            Nama: "Mom n Jo BSD",
             subcategory: "Massage &/ Spa Baby",
             Website: "http://www.momnjo.com/",
             Address: "BSD City, Ruko Bidex, Jl. Pahlawan Seribu No.17 Blok H, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15322",
             phoneNo: "0215387297",
-            Lat: -6.293468887749986, 
+            Lat: -6.293468887749986,
             Long: 106.6673800850399,
             rating: "4.6",
             reviews: "260",
-            IGFollowers: "IGFollowers"
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPOnK_9WhnBorq1ye4Rn4wB-2OkEWSZv3GBsamY=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -2905,16 +2996,433 @@ const detailsWellness = {
             }
         },
         {
-            Name: "Seminyak Wellness and Reflexology BSD",
+            Nama: "Seminyak Wellness and Reflexology BSD",
+            subcategory: "Massage &/ Spa",
+            Website: "https://lh5.googleusercontent.com/p/AF1QipMWfkkQ1dImlrFKrbtfw6VMgZuMobVMBkxglrUd=w426-h240-k-no",
+            Address: "BSD Modern Market, Ruko Jl. Letnan Sutopo No.1 blok A1Jalan, Rw. Mekar Jaya, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
+            phoneNo: "085217140123",
+            Lat: -6.305797167820911,
+            Long: 106.68611798314507,
+            rating: "5.0",
+            reviews: "1846",
+            IGFollowers: "IGFollowers",
+photoURL: ""
+            , allDay: false,
+            openingHours: {
+                Mon: 10,
+                Tue: 10,
+                Wed: 10,
+                Thu: 10,
+                Fri: 10,
+                Sat: 9,
+                Sun: 9,
+            },
+            closingHours: {
+                Mon: 21,
+                Tue: 21,
+                Wed: 21,
+                Thu: 21,
+                Fri: 21,
+                Sat: 22,
+                Sun: 22,
+            }
+        },
+        {
+            Nama: "Hanami Wellness and Reflexology BSD",
             subcategory: "Massage &/ Spa",
             Website: "",
-            Address: "",
+            Address: "Ruko Golden Madrid 2, Jl. Letnan Sutopo No.6 II blok F, Rw. Mekar Jaya, BSD, Kota Tangerang Selatan, Banten 15310",
+            phoneNo: "087889996800",
+            Lat: -6.304760286949765,
+            Long: 106.68607889479529,
+            rating: "4.9",
+            reviews: "65",
+            IGFollowers: "380",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMMpNt-31R74L_rLy_5oyVorWe_GwLW0Y9i16VS=w408-h544-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 9,
+                Tue: 9,
+                Wed: 9,
+                Thu: 9,
+                Fri: 9,
+                Sat: 9,
+                Sun: 9,
+            },
+            closingHours: {
+                Mon: 20.5,
+                Tue: 20.5,
+                Wed: 20.5,
+                Thu: 20.5,
+                Fri: 20.5,
+                Sat: 20.5,
+                Sun: 20.5,
+            }
+        },
+        {
+            Nama: "Fun & Healthy Pijat & Refleksi keluarga ITC BSD",
+            subcategory: "Massage &/ Spa",
+            Website: "",
+            Address: "dekat Lobby Selatan disamping Indomaret/Bank Mandiri, ITC BSD, Jl. Pahlawan Seribu No.12 Ruko Blok R16, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
+            phoneNo: "081222002285",
+            Lat: -6.286827550595936,
+            Long: 106.66489025431002,
+            rating: "4.9",
+            reviews: "208",
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMF7JtysHZThH2ae3v4jK5IMjds1uxtrIerPph4=w408-h306-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 9,
+                Tue: 9,
+                Wed: 9,
+                Thu: 9,
+                Fri: 9,
+                Sat: 9,
+                Sun: 9,
+            },
+            closingHours: {
+                Mon: 22,
+                Tue: 22,
+                Wed: 22,
+                Thu: 22,
+                Fri: 22,
+                Sat: 22,
+                Sun: 22,
+            }
+        },
+        {
+            Nama: "Kyonest Medical Baby Spa & Female Healthcare Center BSD",
+            subcategory: "Massage &/ Spa",
+            Website: "",
+            Address: "Jl. Cemara Ruko RF No.27, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
+            phoneNo: "08811306505",
+            Lat: -6.30570369052951,
+            Long: 106.68165425003939,
+            rating: "4.8",
+            reviews: "120",
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipM1c7jMWQHqfWe-xq1-ewq-QxQJ4kgaYif96iGX=w427-h240-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 8,
+                Tue: 8,
+                Wed: 8,
+                Thu: 8,
+                Fri: 8,
+                Sat: 8,
+                Sun: 8,
+            },
+            closingHours: {
+                Mon: 17,
+                Tue: 17,
+                Wed: 17,
+                Thu: 17,
+                Fri: 17,
+                Sat: 17,
+                Sun: 17,
+            }
+        },
+        {
+            Nama: "Kokuo Family Massage & Reflexology Aeon Mall BSD",
+            subcategory: "Massage &/ Spa",
+            Website: "http://www.kokuo.co.id/",
+            Address: "Jl. BSD Raya Utama, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15345",
+            phoneNo: "02122231983",
+            Lat: -6.304458006553491,
+            Long: 106.64277263528054,
+            rating: "4.6",
+            reviews: "708",
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMt6a0e3A9fAY3K9hN4Fn3ZO9H_pmZrVpAXk_kE=w408-h272-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 10,
+                Tue: 10,
+                Wed: 10,
+                Thu: 10,
+                Fri: 10,
+                Sat: 10,
+                Sun: 10,
+            },
+            closingHours: {
+                Mon: 22,
+                Tue: 22,
+                Wed: 22,
+                Thu: 22,
+                Fri: 22,
+                Sat: 22,
+                Sun: 22,
+            }
+        },
+        {
+            Nama: "TOP Massage",
+            subcategory: "Massage &/ Spa",
+            Website: "",
+            Address: "BSD City RB 1/9 Sektor 1.1, Jalan Hanjuang Raya, Rw. Buntu, Kec. Serpong, Kabupaten Tangerang, Banten 15151",
             phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
+            Lat: -6.304206534074179,
+            Long: 106.67985509389977,
+            rating: "4,2",
+            reviews: "101",
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-yopgEZ2_ym2H8J0sjCZ9PdKzyC_9LW4KfioX=w408-h544-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 8,
+                Tue: 8,
+                Wed: 8,
+                Thu: 8,
+                Fri: 8,
+                Sat: 8,
+                Sun: 8,
+            },
+            closingHours: {
+                Mon: 23,
+                Tue: 23,
+                Wed: 23,
+                Thu: 23,
+                Fri: 23,
+                Sat: 23,
+                Sun: 23,
+            }
+        },
+        {
+            Nama: "Aika Family Massage & Reflexology",
+            subcategory: "Massage &/ Spa",
+            Website: "",
+            Address: "jalan kalimantan blok f1 no 23, komplek nusaloka BSD city sektor 14, SERPONG, Rawa Mekar Jaya, Serpong Sub-District, BSD city, Banten 15310",
+            phoneNo: "02153192743",
+            Lat: -6.300113684852941,
+            Long: 106.68728750586436,
+            rating: "4.5",
+            reviews: "89",
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPIHyylX4dEi0fWEjjSUiqX6bFuChWELUWhwcqE=w426-h240-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 10,
+                Tue: 10,
+                Wed: 10,
+                Thu: 10,
+                Fri: 10,
+                Sat: 10,
+                Sun: 10,
+            },
+            closingHours: {
+                Mon: 22,
+                Tue: 22,
+                Wed: 22,
+                Thu: 22,
+                Fri: 22,
+                Sat: 22,
+                Sun: 22,
+            }
+        },
+        {
+            Nama: "Relaxion Reflexology BSD",
+            subcategory: "Massage &/ Spa",
+            Website: "",
+            Address: "BSD City, Ruko Barcelona, Jl. Letnan Sutopo No.33 Blok E9, Rw. Mekar Jaya, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
+            phoneNo: "085920751624",
+            Lat: -6.301925033672449,
+            Long: 106.68524696722407,
+            rating: "4.8",
+            reviews: "388",
+            IGFollowers: "5476",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOYiRMffmB4IR9lPm-7wPRIu8ox5OSvpK5gnMg5=w427-h240-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 10,
+                Tue: 10,
+                Wed: 10,
+                Thu: 10,
+                Fri: 10,
+                Sat: 10,
+                Sun: 10,
+            },
+            closingHours: {
+                Mon: 21,
+                Tue: 21,
+                Wed: 21,
+                Thu: 21,
+                Fri: 21,
+                Sat: 21,
+                Sun: 21,
+            }
+        },
+        {
+            Nama: "Martha Tilaar Salon Day Spa BSD",
+            subcategory: "Massage &/ Spa",
+            Website: "",
+            Address: "Ruko BSD Sektor VII, Blok RO No.83, BSD City, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
+            phoneNo: "085100421820",
+            Lat: -6.281346091072901,
+            Long: 106.66303609532149,
+            rating: "4.6",
+            reviews: "158",
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPKpN_OpK-YBjUVQgV7uOBJKAkmpLPRBwByTjLs=w427-h240-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 9,
+                Tue: 9,
+                Wed: 9,
+                Thu: 9,
+                Fri: 9,
+                Sat: 9,
+                Sun: 9,
+            },
+            closingHours: {
+                Mon: 20,
+                Tue: 20,
+                Wed: 20,
+                Thu: 20,
+                Fri: 20,
+                Sat: 20,
+                Sun: 20,
+            }
+        },
+        {
+            Nama: "Bersih Sehat BSD",
+            subcategory: "Massage &/ Spa",
+            Website: "",
+            Address: "Jl. Pahlawan Seribu, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
+            phoneNo: "0215386900",
+            Lat: -6.283085034728555,
+            Long: 106.66448612547501,
+            rating: "4.7",
+            reviews: "374",
+            IGFollowers: "IGFollowers",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipP1P7qXCNaRltxQUuT5sHeOzqyTA_N8WMzeA5NK=w408-h544-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 9,
+                Tue: 9,
+                Wed: 9,
+                Thu: 9,
+                Fri: 9,
+                Sat: 9,
+                Sun: 9,
+            },
+            closingHours: {
+                Mon: 22,
+                Tue: 22,
+                Wed: 22,
+                Thu: 22,
+                Fri: 22,
+                Sat: 22,
+                Sun: 22,
+            }
+        },
+        {
+            Nama: "Sukhmaraga Spa",
+            subcategory: "Massage &/ Spa",
+            Website: "https://linktr.ee/sukhmaragaspa",
+            Address: "Jl. Salvia 2 Jl. Griya Loka Raya No.31 Blok UA, BSD, Kec. Serpong, Kota Tangerang Selatan, Banten 15320",
+            phoneNo: "085179783339",
+            Lat: -6.248452451196494,
+            Long: 106.6698773476603,
+            rating: "4.7",
+            reviews: "54",
+            IGFollowers: "IGFollowers",
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOzWE2z-m80eSgv3U-CJCW9-nP5ylXSCfXFQ8d1=w408-h544-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 8,
+                Tue: 8,
+                Wed: 8,
+                Thu: 8,
+                Fri: 8,
+                Sat: 8,
+                Sun: 8,
+            },
+            closingHours: {
+                Mon: 21,
+                Tue: 21,
+                Wed: 21,
+                Thu: 21,
+                Fri: 21,
+                Sat: 21,
+                Sun: 21,
+            }
+        },
+        {
+            Nama: "Tosyma Pijat",
+            subcategory: "Massage &/ Spa",
+            Website: "",
+            Address: "Jl. Ambon Blok MA No.11, sektor 14-6 BSD City, Rw. Mekar Jaya, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
+            phoneNo: "085780002261",
+            Lat: -6.304925875693112,
+            Long: 106.70347010261747,
+            rating: "4.5",
+            reviews: "231",
+            IGFollowers: "IGFollowers",
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipP7CA4wOPly0YeGz1THhztZL_35oACBYwnjADQP=w408-h452-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 8,
+                Tue: 8,
+                Wed: 8,
+                Thu: 8,
+                Fri: 8,
+                Sat: 8,
+                Sun: 8,
+            },
+            closingHours: {
+                Mon: 23,
+                Tue: 23,
+                Wed: 23,
+                Thu: 23,
+                Fri: 23,
+                Sat: 23,
+                Sun: 23,
+            }
+        },
+        {
+            Nama: "Radja Reflexy dan Pijat Keluarga BSD",
+            subcategory: "Massage &/ Spa",
+            Website: "http://www.radjareflexy.co.id/",
+            Address: "BSD CITY,Ruko Golden Madrid 1 Blok B/3 Bumi Serpong Damai, Tanggerang, Kota Tangerang Selatan, Banten 15328",
+            phoneNo: "081389826110",
+            Lat: -6.303172474448749,
+            Long: 106.68529936596029,
+            rating: "4.7",
+            reviews: "30",
+            IGFollowers: "IGFollowers",
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNigOt3r1PmoXN2zvOcBtex3KbzzNDsaVqIkT4F=w408-h544-k-no"
+            , allDay: false,
+            openingHours: {
+                Mon: 9,
+                Tue: 9,
+                Wed: 9,
+                Thu: 9,
+                Fri: 9,
+                Sat: 9,
+                Sun: 9,
+            },
+            closingHours: {
+                Mon: 21,
+                Tue: 21,
+                Wed: 21,
+                Thu: 21,
+                Fri: 21,
+                Sat: 22,
+                Sun: 22,
+            }
+        },
+        {
+            Nama: "Chien Khang Thang Thai Reflexology Ararasa",
+            subcategory: "Massage &/ Spa",
+            Website: "http://www.cktararasa.com/",
+            Address: "Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331",
+            phoneNo: "081293398797",
+            Lat: -6.282047763164141,
+            Long: 106.63758697702926,
+            rating: "4.7",
+            reviews: "794",
+            IGFollowers: "IGFollowers",
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipN2xQ19sBNCD5sO1uKegBHHqh3KFSVhhR2oAE66=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2934,412 +3442,6 @@ const detailsWellness = {
                 Sat: 8,
                 Sun: 8,
             }
-        },
-        {
-            Name: "Hanami Wellness and Reflexology BSD",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Fun & Healthy Pijat & Refleksi keluarga ITC BSD",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Kyonest Medical Baby Spa & Female Healthcare Center BSD",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Kokuo Family Massage & Reflexology Aeon Mall BSD",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "TOP Massage",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Aika Family Massage & Reflexology",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Relaxion Reflexology BSD",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Martha Tilaar Salon Day Spa BSD",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Bersih Sehat BSD",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Sukhmaraga Spa",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Tosyma Pijat",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Radja Reflexy dan Pijat Keluarga BSD",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: "Chien Khang Thang Thai Reflexology Ararasa",
-            subcategory: "Massage &/ Spa",
-            Website: "",
-            Address: "",
-            phoneNo: "",
-            Lat: ,
-            Long: ,
-            rating: ,
-            reviews: "reviews",
-            IGFollowers: "IGFollowers"
-            , allDay: false,
-            openingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            },
-            closingHours: {
-                Mon: 8,
-                Tue: 8,
-                Wed: 8,
-                Thu: 8,
-                Fri: 8,
-                Sat: 8,
-                Sun: 8,
-            }
-        },
-        {
-            Name: ""
         }
     ]
 }

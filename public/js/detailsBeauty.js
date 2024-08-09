@@ -11,7 +11,8 @@ const detailsBeauty = {
             Long: 106.68463560204539,
             rating: "4.9",
             reviews: "131",
-            IGFollowers: ""
+            IGFollowers: "",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOAIcKG6NG-yKUtv6AQZ3BKBh-gM44Kzdr2FDDC=w422-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -42,7 +43,8 @@ const detailsBeauty = {
             Long: 106.66575009873027,
             rating: "4.2",
             reviews: "397",
-            IGFollowers: "366000"
+            IGFollowers: "366000",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNDFbworhhh_W2QoZdTXAnocxLczFkhUzpL9RXn=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -73,7 +75,8 @@ const detailsBeauty = {
             Long:  106.67093779673857,
             rating: "4.9",
             reviews: "113",
-            IGFollowers: "73600"
+            IGFollowers: "73600",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPZxFadJeONvmRycr2wt-fDvfvDwH_P3af3X_EK=w408-h612-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -104,7 +107,8 @@ const detailsBeauty = {
             Long:  106.66638108153458,
             rating: "4.9",
             reviews: "263",
-            IGFollowers: "2682"
+            IGFollowers: "2682",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNVSANGDalT9Bw-IUz4eTW302OzMdb_Dyfoxuxn=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -135,7 +139,8 @@ const detailsBeauty = {
             Long:  106.6822999545504,
             rating: "4.9",
             reviews: "456",
-            IGFollowers: "219000"
+            IGFollowers: "219000",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipN2OfJ1040RCvF_LmqPjcHPTq7N9WDZh91JIFqs=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -166,7 +171,8 @@ const detailsBeauty = {
             Long:  106.67161669502659,
             rating: "5",
             reviews: "307",
-            IGFollowers: "7529"
+            IGFollowers: "7529",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPVfTIReUH2uIFMF0yppSEY46fcNSS752TDh6ZL=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -197,7 +203,8 @@ const detailsBeauty = {
             Long:  106.6860228103708,
             rating: "4.9",
             reviews: "171",
-            IGFollowers: "96800"
+            IGFollowers: "96800",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbu2-xeqOPjQUgzU2AytjrE641qWyD3BfXPV_A=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9.5,
@@ -228,7 +235,8 @@ const detailsBeauty = {
             Long:  106.67290737451341,
             rating: "4.6",
             reviews: "113",
-            IGFollowers: "17800"
+            IGFollowers: "17800",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPIgXj8NIkGS6cImGzpBo7Rlt2Zd5e7cUpgebWy=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 0,
@@ -259,7 +267,8 @@ const detailsBeauty = {
             Long: 106.66301664291016,
             rating: "4.9",
             reviews: "54",
-            IGFollowers: "7961"
+            IGFollowers: "7961",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipO2NVa3mfmEvNrmrfNcR8TF0q_P2Npq3uFjKUnQ=w408-h408-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -290,7 +299,8 @@ const detailsBeauty = {
             Long: 106.67176986619079,
             rating: "4.5",
             reviews: "70",
-            IGFollowers: "11900"
+            IGFollowers: "11900",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPiRK7A9pH0N0do9j_8oae6i54hs9Vs2lqO3d60=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -321,7 +331,8 @@ const detailsBeauty = {
             Long: 106.66841731146769,
             rating: "4",
             reviews: "31",
-            IGFollowers: "48000"
+            IGFollowers: "48000",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipN_vtSRXyBjvO5unBsJMM_T7pzpTZe7VpvDPsD7=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -352,7 +363,8 @@ const detailsBeauty = {
             Long: 106.67065149264566,
             rating: "4.9",
             reviews: "346",
-            IGFollowers: ""
+            IGFollowers: "",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipP-g-3qkyeuPKJBKFA8Ih4fJ1jVtgMC0za9vGVb=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -383,7 +395,8 @@ const detailsBeauty = {
             Long:  106.66673473920655,
             rating: "4.9",
             reviews: "93",
-            IGFollowers: "11600"
+            IGFollowers: "11600",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOwhhJo0p8E9jovMN_X8uhALD-gYy7PxNmN_Wfz=w408-h296-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -414,7 +427,8 @@ const detailsBeauty = {
             Long:  106.65969146874016, 
             rating: "4.6",
             reviews: "168",
-            IGFollowers: "1290"
+            IGFollowers: "1290",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMXas4-5w9a0mfDx_OAtF1oxoAEebzEBX2k5KUu=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -445,7 +459,8 @@ const detailsBeauty = {
             Long: 106.64705976989438,
             rating: "4.9",
             reviews: "16",
-            IGFollowers: "22100"
+            IGFollowers: "22100",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMlc7f0wIYNroDiUOWcQ44L9MGboCCvRnDrC20o=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -476,7 +491,8 @@ const detailsBeauty = {
             Long: 106.66678452756634,
             rating: "4.9",
             reviews: "202",
-            IGFollowers: "5406"
+            IGFollowers: "5406",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNIh-XquvdEq0NOLtAJ10XwzZVgjcEPbU5xh54u=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -507,7 +523,8 @@ const detailsBeauty = {
             Long:  106.68575468523842,
             rating: "5",
             reviews: "94",
-            IGFollowers: "11800"
+            IGFollowers: "11800",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNVldKaiPPnzj2Yip4HODccF1QyTHOd_3uDWltw=w408-h408-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -538,7 +555,8 @@ const detailsBeauty = {
             Long: 106.6885402967386,
             rating: "4.2",
             reviews: "35",
-            IGFollowers: "79200"
+            IGFollowers: "79200",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNXAs9iKl1CpahZQfZ2qenF7L-zzucQvC4zZgE=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -569,7 +587,8 @@ const detailsBeauty = {
             Long:  106.6793700833865,
             rating: "4.4",
             reviews: "29",
-            IGFollowers: "3638"
+            IGFollowers: "3638",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMc8EsSw5Fofu0fUC39JV70w8o03bnfoaWvx7Jd=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -600,7 +619,8 @@ const detailsBeauty = {
             Long: 106.66441204846565,
             rating: "5",
             reviews: "554",
-            IGFollowers: "74300"
+            IGFollowers: "74300",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMSvS7pZNgsMUAviWU4URzg2Q8oC9fIWv5OiSYL=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -631,7 +651,8 @@ const detailsBeauty = {
             Long:  106.67170032571465,
             rating: "4.9",
             reviews: "15",
-            IGFollowers: "22100"
+            IGFollowers: "22100",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMzkCtZRnJjp2kVMJMinvmeNrvK7-llNSRRVxXf=w408-h303-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 0,
@@ -662,7 +683,8 @@ const detailsBeauty = {
             Long:  106.65827432571434,
             rating: "5",
             reviews: "38",
-            IGFollowers: "1632"
+            IGFollowers: "1632",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipOn7TJNpfvPc5rYVUDigsSNYAw5qx6ktoN7kULy=w408-h545-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -693,7 +715,8 @@ const detailsBeauty = {
             Long: 106.63881957822203,
             rating: "3.3",
             reviews: "3",
-            IGFollowers: "20000"
+            IGFollowers: "20000",
+photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=36Ewjjn8noZUtgBHy-Ksvw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=178.1125&pitch=0&thumbfov=100"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -724,7 +747,8 @@ const detailsBeauty = {
             Long: 106.68403736619081,
             rating: "5",
             reviews: "4",
-            IGFollowers: "755"
+            IGFollowers: "755",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPIv-cDVyjCUgXTDHTFX7yYwiP-u3Q_EA_NYxNQ=w408-h302-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -755,7 +779,8 @@ const detailsBeauty = {
             Long:  106.67283595455054,
             rating: "5",
             reviews: "34",
-            IGFollowers: "1485"
+            IGFollowers: "1485",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipPN0o-oo-DfaxxBEVGqZEzkE-HGDQbeqnWzjnp6=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 0,
@@ -786,7 +811,8 @@ const detailsBeauty = {
             Long: 106.66328935031747,
             rating: "4.8",
             reviews: "6",
-            IGFollowers: "502"
+            IGFollowers: "502",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMJu3wG_M6Sd-C8ZTxZs68qEghcq-1NKM9pqq8R=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -817,7 +843,8 @@ const detailsBeauty = {
             Long: 106.64379990736457,
             rating: "2.9",
             reviews: "9",
-            IGFollowers: "37500"
+            IGFollowers: "37500",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipNWosJgWj2TZXecM0U0aAngVDP4qdVwnK2GEai5=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -848,7 +875,8 @@ const detailsBeauty = {
             Long: 106.64061507359794,
             rating: "4.9",
             reviews: "48",
-            IGFollowers: "3847"
+            IGFollowers: "3847",
+photoURL: "https://lh5.googleusercontent.com/p/AF1QipMMNWaryayhubJgq2_leypEXbPFTntQRkGCfmfF=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -871,3 +899,5 @@ const detailsBeauty = {
         }
     ]
 }
+
+export default detailsBeauty;
