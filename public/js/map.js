@@ -94,7 +94,10 @@ let infowindow;
 let currentSelection;
 let ratingFilterNumber = 0; //At the start they want it to be anywhere
 let openingHoursFilter = "Anytime"; //And anytime
+let instaCheck = false;
+let specificDayCheck = false;
 let markers = [];
+
 const mapCenter = { lat: -6.302630388, lng: 106.6505807 };
 
 function loadGoogleMapsAPI(apiKey, callback) {
@@ -396,7 +399,7 @@ function createCenterControl(map) {
         const promoFilter = document.getElementById("promoFilter");
         const ratingFilter = document.getElementById("ratingFilter");
         const hourFilter = document.getElementById("hourFilter");
-
+        const socialFilter = document.getElementById("socialFilter");
         lessFilters.style.zIndex = "2";
         lessFilters.style.width = "100%";
         lessFilters.style.padding = "0 5px";
@@ -413,6 +416,10 @@ function createCenterControl(map) {
         hourFilter.style.width = "100%";
         hourFilter.style.padding = "0 5px";
         hourFilter.classList.add("px-2");
+        socialFilter.style.zIndex = "2";
+        socialFilter.style.width = "100%";
+        socialFilter.style.padding = "0 5px";
+        socialFilter.classList.add("px-2");
         moreFilters.style.zIndex = -1000;
         moreFilters.style.width = "0px";
         moreFilters.style.padding = "0px";
@@ -541,7 +548,6 @@ function createCenterControl(map) {
     const openingHoursContainer = document.createElement("div");
     openingHoursContainer.id = "openingHoursContainer";
     openingHoursContainer.classList.add("flex-column", "d-flex");
-    openingHoursContainer.style.margin = "8px 0 22px";
     openingHoursContainer.style.fontSize = "16px";
     openingHoursContainer.style.lineHeight = "12px";
     openingHoursContainer.style.display = "none";
@@ -574,49 +580,135 @@ function createCenterControl(map) {
     specificDayOption.id = "specificDayOptionButton";
     specificDayOption.innerHTML = "Specific";
     specificDayOption.classList.add("openingHourSize")
-    // openingHoursContainer.appendChild(specificDayOption);
+    openingHoursContainer.appendChild(specificDayOption);
 
 
     //the more specific selection
     const specificSelectionContainer = document.createElement("div");
     specificSelectionContainer.classList.add("specific-selection");
+    specificSelectionContainer.style.display = "none";
 
     const daySelect = document.createElement("select");
+    daySelect.id = "daySelect";
+    daySelect.style.width = "120px";
     daySelect.disabled = true;
     const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    const hours = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
     days.forEach(day => {
         const option = document.createElement("option");
         option.value = day;
         option.innerHTML = day;
         daySelect.appendChild(option);
     });
+    daySelect.onchange = onDateChange();
     specificSelectionContainer.appendChild(daySelect);
 
-    const openingTimeInput = document.createElement("input");
+    const openingTimeInput = document.createElement("select");
     openingTimeInput.disabled = true;
     openingTimeInput.id = "openingTimeInput";
-    openingTimeInput.type = "time";
-    openingTimeInput.classList.add("openingHourSize")
+    openingTimeInput.style.width = "120px";
+    hours.forEach(hour => {
+        const option = document.createElement("option");
+        option.value = hour;
+        option.innerHTML = hour;
+        openingTimeInput.appendChild(option);
+    });    
+    openingTimeInput.onchange = onDateChange();
+    // openingTimeInput.classList.add("openingHourSize")
     specificSelectionContainer.appendChild(openingTimeInput);
 
-    const closingTimeInput = document.createElement("input");
+    const closingTimeInput = document.createElement("select");
     closingTimeInput.disabled = true;
     closingTimeInput.id = "closingTimeInput";
-    closingTimeInput.type = "time";
-    closingTimeInput.classList.add("openingHourSize")
+    closingTimeInput.style.width = "120px";
+    hours.forEach(hour => {
+        const option = document.createElement("option");
+        option.value = hour;
+        option.innerHTML = hour;
+        closingTimeInput.appendChild(option);
+    });      
+    closingTimeInput.onchange = onDateChange();
+    // closingTimeInput.classList.add("openingHourSize")
     specificSelectionContainer.appendChild(closingTimeInput);
 
-    // openingHoursContainer.appendChild(specificSelectionContainer);
+    const applyButton = document.createElement("button");
+    applyButton.id = "applyButton";
+    applyButton.innerHTML = "Search";
+    applyButton.classList.add("openingHourSize")
+    // specificSelectionContainer.appendChild(applyButton);
+
+    openingHoursContainer.appendChild(specificSelectionContainer);
     openingHourstContainerContainer.appendChild(openingHoursContainer);
     hourFilter.appendChild(openingHourstContainerContainer);
+
+    specificDayOption.addEventListener("click", () => {
+        if(specificSelectionContainer.style.display === "none"){
+            specificSelectionContainer.style.display = "block";
+            daySelect.disabled = false;
+            openingTimeInput.disabled = false;
+            closingTimeInput.disabled = false;
+        } else {
+            specificSelectionContainer.style.display = "none";
+            daySelect.disabled = true;
+            openingTimeInput.disabled = true;
+            closingTimeInput.disabled = true;
+        }
+    });
 
     hourButton.addEventListener("click", () => {
         if (openingHourstContainerContainer.style.display === "none") {
             openingHourstContainerContainer.style.display = "block";
         } else {
             openingHourstContainerContainer.style.display = "none";
-    }});
-    //Social???
+        }
+    });
+    //Social
+    const socialFilterContainer = document.createElement("div");
+    const socialFilter = document.createElement("div");
+    socialFilter.id = "socialFilter";
+    socialFilter.classList.add("flex-column");
+    socialFilter.classList.add("d-flex")
+    socialFilter.style.margin = "8px 0 22px";
+    socialFilter.style.fontSize = "16px";
+    socialFilter.style.lineHeight = "12px";
+    socialFilter.style.display = "none";
+    socialFilter.style.zIndex = -1000;
+    socialFilter.style.position = "relative";
+    socialFilter.style.width = "0px";
+
+    const socialButton = document.createElement("button");
+    socialButton.classList.add("dropbtn");
+    socialButton.innerHTML = "Socials";
+    socialFilter.appendChild(socialButton);
+    socialFilterContainer.appendChild(socialFilter);
+
+    
+    const socialButtonContent = document.createElement("div");
+    socialButtonContent.id = "beautyDropdown";
+    socialButtonContent.classList.add("vertical-menu");
+    socialButtonContent.style.display = "none";
+    socialFilter.appendChild(socialButtonContent);
+
+    const instaOption = document.createElement("button");
+    instaOption.id = "instaOptionButton";
+    instaOption.innerHTML = "Instagram";
+    instaOption.classList.add("openingHourSize")
+    instaOption.style.margin = "2.5px auto";
+    socialButtonContent.appendChild(instaOption);
+
+    socialButton.addEventListener("click", () => {
+        if (socialButtonContent.style.display === "none") {
+            socialButtonContent.style.display = "block";
+        } else {
+            socialButtonContent.style.display = "none";
+        }
+    });
+
+    instaOption.addEventListener("click", () => {
+        toggleInstragram();
+    });
+
+
     //Less Filter More Filter Button
     const lessFiltersContainer = document.createElement("div");
     const lessFilters = document.createElement("div");
@@ -640,6 +732,7 @@ function createCenterControl(map) {
         const ratingFilter = document.getElementById("ratingFilter");
         const hourFilter = document.getElementById("hourFilter");
         const moreFilters = document.getElementById("moreFilters");
+        const socialFilter = document.getElementById("socialFilter");
         moreFilters.style.zIndex = "2";
         moreFilters.style.width = "100%";
         moreFilters.style.padding = "0 5px";
@@ -656,6 +749,10 @@ function createCenterControl(map) {
         hourFilter.style.width = "0px";
         hourFilter.style.padding = "0px";
         hourFilter.classList.remove("px-2");
+        socialFilter.style.zIndex = -1000;
+        socialFilter.style.width = "0px";
+        socialFilter.style.padding = "0px";
+        socialFilter.classList.remove("px-2");
         lessFilters.style.zIndex = -1000;
         lessFilters.style.width = "0px";
         lessFilters.style.padding = "0px";
@@ -669,12 +766,10 @@ function createCenterControl(map) {
     controlDiv.appendChild(promoFilterContainer);
     controlDiv.appendChild(ratingFilterContainer);
     controlDiv.appendChild(hourFilterContainer);
+    controlDiv.appendChild(socialFilterContainer);
     controlDiv.appendChild(lessFiltersContainer);
-
-
     return controlDiv;
 }
-// Function to find places based on the type
 async function findPlace(type) {
 
     if (currentSelection == type) {
@@ -684,7 +779,6 @@ async function findPlace(type) {
         currentSelection = type;
         deleteMarkers();
     }
-
 
 
     if (!service) {
@@ -722,134 +816,61 @@ async function findPlace(type) {
     // });
     processResultsLocal(type, map);
 }
-// async function processResults(type, map, polygon) {
-//     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-
-//     for (let i = results.length - 1; i >= 0; i--) {
-//         const currentPlace = results[i]
-//         console.log(results[i])
-//         if (currentPlace.types[0] !== type[0]) {
-//             console.log("Type Mismatch: ", currentPlace.types[0], " vs ", type)
-//         } else {
-//             console.log("Type Match: ", currentPlace.types[0], " vs ", type)
-//             if (google.maps.geometry.poly.containsLocation(currentPlace.geometry.location, polygon)) {
-//                 const placeId = currentPlace.place_id;
-//                 const cachedDetails = localStorage.getItem(placeId); //Fuck it we cache
-//                 if (currentPlace.photos && currentPlace.photos.length > 0) {
-//                     currentPlace.photoUrl = currentPlace.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 });
-//                     //marker.content.style.backgroundImage = `url(${currentPlace.photoUrl})`;
-//                 } else {
-//                     currentPlace.photoUrl = null;
-//                 }
-//                 if (cachedDetails) {
-//                     console.log("Cache Data present")
-//                     const placeDetails = JSON.parse(cachedDetails);
-//                     currentPlace.website = placeDetails.website; //THESE TWO, cost the most. 0.020 USD per call! THats like, 1.2 Dollars per click! So DONT use PLACE DETAILS AHHHH
-//                     currentPlace.photoUrl = placeDetails.photoUrl;
-//                     const marker = new AdvancedMarkerElement({
-//                         map: map,
-//                         content: buildContent(currentPlace, type),
-//                         position: currentPlace.geometry.location
-//                     });
-//                     marker.addListener("click", () => {
-//                         toggleHighlight(marker, currentPlace);
-//                     });
-//                     marker.rating = currentPlace.rating;
-//                     marker.openingHours = currentPlace.opening_hours;
-//                     markers.push(marker);
-//                 } else {
-//                     const marker = new AdvancedMarkerElement({
-//                         map: map,
-//                         content: buildContent(currentPlace, type),
-//                         position: currentPlace.geometry.location
-//                     });
-//                     marker.addListener("click", async () => {
-//                         console.log("Getting Data!")
-//                         const choseNamed = currentPlace.name.toLowerCase();
-//                         //console.log(choseNamed)
-//                         for (i in knownWebsites) {
-//                             //console.log(knownWebsites[i][0].toLowerCase())
-//                             if (choseNamed == knownWebsites[i][0].toLowerCase()) {
-//                                 const websiteContainer = document.getElementById(`${placeId}-website`);
-//                                 websiteContainer.innerHTML = `
-//                                             <div>
-//                                                  <a href="${websiteContainer.website}" target="_blank">Website</a>               
-//                                              </div>
-//                                          `
-//                             }
-//                         }
-//                         toggleHighlight(marker, currentPlace);
-//                     });
-//                     marker.rating = currentPlace.rating;
-//                     marker.openingHours = currentPlace.opening_hours;
-//                     //console.log(currentPlace.opening_hours.isOpen.length)
-//                     markers.push(marker);
-//                 }
-//             }
-//         }
-//         //currentPlace.moreDetails = new google.maps.places.Place(currentPlace.id);
-//     }
-
-//     if (results.length > 0) {
-//         //console.log(results.length)
-//         // map.setCenter(-6.2926352615305315, 106.64603487500078);
-//         map.setZoom(14);
-//     }
-
-// }
-
 async function processResultsLocal(type, map) {
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
     deleteMarkers();
-    if( type == "Rumah Sakit"|| type == "klinik medical" || type == "klinik ibu & anak" || type == "klinik gigi" || type == "Klinik Fisioterapi" || type == "Klinik Tumbuh Kembang Anak" || type == "Laboratorium"){ 
+    if (type == "Rumah Sakit" || type == "klinik medical" || type == "klinik ibu & anak" || type == "klinik gigi" || type == "Klinik Fisioterapi" || type == "Klinik Tumbuh Kembang Anak" || type == "Laboratorium") {
         for (let i = 0; i < detailsMedical.info.length; i++) {
             const currentPlace = detailsMedical.info[i];
             if (currentPlace.subcategory !== type) {
                 console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type)
             } else {
                 console.log("Type Match: ", currentPlace.subcategory, " vs ", type)
-                    const marker = new AdvancedMarkerElement({
-                        map: map,
-                        content: buildContent(currentPlace, type),
-                        position: { lat: currentPlace.Lat, lng: currentPlace.Long }
-                    });
-                    marker.addListener("click", () => {
-                        toggleHighlight(marker, currentPlace);
-                    });
-                    marker.name = currentPlace.Nama;
-                    marker.rating = currentPlace.rating;
-                    marker.openingHours = currentPlace.openingHours;
-                    marker.closingHours = currentPlace.closingHours;
-                    marker.allDay = currentPlace.allDay;
-                    marker.IGFollowers = currentPlace.IGFollowers;
-                    markers.push(marker);
+                const marker = new AdvancedMarkerElement({
+                    map: map,
+                    content: buildContent(currentPlace, type),
+                    position: { lat: currentPlace.Lat, lng: currentPlace.Long }
+                });
+                marker.addListener("click", () => {
+                    toggleHighlight(marker, currentPlace);
+                    //console.log(currentPlace.photoURL)
+                });
+                marker.name = currentPlace.Nama;
+                marker.rating = currentPlace.rating;
+                marker.openingHours = currentPlace.openingHours;
+                marker.closingHours = currentPlace.closingHours;
+                marker.allDay = currentPlace.allDay;
+                marker.IGFollowers = currentPlace.IGFollowers;
+                markers.push(marker);
 
             }
         }
     }
 
-    if ( type == "Basket Ball Court" || type == "Club House" || type == "Gym" || type == "Pilates Studio" || type == "Stadion" || type == "Swimming Pool" || type == "Tennis Court" || type == "Yoga Studio" || type == "Massage &/ Spa" || type == "Massage sakit & cedera" || type == "Massage &/ Spa Baby") {
+    if (type == "Basket Ball Court" || type == "Club House" || type == "Gym" || type == "Pilates Studio" || type == "Stadion" || type == "Swimming Pool" || type == "Tennis Court" || type == "Yoga Studio" || type == "Massage &/ Spa" || type == "Massage sakit & cedera" || type == "Massage &/ Spa Baby") {
         for (let i = 0; i < detailsWellness.info.length; i++) {
             const currentPlace = detailsWellness.info[i];
             if (currentPlace.subcategory !== type) {
                 console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type)
             } else {
                 console.log("Type Match: ", currentPlace.subcategory, " vs ", type)
-                    const marker = new AdvancedMarkerElement({
-                        map: map,
-                        content: buildContent(currentPlace, type),
-                        position: { lat: currentPlace.Lat, lng: currentPlace.Long }
-                    });
-                    marker.addListener("click", () => {
-                        toggleHighlight(marker, currentPlace);
-                    });
-                    marker.name = currentPlace.Nama;
-                    marker.rating = currentPlace.rating;
-                    marker.openingHours = currentPlace.openingHours;
-                    marker.closingHours = currentPlace.closingHours;
-                    marker.allDay = currentPlace.allDay;
-                    marker.IGFollowers = currentPlace.IGFollowers;
-                    markers.push(marker);            }
+                const marker = new AdvancedMarkerElement({
+                    map: map,
+                    content: buildContent(currentPlace, type),
+                    position: { lat: currentPlace.Lat, lng: currentPlace.Long }
+                });
+                marker.addListener("click", () => {
+                    toggleHighlight(marker, currentPlace);
+                   // console.log(currentPlace.photoURL)
+                });
+                marker.name = currentPlace.Nama;
+                marker.rating = currentPlace.rating;
+                marker.openingHours = currentPlace.openingHours;
+                marker.closingHours = currentPlace.closingHours;
+                marker.allDay = currentPlace.allDay;
+                marker.IGFollowers = currentPlace.IGFollowers;
+                markers.push(marker);
+            }
         }
     }
 
@@ -860,21 +881,23 @@ async function processResultsLocal(type, map) {
                 console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type)
             } else {
                 console.log("Type Match: ", currentPlace.subcategory, " vs ", type)
-                    const marker = new AdvancedMarkerElement({
-                        map: map,
-                        content: buildContent(currentPlace, type),
-                        position: { lat: currentPlace.Lat, lng: currentPlace.Long }
-                    });
-                    marker.addListener("click", () => {
-                        toggleHighlight(marker, currentPlace);
-                    });                    
-                    marker.name = currentPlace.Nama;
-                    marker.rating = currentPlace.rating;
-                    marker.openingHours = currentPlace.openingHours;
-                    marker.closingHours = currentPlace.closingHours;
-                    marker.allDay = currentPlace.allDay;
-                    marker.IGFollowers = currentPlace.IGFollowers;
-                    markers.push(marker);            }
+                const marker = new AdvancedMarkerElement({
+                    map: map,
+                    content: buildContent(currentPlace, type),
+                    position: { lat: currentPlace.Lat, lng: currentPlace.Long }
+                });
+                marker.addListener("click", () => {
+                    toggleHighlight(marker, currentPlace);
+                    //console.log(currentPlace.photoURL)
+                });
+                marker.name = currentPlace.Nama;
+                marker.rating = currentPlace.rating;
+                marker.openingHours = currentPlace.openingHours;
+                marker.closingHours = currentPlace.closingHours;
+                marker.allDay = currentPlace.allDay;
+                marker.IGFollowers = currentPlace.IGFollowers;
+                markers.push(marker);
+            }
         }
     }
 
@@ -884,26 +907,36 @@ function buildContent(property, type) {
     //console.log(property)
     content.classList.add("property");
     content.classList.add("rounded-3");
-    if (property.photoURL) {
-        content.style.backgroundImage = `url(${property.photoURL})`;
+    if (property.photoURL.length > 0) {
+        //console.log(property.photoURL)
+        content.style.backgroundImage = `url(${property.photoURL}), url("../img/noImage.png")`;
+        content.style.backgroundPosition = "center top";
+        content.style.backgroundSize = "contain"
     } else {
         content.style.backgroundImage = `url("../img/noImage.png")`;
-
+        content.style.backgroundPosition = "center top";
+        content.style.backgroundSize = "contain"
     }
     content.innerHTML = `
-        <div class="icon rounded-3">
+        <div class="icon rounded-3 ${instaCheck ? "": "active"}" style =" ${instaCheck ? "opacity: 0;": "opacity: 1;"}">
             <i aria-hidden="true" class="fa fa-icon ${typeIconProcessor(property.subcategory)}" title="${property.Nama}"></i>
             <span class="fa-sr-only">${property.Nama}</span>
         </div>
-        <div class="details-container">
+        <div class="rounded-4 insta-container ${instaCheck ? "active": ""}"  style =" ${instaCheck ? "opacity: 1;": "opacity: 0;"}">
+            <div class="mt-1">
+                <span class="mt-2" style="color: rgb(225, 48, 108); font-size: 12px"><center>${property.IGFollowers == "IGFollowers" ? 0 : property.IGFollowers}</center></span>
+            </div>
+        </div>
+        <div class="details-container" >
             <div class="details">
                 <div class="price">${property.Nama}</div>
+                <div class="time">${timeOpenProcessor(property)}</div>
                 <div class="address">${property.Address}</div>
                 <div class="features">
                      <div>
                         <i aria-hidden="true" class="fa fa-star fa-lg star" title="size"></i>
                         <span class="fa-sr-only">size</span>
-                        <span>${property.rating ? `Rating: ${generateStars(property.rating)} | ${property.rating} Stars` : 'No rating available'}</span>
+                        <span>${property.rating ? `Rating: ${generateStars(property.rating)} | ${property.rating}` : 'No rating available'} (${property.reviews})</span>
                     </div>
                     <div>
                         <i aria-hidden="true" class="fa fa-bed fa-lg bed" title="bedroom"></i>
@@ -939,33 +972,71 @@ function deleteMarkers() {
     markers = [];
 }
 function toggleHighlight(markerView, property) {
-
     markers.forEach(view => {
-        if(view.name != markerView.name) {
+        if (view.name != markerView.name) {
             const otherInnerDiv = view.content.querySelector('.details-container');
-            const otherIconDiv =  view.content.querySelector('.icon');
+            const otherIconDiv = view.content.querySelector('.icon');
+            const otherInstaDiv = view.content.querySelector('.insta-container');
             view.content.classList.remove("highlight");
             view.zIndex = null;
             otherInnerDiv.style.opacity = 0;
-            otherIconDiv.style.opacity = 1;
+            if(otherIconDiv.classList.contains("active")){
+                otherIconDiv.style.opacity = 1;
+            } else if (otherInstaDiv.classList.contains("active")){
+                otherInstaDiv.style.opacity = 1;
+            } else {
+                otherIconDiv.style.opacity = 1;
+            }
         }
     });
     const innerDiv = markerView.content.querySelector('.details-container');
     const iconDiv = markerView.content.querySelector('.icon');
+    const instaDiv = markerView.content.querySelector('.insta-container')
     //console.log(innerDiv)
     if (markerView.content.classList.contains("highlight")) {
         markerView.content.classList.remove("highlight");
         markerView.zIndex = null;
         innerDiv.style.opacity = 0;
-        iconDiv.style.opacity = 1;
+        if(iconDiv.classList.contains("active")){
+            iconDiv.style.opacity = 1;
+        } else if (instaDiv.classList.contains("active")){
+            instaDiv.style.opacity = 1;
+        } else {
+            iconDiv.style.opacity = 1;
+        }
 
     } else {
         markerView.content.classList.add("highlight");
         markerView.zIndex = 100;
         innerDiv.style.opacity = 1;
-        iconDiv.style.opacity = 0;
+        if(iconDiv.classList.contains("active")){
+            iconDiv.style.opacity = 0;
+        } else if (instaDiv.classList.contains("active")){
+            instaDiv.style.opacity = 0;
+        } else {
+            iconDiv.style.opacity = 0;
+        }
 
     }
+}
+function toggleInstragram() {
+    instaCheck = !instaCheck;
+    markers.forEach(view => {
+        const instaDiv = view.content.querySelector('.insta-container');
+        const iconDiv = view.content.querySelector('.icon');
+        if (iconDiv.classList.contains("active")) {
+            iconDiv.classList.remove("active");
+            instaDiv.classList.add("active");
+            instaDiv.style.opacity = 1;
+            iconDiv.style.opacity = 0;
+
+        } else {
+            instaDiv.classList.remove("active");
+            iconDiv.classList.add("active");
+            instaDiv.style.opacity = 0;
+            iconDiv.style.opacity = 1;
+        }
+    })
 }
 function generateStars(rating) {
     const fullStar = '<span class="gold-star">★</span>';
@@ -978,7 +1049,11 @@ function generateStars(rating) {
 
     return stars;
 }
+function onDateChange() {
+    return filterMarkers(markers); //Because onchange is nuts
+}
 function filterMarkers(markers) {
+    console.log("Called")
     markers.forEach(marker => {
         const rating = marker.rating;
         const openingHours = marker.openingHours;
@@ -989,7 +1064,7 @@ function filterMarkers(markers) {
             showMarker = false;
         }
 
-        if(ratingFilterNumber > 0 && !rating) {
+        if (ratingFilterNumber > 0 && !rating) {
             showMarker = false;
         }
 
@@ -998,18 +1073,18 @@ function filterMarkers(markers) {
             const day = now.getDay(); // 0 (Sunday) to 6 (Saturday)
             const time = now.getHours() * 60 + now.getMinutes(); // Minutes since midnight
 
-            if(marker.openingHours != null) {
+            if (marker.openingHours != null) {
                 if (openingHoursFilter === "Now") {
                     if (marker.allDay == true) {
                         showMarker = true;
                     } else {
                         const d = new Date();
                         const day = d.getDay();
-                        console.log(day)
-                        switch(day) {
+                        // console.log(day)
+                        switch (day) {
                             case 1:
                                 if (marker.openingHours.Mon > d.getHours() || marker.closingHours.Mon < d.getHours()) {
-                                    
+
                                     showMarker = false;
                                 }
                                 break;
@@ -1030,8 +1105,8 @@ function filterMarkers(markers) {
                                 break;
                             case 5:
                                 if (marker.openingHours.Fri > d.getHours() || marker.closingHours.Fri < d.getHours()) {
-                                    console.log("Current Time: ", d.getHours(), " Opening Times: ", marker.openingHours.Fri, " Closing Hours: ", marker.openingHours.Fri)
-    
+                                    // console.log("Current Time: ", d.getHours(), " Opening Times: ", marker.openingHours.Fri, " Closing Hours: ", marker.openingHours.Fri)
+
                                     showMarker = false;
                                 }
                                 break;
@@ -1049,7 +1124,7 @@ function filterMarkers(markers) {
                                 showMarker = false;
                         }
                     }
-                    
+
 
                 } else if (openingHoursFilter === "24 Hours") {
                     if (!marker.allDay) {
@@ -1057,13 +1132,57 @@ function filterMarkers(markers) {
                     }
 
                 } else {
-                    const [filterDay, filterOpeningTime, filterClosingTime] = openingHoursFilter.split(",");
-                    const filterDayIndex = days.indexOf(filterDay); //I hate this
-                    const filterOpeningMinutes = convertTimeToMinutes(filterOpeningTime);
-                    const filterClosingMinutes = convertTimeToMinutes(filterClosingTime);
-    
-                    if (!isOpenDuringSpecificTime(openingHours, filterDayIndex, filterOpeningMinutes, filterClosingMinutes)) {
-                        showMarker = false;
+                }
+                if (specificDayCheck) {
+                    const specificDay = document.getElementById("daySelect").value;
+                    const specificOpeningTime = document.getElementById("openingTimeInput").value;
+                    const specificClosingTime = document.getElementById("closingTimeInput").value;
+                    switch (specificDay) {
+                        case "Monday":
+                            if (marker.openingHours.Mon < specificOpeningTime || marker.closingHours.Mon > specificClosingTime) {
+                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Monday")
+                                showMarker = false;
+                            }
+                            break;
+                        case "Tuesday":
+                            if (marker.openingHours.Tue < specificOpeningTime || marker.closingHours.Tue > specificClosingTime) {
+                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Tuesday")
+                                showMarker = false;
+                            }
+                            break;
+                        case "Wednesday":
+                            if (marker.openingHours.Wed < specificOpeningTime || marker.closingHours.Wed > specificClosingTime) {
+                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Wednesday")
+                                showMarker = false;
+                            }
+                            break;
+                        case "Thursday":
+                            if (marker.openingHours.Thu < specificOpeningTime || marker.closingHours.Thu > specificClosingTime) {
+                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Thursday")
+                                showMarker = false;
+                            }
+                            break;
+                        case "Friday":
+                            if (marker.openingHours.Fri < specificOpeningTime || marker.closingHours.Fri > specificClosingTime) {
+                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Friday")
+
+                                showMarker = false;
+                            }
+                            break;
+                        case "Saturday":
+                            if (marker.openingHours.Sat < specificOpeningTime || marker.closingHours.Sat > specificClosingTime) {
+                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Saturday")
+                                showMarker = false;
+                            }
+                            break;
+                        case "Sunday":
+                            if (marker.openingHours.Sun < specificOpeningTime || marker.closingHours.Sun > specificClosingTime) {
+                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Sunday")
+                                showMarker = false;
+                            }
+                            break;
+                        default:
+                            showMarker = false;
                     }
                 }
             } else {
@@ -1092,7 +1211,7 @@ function typeIconProcessor(type) {
         case "klinik gigi":
             return "fa-tooth";
         case "Klinik Fisioterapi":
-            return  "fa-crutch";
+            return "fa-crutch";
         case "Klinik Tumbuh Kembang Anak":
             return "fa-child";
         case "Laboratorium":
@@ -1106,7 +1225,7 @@ function typeIconProcessor(type) {
         case "Club House":
             return "fa-house";
         case "Gym":
-            return "fa-dumbbell"; ;
+            return "fa-dumbbell";;
         case "Pilates Studio":
             return "fa-person-walking";
         case "Stadion":
@@ -1114,7 +1233,7 @@ function typeIconProcessor(type) {
         case "Swimming Pool":
             return "fa-person-swimming";
         case "Tennis Court":
-            return "fatable-tennis-paddle-ball";
+            return "fa-table-tennis-paddle-ball";
         case "Yoga Studio":
             return "fa-person";
         case "Massage &/ Spa":
@@ -1127,13 +1246,62 @@ function typeIconProcessor(type) {
             return "fa-question";
     }
 }
-
-
+function timeOpenProcessor(place) {
+    if (place.allDay == true) {
+        return "<span>Open 24 Hours</span>"
+    } else {
+        const d = new Date();
+        const day = d.getDay();
+        switch (day) {
+            case 1:
+                if (place.openingHours.Mon - place.closingHours.Mon == 0) {
+                    return `<span>Closed Today</span>`
+                } else {
+                    return `<span>Open: ${place.openingHours.Mon} AM - ${place.closingHours.Mon > 12 ? place.closingHours.Mon - 12 : place.closingHours.Mon} PM</span>`
+                }
+            case 2:
+                if (place.openingHours.Tue - place.closingHours.Tue == 0) {
+                    return `<span>Closed Today</span>`
+                } else {
+                    return `<span>Open: ${place.openingHours.Tue} AM - ${place.closingHours.Tue > 12 ? place.closingHours.Tue - 12 : place.closingHours.Tue} PM</span>`
+                }
+            case 3:
+                if (place.openingHours.Wed - place.closingHours.Wed == 0) {
+                    return `<span>Closed Today</span>`
+                } else {
+                    return `<span>Open: ${place.openingHours.Wed} AM - ${place.closingHours.Wed > 12 ? place.closingHours.Wed - 12 : place.closingHours.Wed} PM</span>`
+                }
+            case 4:
+                if (place.openingHours.Thu - place.closingHours.Thu == 0) {
+                    return `<span>Closed Today</span>`
+                } else {
+                    return `<span>Open: ${place.openingHours.Thu} AM - ${place.closingHours.Thu > 12 ? place.closingHours.Thu - 12 : place.closingHours.Thu} PM</span>`
+                }
+            case 5:
+                if (place.openingHours.Fri - place.closingHours.Fri == 0) {
+                    return `<span>Closed Today</span>`
+                } else {
+                    return `<span>Open: ${place.openingHours.Fri} AM - ${place.closingHours.Fri > 12 ? place.closingHours.Fri - 12 : place.closingHours.Fri} PM</span>`
+                }
+            case 6:
+                if (place.openingHours.Sat - place.closingHours.Sat == 0) {
+                    return `<span>Closed Today</span>`
+                } else {
+                    return `<span>Open: ${place.openingHours.Sat} AM - ${place.closingHours.Sat > 12 ? place.closingHours.Sat - 12 : place.closingHours.Sat} PM</span>`
+                }
+            case 0:
+                if (place.openingHours.Sun - place.openingHours.Sun == 0) {
+                    return `<span>Closed Today</span>`
+                } else {
+                    return `<span>Open: ${place.openingHours.Sun} AM - ${place.closingHours.Sun > 12 ? place.closingHours.Sun - 12 : place.closingHours.Sun} PM</span>`
+                }
+            default:
+                return "<span>Not Available</span>"
+        }
+    }
+}
 loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
-
-//Add KEKA 
 window.initMap = initMap;
-
 
 setTimeout(() => {
     document.getElementById("ratingRange").addEventListener("input", () => {
@@ -1153,9 +1321,28 @@ setTimeout(() => {
         openingHoursFilter = "24 Hours";
         filterMarkers(markers);
     });
+    const specificTimeCheck = document.getElementById("daySelect");
+    specificTimeCheck.addEventListener("change", () => {
+        if (specificTimeCheck.disabled) {
+            specificDayCheck = false;
+        } else {
+            specificDayCheck = true;
+            filterMarkers(markers);
+        }
+    });
+    const specificOpeningTime = document.getElementById("openingTimeInput");
+    const specificClosingTime = document.getElementById("closingTimeInput");
+    specificOpeningTime.addEventListener("change", () => {
+        filterMarkers(markers);
+    });
+    specificClosingTime.addEventListener("change", () => {
+        filterMarkers(markers);
+    });
+
+
     // document.getElementById("specificDayOptionButton").addEventListener("click", () => {
     //     openingHoursFilter = "Specific";
     //     filterMarkers(markers);
     // });
-}, 7000);
+}, 10000);
 

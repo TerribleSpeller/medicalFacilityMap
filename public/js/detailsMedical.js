@@ -12,7 +12,7 @@ const detailsMedical = {
             rating: "3.7",
             reviews: "3111",
             IGFollowers: "64100",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMWSgKBlPbqzshxvyCaB6uq97H94_qRjIn4kUql=w408-h408-k-no",
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMWSgKBlPbqzshxvyCaB6uq97H94_qRjIn4kUql=w408-h408-k-no",
             allDay: true,
             openingHours: {
                 Mon: 8,
@@ -76,7 +76,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMWSgKBlPbqzshxvyCaB6uq97H94
             rating: "4",
             reviews: "3232",
             IGFollowers: "12700",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNe6jEvmPzbpwz-goFBuaYKy4LqILqjzILQ4qtY=w408-h306-k-no",
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNe6jEvmPzbpwz-goFBuaYKy4LqILqjzILQ4qtY=w408-h306-k-no",
             allDay: true,
             openingHours: {
                 Mon: 8,
@@ -108,7 +108,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNe6jEvmPzbpwz-goFBuaYKy4LqI
             rating: "3.6",
             reviews: "771",
             IGFollowers: "12300",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPjOtSE_1H-qlTb99dnv4n3wrZzbmdL-GVsrF2p=w408-h293-k-no",
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPjOtSE_1H-qlTb99dnv4n3wrZzbmdL-GVsrF2p=w408-h293-k-no",
             allDay: true,
             openingHours: {
                 Mon: 8,
@@ -172,7 +172,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPjOtSE_1H-qlTb99dnv4n3wrZzb
             rating: "4.6",
             reviews: "310",
             IGFollowers: "5403",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPSR4efJS0mNR05_Fty27bio7EJ4E65CvPpV8H4=w408-h306-k-no",
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPSR4efJS0mNR05_Fty27bio7EJ4E65CvPpV8H4=w408-h306-k-no",
             allDay: true,
             openingHours: {
                 Mon: 8,
@@ -204,7 +204,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPSR4efJS0mNR05_Fty27bio7EJ4
             rating: "4.5",
             reviews: "122",
             IGFollowers: "931",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPZiWvk7EWctcoZ6M5vKdwxTHdtFoQfywTY7NVU=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPZiWvk7EWctcoZ6M5vKdwxTHdtFoQfywTY7NVU=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -236,7 +236,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPZiWvk7EWctcoZ6M5vKdwxTHdtF
             rating: "4.8",
             reviews: "32",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOVUzdPMOFtIqjgXFPvgPlrg2kDcrPuKGa24ydb=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOVUzdPMOFtIqjgXFPvgPlrg2kDcrPuKGa24ydb=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -263,12 +263,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOVUzdPMOFtIqjgXFPvgPlrg2kDc
             Website: "",
             Address: "Treepark Apartment Serpong Sunburst CBD LotII/17 Ruko No CG12, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15345",
             phoneNo: "081387119358",
-            Lat:-6.298030612073054, 
+            Lat: -6.298030612073054,
             Long: 106.66430889317488,
             rating: "5",
             reviews: "7",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOhKfYe0JQT6QC2nMnqFKyGx3-5phkVBLXMXY29=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOhKfYe0JQT6QC2nMnqFKyGx3-5phkVBLXMXY29=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7.5,
@@ -295,12 +295,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOhKfYe0JQT6QC2nMnqFKyGx3-5p
             Website: "",
             Address: "Jl. Pahlawan Seribu, Ruko BSD Junction Gallery Shop A 48-50, Indonesia, Kota Tangerang Selatan, Lengkong Wetan, Serpong Sub-District, South Tangerang City, Banten 15321",
             phoneNo: "02153156111",
-            Lat:-6.283623048673851, 
+            Lat: -6.283623048673851,
             Long: 106.66488389502663,
             rating: "4.8",
             reviews: "237",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPoBHCcVEwxj6PvZQLyk4oZi1ZB_30rUqFKQwFM=w408-h271-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPoBHCcVEwxj6PvZQLyk4oZi1ZB_30rUqFKQwFM=w408-h271-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -327,12 +327,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPoBHCcVEwxj6PvZQLyk4oZi1ZB_
             Website: "http://instagram.com/eclinicbydrgio",
             Address: "Ruko Golden Boulevard 2 Blok S-07, Jelupang, Serpong Utara, South Tangerang City, Banten 15310",
             phoneNo: "087735354515",
-            Lat:-6.276100483876895, 
+            Lat: -6.276100483876895,
             Long: 106.66222905640211,
             rating: "5",
             reviews: "18",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPOUgLS7pr_Q7PeknGS5y_01ul_jsSTWeZdijq8=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPOUgLS7pr_Q7PeknGS5y_01ul_jsSTWeZdijq8=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -359,12 +359,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPOUgLS7pr_Q7PeknGS5y_01ul_j
             Website: "",
             Address: "Jl. Raya Pagedangan Jl. Cicayur I No.2, RT.01/RW.03, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339",
             phoneNo: "08111222182",
-            Lat:-6.296300890789199, 
+            Lat: -6.296300890789199,
             Long: 106.6255338429102,
             rating: "4.6",
             reviews: "160",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNUBh7K2ZKq_x2Ns4OCuhGKgyoEuMlykYDSLGFz=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNUBh7K2ZKq_x2Ns4OCuhGKgyoEuMlykYDSLGFz=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -391,15 +391,15 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNUBh7K2ZKq_x2Ns4OCuhGKgyoEu
             Website: "https://www.amiramedika.co.id/",
             Address: "Jl. Ciater Raya No.7A Blok A1, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "08111885066",
-            Lat:-6.30338604345127,
-            Long:  106.68170682840729,
+            Lat: -6.30338604345127,
+            Long: 106.68170682840729,
             rating: "4.7",
             reviews: "1609",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhpvjFiZ7ynf0STNGuTI0_29rJWwKgo3yg55zn=w408-h277-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhpvjFiZ7ynf0STNGuTI0_29rJWwKgo3yg55zn=w408-h277-k-no"
             , allDay: false,
             openingHours: {
-                Mon:7.5,
+                Mon: 7.5,
                 Tue: 7.5,
                 Wed: 7.5,
                 Thu: 7.5,
@@ -423,12 +423,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhpvjFiZ7ynf0STNGuTI0_29rJW
             Website: "http://kliniksatriabudi.com/",
             Address: "Ruko C-17 - Pasar Modern Intermoda - BSD, Jl. Raya Cisauk Lapan, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 14313",
             phoneNo: "089658868769",
-            Lat:-6.320379630389944, 
+            Lat: -6.320379630389944,
             Long: 106.64272719687868,
             rating: "4.8",
             reviews: "25",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOsGFFfJGfp09eIDFcn3DqgdxSHPvRnLJGWnDww=w408-h408-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOsGFFfJGfp09eIDFcn3DqgdxSHPvRnLJGWnDww=w408-h408-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -455,12 +455,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOsGFFfJGfp09eIDFcn3DqgdxSHP
             Website: "",
             Address: "Jl. Pahlawan Seribu Ruko BSD Sektor IV, Bumi serpong Damai No.43-45 Blok E, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "0215370310",
-            Lat:-6.280969640659988, 
+            Lat: -6.280969640659988,
             Long: 106.66359383735482,
             rating: "3.5",
             reviews: "383",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPmKNs-bTq1zP0mzbatUhAMkDkEA0uZKrPNKGE7=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPmKNs-bTq1zP0mzbatUhAMkDkEA0uZKrPNKGE7=w426-h240-k-no"
 
             , allDay: false,
             openingHours: {
@@ -488,12 +488,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPmKNs-bTq1zP0mzbatUhAMkDkEA
             Website: "",
             Address: "Jl. Raya Pagedangan, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339",
             phoneNo: "081298276220",
-            Lat:-6.296489524341944, 
+            Lat: -6.296489524341944,
             Long: 106.62390378153465,
             rating: "4.1",
             reviews: "15",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPq0d4EUUzqMqQxBeqSSwVNzGFbFs_vuTTqoLzU=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPq0d4EUUzqMqQxBeqSSwVNzGFbFs_vuTTqoLzU=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -520,12 +520,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPq0d4EUUzqMqQxBeqSSwVNzGFbF
             Website: "",
             Address: "Gedung perkantoran Bidex, Blok G no 22, BSD City (Sebelum Teras Kota mal, Jl. Pahlawan Seribu, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15321",
             phoneNo: "02153164347",
-            Lat:-6.293718717801636, 
+            Lat: -6.293718717801636,
             Long: 106.66763102201088,
             rating: "4.1",
             reviews: "38",
             IGFollowers: "880000",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTscp1NmbbrZszMY8WC11ICI0ZxXkJXNJPOyX6=w408-h549-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTscp1NmbbrZszMY8WC11ICI0ZxXkJXNJPOyX6=w408-h549-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -552,12 +552,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTscp1NmbbrZszMY8WC11ICI0Zx
             Website: "",
             Address: "Jl. Alamanda No.1 Blok B, Rawa Buntu, Serpong Sub-District, South Tangerang City, Banten 15310",
             phoneNo: "0215381663",
-            Lat:-6.303057074377732,
-            Long:  106.68087060058231,
+            Lat: -6.303057074377732,
+            Long: 106.68087060058231,
             rating: "5",
             reviews: "15",
             IGFollowers: "IGFollowers",
-photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=GEFm5bmbyFYNE9UyRDvnyQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=138.35909&pitch=0&thumbfov=100"
+            photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=GEFm5bmbyFYNE9UyRDvnyQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=138.35909&pitch=0&thumbfov=100"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -584,17 +584,17 @@ photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=GEFm5b
             Website: "",
             Address: "Jalan Giri Loka 3 Z1, Jl. Komp. Bsd No.9, Lengkong Wetan, Serpong Sub-District, South Tangerang City, Banten 15310",
             phoneNo: "087886076622",
-            Lat: -6.285285606854653, 
+            Lat: -6.285285606854653,
             Long: 106.67580375455039,
             rating: "3.7",
             reviews: "3",
             IGFollowers: "IGFollowers",
-photoURL: ""
+            photoURL: ""
             , allDay: false,
             openingHours: {
                 Mon: 9,
                 Tue: 9,
-                Wed: 9 ,
+                Wed: 9,
                 Thu: 9,
                 Fri: 9,
                 Sat: 0,
@@ -616,12 +616,12 @@ photoURL: ""
             Website: "",
             Address: "Komplek Anggrek Loka, Jalan Anggrek Mawar Blok C No. 1B, Sektor 2.1, BSD City, Serpong, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "0215372501",
-            Lat:-6.304177142501335,
-            Long:  106.66984882386268,
+            Lat: -6.304177142501335,
+            Long: 106.66984882386268,
             rating: "4.8",
             reviews: "6",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOsYtYBR1aS0J_sC5U11epCC3DT_3JjMCmYSsfI=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOsYtYBR1aS0J_sC5U11epCC3DT_3JjMCmYSsfI=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -679,12 +679,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOsYtYBR1aS0J_sC5U11epCC3DT_
             Website: "http://www.klinikdrpopy.com/",
             Address: "Jalan Ciater Raya RJ 3, Nusa Loka, sektor XIV Jl. Komp. BSD No.6, Rawa Buntu, Serpong Sub-District, South Tangerang City, Banten 15310",
             phoneNo: "0818566177",
-            Lat:-6.313840346071074, 
-            Long:106.69816838338659, 
+            Lat: -6.313840346071074,
+            Long: 106.69816838338659,
             rating: "5",
             reviews: "152",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMT7IToToy_AFeMtf2a313nzBP12g2GXibnCdYx=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMT7IToToy_AFeMtf2a313nzBP12g2GXibnCdYx=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -711,12 +711,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMT7IToToy_AFeMtf2a313nzBP12
             Website: "",
             Address: "Komplek Anggrek Loka, Jalan Anggrek Mawar Blok C No. 1B, Sektor 2.1, BSD City, Serpong, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "",
-            Lat:-6.304102494789453, 
+            Lat: -6.304102494789453,
             Long: 106.66995611222242,
             rating: 5,
             reviews: "1",
             IGFollowers: "IGFollowers",
-photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=6VPly0A-Ye7Hw96eCrlo5A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=229.28294&pitch=0&thumbfov=100"
+            photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=6VPly0A-Ye7Hw96eCrlo5A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=229.28294&pitch=0&thumbfov=100"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -743,12 +743,12 @@ photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=6VPly0
             Website: "",
             Address: "Komplek BSD Sektor I-II Jakarta - Serpong Toll Rd Blok RC-3/17, Pakulonan, Tangerang, South Tangerang City, Banten 15325",
             phoneNo: "MMWJ+7R Rawa Buntu, South Tangerang City, Banten",
-            Lat:-6.302577137539043, 
+            Lat: -6.302577137539043,
             Long: 106.6825301120601,
             rating: "5",
             reviews: "2",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMb2nl_z_vaik8DBapsmbohummnApMOBh3-xRAQ=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMb2nl_z_vaik8DBapsmbohummnApMOBh3-xRAQ=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -775,12 +775,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMb2nl_z_vaik8DBapsmbohummnA
             Website: "https://klinikdianandi.com/",
             Address: "Ruko victory Jl. Ciater Raya No.1, RT.5/RW.7, Ciater, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "082249108400",
-            Lat: -6.3141031924227615, 
+            Lat: -6.3141031924227615,
             Long: 106.69722591592623,
             rating: "4.7",
             reviews: "211",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMWFDjU4PdLxs-WRUQlLu2SGKGe2gJP_RBr3AYk=w408-h408-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMWFDjU4PdLxs-WRUQlLu2SGKGe2gJP_RBr3AYk=w408-h408-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -807,12 +807,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMWFDjU4PdLxs-WRUQlLu2SGKGe2
             Website: "",
             Address: "Jl. Ciater Bar. Jl. Raya Viktor Bsd No.27D, Ciater, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "02129666007",
-            Lat: -6.32179873989344, 
+            Lat: -6.32179873989344,
             Long: 106.68305830422065,
             rating: "4.7",
             reviews: "303",
             IGFollowers: "330",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNKDM8mI0zEmrcBp9fMdUXQOQREw1StgcSe55O5=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNKDM8mI0zEmrcBp9fMdUXQOQREw1StgcSe55O5=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -839,12 +839,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNKDM8mI0zEmrcBp9fMdUXQOQREw
             Website: "https://sehatplusbsd.com/",
             Address: "Ruko BSD Sektor 7, Jl. Pahlawan Seribu Blok RM No.39, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "087833683388",
-            Lat:-6.281347105244184,
-            Long:  106.66279528153443,
+            Lat: -6.281347105244184,
+            Long: 106.66279528153443,
             rating: "5",
             reviews: "485",
             IGFollowers: "852",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAJngu7E4qx7Hk_mevUWYx1sSK8f0URCj0qvnr=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAJngu7E4qx7Hk_mevUWYx1sSK8f0URCj0qvnr=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -871,12 +871,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAJngu7E4qx7Hk_mevUWYx1sSK8
             Website: "https://binamedicalcenter.com/",
             Address: "Blok B1 no 10, Jl. Ciater Raya, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "02138929007",
-            Lat:-6.3075373132552315, 
+            Lat: -6.3075373132552315,
             Long: 106.67821955640238,
             rating: "5",
             reviews: "19",
             IGFollowers: "77",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipN58i90c9ch3z6PX6P2bCN1fKtyceqybpw_XONB=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipN58i90c9ch3z6PX6P2bCN1fKtyceqybpw_XONB=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -903,12 +903,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipN58i90c9ch3z6PX6P2bCN1fKtyc
             Website: "",
             Address: "Ruko Tol Boulevard Jalan Pelayangan.blok B6~7, RW.1, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "081312148988",
-            Lat:-6.306327232022846, 
+            Lat: -6.306327232022846,
             Long: 106.67195649687854,
             rating: "4.9",
             reviews: "476",
             IGFollowers: "3395",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOaMHJ2hxDdIsv6R3wCpqMtv1X1mMO68cpyG-98=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOaMHJ2hxDdIsv6R3wCpqMtv1X1mMO68cpyG-98=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -935,12 +935,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOaMHJ2hxDdIsv6R3wCpqMtv1X1m
             Website: "",
             Address: "Jl. Rawa Buntu Utara 1 sektor 1.4 Blok H1 No.2, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "02153153535",
-            Lat:-6.300711425378606,
-            Long:  106.67843218894194,
+            Lat: -6.300711425378606,
+            Long: 106.67843218894194,
             rating: "4.7",
             reviews: "39",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNCCilHnY9N-Xdaqdwxk0M4d9qDU3hFx4mBUZX1=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNCCilHnY9N-Xdaqdwxk0M4d9qDU3hFx4mBUZX1=w426-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -967,12 +967,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNCCilHnY9N-Xdaqdwxk0M4d9qDU
             Website: "",
             Address: "PM88+C47, Jl. Kapten Soebijanto Djojohadikusumo, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "02153162096",
-            Lat:-6.283641868709517, 
-            Long: 106.66529683554624, 
+            Lat: -6.283641868709517,
+            Long: 106.66529683554624,
             rating: "3.3",
             reviews: "24",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQcmXlkhCITBoKDsa69QVB8Rwp-ifUF3qpVH4D=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQcmXlkhCITBoKDsa69QVB8Rwp-ifUF3qpVH4D=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -999,12 +999,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQcmXlkhCITBoKDsa69QVB8Rwp-
             Website: "https://bumilqklinik.com/",
             Address: "Bsd city, Icon, Business Park, R/03, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345",
             phoneNo: "081210810549",
-            Lat:-6.317793511206994,
-            Long:  106.64616466195803,
+            Lat: -6.317793511206994,
+            Long: 106.64616466195803,
             rating: "4.9",
             reviews: "128",
             IGFollowers: "1597",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipN9Cxbq5qfSVjCun6sGhS9_yuP49Hs3MpVeP4JX=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipN9Cxbq5qfSVjCun6sGhS9_yuP49Hs3MpVeP4JX=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -1031,12 +1031,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipN9Cxbq5qfSVjCun6sGhS9_yuP49
             Website: "https://kmnc.co.id/",
             Address: "Ruko Horizon Broadway M2 no 29, Kabupaten Tangerang, Banten 15345",
             phoneNo: "08111028232",
-            Lat:-6.315042246515508, 
+            Lat: -6.315042246515508,
             Long: 106.64677969502675,
             rating: "5",
             reviews: "84",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMCCOXxYagjcDD6W3dZnV3FE_o-8-if9CHDKb80=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMCCOXxYagjcDD6W3dZnV3FE_o-8-if9CHDKb80=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1063,12 +1063,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMCCOXxYagjcDD6W3dZnV3FE_o-8
             Website: "https://www.royaldentalart.com/",
             Address: "Ruko Icon Business Park, Jln No.G2, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345",
             phoneNo: "08170116161",
-            Lat:-6.316386038122012, 
+            Lat: -6.316386038122012,
             Long: 106.6520134447623,
             rating: "5",
             reviews: "22",
             IGFollowers: "604",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMc7XLkF6dNlDzW_Q6CeR1myRNTtdj-3BX2wq1o=w408-h404-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMc7XLkF6dNlDzW_Q6CeR1myRNTtdj-3BX2wq1o=w408-h404-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 0,
@@ -1095,12 +1095,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMc7XLkF6dNlDzW_Q6CeR1myRNTt
             Website: "https://thesmileorthodontic.com/",
             Address: "Ruko Golden Madrid 2, Jl. Letnan Sutopo No.05 Blok F, Rw. Mekar Jaya, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "087712000300",
-            Lat:-6.304949270663363,
-            Long:  106.68647782571452,
+            Lat: -6.304949270663363,
+            Long: 106.68647782571452,
             rating: "5",
             reviews: "215",
             IGFollowers: "504",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPINI2BwqtdqADtuq8jeAuvxbLgjgJ0ePRwOEWu=w427-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPINI2BwqtdqADtuq8jeAuvxbLgjgJ0ePRwOEWu=w427-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1127,12 +1127,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPINI2BwqtdqADtuq8jeAuvxbLgj
             Website: "https://damessa.id/",
             Address: "Ruko Provence Suites, Jl. Letnan Sutopo No.10 Blok A1, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15322",
             phoneNo: "08111859009",
-            Lat:-6.284365699560685, 
-            Long:106.6712603545504, 
+            Lat: -6.284365699560685,
+            Long: 106.6712603545504,
             rating: "5",
             reviews: "325",
             IGFollowers: "318",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOd0jmHItYyW9_MIbmNMk605IrL7gWcnz4R7M0b=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOd0jmHItYyW9_MIbmNMk605IrL7gWcnz4R7M0b=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1159,12 +1159,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOd0jmHItYyW9_MIbmNMk605IrL7
             Website: "https://sites.google.com/view/be-u-dental-care",
             Address: "Apartemen Saveria Ruko R11 lt. 2, Sampora, Cisauk, Tangerang Regency, Banten 15345",
             phoneNo: "087880919171",
-            Lat:-6.306893490797531,
-            Long:  106.65220245640224,
+            Lat: -6.306893490797531,
+            Long: 106.65220245640224,
             rating: "5",
             reviews: "2",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPCXW3LHf9Fg9DFzWh4Cg6W1nbhvZz6tnzIXlA=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPCXW3LHf9Fg9DFzWh4Cg6W1nbhvZz6tnzIXlA=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1191,12 +1191,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPCXW3LHf9Fg9DFzWh4Cg6W1nbhv
             Website: "http://bit.ly/3KSFKLf",
             Address: "Ruko Tol Boulevard Blok G no 19, BSD City, Kota Tangerang Selatan, Banten 15322",
             phoneNo: "081386586161",
-            Lat:-6.3009120931530225,
-            Long:  106.66864432756644,
+            Lat: -6.3009120931530225,
+            Long: 106.66864432756644,
             rating: "5",
             reviews: "1429",
             IGFollowers: "839",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipN8YTF658tu4qi7q-LPQ5HPIftRIfFbSfPAXCuP=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipN8YTF658tu4qi7q-LPQ5HPIftRIfFbSfPAXCuP=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -1223,12 +1223,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipN8YTF658tu4qi7q-LPQ5HPIftRI
             Website: "",
             Address: "Jl. Anggrek Loka Blok AF No. 61, Sektor 22, RT.2/RW.02, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "081318878779",
-            Lat:-6.3002348208734285, 
+            Lat: -6.3002348208734285,
             Long: 106.67113305455051,
             rating: "4.8",
             reviews: "112",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOIi3rVXEFOMrpao5gnPJvwjqgwAnoIDBtfoaa2=w408-h270-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOIi3rVXEFOMrpao5gnPJvwjqgwAnoIDBtfoaa2=w408-h270-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1255,12 +1255,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOIi3rVXEFOMrpao5gnPJvwjqgwA
             Website: "",
             Address: "Ruko Bidex C.10 BSD, Jl. Pahlawan Seribu, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15321",
             phoneNo: "087718182999",
-            Lat:-6.294609982371382, 
+            Lat: -6.294609982371382,
             Long: 106.66707036804269,
             rating: "5",
             reviews: "9",
             IGFollowers: "759",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOugRsQoqx7hOzkA_z7m9jUf75IWmf3lIO25pd3=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOugRsQoqx7hOzkA_z7m9jUf75IWmf3lIO25pd3=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 11,
@@ -1287,12 +1287,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOugRsQoqx7hOzkA_z7m9jUf75IW
             Website: "https://www.adcsmiles.co/",
             Address: "North Point Commercial Navapark Unit 07, BSD City, Banten 15331",
             phoneNo: "081288721800",
-            Lat: -6.288475393820635, 
+            Lat: -6.288475393820635,
             Long: 106.65349472756623,
             rating: "4.9",
             reviews: "163",
             IGFollowers: "4461",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMYVC30c2n_fenc8SZawTJfCt0eVIqtMeVq2CBq=w427-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMYVC30c2n_fenc8SZawTJfCt0eVIqtMeVq2CBq=w427-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1320,11 +1320,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMYVC30c2n_fenc8SZawTJfCt0eV
             Address: "G17 BSD, Ruko Tol Boulevard, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "082163536161",
             Lat: -6.301022165174968,
-            Long:  106.6686669968785,
+            Long: 106.6686669968785,
             rating: "5",
             reviews: "202",
             IGFollowers: "15400",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipO53HIk30Nu8O5cJV-HSP-42war4RSU6dKoElEO=w408-h613-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipO53HIk30Nu8O5cJV-HSP-42war4RSU6dKoElEO=w408-h613-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1351,12 +1351,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipO53HIk30Nu8O5cJV-HSP-42war4
             Website: "https://www.dentalounge.co.id/en/",
             Address: "TreePark Commercial & Apartment, 2nd fl. Suite C-08B, Jl. Sunburst CBD Jl. KAV P&K II No.18 C, Lengkong Gudang, BSD, Kota Tangerang Selatan, Banten 15311",
             phoneNo: "087782275999",
-            Lat:-6.2981585198942796, 
+            Lat: -6.2981585198942796,
             Long: 106.66477861407432,
             rating: "5",
             reviews: "113",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOs278QgVaLUAJwFAzqjGIkszfvd2x27NEtKTm4=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOs278QgVaLUAJwFAzqjGIkszfvd2x27NEtKTm4=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1383,12 +1383,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOs278QgVaLUAJwFAzqjGIkszfvd
             Website: "https://ipondental.com/",
             Address: "Ruko Paris Square B2/1, Jl. Boulevard BSD Timur, BSD City, Lengkong Gudang Tim., Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "08175276161",
-            Lat: -6.294129953836078, 
+            Lat: -6.294129953836078,
             Long: 106.67902544291019,
             rating: "4.9",
             reviews: "159",
             IGFollowers: "956",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNftlVj3ikdLmHJaRxAKmo2YUmNfyiFtFUuCc27=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNftlVj3ikdLmHJaRxAKmo2YUmNfyiFtFUuCc27=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 12.5,
@@ -1415,12 +1415,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNftlVj3ikdLmHJaRxAKmo2YUmNf
             Website: "http://instagram.com/inidental.clinic",
             Address: "Jl. Rawa Buntu Utara No.25 Sektor I.2, Blok V2, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "081381385810",
-            Lat: -6.299694428491783, 
+            Lat: -6.299694428491783,
             Long: 106.68195815693082,
             rating: "5",
             reviews: "160",
             IGFollowers: "963",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPP0n7HHr70vBJVY7PoEyWKsQfBWTZrH1WtRZlE=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPP0n7HHr70vBJVY7PoEyWKsQfBWTZrH1WtRZlE=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 0,
@@ -1448,11 +1448,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPP0n7HHr70vBJVY7PoEyWKsQfBW
             Address: "Ruko Golden Boulevard Blok Q No.3 BSD city, Jl. Pahlawan Seribu, Lengkong Karya, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "02153161399",
             Lat: -6.276940174418696,
-            Long:  106.66095703920654,
+            Long: 106.66095703920654,
             rating: "4.9",
             reviews: "2904",
             IGFollowers: "116000",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMHMYcIMRwJNNxVzWFXb50ZZ7QiUiGU5dY2ENKt=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMHMYcIMRwJNNxVzWFXb50ZZ7QiUiGU5dY2ENKt=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1479,12 +1479,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMHMYcIMRwJNNxVzWFXb50ZZ7QiU
             Website: "https://kidzdental.co.id/",
             Address: "BSD City, Ruko Golden Madrid 1 Blok B No.18, Rw. Mekar Jaya, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "02153160431",
-            Lat: -6.302936510326585, 
+            Lat: -6.302936510326585,
             Long: 106.68554889687852,
             rating: "4.8",
             reviews: "164",
             IGFollowers: "51300",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNe3VXRsxIP0A8sOc8nX6-Ic19UkC4OupHw4jGV=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNe3VXRsxIP0A8sOc8nX6-Ic19UkC4OupHw4jGV=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1542,12 +1542,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNe3VXRsxIP0A8sOc8nX6-Ic19Uk
             Website: "https://www.charisdentalcare.com/",
             Address: "Jl. Letnan Sutopo No.27, Lengkong Gudang Tim., Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "085100084959",
-            Lat:-6.293226931387385, 
-            Long:106.67970083464016, 
+            Lat: -6.293226931387385,
+            Long: 106.67970083464016,
             rating: "5",
             reviews: "6",
             IGFollowers: "66",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPuyI5fGR3B_OrrRMMT8WFp1Ls5peOWnV8XZxRr=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPuyI5fGR3B_OrrRMMT8WFp1Ls5peOWnV8XZxRr=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1574,12 +1574,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPuyI5fGR3B_OrrRMMT8WFp1Ls5p
             Website: "",
             Address: "jalan anggrek hitam blok AA no 21 Anggrek Loka,BSD, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "081281997972",
-            Lat:-6.303056870042641, 
+            Lat: -6.303056870042641,
             Long: 106.67152677783116,
             rating: "4.8",
             reviews: "33",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMKUmzQOmaqkAjVbHptOpa4ICeCDgaWdOkG6_lR=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMKUmzQOmaqkAjVbHptOpa4ICeCDgaWdOkG6_lR=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1606,12 +1606,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMKUmzQOmaqkAjVbHptOpa4ICeCD
             Website: "https://sites.google.com/view/uniondentalclinic",
             Address: "Ruko Golden Madrid 2 Blok F-25 BSD City, Jl. Letnan Sutopo, Rawa Mekar Jaya, Serpong Sub-District, South Tangerang City, Banten 15310",
             phoneNo: "08119761618",
-            Lat: -6.304631906614142, 
+            Lat: -6.304631906614142,
             Long: 106.6861328373548,
             rating: "4.9",
             reviews: "426",
             IGFollowers: "1271",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPM913zWzrSuuacDcU-cD8GBr4cR_WSLLvqYs0D=w427-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPM913zWzrSuuacDcU-cD8GBr4cR_WSLLvqYs0D=w427-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1638,12 +1638,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPM913zWzrSuuacDcU-cD8GBr4cR
             Website: "",
             Address: "Jl. Letnan Sutopo No.5, Lengkong Gudang Tim., Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "085770575799",
-            Lat: -6.2962169395648235, 
+            Lat: -6.2962169395648235,
             Long: 106.6809578122224,
             rating: "5",
             reviews: "77",
             IGFollowers: "3170",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOyWa_XE04P27XKXtFGHjdcV5SsDtezPDlulOqa=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOyWa_XE04P27XKXtFGHjdcV5SsDtezPDlulOqa=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 11,
@@ -1671,11 +1671,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOyWa_XE04P27XKXtFGHjdcV5SsD
             Address: "Jl. Rawa Buntu Utara Blok BJ No.23, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "0215382364",
             Lat: -6.303340068450667,
-            Long:  106.68076993172113,
+            Long: 106.68076993172113,
             rating: "4.4",
             reviews: "18",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipM8GBUtD0wXXMa0AT-UxwuOYy75eLot6EBHhkkU=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipM8GBUtD0wXXMa0AT-UxwuOYy75eLot6EBHhkkU=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -1702,12 +1702,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipM8GBUtD0wXXMa0AT-UxwuOYy75e
             Website: "http://smilingdental.co.id/",
             Address: "Ruko Sektor 7 Blok RM No 42, Jl. BSD Raya Bar., Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15320",
             phoneNo: "0215388883",
-            Lat:-6.2790717327089185,
-            Long:  106.66428945974488,
+            Lat: -6.2790717327089185,
+            Long: 106.66428945974488,
             rating: "4.1",
             reviews: "29",
             IGFollowers: "701",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOxXPSQ_5ILRu3zDRVcHd7hWMGqoOvcTqbktiR3=w408-h272-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOxXPSQ_5ILRu3zDRVcHd7hWMGqoOvcTqbktiR3=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1734,12 +1734,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOxXPSQ_5ILRu3zDRVcHd7hWMGqo
             Website: "http://smilingdental.co.id/",
             Address: "GRAMEDIA World BSD, Jl. BSD Raya Utama No.22 Ground FLoor, BSD, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339",
             phoneNo: "087816088008",
-            Lat:-6.288434551139054,
-            Long:  106.63894694598896,
+            Lat: -6.288434551139054,
+            Long: 106.63894694598896,
             rating: "4.3",
             reviews: "49",
             IGFollowers: "701",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOxXPSQ_5ILRu3zDRVcHd7hWMGqoOvcTqbktiR3=w408-h272-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOxXPSQ_5ILRu3zDRVcHd7hWMGqoOvcTqbktiR3=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1766,12 +1766,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOxXPSQ_5ILRu3zDRVcHd7hWMGqo
             Website: "http://www.dentalosophy.id/",
             Address: "Kav Commercial International School II, BSD City, Jl. Sekolah Foresta No.8, Lengkong Kulon, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331",
             phoneNo: "081291469830",
-            Lat:-6.288306093772175, 
+            Lat: -6.288306093772175,
             Long: 106.65125425455048,
             rating: "4.4",
             reviews: "32",
             IGFollowers: "10100",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMvDyYt7nwjyVgJ5RRoD484Bq1btXP2D277mAXS=w408-h693-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMvDyYt7nwjyVgJ5RRoD484Bq1btXP2D277mAXS=w408-h693-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1798,12 +1798,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMvDyYt7nwjyVgJ5RRoD484Bq1bt
             Website: "",
             Address: "MMM2+3R8, Sampora, Cisauk, Tangerang Regency, Banten 15345",
             phoneNo: "081958119191",
-            Lat: -6.316831101953535, 
+            Lat: -6.316831101953535,
             Long: 106.6525328680427,
             rating: "4.9",
             reviews: "253",
             IGFollowers: "5945",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPTKfE2bTHLE6WEL2BtA0OmFE43wmoU1n4AKwan=w408-h408-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPTKfE2bTHLE6WEL2BtA0OmFE43wmoU1n4AKwan=w408-h408-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1830,12 +1830,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPTKfE2bTHLE6WEL2BtA0OmFE43w
             Website: "",
             Address: "Foresta Business Loft 3, Jl. BSD Raya Utama No.21, Lengkong Kulon, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331",
             phoneNo: "085745182016",
-            Lat: -6.287133143306903, 
+            Lat: -6.287133143306903,
             Long: 106.64079750851874,
             rating: "5.0",
             reviews: "100",
             IGFollowers: "14400",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNaHX9pHS3s8cc6HdBqgniYWM97aevO025ts95L=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNaHX9pHS3s8cc6HdBqgniYWM97aevO025ts95L=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1862,12 +1862,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNaHX9pHS3s8cc6HdBqgniYWM97a
             Website: "http://www.oceandental.co.id/",
             Address: "Ruko Golden Boulevard Blok C.2, JL. Pahlawan Seribu, Lengkong Wetan Serpong, 15322, Lengkong Karya, Tangerang, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "081218900698",
-            Lat: -6.275459383733197, 
+            Lat: -6.275459383733197,
             Long: 106.65906693920634,
             rating: "5",
             reviews: "1212",
             IGFollowers: "32800",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNFJdLWJtjmqRbaGCHJRKm6uuwO7d9x-_HYhNOn=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNFJdLWJtjmqRbaGCHJRKm6uuwO7d9x-_HYhNOn=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1894,12 +1894,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNFJdLWJtjmqRbaGCHJRKm6uuwO7
             Website: "",
             Address: "Ruko Versailles blok FB no 25, Jl. Griya Loka Raya, Rawa Buntu, Serpong Sub-District, South Tangerang City, Banten 15310",
             phoneNo: "081299330996",
-            Lat: -6.307748252178842, 
+            Lat: -6.307748252178842,
             Long: 106.6737631717462,
             rating: "5",
             reviews: "483",
             IGFollowers: "1790",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPoCZnmeqREU9ApLo2HoRCsEF3DLA2BO0f8IWwo=w408-h408-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPoCZnmeqREU9ApLo2HoRCsEF3DLA2BO0f8IWwo=w408-h408-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1927,11 +1927,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPoCZnmeqREU9ApLo2HoRCsEF3DL
             Address: "Apotik Kimia Farma. Jl. Pahlawan Seribu Ruko Versailles Blok.Fb No.15, Banten 15318",
             phoneNo: "081382499299",
             Lat: -6.306905574196392,
-            Long:  106.67371916585523,
+            Long: 106.67371916585523,
             rating: "5",
             reviews: "158",
             IGFollowers: "2555",
-photoURL: ""
+            photoURL: ""
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1958,12 +1958,12 @@ photoURL: ""
             Website: "",
             Address: "Jl. Lili No.9 Blok H1, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "081310353041",
-            Lat: -6.292891727137289, 
+            Lat: -6.292891727137289,
             Long: 106.67392377498558,
             rating: "5",
             reviews: "27",
             IGFollowers: "290",
-photoURL: ""
+            photoURL: ""
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -1990,12 +1990,12 @@ photoURL: ""
             Website: "https://instagram.com/icon.griyadentalcare?utm_source=ig_profile_share&igshid=1s2otwgm2wr92",
             Address: "Ruko The Icon Business Park, Blok A10, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15340",
             phoneNo: "081316885817",
-            Lat: -6.3136694372852835, 
+            Lat: -6.3136694372852835,
             Long: 106.65171689873034,
             rating: "5",
             reviews: "341",
             IGFollowers: "2881",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNnwrf0DocNP_DxJuicOLxCMqkKvSiWJXkF3oZQ=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNnwrf0DocNP_DxJuicOLxCMqkKvSiWJXkF3oZQ=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -2022,12 +2022,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNnwrf0DocNP_DxJuicOLxCMqkKv
             Website: "",
             Address: "Jl. BSD Raya Utama No.8, Lengkong Kulon, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331",
             phoneNo: "081284759191",
-            Lat: -6.280166766212554, 
+            Lat: -6.280166766212554,
             Long: 106.6468170754866,
             rating: "4.9",
             reviews: "45",
             IGFollowers: "48400",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOc8wH7fDLUfiUyOHH36lWJ3ZfoyUWiG_E7BjkZ=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOc8wH7fDLUfiUyOHH36lWJ3ZfoyUWiG_E7BjkZ=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -2054,12 +2054,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOc8wH7fDLUfiUyOHH36lWJ3Zfoy
             Website: "https://linktr.ee/esdiesdentalhome",
             Address: "Ruko CBD Bidex, Unit B-22, RT.01/RW.04, Lengkong Gudang, Serpong Sub-District, South Tangerang City, Banten 15311",
             phoneNo: "08818004746",
-            Lat: -6.293709853629529, 
+            Lat: -6.293709853629529,
             Long: 106.6668215698943,
             rating: "5",
             reviews: "37",
             IGFollowers: "253",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMnnqBGJdJSh49qhVhS9KPOiUScMu-dvCcIcCrj=w452-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMnnqBGJdJSh49qhVhS9KPOiUScMu-dvCcIcCrj=w452-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -2091,7 +2091,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMnnqBGJdJSh49qhVhS9KPOiUScM
             rating: "4.9",
             reviews: "298",
             IGFollowers: "3518",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNOpV196c4KY2KUhzPJFgbmnZmWsVB49PU2CkG1=w408-h241-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNOpV196c4KY2KUhzPJFgbmnZmWsVB49PU2CkG1=w408-h241-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 0,
@@ -2118,12 +2118,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNOpV196c4KY2KUhzPJFgbmnZmWs
             Website: "",
             Address: "Ruko, The Icon Jl. Horizon Broadway M6 No.9, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten",
             phoneNo: "081336383840",
-            Lat: -6.313392918377116, 
+            Lat: -6.313392918377116,
             Long: 106.6505188545505,
             rating: "4.9",
             reviews: "127",
             IGFollowers: "352",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6L0MrN4d9W41I6n__cCfw4WDJ-_MPuRg5ILRL=w408-h543-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6L0MrN4d9W41I6n__cCfw4WDJ-_MPuRg5ILRL=w408-h543-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -2150,12 +2150,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6L0MrN4d9W41I6n__cCfw4WDJ-
             Website: "",
             Address: "Sky View, Jl. Lengkong Gudang Timur Raya Apartment Unit 1.12, Lengkong Gudang Tim., Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "081295443004",
-            Lat: -6.295152388154797, 
+            Lat: -6.295152388154797,
             Long: 106.68373372571463,
             rating: "4.6",
             reviews: "20",
             IGFollowers: "3922",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMw223804oo2QDqldmIbrcixGnBBcUDn1E1D7_0=w408-h595-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMw223804oo2QDqldmIbrcixGnBBcUDn1E1D7_0=w408-h595-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -2183,11 +2183,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMw223804oo2QDqldmIbrcixGnBB
             Address: "Apotik Century, Ruko Versilles FB No.11 sektor 1.6 2nd Floor, Rawa Buntu, Serpong Sub-District, South Tangerang City, Banten 15310",
             phoneNo: "081283831309",
             Lat: -6.307428771476893,
-            Long:  106.67402688523833,
+            Long: 106.67402688523833,
             rating: "5",
             reviews: "26",
             IGFollowers: "1528",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMGF0efUUZqfbxToU07GmHhCdNf8RYJ5RRBZ_AZ=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMGF0efUUZqfbxToU07GmHhCdNf8RYJ5RRBZ_AZ=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2215,11 +2215,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMGF0efUUZqfbxToU07GmHhCdNf8
             Address: "Ruko Golden Vienna blok BA no 22-23 Sektor X11 BSD city kelurahan, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "081333554514",
             Lat: -6.320471711963647,
-            Long:  106.68326589873051,
+            Long: 106.68326589873051,
             rating: "4.8",
             reviews: "93",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipM8X2-6cc2HsWRnqvaj_2JmhK3ZKm0LACsxFUpB=w427-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipM8X2-6cc2HsWRnqvaj_2JmhK3ZKm0LACsxFUpB=w427-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2271,7 +2271,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipM8X2-6cc2HsWRnqvaj_2JmhK3ZK
         //         Sun: 8,
         //     }
         // },
- 
+
         {
             Nama: "First Physio BSD",
             subcategory: "Klinik Fisioterapi",
@@ -2279,11 +2279,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipM8X2-6cc2HsWRnqvaj_2JmhK3ZK
             Address: "Jl. Rawa Buntu Utara Blok Ui No.13, RT.1/RW.5, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "08118188098",
             Lat: -6.301015625453339,
-            Long:  106.67718516804253,
+            Long: 106.67718516804253,
             rating: "4.9",
             reviews: "79",
             IGFollowers: "13100",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPBPl_kBAKArm8MO-Fai_2G4IBHvmPTxu6yTzGH=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPBPl_kBAKArm8MO-Fai_2G4IBHvmPTxu6yTzGH=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2311,11 +2311,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPBPl_kBAKArm8MO-Fai_2G4IBHv
             Address: "Gedung Graha Bangun Nusantara, Jl. Letnan Sutopo No.5, Lengkong Gudang Tim., Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "0215852866",
             Lat: -6.296095324245165,
-            Long:  106.68139185216934,
+            Long: 106.68139185216934,
             rating: "4.9",
             reviews: "26",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMG-nequTawzYfPCY9E1U_sLliVSa-bM6Mwn1yr=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMG-nequTawzYfPCY9E1U_sLliVSa-bM6Mwn1yr=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -2342,12 +2342,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMG-nequTawzYfPCY9E1U_sLliVS
             Website: "https://recoveryklinik.net/",
             Address: "West Park A/17 BSD City, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15336",
             phoneNo: "081197900030",
-            Lat: -6.2954179110024455, 
+            Lat: -6.2954179110024455,
             Long: 106.62287008153467,
             rating: "5",
             reviews: "163",
             IGFollowers: "2934",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipN97MTuIyjLf0fuEkilcfEa2Tj5dSZosxO_ejpm=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipN97MTuIyjLf0fuEkilcfEa2Tj5dSZosxO_ejpm=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 0,
@@ -2374,12 +2374,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipN97MTuIyjLf0fuEkilcfEa2Tj5d
             Website: "https://www.superkidz.id/",
             Address: "Ruko Tol Boulevard, Jl. Pelayangan No.19 Blok F, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "082123991183",
-            Lat: -6.302199753736865, 
+            Lat: -6.302199753736865,
             Long: 106.66929343682563,
             rating: "4.9",
             reviews: "61",
             IGFollowers: "13400",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipN4UZX6jbrZZwGcDOku-n82ij3euLYKDomclQr9=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipN4UZX6jbrZZwGcDOku-n82ij3euLYKDomclQr9=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2407,11 +2407,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipN4UZX6jbrZZwGcDOku-n82ij3eu
             Address: "Kompleks ITC BSD City, Ruko Malibu Blok B 35, Lengkong Gudang, Kec. Serpong, Tangerang, Banten 15321",
             phoneNo: "087864735054",
             Lat: -6.288040072282559,
-            Long:  106.66458770243395,
+            Long: 106.66458770243395,
             rating: "5",
             reviews: "144",
             IGFollowers: "57500",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipN3Dign0bYe3OGZijaz7X_FN5dYSOwhozCvVxTH=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipN3Dign0bYe3OGZijaz7X_FN5dYSOwhozCvVxTH=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2439,11 +2439,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipN3Dign0bYe3OGZijaz7X_FN5dYS
             Address: "Jl. Ciater Bar. Jalan Kompleks Bsd No.64, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "081398898881",
             Lat: -6.322719003646878,
-            Long:  106.68324751962994,
+            Long: 106.68324751962994,
             rating: "4.8",
             reviews: "215",
             IGFollowers: "2844",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOUe50Hlyq2Isg4MCyrXF3ow6etH54Z12JkwH0c=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOUe50Hlyq2Isg4MCyrXF3ow6etH54Z12JkwH0c=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2470,12 +2470,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOUe50Hlyq2Isg4MCyrXF3ow6etH
             Website: "https://klinikanakku-bsd.com/",
             Address: "Ruko Golden Madrid 2, Jl. Letnan Sutopo No.8 Blok I, Rw. Mekar Jaya, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "085891054333",
-            Lat: -6.304742010035897, 
+            Lat: -6.304742010035897,
             Long: 106.68710181962979,
             rating: "4.5",
             reviews: "137",
             IGFollowers: "18700",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMjhYUt_tX7mDxpOR3N4qW5g6mYg7V4C2onYt7z=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMjhYUt_tX7mDxpOR3N4qW5g6mYg7V4C2onYt7z=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2502,12 +2502,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMjhYUt_tX7mDxpOR3N4qW5g6mYg
             Website: "https://www.anakpelangicenter.com/",
             Address: "Jl. Salvia 4, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
             phoneNo: "081288750162",
-            Lat: -6.301273397486779, 
+            Lat: -6.301273397486779,
             Long: 106.67959057174623,
             rating: "5",
             reviews: "29",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOlrDxZTowiYwooo-9lgitvtjWv3o9Nma16-Kpi=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOlrDxZTowiYwooo-9lgitvtjWv3o9Nma16-Kpi=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2535,11 +2535,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOlrDxZTowiYwooo-9lgitvtjWv3
             Address: "Block B No, Ruko Golden Madrid, Jl. Letnan Sutopo 1-2, Rw. Mekar Jaya, Kec. Serpong, Kota Tangerang Selatan, Banten 15311",
             phoneNo: "1500830",
             Lat: -6.303290126012097,
-            Long:  106.68550071407435,
+            Long: 106.68550071407435,
             rating: "4.4",
             reviews: "264",
             IGFollowers: "124000",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPgP7lMe6HCDn3nrDC-3GG-31fMsszUX2GKuBY=w435-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPgP7lMe6HCDn3nrDC-3GG-31fMsszUX2GKuBY=w435-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2567,11 +2567,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPgP7lMe6HCDn3nrDC-3GG-31fMs
             Address: "Ruko tol boulevard, Jl. Pelayangan Blok G No.10-11, Rawa Buntu, Serpong Sub-District, South Tangerang City, Banten 15318",
             phoneNo: "02153158255",
             Lat: -6.301317613420624,
-            Long:  106.66863323735488,
+            Long: 106.66863323735488,
             rating: "4.2",
             reviews: "204",
             IGFollowers: "5603",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipO0Fhzg6R3hVgql6cJKJKnSC9NcYwGZndcKOob8=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipO0Fhzg6R3hVgql6cJKJKnSC9NcYwGZndcKOob8=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6.5,
@@ -2598,12 +2598,12 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipO0Fhzg6R3hVgql6cJKJKnSC9NcY
             Website: "https://www.biomedilab.co.id/",
             Address: "BSD City, Ruko Golden Madrid 1 Blok D No. 3, Jl. Letnan Sutopo Sektor XIV, Kota Tangerang Selatan, Banten 15310",
             phoneNo: "08118600123",
-            Lat: -6.304257134389342, 
+            Lat: -6.304257134389342,
             Long: 106.68580933920671,
             rating: "5",
             reviews: "54",
             IGFollowers: "12400",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNd-pdIsD3lWAl3JECbveykGrzH3yzTydtiqqx1=w408-h906-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNd-pdIsD3lWAl3JECbveykGrzH3yzTydtiqqx1=w408-h906-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2631,11 +2631,11 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNd-pdIsD3lWAl3JECbveykGrzH3
             Address: "Blk. B, Ruko Golden Madrid, Jl. Letnan Sutopo No 6, Rw. Mekar Jaya, Kec. Serpong, Kota Tangerang Selatan, Banten 15311",
             phoneNo: "02127848604",
             Lat: -6.296388562090506,
-            Long:  106.68228843271966,
+            Long: 106.68228843271966,
             rating: "5",
             reviews: "90",
             IGFollowers: "20600",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMyxoHLDsiDxiMTK7UQwnS3PcrpWIFWR9bZY_u2=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMyxoHLDsiDxiMTK7UQwnS3PcrpWIFWR9bZY_u2=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6.5,

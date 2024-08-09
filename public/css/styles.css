@@ -2102,6 +2102,21 @@ body {
     border-top: 9px solid var(--shop-color);
 }
 
+.insta-container {
+    position: absolute;
+    bottom: 0;
+    width: 150%;
+    background-color: rgba(255, 255, 255, 1);
+    /* Optional: to make the background slightly transparent */
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    border-color: rgb(225, 48, 108); 
+    border-width: 4px; 
+    border-style: solid;
+    height: 100%;
+}
+
 .details-container {
     position: absolute;
     bottom: 0;
@@ -2122,7 +2137,7 @@ body {
 .price,
 .address,
 .features {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .features div {

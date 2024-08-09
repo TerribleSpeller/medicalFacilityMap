@@ -12,7 +12,7 @@ const detailsWellness = {
             rating: "3.8",
             reviews: "4",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMHH1-Xuw-lwjdgvUX6hUNjt8rJs3RCDVJgbPH0=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMHH1-Xuw-lwjdgvUX6hUNjt8rJs3RCDVJgbPH0=w408-h544-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -44,7 +44,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMHH1-Xuw-lwjdgvUX6hUNjt8rJs
             rating: "4.2",
             reviews: "262",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOBhW--J6C2JSf6OMOj98Aeg7sy_qznaZbDqFft=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOBhW--J6C2JSf6OMOj98Aeg7sy_qznaZbDqFft=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -76,7 +76,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOBhW--J6C2JSf6OMOj98Aeg7sy_
             rating: "4.8",
             reviews: "27",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPaxCZJ1kuSjNKyLRpfhSy5IX_SLg8-NrWdKv00=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPaxCZJ1kuSjNKyLRpfhSy5IX_SLg8-NrWdKv00=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -108,7 +108,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPaxCZJ1kuSjNKyLRpfhSy5IX_SL
             rating: "4.6",
             reviews: "79",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAIaZbQcJh9XmHhLu3H0ZoRPJl6Vd4s9EA2qt5=w408-h307-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAIaZbQcJh9XmHhLu3H0ZoRPJl6Vd4s9EA2qt5=w408-h307-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -140,7 +140,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAIaZbQcJh9XmHhLu3H0ZoRPJl6
             rating: "4.1",
             reviews: "414",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -172,7 +172,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_
             rating: "5.0",
             reviews: "2",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMq2ifFqfBZc9N32PLkyvWwg5am_IFbIDqNM-G7=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMq2ifFqfBZc9N32PLkyvWwg5am_IFbIDqNM-G7=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -204,7 +204,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMq2ifFqfBZc9N32PLkyvWwg5am_
             rating: "4.0",
             reviews: "12",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOb0IO6LMJY3xdkYprl97H63kvuuotYY4ArsQi9=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOb0IO6LMJY3xdkYprl97H63kvuuotYY4ArsQi9=w408-h544-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -236,7 +236,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOb0IO6LMJY3xdkYprl97H63kvuu
             rating: "4.6",
             reviews: "5",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMVLVCqt_siscqRP2fwu9XqIgQtEmtD9yD5H2nu=w408-h408-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMVLVCqt_siscqRP2fwu9XqIgQtEmtD9yD5H2nu=w408-h408-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -268,7 +268,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMVLVCqt_siscqRP2fwu9XqIgQtE
             rating: "5.0",
             reviews: "5",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -300,7 +300,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9Iyr
             rating: "4.6",
             reviews: "442",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -332,7 +332,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3N
             rating: "4,8",
             reviews: "66",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMflOSuEMXKswoQl-zifQLQp9CHi2yMB_KZ4pZ7=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMflOSuEMXKswoQl-zifQLQp9CHi2yMB_KZ4pZ7=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -364,7 +364,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMflOSuEMXKswoQl-zifQLQp9CHi
             rating: "4.7",
             reviews: "64",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNaqayrNaVAK3-sf15V2ORoU2kTtg0puUsyjtnv=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNaqayrNaVAK3-sf15V2ORoU2kTtg0puUsyjtnv=w408-h725-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -396,7 +396,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNaqayrNaVAK3-sf15V2ORoU2kTt
             rating: "4.8",
             reviews: "22",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMNfJle1uc1NK_TvkGxxuOYMM8KKgPmwP3DCdxv=w408-h299-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMNfJle1uc1NK_TvkGxxuOYMM8KKgPmwP3DCdxv=w408-h299-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -428,7 +428,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMNfJle1uc1NK_TvkGxxuOYMM8KK
             rating: "4.5",
             reviews: "271",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMnAEUgnpH3jNsQZ28oJxbgqaDghYiiFk67r42Z=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMnAEUgnpH3jNsQZ28oJxbgqaDghYiiFk67r42Z=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -460,7 +460,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMnAEUgnpH3jNsQZ28oJxbgqaDgh
             rating: "5.0",
             reviews: "17",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipP3VwC12RnOsUa_UNvj9PsFrOX-XZdy_DOvGrQC=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipP3VwC12RnOsUa_UNvj9PsFrOX-XZdy_DOvGrQC=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -492,7 +492,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipP3VwC12RnOsUa_UNvj9PsFrOX-X
             rating: "4.2",
             reviews: "166",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNf1zSfX33zDhU9cL1XrW9YzyCC6hreFm1GANb6=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNf1zSfX33zDhU9cL1XrW9YzyCC6hreFm1GANb6=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6.5,
@@ -524,7 +524,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNf1zSfX33zDhU9cL1XrW9YzyCC6
             rating: "4.4",
             reviews: "213",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNo75KnT9KeOk2BNDyGFejViv41NcGKoDWDehtO=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNo75KnT9KeOk2BNDyGFejViv41NcGKoDWDehtO=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -556,7 +556,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNo75KnT9KeOk2BNDyGFejViv41N
             rating: "4.8",
             reviews: "64",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNcSl3y-PNfxSBLElvjzaSGcrRinEKlUBiQB5Ud=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNcSl3y-PNfxSBLElvjzaSGcrRinEKlUBiQB5Ud=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -588,7 +588,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNcSl3y-PNfxSBLElvjzaSGcrRin
             rating: "4.4",
             reviews: "83",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -620,7 +620,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8
             rating: "4.1",
             reviews: "18",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPa8QifE7HAfsA6qRTCI1UdthfYF9EjnwL0aQWr=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPa8QifE7HAfsA6qRTCI1UdthfYF9EjnwL0aQWr=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -652,7 +652,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPa8QifE7HAfsA6qRTCI1UdthfYF
             rating: "4.6",
             reviews: "77",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -684,7 +684,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiH
             rating: "4.9",
             reviews: "14",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipORUATnGc0aItwoAeAGdjSxy1h4MXcH9JMbfUjL=w533-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipORUATnGc0aItwoAeAGdjSxy1h4MXcH9JMbfUjL=w533-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -747,7 +747,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipORUATnGc0aItwoAeAGdjSxy1h4M
             rating: "4.1",
             reviews: "414",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -779,7 +779,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_
             rating: "4.6",
             reviews: "19",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOpgylqAQ1JDORLQ1LuZF-NXzhCAzsFY7IsE8em=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOpgylqAQ1JDORLQ1LuZF-NXzhCAzsFY7IsE8em=w408-h544-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -811,7 +811,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOpgylqAQ1JDORLQ1LuZF-NXzhCA
             rating: "4.5",
             reviews: "359",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7kJkC1fFZciV=w408-h312-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7kJkC1fFZciV=w408-h312-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -835,7 +835,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7
         {
             Nama: "Navapark Country Club",
             subcategory: "Club House",
-            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no",allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
+            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
         },
         {
             Nama: "Palazetto Sport Club Foresta BSD City",
@@ -848,7 +848,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7
             rating: "4.5",
             reviews: "reviews",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -880,7 +880,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8
             rating: "4.9",
             reviews: "96",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNR8y2Wvnq3qRpG5UYAm0x3iHPzdLQNB1q-vAvy=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNR8y2Wvnq3qRpG5UYAm0x3iHPzdLQNB1q-vAvy=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -912,7 +912,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNR8y2Wvnq3qRpG5UYAm0x3iHPzd
             rating: "4.4",
             reviews: "213",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNo75KnT9KeOk2BNDyGFejViv41NcGKoDWDehtO=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNo75KnT9KeOk2BNDyGFejViv41NcGKoDWDehtO=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -944,7 +944,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNo75KnT9KeOk2BNDyGFejViv41N
             rating: "4.5",
             reviews: "20",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipP07E9Adfo3XztG3jVSKPb4NGXwenBjlFZiIGlh=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipP07E9Adfo3XztG3jVSKPb4NGXwenBjlFZiIGlh=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 7,
@@ -976,7 +976,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipP07E9Adfo3XztG3jVSKPb4NGXwe
             rating: "3.4",
             reviews: "26",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipN9Ax6F-Nxyd3I_OsBAUxQLvYePIOCzI0ZnYIbp=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipN9Ax6F-Nxyd3I_OsBAUxQLvYePIOCzI0ZnYIbp=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1008,7 +1008,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipN9Ax6F-Nxyd3I_OsBAUxQLvYePI
             rating: "4.9",
             reviews: "64",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMjdH-rA0wMfbUNkDb7kNPSd7b7gyQEwoJzr0Qt=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMjdH-rA0wMfbUNkDb7kNPSd7b7gyQEwoJzr0Qt=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -1040,7 +1040,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMjdH-rA0wMfbUNkDb7kNPSd7b7g
             rating: "4.2",
             reviews: "2623",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOBhW--J6C2JSf6OMOj98Aeg7sy_qznaZbDqFft=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOBhW--J6C2JSf6OMOj98Aeg7sy_qznaZbDqFft=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1072,7 +1072,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOBhW--J6C2JSf6OMOj98Aeg7sy_
             rating: "5.0",
             reviews: "278",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOnvXSewtUe2MWfHz-y5LLEc0go3ak3scrF0tPO=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOnvXSewtUe2MWfHz-y5LLEc0go3ak3scrF0tPO=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10.5,
@@ -1104,7 +1104,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOnvXSewtUe2MWfHz-y5LLEc0go3
             rating: "4.8",
             reviews: "681",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPsF4lMpAo4VwP55CbslII52GiFZAw9BSRucADD=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPsF4lMpAo4VwP55CbslII52GiFZAw9BSRucADD=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7.5,
@@ -1136,7 +1136,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPsF4lMpAo4VwP55CbslII52GiFZ
             rating: "4.5",
             reviews: "134",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipO_9BPs62b08JqUwRae6rCjjgxTxj_fwuhastra=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipO_9BPs62b08JqUwRae6rCjjgxTxj_fwuhastra=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1168,7 +1168,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipO_9BPs62b08JqUwRae6rCjjgxTx
             rating: "4.8",
             reviews: "50",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipO1_r170T_rXZXxM_sHkEg2FtOB3YkhXKhsI6fF=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipO1_r170T_rXZXxM_sHkEg2FtOB3YkhXKhsI6fF=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1200,7 +1200,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipO1_r170T_rXZXxM_sHkEg2FtOB3
             rating: "4.2",
             reviews: "232",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOUPIw9yus6E-ScVts8mA2RyRgf5G15jWxyR2L4=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOUPIw9yus6E-ScVts8mA2RyRgf5G15jWxyR2L4=w408-h725-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1224,7 +1224,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOUPIw9yus6E-ScVts8mA2RyRgf5
         {
             Nama: "Navapark Country Club - Gym",
             subcategory: "Gym",
-            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no" ,allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
+            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
         },
         {
             Nama: "Palazetto Sport Club, Foresta BSD City Gym",
@@ -1237,7 +1237,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOUPIw9yus6E-ScVts8mA2RyRgf5
             rating: "4.5",
             reviews: "reviews",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1269,7 +1269,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8
             rating: "4.9",
             reviews: "46",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOwqX87DinYxEthFVfVig8z9dvg1gqcjf21YDIO=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOwqX87DinYxEthFVfVig8z9dvg1gqcjf21YDIO=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1301,7 +1301,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOwqX87DinYxEthFVfVig8z9dvg1
             rating: "3.9",
             reviews: "19",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbUJhs_X1J-IKXlunrkoITr5cvM6ud_eQ-9fiW=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbUJhs_X1J-IKXlunrkoITr5cvM6ud_eQ-9fiW=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1333,7 +1333,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbUJhs_X1J-IKXlunrkoITr5cvM
             rating: "5.0",
             reviews: "10",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTEc4dfXXrRq2QSzW2X1fb9SbohjTepiC0G-BJ=w408-h408-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTEc4dfXXrRq2QSzW2X1fb9SbohjTepiC0G-BJ=w408-h408-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1365,7 +1365,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTEc4dfXXrRq2QSzW2X1fb9Sboh
             rating: "5.0",
             reviews: "8",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTrf1NsXANYbExVLQmCB6fHPaDKN517SlEHdPd=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTrf1NsXANYbExVLQmCB6fHPaDKN517SlEHdPd=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -1397,7 +1397,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTrf1NsXANYbExVLQmCB6fHPaDK
             rating: "5.0",
             reviews: "8",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipO2qM1v5vaLyRacng9lyD9JKxAWoee1J8cgLRGa=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipO2qM1v5vaLyRacng9lyD9JKxAWoee1J8cgLRGa=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1429,7 +1429,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipO2qM1v5vaLyRacng9lyD9JKxAWo
             rating: "4.8",
             reviews: "5",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQqmXZo2E1hGVbvpD3gPBUr5DZfGb2FM8bvnjl=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQqmXZo2E1hGVbvpD3gPBUr5DZfGb2FM8bvnjl=w426-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1492,7 +1492,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQqmXZo2E1hGVbvpD3gPBUr5DZf
             rating: "4.8",
             reviews: "96",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNCf48qz2K4N56CTOzymSGwsNh7NUoYyXlS8SdA=w408-h906-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNCf48qz2K4N56CTOzymSGwsNh7NUoYyXlS8SdA=w408-h906-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1524,7 +1524,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNCf48qz2K4N56CTOzymSGwsNh7N
             rating: "5.0",
             reviews: "58",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPZ0yk_tIu9Vp4oYMYzXAbC4KWbanlNT8kOv-Yq=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPZ0yk_tIu9Vp4oYMYzXAbC4KWbanlNT8kOv-Yq=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -1556,7 +1556,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPZ0yk_tIu9Vp4oYMYzXAbC4KWba
             rating: "4.4",
             reviews: "440",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNO40e4rolWcNDGmB_M0pP2ff4W8EHg5YWWQzIj=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNO40e4rolWcNDGmB_M0pP2ff4W8EHg5YWWQzIj=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1588,7 +1588,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNO40e4rolWcNDGmB_M0pP2ff4W8
             rating: "4,7",
             reviews: "62",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMgQB-Fq-AqN63X0a74b0TYfqdnHV5A3Jv0bKL7=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMgQB-Fq-AqN63X0a74b0TYfqdnHV5A3Jv0bKL7=w426-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1651,7 +1651,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMgQB-Fq-AqN63X0a74b0TYfqdnH
             rating: "4.6",
             reviews: "190",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOLcsf9EB-MGkFMqSBXkwf0nCZd9GN36vh9xyuD=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOLcsf9EB-MGkFMqSBXkwf0nCZd9GN36vh9xyuD=w426-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1683,7 +1683,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOLcsf9EB-MGkFMqSBXkwf0nCZd9
             rating: "4.6",
             reviews: "77",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1715,7 +1715,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiH
             rating: "4.2",
             reviews: "12",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNfwyNUrPtb1tr4acYIiht432HlovL-rc4pb1rR=w417-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNfwyNUrPtb1tr4acYIiht432HlovL-rc4pb1rR=w417-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1747,7 +1747,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNfwyNUrPtb1tr4acYIiht432Hlo
             rating: "4.9",
             reviews: "14",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipORUATnGc0aItwoAeAGdjSxy1h4MXcH9JMbfUjL=w533-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipORUATnGc0aItwoAeAGdjSxy1h4MXcH9JMbfUjL=w533-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1779,7 +1779,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipORUATnGc0aItwoAeAGdjSxy1h4M
             rating: "4.6",
             reviews: "79",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAIaZbQcJh9XmHhLu3H0ZoRPJl6Vd4s9EA2qt5=w408-h307-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAIaZbQcJh9XmHhLu3H0ZoRPJl6Vd4s9EA2qt5=w408-h307-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1811,7 +1811,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAIaZbQcJh9XmHhLu3H0ZoRPJl6
             rating: "4.5",
             reviews: "560",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNI0Gr7LVcasO4vz4AgYdicy7mcRb8UG-dHpLLm=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNI0Gr7LVcasO4vz4AgYdicy7mcRb8UG-dHpLLm=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 12,
@@ -1843,7 +1843,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNI0Gr7LVcasO4vz4AgYdicy7mcR
             rating: "4.5",
             reviews: "31",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-lpff5IbxwkYiWN_2hRkr43qKOC9698tMDnHM=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-lpff5IbxwkYiWN_2hRkr43qKOC9698tMDnHM=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -1875,7 +1875,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-lpff5IbxwkYiWN_2hRkr43qKO
             rating: "4.2",
             reviews: "90",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPiTjImUvHni7Z4Ixes8hK638uGFeAsENyHW2mk=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPiTjImUvHni7Z4Ixes8hK638uGFeAsENyHW2mk=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -1907,7 +1907,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPiTjImUvHni7Z4Ixes8hK638uGF
             rating: "4.1",
             reviews: "81",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPe882ilxDqYV2Nqjoni7LA_yXgxqtNKOnumnj4=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPe882ilxDqYV2Nqjoni7LA_yXgxqtNKOnumnj4=w426-h240-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -1939,7 +1939,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPe882ilxDqYV2Nqjoni7LA_yXgx
             rating: "4.1",
             reviews: "414",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -1971,7 +1971,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_
             rating: "4.5",
             reviews: "359",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7kJkC1fFZciV=w408-h312-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7kJkC1fFZciV=w408-h312-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2008,7 +2008,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7
             rating: "4.5",
             reviews: "reviews",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -2040,7 +2040,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8
             rating: "4.3",
             reviews: "49",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPWyf-xxDMV3GoHfp5OCZA0mZ0XTfTV_mdkgkEN=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPWyf-xxDMV3GoHfp5OCZA0mZ0XTfTV_mdkgkEN=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -2072,7 +2072,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPWyf-xxDMV3GoHfp5OCZA0mZ0XT
             rating: "5.0",
             reviews: "5",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOI5bJfcRnLJbggMUnRZbHPTGvcpyvN0QtD5moQ=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOI5bJfcRnLJbggMUnRZbHPTGvcpyvN0QtD5moQ=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2135,7 +2135,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOI5bJfcRnLJbggMUnRZbHPTGvcp
             rating: "4.6",
             reviews: "77",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -2167,7 +2167,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiH
             rating: "4.0",
             reviews: "12",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOb0IO6LMJY3xdkYprl97H63kvuuotYY4ArsQi9=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOb0IO6LMJY3xdkYprl97H63kvuuotYY4ArsQi9=w408-h544-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2199,7 +2199,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOb0IO6LMJY3xdkYprl97H63kvuu
             rating: "4.6",
             reviews: "79",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipO-ns4uF9VJWBxAupA3T3bxCaxsCbGVJr3os-5r=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipO-ns4uF9VJWBxAupA3T3bxCaxsCbGVJr3os-5r=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2231,7 +2231,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipO-ns4uF9VJWBxAupA3T3bxCaxsC
             rating: "4.8",
             reviews: "5",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPigFnzLBZYtlkWgB3LcnGFCYYmFUK9r2Fr_eoe=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPigFnzLBZYtlkWgB3LcnGFCYYmFUK9r2Fr_eoe=w408-h306-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2263,7 +2263,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPigFnzLBZYtlkWgB3LcnGFCYYmF
             rating: "4.6",
             reviews: "135",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2295,7 +2295,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9Iyr
             rating: "4.5",
             reviews: "359",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2319,7 +2319,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9Iyr
         {
             Nama: "Navapark Country Club - Tennis Court",
             subcategory: "Tennis Court",
-            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", 
+            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no",
             allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
         },
@@ -2334,7 +2334,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9Iyr
             rating: "4.1",
             reviews: "414",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2366,7 +2366,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_
             rating: "4.5",
             reviews: "88",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipN8nF4xDNtnRY_DSuTpZMj0KLrwR0rAGtqzj-Fz=w408-h272-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipN8nF4xDNtnRY_DSuTpZMj0KLrwR0rAGtqzj-Fz=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2398,7 +2398,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipN8nF4xDNtnRY_DSuTpZMj0KLrwR
             rating: "3.0",
             reviews: "2",
             IGFollowers: "IGFollowers",
-photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=zk9ADTc1Zp_jxIohifZDvw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=284.63217&pitch=0&thumbfov=100"
+            photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=zk9ADTc1Zp_jxIohifZDvw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=284.63217&pitch=0&thumbfov=100"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2430,7 +2430,7 @@ photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=zk9ADT
             rating: "3.5",
             reviews: "8",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNXGntF4oSA0lR09u1Nv4WYU-UoA2SRqL7tTg6G=w408-h725-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNXGntF4oSA0lR09u1Nv4WYU-UoA2SRqL7tTg6G=w408-h725-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2462,7 +2462,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNXGntF4oSA0lR09u1Nv4WYU-UoA
             rating: "4.6",
             reviews: "62",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQ2jyZHosx2s00HuDFAnoI-8mpw6YVl8rKHgkp=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQ2jyZHosx2s00HuDFAnoI-8mpw6YVl8rKHgkp=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 6,
@@ -2494,7 +2494,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQ2jyZHosx2s00HuDFAnoI-8mpw
             rating: "4.1",
             reviews: "8",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNzJGGzZ6naPe_essSLmFra9grJoCiT3mzIg5zH=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNzJGGzZ6naPe_essSLmFra9grJoCiT3mzIg5zH=w408-h544-k-no"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2526,7 +2526,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNzJGGzZ6naPe_essSLmFra9grJo
             rating: "5.0",
             reviews: "115",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPrsccb8A-nFA7_bhBoeBJGO0juRLJ4hQypi1-2=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPrsccb8A-nFA7_bhBoeBJGO0juRLJ4hQypi1-2=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -2558,7 +2558,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPrsccb8A-nFA7_bhBoeBJGO0juR
             rating: "4.4",
             reviews: "7",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPSh3pyHUVZVtKdwJQs1jkdQUnr5q8hhFpRM4Pd=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPSh3pyHUVZVtKdwJQs1jkdQUnr5q8hhFpRM4Pd=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2590,7 +2590,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPSh3pyHUVZVtKdwJQs1jkdQUnr5
             rating: "4.2",
             reviews: "12",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipM0NDfW7C88rm-nDj07ML1vmO5WMwQ7adw6D8HO=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipM0NDfW7C88rm-nDj07ML1vmO5WMwQ7adw6D8HO=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7,
@@ -2622,7 +2622,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipM0NDfW7C88rm-nDj07ML1vmO5WM
             rating: "4.2",
             reviews: "5",
             IGFollowers: "IGFollowers",
-photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=bHl1193oUC9UnVDd0mhi-w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=188.95705&pitch=0&thumbfov=100"
+            photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=bHl1193oUC9UnVDd0mhi-w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=188.95705&pitch=0&thumbfov=100"
             , allDay: true,
             openingHours: {
                 Mon: 8,
@@ -2654,7 +2654,7 @@ photoURL: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=bHl119
             rating: "4.8",
             reviews: "22",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMQA_Cy9i_SgzBF0awCk7v0JIcEH6fp2ngnuzI=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMQA_Cy9i_SgzBF0awCk7v0JIcEH6fp2ngnuzI=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -2686,7 +2686,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMQA_Cy9i_SgzBF0awCk7v0JIcEH
             rating: "5.0",
             reviews: "14",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipN0EXlglPCCzVk_2NZlEKZhVJgXEb83Z6D33Cul=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipN0EXlglPCCzVk_2NZlEKZhVJgXEb83Z6D33Cul=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2718,7 +2718,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipN0EXlglPCCzVk_2NZlEKZhVJgXE
             rating: "5.0",
             reviews: "42",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipO-jE2JOcZqXIeACJ_-pi3yU4r8edGqVtPExULP=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipO-jE2JOcZqXIeACJ_-pi3yU4r8edGqVtPExULP=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 7.5,
@@ -2750,7 +2750,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipO-jE2JOcZqXIeACJ_-pi3yU4r8e
             rating: "4.9",
             reviews: "39",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMpkz4m7o4YTOB9WwULqEVF0h8hr5KqL6koidE=w427-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMpkz4m7o4YTOB9WwULqEVF0h8hr5KqL6koidE=w427-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -2782,7 +2782,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMpkz4m7o4YTOB9WwULqEVF0h8hr
             rating: "4.9",
             reviews: "2392",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMD1PXPLj6lHCf99JJfMACPLYfJKVvUDFPw1nXF=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMD1PXPLj6lHCf99JJfMACPLYfJKVvUDFPw1nXF=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -2814,7 +2814,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMD1PXPLj6lHCf99JJfMACPLYfJK
             rating: "4.9",
             reviews: "171",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNjPqm_6dXcwhkjoH4DU9z8MABT8QrywnnhxwZ5=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNjPqm_6dXcwhkjoH4DU9z8MABT8QrywnnhxwZ5=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 0,
@@ -2846,7 +2846,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNjPqm_6dXcwhkjoH4DU9z8MABT8
             rating: "5.0",
             reviews: "60",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOuSgMTRZOp4FFeN8aCDxPZNJM41wqWEwGMqK5Q=w408-h631-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOuSgMTRZOp4FFeN8aCDxPZNJM41wqWEwGMqK5Q=w408-h631-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -2878,7 +2878,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOuSgMTRZOp4FFeN8aCDxPZNJM41
             rating: "4.7",
             reviews: "441",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMF7JtysHZThH2ae3v4jK5IMjds1uxtrIerPph4=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMF7JtysHZThH2ae3v4jK5IMjds1uxtrIerPph4=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -2910,7 +2910,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMF7JtysHZThH2ae3v4jK5IMjds1
             rating: "4.8",
             reviews: "170",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipNbX1sc8zRf09uYtedr0FkK-gDwz86sTX7mrR3I=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipNbX1sc8zRf09uYtedr0FkK-gDwz86sTX7mrR3I=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9.5,
@@ -2942,7 +2942,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipNbX1sc8zRf09uYtedr0FkK-gDwz
             rating: "4.5",
             reviews: "157",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPI8tuCQ_3WCXtw1URzq6Gx9wjPuRk3hXiAmIg7=w408-h305-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPI8tuCQ_3WCXtw1URzq6Gx9wjPuRk3hXiAmIg7=w408-h305-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -2974,7 +2974,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPI8tuCQ_3WCXtw1URzq6Gx9wjPu
             rating: "4.6",
             reviews: "260",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPOnK_9WhnBorq1ye4Rn4wB-2OkEWSZv3GBsamY=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPOnK_9WhnBorq1ye4Rn4wB-2OkEWSZv3GBsamY=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -3006,7 +3006,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPOnK_9WhnBorq1ye4Rn4wB-2OkE
             rating: "5.0",
             reviews: "1846",
             IGFollowers: "IGFollowers",
-photoURL: ""
+            photoURL: ""
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -3038,7 +3038,7 @@ photoURL: ""
             rating: "4.9",
             reviews: "65",
             IGFollowers: "380",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMMpNt-31R74L_rLy_5oyVorWe_GwLW0Y9i16VS=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMMpNt-31R74L_rLy_5oyVorWe_GwLW0Y9i16VS=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -3070,7 +3070,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMMpNt-31R74L_rLy_5oyVorWe_G
             rating: "4.9",
             reviews: "208",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMF7JtysHZThH2ae3v4jK5IMjds1uxtrIerPph4=w408-h306-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMF7JtysHZThH2ae3v4jK5IMjds1uxtrIerPph4=w408-h306-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -3102,7 +3102,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMF7JtysHZThH2ae3v4jK5IMjds1
             rating: "4.8",
             reviews: "120",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipM1c7jMWQHqfWe-xq1-ewq-QxQJ4kgaYif96iGX=w427-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipM1c7jMWQHqfWe-xq1-ewq-QxQJ4kgaYif96iGX=w427-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -3134,7 +3134,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipM1c7jMWQHqfWe-xq1-ewq-QxQJ4
             rating: "4.6",
             reviews: "708",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipMt6a0e3A9fAY3K9hN4Fn3ZO9H_pmZrVpAXk_kE=w408-h272-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipMt6a0e3A9fAY3K9hN4Fn3ZO9H_pmZrVpAXk_kE=w408-h272-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -3166,7 +3166,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipMt6a0e3A9fAY3K9hN4Fn3ZO9H_p
             rating: "4,2",
             reviews: "101",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-yopgEZ2_ym2H8J0sjCZ9PdKzyC_9LW4KfioX=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-yopgEZ2_ym2H8J0sjCZ9PdKzyC_9LW4KfioX=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 8,
@@ -3198,7 +3198,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-yopgEZ2_ym2H8J0sjCZ9PdKzy
             rating: "4.5",
             reviews: "89",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPIHyylX4dEi0fWEjjSUiqX6bFuChWELUWhwcqE=w426-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPIHyylX4dEi0fWEjjSUiqX6bFuChWELUWhwcqE=w426-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -3230,7 +3230,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPIHyylX4dEi0fWEjjSUiqX6bFuC
             rating: "4.8",
             reviews: "388",
             IGFollowers: "5476",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipOYiRMffmB4IR9lPm-7wPRIu8ox5OSvpK5gnMg5=w427-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipOYiRMffmB4IR9lPm-7wPRIu8ox5OSvpK5gnMg5=w427-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 10,
@@ -3262,7 +3262,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipOYiRMffmB4IR9lPm-7wPRIu8ox5
             rating: "4.6",
             reviews: "158",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipPKpN_OpK-YBjUVQgV7uOBJKAkmpLPRBwByTjLs=w427-h240-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipPKpN_OpK-YBjUVQgV7uOBJKAkmpLPRBwByTjLs=w427-h240-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
@@ -3294,7 +3294,7 @@ photoURL: "https://lh5.googleusercontent.com/p/AF1QipPKpN_OpK-YBjUVQgV7uOBJKAkmp
             rating: "4.7",
             reviews: "374",
             IGFollowers: "IGFollowers",
-photoURL: "https://lh5.googleusercontent.com/p/AF1QipP1P7qXCNaRltxQUuT5sHeOzqyTA_N8WMzeA5NK=w408-h544-k-no"
+            photoURL: "https://lh5.googleusercontent.com/p/AF1QipP1P7qXCNaRltxQUuT5sHeOzqyTA_N8WMzeA5NK=w408-h544-k-no"
             , allDay: false,
             openingHours: {
                 Mon: 9,
