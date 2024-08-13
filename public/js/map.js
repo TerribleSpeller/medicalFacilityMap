@@ -141,19 +141,20 @@ async function initMap() {
     BSDBoundary.setMap(map);
     const centerControlDiv = document.createElement("div");
     const centerControl = createCenterControl(map);
-    centerControlDiv.classList.add("px-2");
+    // centerControlDiv.classList.add("px-1");
     centerControlDiv.appendChild(centerControl);
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(centerControlDiv);
 }
 function createCenterControl(map) {
     const controlDiv = document.createElement("div");
-    controlDiv.classList.add("px-2");
+    // controlDiv.classList.add("px-1");
     controlDiv.classList.add("flex-row")
     controlDiv.classList.add("d-flex")
+    controlDiv.style.alignItems = "flex-start";
 
 
     const controlButton = document.createElement("button");
-    controlButton.classList.add("px-2");
+    // controlButton.classList.add("");
     controlButton.style.backgroundColor = "#fff";
     controlButton.style.border = "2px solid #fff";
     controlButton.style.borderRadius = "3px";
@@ -162,7 +163,7 @@ function createCenterControl(map) {
     controlButton.style.fontFamily = "Roboto,Arial,sans-serif";
     controlButton.style.fontSize = "16px";
     controlButton.style.lineHeight = "12px";
-    controlButton.style.margin = "8px 0 22px";
+    controlButton.style.margin = "8px 0 3px";
     controlButton.style.padding = "0 5px";
     controlButton.style.textAlign = "center";
     controlButton.textContent = "Find Place";
@@ -172,10 +173,10 @@ function createCenterControl(map) {
     //Category Stuff
     const dropdownCategory = document.createElement("div");
     dropdownCategory.id = "Category Dropdown";
-    dropdownCategory.classList.add("px-2");
+    dropdownCategory.classList.add("px-1");
     dropdownCategory.classList.add("flex-column");
     dropdownCategory.classList.add("d-flex")
-    dropdownCategory.style.margin = "8px 0 22px";
+    dropdownCategory.style.margin = "8px 0 3px";
     dropdownCategory.style.padding = "0 5px";
     dropdownCategory.style.fontSize = "16px";
     dropdownCategory.style.lineHeight = "12px";
@@ -210,7 +211,7 @@ function createCenterControl(map) {
         button.value = option.value;
         button.textContent = option.text;
         button.classList.add("vertical-menu-long")
-        button.style.margin = "2.5px auto";
+        button.style.margin = "1.0px auto";
         button.style.padding = "px";
         button.style.fontSize = "16px";
         button.style.cursor = "pointer";
@@ -239,10 +240,10 @@ function createCenterControl(map) {
     //Subcategory Function 
     const dropdown = document.createElement("div");
     dropdown.id = "Subcategory Dropdown";
-    dropdown.classList.add("px-2");
+    dropdown.classList.add("px-1");
     dropdown.classList.add("flex-column");
     dropdown.classList.add("d-flex")
-    dropdown.style.margin = "8px 0 22px";
+    dropdown.style.margin = "8px 0 3px";
     dropdown.style.padding = "0 5px";
     dropdown.style.fontSize = "16px";
     dropdown.style.lineHeight = "12px";
@@ -335,7 +336,7 @@ function createCenterControl(map) {
         button.value = option.value;
         button.textContent = option.text;
         button.classList.add("vertical-menu-long")
-        button.style.margin = "2.5px auto";
+        button.style.margin = "1.0px auto";
         button.style.fontSize = "14px";
         button.style.cursor = "pointer";
 
@@ -351,7 +352,7 @@ function createCenterControl(map) {
         button.value = option.value;
         button.textContent = option.text;
         button.classList.add("vertical-menu-long")
-        button.style.margin = "2.5px auto";
+        button.style.margin = "1.0px auto";
         button.style.fontSize = "14px";
         button.style.cursor = "pointer";
 
@@ -367,7 +368,7 @@ function createCenterControl(map) {
         button.value = option.value;
         button.textContent = option.text;
         button.classList.add("vertical-menu-long")
-        button.style.margin = "2.5px auto";
+        button.style.margin = "1.0px auto";
         button.style.fontSize = "14px";
         button.style.cursor = "pointer";
 
@@ -382,10 +383,10 @@ function createCenterControl(map) {
     const moreFiltersContainer = document.createElement("div");
     const moreFilters = document.createElement("div");
     moreFilters.id = "moreFilters";
-    moreFilters.classList.add("px-2");
+    moreFilters.classList.add("px-1");
     moreFilters.classList.add("flex-column");
     moreFilters.classList.add("d-flex")
-    moreFilters.style.margin = "8px 0 22px";
+    moreFilters.style.margin = "8px 0 3px";
     moreFilters.style.padding = "0 5px";
     moreFilters.style.fontSize = "16px";
     moreFilters.style.lineHeight = "12px";
@@ -403,27 +404,27 @@ function createCenterControl(map) {
         lessFilters.style.zIndex = "2";
         lessFilters.style.width = "100%";
         lessFilters.style.padding = "0 5px";
-        lessFilters.classList.add("px-2");
+        lessFilters.classList.add("px-1");
         promoFilter.style.zIndex = "2";
         promoFilter.style.width = "100%";
         promoFilter.style.padding = "0 5px";
-        promoFilter.classList.add("px-2");
+        promoFilter.classList.add("px-1");
         ratingFilter.style.zIndex = "2";
         ratingFilter.style.width = "100%";
         ratingFilter.style.padding = "0 5px";
-        ratingFilter.classList.add("px-2");
+        ratingFilter.classList.add("px-1");
         hourFilter.style.zIndex = "2";
         hourFilter.style.width = "100%";
         hourFilter.style.padding = "0 5px";
-        hourFilter.classList.add("px-2");
+        hourFilter.classList.add("px-1");
         socialFilter.style.zIndex = "2";
         socialFilter.style.width = "100%";
         socialFilter.style.padding = "0 5px";
-        socialFilter.classList.add("px-2");
+        socialFilter.classList.add("px-1");
         moreFilters.style.zIndex = -1000;
         moreFilters.style.width = "0px";
         moreFilters.style.padding = "0px";
-        moreFilters.classList.remove("px-2");
+        moreFilters.classList.remove("px-1");
     });
 
     moreFilters.appendChild(moreFiltersButton);
@@ -433,10 +434,10 @@ function createCenterControl(map) {
     const promoFilterContainer = document.createElement("div");
     const promoFilter = document.createElement("div");
     promoFilter.id = "promoFilter";
-    //promoFilter.classList.add("px-2");
+    //promoFilter.classList.add("px-1");
     promoFilter.classList.add("flex-column");
     promoFilter.classList.add("d-flex")
-    promoFilter.style.margin = "8px 0 22px";
+    promoFilter.style.margin = "8px 0 3px";
     // promoFilter.style.padding = "0 5px";
     promoFilter.style.fontSize = "16px";
     promoFilter.style.lineHeight = "12px";
@@ -453,7 +454,7 @@ function createCenterControl(map) {
 
     const PromoDiv = document.createElement("div");
     PromoDiv.classList.add("vertical-menu-long");
-    PromoDiv.style.margin = "2.5px auto";
+    PromoDiv.style.margin = "1.0px auto";
     PromoDiv.style.padding = "10px";
     PromoDiv.style.fontSize = "16px";
     PromoDiv.style.cursor = "pointer";
@@ -478,10 +479,10 @@ function createCenterControl(map) {
     const ratingFilterContainer = document.createElement("div");
     const ratingFilter = document.createElement("div");
     ratingFilter.id = "ratingFilter";
-    //ratingFilter.classList.add("px-2");
+    //ratingFilter.classList.add("px-1");
     ratingFilter.classList.add("flex-column");
     ratingFilter.classList.add("d-flex")
-    ratingFilter.style.margin = "8px 0 22px";
+    ratingFilter.style.margin = "8px 0 3px";
     // ratingFilter.style.padding = "0 5px";
     ratingFilter.style.fontSize = "16px";
     ratingFilter.style.lineHeight = "12px";
@@ -498,7 +499,7 @@ function createCenterControl(map) {
 
     const RatingDiv = document.createElement("div");
     RatingDiv.classList.add("vertical-menu-long")
-    RatingDiv.style.margin = "2.5px auto";
+    RatingDiv.style.margin = "1.0px auto";
     RatingDiv.style.padding = "10px";
     RatingDiv.style.fontSize = "16px";
     RatingDiv.style.cursor = "pointer";
@@ -523,10 +524,10 @@ function createCenterControl(map) {
     const hourFilterContainer = document.createElement("div");
     const hourFilter = document.createElement("div");
     hourFilter.id = "hourFilter";
-    // hourFilter.classList.add("px-2");
+    // hourFilter.classList.add("px-1");
     hourFilter.classList.add("flex-column");
     hourFilter.classList.add("d-flex")
-    hourFilter.style.margin = "8px 0 22px";
+    hourFilter.style.margin = "8px 0 3px";
     // hourFilter.style.padding = "0 5px";
     hourFilter.style.fontSize = "16px";
     hourFilter.style.lineHeight = "12px";
@@ -559,21 +560,21 @@ function createCenterControl(map) {
     anytimeOption.id = "anytimeOptionButton";
     anytimeOption.innerHTML = "Anytime";
     anytimeOption.classList.add("openingHourSize");
-    anytimeOption.style.margin = "2.5px auto";
+    anytimeOption.style.margin = "1.0px auto";
     openingHoursContainer.appendChild(anytimeOption);
 
     const nowOption = document.createElement("button");
     nowOption.id = "nowOptionButton";
     nowOption.innerHTML = "Now";
     nowOption.classList.add("openingHourSize")
-    nowOption.style.margin = "2.5px auto";
+    nowOption.style.margin = "1.0px auto";
     openingHoursContainer.appendChild(nowOption);
 
     const hours24Option = document.createElement("button");
     hours24Option.id = "hours24OptionButton";
     hours24Option.innerHTML = "24 Hours";
     hours24Option.classList.add("openingHourSize")
-    hours24Option.style.margin = "2.5px auto";
+    hours24Option.style.margin = "1.0px auto";
     openingHoursContainer.appendChild(hours24Option);
 
     const specificDayOption = document.createElement("button");
@@ -668,7 +669,7 @@ function createCenterControl(map) {
     socialFilter.id = "socialFilter";
     socialFilter.classList.add("flex-column");
     socialFilter.classList.add("d-flex")
-    socialFilter.style.margin = "8px 0 22px";
+    socialFilter.style.margin = "8px 0 3px";
     socialFilter.style.fontSize = "16px";
     socialFilter.style.lineHeight = "12px";
     socialFilter.style.display = "none";
@@ -693,7 +694,7 @@ function createCenterControl(map) {
     instaOption.id = "instaOptionButton";
     instaOption.innerHTML = "Instagram";
     instaOption.classList.add("openingHourSize")
-    instaOption.style.margin = "2.5px auto";
+    instaOption.style.margin = "1.0px auto";
     socialButtonContent.appendChild(instaOption);
 
     socialButton.addEventListener("click", () => {
@@ -713,10 +714,10 @@ function createCenterControl(map) {
     const lessFiltersContainer = document.createElement("div");
     const lessFilters = document.createElement("div");
     lessFilters.id = "lessFilters";
-    //lessFilters.classList.add("px-2");
+    //lessFilters.classList.add("px-1");
     lessFilters.classList.add("flex-column");
     lessFilters.classList.add("d-flex")
-    lessFilters.style.margin = "8px 0 22px";
+    lessFilters.style.margin = "8px 0 3px";
     // lessFilters.style.padding = "0 5px";
     lessFilters.style.fontSize = "16px";
     lessFilters.style.lineHeight = "12px";
@@ -736,27 +737,27 @@ function createCenterControl(map) {
         moreFilters.style.zIndex = "2";
         moreFilters.style.width = "100%";
         moreFilters.style.padding = "0 5px";
-        moreFilters.classList.add("px-2");
+        moreFilters.classList.add("px-1");
         promoFilter.style.zIndex = -1000;
         promoFilter.style.width = "0px";
         promoFilter.style.padding = "0px";
-        promoFilter.classList.remove("px-2");
+        promoFilter.classList.remove("px-1");
         ratingFilter.style.zIndex = -1000;
         ratingFilter.style.width = "0px";
         ratingFilter.style.padding = "0px";
-        ratingFilter.classList.remove("px-2");
+        ratingFilter.classList.remove("px-1");
         hourFilter.style.zIndex = -1000;
         hourFilter.style.width = "0px";
         hourFilter.style.padding = "0px";
-        hourFilter.classList.remove("px-2");
+        hourFilter.classList.remove("px-1");
         socialFilter.style.zIndex = -1000;
         socialFilter.style.width = "0px";
         socialFilter.style.padding = "0px";
-        socialFilter.classList.remove("px-2");
+        socialFilter.classList.remove("px-1");
         lessFilters.style.zIndex = -1000;
         lessFilters.style.width = "0px";
         lessFilters.style.padding = "0px";
-        lessFilters.classList.remove("px-2");
+        lessFilters.classList.remove("px-1");
     });
     lessFilters.appendChild(lessFiltersButton);
     lessFiltersContainer.appendChild(lessFilters);
@@ -768,6 +769,8 @@ function createCenterControl(map) {
     controlDiv.appendChild(hourFilterContainer);
     controlDiv.appendChild(socialFilterContainer);
     controlDiv.appendChild(lessFiltersContainer);
+    controlDiv.classList.add("rounded-end-5", "pe-4");
+    controlDiv.classList.add("bg-white")
     return controlDiv;
 }
 async function findPlace(type) {
@@ -1133,57 +1136,62 @@ function filterMarkers(markers) {
 
                 } else {
                 }
-                if (specificDayCheck) {
+                if (openingHoursFilter == "specificTime") {
                     const specificDay = document.getElementById("daySelect").value;
                     const specificOpeningTime = document.getElementById("openingTimeInput").value;
                     const specificClosingTime = document.getElementById("closingTimeInput").value;
-                    switch (specificDay) {
-                        case "Monday":
-                            if (marker.openingHours.Mon < specificOpeningTime || marker.closingHours.Mon > specificClosingTime) {
-                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Monday")
+                    if (marker.allDay) {
+                        showMarker = true;
+                    } else {
+                        switch (specificDay) {
+                            case "Monday":
+                                if (marker.openingHours.Mon < specificOpeningTime || marker.closingHours.Mon > specificClosingTime) {
+                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Monday")
+                                    showMarker = false;
+                                }
+                                break;
+                            case "Tuesday":
+                                if (marker.openingHours.Tue < specificOpeningTime || marker.closingHours.Tue > specificClosingTime) {
+                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Tuesday")
+                                    showMarker = false;
+                                }
+                                break;
+                            case "Wednesday":
+                                if (marker.openingHours.Wed < specificOpeningTime || marker.closingHours.Wed > specificClosingTime) {
+                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Wednesday")
+                                    showMarker = false;
+                                }
+                                break;
+                            case "Thursday":
+                                if (marker.openingHours.Thu < specificOpeningTime || marker.closingHours.Thu > specificClosingTime) {
+                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Thursday")
+                                    showMarker = false;
+                                }
+                                break;
+                            case "Friday":
+                                if (marker.openingHours.Fri < specificOpeningTime || marker.closingHours.Fri > specificClosingTime) {
+                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Friday")
+    
+                                    showMarker = false;
+                                }
+                                break;
+                            case "Saturday":
+                                if (marker.openingHours.Sat < specificOpeningTime || marker.closingHours.Sat > specificClosingTime) {
+                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Saturday")
+                                    showMarker = false;
+                                }
+                                break;
+                            case "Sunday":
+                                if (marker.openingHours.Sun < specificOpeningTime || marker.closingHours.Sun > specificClosingTime) {
+                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Sunday")
+                                    showMarker = false;
+                                }
+                                break;
+                            default:
                                 showMarker = false;
-                            }
-                            break;
-                        case "Tuesday":
-                            if (marker.openingHours.Tue < specificOpeningTime || marker.closingHours.Tue > specificClosingTime) {
-                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Tuesday")
-                                showMarker = false;
-                            }
-                            break;
-                        case "Wednesday":
-                            if (marker.openingHours.Wed < specificOpeningTime || marker.closingHours.Wed > specificClosingTime) {
-                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Wednesday")
-                                showMarker = false;
-                            }
-                            break;
-                        case "Thursday":
-                            if (marker.openingHours.Thu < specificOpeningTime || marker.closingHours.Thu > specificClosingTime) {
-                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Thursday")
-                                showMarker = false;
-                            }
-                            break;
-                        case "Friday":
-                            if (marker.openingHours.Fri < specificOpeningTime || marker.closingHours.Fri > specificClosingTime) {
-                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Friday")
-
-                                showMarker = false;
-                            }
-                            break;
-                        case "Saturday":
-                            if (marker.openingHours.Sat < specificOpeningTime || marker.closingHours.Sat > specificClosingTime) {
-                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Saturday")
-                                showMarker = false;
-                            }
-                            break;
-                        case "Sunday":
-                            if (marker.openingHours.Sun < specificOpeningTime || marker.closingHours.Sun > specificClosingTime) {
-                                console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Sunday")
-                                showMarker = false;
-                            }
-                            break;
-                        default:
-                            showMarker = false;
+                        }
                     }
+
                 }
             } else {
                 showMarker = false;
@@ -1303,46 +1311,69 @@ function timeOpenProcessor(place) {
 loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
 window.initMap = initMap;
 
-setTimeout(() => {
-    document.getElementById("ratingRange").addEventListener("input", () => {
-        document.getElementById("result").textContent = document.getElementById("ratingRange").value;
-        ratingFilterNumber = document.getElementById("ratingRange").value;
-        filterMarkers(markers, ratingFilterNumber);
-    });
-    document.getElementById("anytimeOptionButton").addEventListener("click", () => {
-        openingHoursFilter = "Anytime";
-        filterMarkers(markers);
-    });
-    document.getElementById("nowOptionButton").addEventListener("click", () => {
-        openingHoursFilter = "Now";
-        filterMarkers(markers);
-    });
-    document.getElementById("hours24OptionButton").addEventListener("click", () => {
-        openingHoursFilter = "24 Hours";
-        filterMarkers(markers);
-    });
+const checkElementsAndSetupListeners = () => {
+    const ratingRange = document.getElementById("ratingRange");
+    const anytimeOptionButton = document.getElementById("anytimeOptionButton");
+    const nowOptionButton = document.getElementById("nowOptionButton");
+    const hours24OptionButton = document.getElementById("hours24OptionButton");
+    const specificDayOptionButton = document.getElementById("specificDayOptionButton");
     const specificTimeCheck = document.getElementById("daySelect");
-    specificTimeCheck.addEventListener("change", () => {
-        if (specificTimeCheck.disabled) {
-            specificDayCheck = false;
-        } else {
-            specificDayCheck = true;
-            filterMarkers(markers);
-        }
-    });
     const specificOpeningTime = document.getElementById("openingTimeInput");
     const specificClosingTime = document.getElementById("closingTimeInput");
-    specificOpeningTime.addEventListener("change", () => {
-        filterMarkers(markers);
-    });
-    specificClosingTime.addEventListener("change", () => {
-        filterMarkers(markers);
-    });
 
+    if (ratingRange && anytimeOptionButton && nowOptionButton && hours24OptionButton && specificDayOptionButton && specificTimeCheck && specificOpeningTime && specificClosingTime) {
+        // Set up event listeners
+        ratingRange.addEventListener("input", () => {
+            document.getElementById("result").textContent = ratingRange.value;
+            ratingFilterNumber = ratingRange.value;
+            filterMarkers(markers, ratingFilterNumber);
+        });
 
-    // document.getElementById("specificDayOptionButton").addEventListener("click", () => {
-    //     openingHoursFilter = "Specific";
-    //     filterMarkers(markers);
-    // });
-}, 10000);
+        anytimeOptionButton.addEventListener("click", () => {
+            openingHoursFilter = "Anytime";
+            filterMarkers(markers);
+        });
+
+        nowOptionButton.addEventListener("click", () => {
+            openingHoursFilter = "Now";
+            filterMarkers(markers);
+        });
+
+        hours24OptionButton.addEventListener("click", () => {
+            openingHoursFilter = "24 Hours";
+            filterMarkers(markers);
+        });
+
+        specificDayOptionButton.addEventListener("click", () => {
+            openingHoursFilter = "specificTime";
+            filterMarkers(markers);
+        });
+
+        specificTimeCheck.addEventListener("change", () => {
+            openingHoursFilter = "specificTime";    
+            console.log(openingHoursFilter);
+
+            if (specificTimeCheck.disabled) {
+                specificDayCheck = false;
+            } else {
+                specificDayCheck = true;
+                filterMarkers(markers);
+            }
+        });
+
+        specificOpeningTime.addEventListener("change", () => {
+            filterMarkers(markers);
+        });
+
+        specificClosingTime.addEventListener("change", () => {
+            filterMarkers(markers);
+        });
+
+        // Clear the interval once the listeners are set up
+        clearInterval(intervalId);
+    }
+};
+
+// Check every second if the elements are available
+const intervalId = setInterval(checkElementsAndSetupListeners, 1000);
 
