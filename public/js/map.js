@@ -139,38 +139,31 @@ async function initMap() {
     });
 
     BSDBoundary.setMap(map);
-    const centerControlDiv = document.createElement("div");
-    const centerControl = createCenterControl(map);
-    // centerControlDiv.classList.add("px-1");
-    centerControlDiv.appendChild(centerControl);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(centerControlDiv);
+    // const centerControlDiv = document.createElement("div");
+    // const centerControl = createCenterControl(map);
+    // // centerControlDiv.classList.add("px-1");
+    // centerControlDiv.appendChild(centerControl);
+    // map.controls[google.maps.ControlPosition.TOP_LEFT].push(centerControlDiv);
+    const dropDownCategory = dropdownCategoryFunc(map);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(dropDownCategory);
+    const dropdownSubCategory = dropdownSubCategoryFunc(map);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(dropdownSubCategory);
+    const moreFiltersCategory = moreFiltersFunc(map);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(moreFiltersCategory);
+    const promoCategory = promoFunc(map);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(promoCategory);
+    const ratingCategory = RatingFunc(map);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(ratingCategory);
+    const hourCategory = hourFunc(map);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(hourCategory);
+    const socialCategory = socialFunc(map);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(socialCategory);
+    // const lessFiltersCategory = lessFiltersFunc(map);
+    // map.controls[google.maps.ControlPosition.TOP_LEFT].push(lessFiltersCategory);
+    const contactUs = contactUsFunc(map);
+    map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(contactUs);
 }
-function createCenterControl(map) {
-    const controlDiv = document.createElement("div");
-    // controlDiv.classList.add("px-1");
-    controlDiv.classList.add("flex-row")
-    controlDiv.classList.add("d-flex")
-    controlDiv.style.alignItems = "flex-start";
-
-
-    const controlButton = document.createElement("button");
-    // controlButton.classList.add("");
-    controlButton.style.backgroundColor = "#fff";
-    controlButton.style.border = "2px solid #fff";
-    controlButton.style.borderRadius = "3px";
-    controlButton.style.color = "rgb(25,25,25)";
-    controlButton.style.cursor = "pointer";
-    controlButton.style.fontFamily = "Roboto,Arial,sans-serif";
-    controlButton.style.fontSize = "16px";
-    controlButton.style.lineHeight = "12px";
-    controlButton.style.margin = "8px 0 3px";
-    controlButton.style.padding = "0 5px";
-    controlButton.style.textAlign = "center";
-    controlButton.textContent = "Find Place";
-    controlButton.title = "Click to find places";
-    controlButton.type = "button";
-
-    //Category Stuff
+function dropdownCategoryFunc(map) {
     const dropdownCategory = document.createElement("div");
     dropdownCategory.id = "Category Dropdown";
     dropdownCategory.classList.add("px-1");
@@ -180,6 +173,7 @@ function createCenterControl(map) {
     dropdownCategory.style.padding = "0 5px";
     dropdownCategory.style.fontSize = "16px";
     dropdownCategory.style.lineHeight = "12px";
+    dropdownCategory.style.width = "130px"
 
     const revealButtonCateogyr = document.createElement("button");
     revealButtonCateogyr.classList.add("dropbtn");
@@ -195,6 +189,7 @@ function createCenterControl(map) {
     const dropdownContentCategory = document.createElement("div");
     dropdownContentCategory.id = "Dropdown Category";
     dropdownContentCategory.classList.add("vertical-menu");
+    dropdownContentCategory.style.width = "125px";
     dropdownContentCategory.style.display = "none";
     dropdownCategory.appendChild(dropdownContentCategory);
 
@@ -209,7 +204,9 @@ function createCenterControl(map) {
     categoryOptions.forEach(option => {
         const button = document.createElement("button");
         button.value = option.value;
+        button.id = option.value + "Button";
         button.textContent = option.text;
+        button.style.width = "124px";
         button.classList.add("vertical-menu-long")
         button.style.margin = "1.0px auto";
         button.style.padding = "px";
@@ -222,22 +219,30 @@ function createCenterControl(map) {
             console.log(targetMenu)
             if (targetMenu.classList.contains("active")) {
                 targetMenu.classList.remove("active");
+                button.style.backgroundColor = "";
             } else {
                 categoryOptions.forEach(option => {
                     var targetMenu = document.getElementById(option.value + "Dropdown");
                     targetMenu.classList.remove("active");
                     targetMenu.style.display = "none";
+                    var otherButton = document.getElementById(option.value + "Button");
+                    if (otherButton) { // Check if otherButton exists
+                        otherButton.style.backgroundColor = ""; // Reset background color
+                    }
                 });
+
                 targetMenu.classList.add("active");
                 targetMenu.style.display = "block";
+                button.style.backgroundColor = "#A1A1A1"; // Set background color
+
             }
         });
 
         dropdownContentCategory.appendChild(button);
     });
-
-
-    //Subcategory Function 
+    return dropdownCategory;
+}
+function dropdownSubCategoryFunc(map) {
     const dropdown = document.createElement("div");
     dropdown.id = "Subcategory Dropdown";
     dropdown.classList.add("px-1");
@@ -288,12 +293,14 @@ function createCenterControl(map) {
     dropdownContent.id = "medicalDropdown";
     dropdownContent.classList.add("vertical-menu");
     dropdownContent.style.display = "none";
+    dropdownContent.style.width = "134px";
     dropdown.appendChild(dropdownContent);
 
     const dropdownContent2 = document.createElement("div");
     dropdownContent2.id = "wellnessDropdown";
     dropdownContent2.classList.add("vertical-menu");
     dropdownContent2.style.display = "none";
+    dropdownContent2.style.width = "134px";
     dropdown.appendChild(dropdownContent2);
 
 
@@ -301,6 +308,7 @@ function createCenterControl(map) {
     dropdownContent3.id = "beautyDropdown";
     dropdownContent3.classList.add("vertical-menu");
     dropdownContent3.style.display = "none";
+    dropdownContent3.style.width = "134px";
     dropdown.appendChild(dropdownContent3);
 
 
@@ -338,9 +346,21 @@ function createCenterControl(map) {
         button.classList.add("vertical-menu-long")
         button.style.margin = "1.0px auto";
         button.style.fontSize = "14px";
+        button.style.width = "134px";
         button.style.cursor = "pointer";
 
         button.addEventListener("click", () => {
+            options.forEach(opt => {
+                const otherButton = document.querySelector(`button[value="${opt.value}"]`);
+                if (otherButton) {
+                    otherButton.style.backgroundColor = "";
+                }
+            });
+            if(button.style.backgroundColor === "rgb(161, 161, 161)"){
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "#A1A1A1";
+            }
             findPlace(button.value);
         });
 
@@ -354,9 +374,22 @@ function createCenterControl(map) {
         button.classList.add("vertical-menu-long")
         button.style.margin = "1.0px auto";
         button.style.fontSize = "14px";
+        button.style.width = "134px";
+
         button.style.cursor = "pointer";
 
         button.addEventListener("click", () => {
+            options2well.forEach(opt => {
+                const otherButton = document.querySelector(`button[value="${opt.value}"]`);
+                if (otherButton) {
+                    otherButton.style.backgroundColor = "";
+                }
+            });
+            if(button.style.backgroundColor === "rgb(161, 161, 161)"){
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "#A1A1A1";
+            }
             findPlace(button.value);
         });
 
@@ -370,16 +403,29 @@ function createCenterControl(map) {
         button.classList.add("vertical-menu-long")
         button.style.margin = "1.0px auto";
         button.style.fontSize = "14px";
+        button.style.width = "134px";
         button.style.cursor = "pointer";
 
         button.addEventListener("click", () => {
+            options3beauty.forEach(opt => {
+                const otherButton = document.querySelector(`button[value="${opt.value}"]`);
+                if (otherButton) {
+                    otherButton.style.backgroundColor = "";
+                }
+            });
+            if(button.style.backgroundColor === "rgb(161, 161, 161)"){
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "#A1A1A1";
+            }
             findPlace(button.value);
         });
 
         dropdownContent3.appendChild(button);
     });
-
-    //The Rest
+    return dropdown;
+}
+function moreFiltersFunc(map) {
     const moreFiltersContainer = document.createElement("div");
     const moreFilters = document.createElement("div");
     moreFilters.id = "moreFilters";
@@ -390,47 +436,38 @@ function createCenterControl(map) {
     moreFilters.style.padding = "0 5px";
     moreFilters.style.fontSize = "16px";
     moreFilters.style.lineHeight = "12px";
-    moreFilters.style.position = "relative";
+    moreFilters.style.width = "140px";
 
     const moreFiltersButton = document.createElement("button");
     moreFiltersButton.classList.add("dropbtn");
-    moreFiltersButton.innerHTML = "More Filters";
+    moreFiltersButton.innerHTML = "Show Filters";
     moreFiltersButton.addEventListener("click", () => {
-        const lessFilters = document.getElementById("lessFilters");
         const promoFilter = document.getElementById("promoFilter");
         const ratingFilter = document.getElementById("ratingFilter");
         const hourFilter = document.getElementById("hourFilter");
         const socialFilter = document.getElementById("socialFilter");
-        lessFilters.style.zIndex = "2";
-        lessFilters.style.width = "100%";
-        lessFilters.style.padding = "0 5px";
-        lessFilters.classList.add("px-1");
-        promoFilter.style.zIndex = "2";
-        promoFilter.style.width = "100%";
-        promoFilter.style.padding = "0 5px";
-        promoFilter.classList.add("px-1");
-        ratingFilter.style.zIndex = "2";
-        ratingFilter.style.width = "100%";
-        ratingFilter.style.padding = "0 5px";
-        ratingFilter.classList.add("px-1");
-        hourFilter.style.zIndex = "2";
-        hourFilter.style.width = "100%";
-        hourFilter.style.padding = "0 5px";
-        hourFilter.classList.add("px-1");
-        socialFilter.style.zIndex = "2";
-        socialFilter.style.width = "100%";
-        socialFilter.style.padding = "0 5px";
-        socialFilter.classList.add("px-1");
-        moreFilters.style.zIndex = -1000;
-        moreFilters.style.width = "0px";
-        moreFilters.style.padding = "0px";
-        moreFilters.classList.remove("px-1");
+        if (moreFiltersButton.innerHTML == "Hide Filters") {
+            promoFilter.style.zIndex = "-500";
+            ratingFilter.style.zIndex = "-500";
+            hourFilter.style.zIndex = "-500";
+            socialFilter.style.zIndex = "-500";
+            moreFiltersButton.innerHTML = "Show Filters";
+        } else {
+            promoFilter.style.zIndex = "1";
+            ratingFilter.style.zIndex = "1";
+            hourFilter.style.zIndex = "1";
+            socialFilter.style.zIndex = "1";
+            moreFiltersButton.innerHTML = "Hide Filters";
+        }
+
     });
 
     moreFilters.appendChild(moreFiltersButton);
     moreFiltersContainer.appendChild(moreFilters);
 
-    //Promo
+    return moreFiltersContainer;
+}
+function promoFunc(map) {
     const promoFilterContainer = document.createElement("div");
     const promoFilter = document.createElement("div");
     promoFilter.id = "promoFilter";
@@ -438,13 +475,15 @@ function createCenterControl(map) {
     promoFilter.classList.add("flex-column");
     promoFilter.classList.add("d-flex")
     promoFilter.style.margin = "8px 0 3px";
-    // promoFilter.style.padding = "0 5px";
+    promoFilter.style.padding = "0 5px";
     promoFilter.style.fontSize = "16px";
     promoFilter.style.lineHeight = "12px";
-    promoFilter.style.display = "none";
-    promoFilter.style.zIndex = -1000;
-    promoFilter.style.position = "relative";
-    promoFilter.style.width = "0px";
+    // promoFilter.style.display = "none";
+    promoFilter.style.display = "block";
+    promoFilter.style.zIndex = -500;
+    // promoFilter.style.width = "0px";
+    promoFilter.style.width = "120px"
+    // promoFilter.style.left = "255px";
 
     const PromosButton = document.createElement("button");
     PromosButton.classList.add("dropbtn");
@@ -453,15 +492,17 @@ function createCenterControl(map) {
     promoFilterContainer.appendChild(promoFilter);
 
     const PromoDiv = document.createElement("div");
-    PromoDiv.classList.add("vertical-menu-long");
+    PromoDiv.classList.add("vertical-menu-long", "border", "border-black");
     PromoDiv.style.margin = "1.0px auto";
     PromoDiv.style.padding = "10px";
     PromoDiv.style.fontSize = "16px";
     PromoDiv.style.cursor = "pointer";
+    PromoDiv.style.width = "110px";
     PromoDiv.style.display = "none";
     PromoDiv.style.position = "relative";
+    PromoDiv.style.backgroundColor = "#f0f0f0"
     PromoDiv.innerHTML = `
-        <div class="checkbox-wrapper-1">
+        <div class="checkbox-wrapper-1" style="background-color=#f0f0f0;">
             <input id="example-1" class="substituted" type="checkbox" aria-hidden="true" />
             <label for="example-1">Show?</label>
         </div>
@@ -474,8 +515,9 @@ function createCenterControl(map) {
             PromoDiv.style.display = "none";
         }
     });
-
-    //Rating
+    return promoFilter;
+}
+function RatingFunc(map) {
     const ratingFilterContainer = document.createElement("div");
     const ratingFilter = document.createElement("div");
     ratingFilter.id = "ratingFilter";
@@ -486,10 +528,12 @@ function createCenterControl(map) {
     // ratingFilter.style.padding = "0 5px";
     ratingFilter.style.fontSize = "16px";
     ratingFilter.style.lineHeight = "12px";
-    ratingFilter.style.display = "none";
+    // ratingFilter.style.display = "none";
+    ratingFilter.style.display = "block";
     ratingFilter.style.zIndex = -1000;
-    ratingFilter.style.position = "relative";
-    ratingFilter.style.width = "0px";
+    // ratingFilter.style.position = "relative";
+    // ratingFilter.style.width = "0px";
+    ratingFilter.style.width = "120px";
 
     const RatingButton = document.createElement("button");
     RatingButton.classList.add("dropbtn");
@@ -498,17 +542,19 @@ function createCenterControl(map) {
     ratingFilterContainer.appendChild(ratingFilter);
 
     const RatingDiv = document.createElement("div");
-    RatingDiv.classList.add("vertical-menu-long")
+    RatingDiv.classList.add("vertical-menu-long", "border", "border-black")
     RatingDiv.style.margin = "1.0px auto";
     RatingDiv.style.padding = "10px";
     RatingDiv.style.fontSize = "16px";
     RatingDiv.style.cursor = "pointer";
     RatingDiv.style.display = "none";
     RatingDiv.style.position = "relative";
+    RatingDiv.style.backgroundColor = "#f0f0f0"
+    RatingDiv.style.height = "62px";
     RatingDiv.innerHTML = `
-        <div class="slidecontainer">
+        <div class="slidecontainer " style="background-color=#f0f0f0;">
             <input type="range" min="0" max="5" value="0" class="slider" id="ratingRange">
-            <p>Value: <span id="result" >0</span></p>
+            <p class="mt-2" style="margin:0;">Value: <span id="result" >0</span></p>
         </div>`
     ratingFilter.appendChild(RatingDiv);
 
@@ -520,25 +566,29 @@ function createCenterControl(map) {
         }
     });
 
-    //Open Hours
+    return ratingFilter;
+}
+function hourFunc(map) {
     const hourFilterContainer = document.createElement("div");
     const hourFilter = document.createElement("div");
     hourFilter.id = "hourFilter";
     // hourFilter.classList.add("px-1");
     hourFilter.classList.add("flex-column");
     hourFilter.classList.add("d-flex")
-    hourFilter.style.margin = "8px 0 3px";
+    hourFilter.style.margin = "8px 0px 3px 6px";
     // hourFilter.style.padding = "0 5px";
     hourFilter.style.fontSize = "16px";
     hourFilter.style.lineHeight = "12px";
-    hourFilter.style.display = "none";
+    // hourFilter.style.display = "none";
+    hourFilter.style.display = "block";
     hourFilter.style.zIndex = -1000;
-    hourFilter.style.position = "relative";
-    hourFilter.style.width = "0px";
+    // hourFilter.style.position = "relative";
+    // hourFilter.style.width = "0px";
+    hourFilter.style.width = "120px";
 
     const hourButton = document.createElement("button");
     hourButton.classList.add("dropbtn");
-    hourButton.innerHTML = "Opening Hours";
+    hourButton.innerHTML = "Open Times";
     hourFilter.appendChild(hourButton);
     hourFilterContainer.appendChild(hourFilter);
     //For specific times
@@ -562,6 +612,16 @@ function createCenterControl(map) {
     anytimeOption.classList.add("openingHourSize");
     anytimeOption.style.margin = "1.0px auto";
     openingHoursContainer.appendChild(anytimeOption);
+    anytimeOption.addEventListener("click", () => {
+        if(anytimeOption.style.backgroundColor === "rgb(161, 161, 161)"){
+            anytimeOption.style.backgroundColor = "#F0F0F0";
+        } else {
+            anytimeOption.style.backgroundColor = "#A1A1A1";
+            nowOption.style.backgroundColor = "#F0F0F0";
+            hours24Option.style.backgroundColor = "#F0F0F0";
+            specificDayOption.style.backgroundColor = "#F0F0F0";
+        }
+    });
 
     const nowOption = document.createElement("button");
     nowOption.id = "nowOptionButton";
@@ -569,6 +629,16 @@ function createCenterControl(map) {
     nowOption.classList.add("openingHourSize")
     nowOption.style.margin = "1.0px auto";
     openingHoursContainer.appendChild(nowOption);
+    nowOption.addEventListener("click", () => {
+        if(nowOption.style.backgroundColor === "rgb(161, 161, 161)"){
+            nowOption.style.backgroundColor = "#F0F0F0";
+        } else {
+            nowOption.style.backgroundColor = "#A1A1A1";
+            anytimeOption.style.backgroundColor = "#F0F0F0";
+            hours24Option.style.backgroundColor = "#F0F0F0";
+            specificDayOption.style.backgroundColor = "#F0F0F0";
+        }
+    });
 
     const hours24Option = document.createElement("button");
     hours24Option.id = "hours24OptionButton";
@@ -576,6 +646,16 @@ function createCenterControl(map) {
     hours24Option.classList.add("openingHourSize")
     hours24Option.style.margin = "1.0px auto";
     openingHoursContainer.appendChild(hours24Option);
+    hours24Option.addEventListener("click", () => {
+        if(hours24Option.style.backgroundColor === "rgb(161, 161, 161)"){
+            hours24Option.style.backgroundColor = "#F0F0F0";
+        } else {
+            hours24Option.style.backgroundColor = "#A1A1A1";
+            anytimeOption.style.backgroundColor = "#F0F0F0";
+            nowOption.style.backgroundColor = "#F0F0F0";
+            specificDayOption.style.backgroundColor = "#F0F0F0";
+        }
+    });
 
     const specificDayOption = document.createElement("button");
     specificDayOption.id = "specificDayOptionButton";
@@ -594,7 +674,7 @@ function createCenterControl(map) {
     daySelect.style.width = "120px";
     daySelect.disabled = true;
     const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-    const hours = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+    const hours = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
     days.forEach(day => {
         const option = document.createElement("option");
         option.value = day;
@@ -613,7 +693,7 @@ function createCenterControl(map) {
         option.value = hour;
         option.innerHTML = hour;
         openingTimeInput.appendChild(option);
-    });    
+    });
     openingTimeInput.onchange = onDateChange();
     // openingTimeInput.classList.add("openingHourSize")
     specificSelectionContainer.appendChild(openingTimeInput);
@@ -627,7 +707,7 @@ function createCenterControl(map) {
         option.value = hour;
         option.innerHTML = hour;
         closingTimeInput.appendChild(option);
-    });      
+    });
     closingTimeInput.onchange = onDateChange();
     // closingTimeInput.classList.add("openingHourSize")
     specificSelectionContainer.appendChild(closingTimeInput);
@@ -643,39 +723,52 @@ function createCenterControl(map) {
     hourFilter.appendChild(openingHourstContainerContainer);
 
     specificDayOption.addEventListener("click", () => {
-        if(specificSelectionContainer.style.display === "none"){
+        if (specificSelectionContainer.style.display === "none") {
             specificSelectionContainer.style.display = "block";
             daySelect.disabled = false;
             openingTimeInput.disabled = false;
             closingTimeInput.disabled = false;
+            specificDayOption.style.backgroundColor = "#A1A1A1";
+            hours24Option.style.backgroundColor = "#F0F0F0";
+            anytimeOption.style.backgroundColor = "#F0F0F0";
+            nowOption.style.backgroundColor = "#F0F0F0";
         } else {
             specificSelectionContainer.style.display = "none";
             daySelect.disabled = true;
             openingTimeInput.disabled = true;
             closingTimeInput.disabled = true;
+            specificDayOption.style.backgroundColor = "#F0F0F0";
+            
+
         }
     });
 
     hourButton.addEventListener("click", () => {
         if (openingHourstContainerContainer.style.display === "none") {
             openingHourstContainerContainer.style.display = "block";
+        
         } else {
             openingHourstContainerContainer.style.display = "none";
         }
     });
-    //Social
+
+    return hourFilter;
+}
+function socialFunc(map) {
     const socialFilterContainer = document.createElement("div");
     const socialFilter = document.createElement("div");
     socialFilter.id = "socialFilter";
     socialFilter.classList.add("flex-column");
     socialFilter.classList.add("d-flex")
-    socialFilter.style.margin = "8px 0 3px";
+    socialFilter.style.margin = "8px 0px 3px 6px";
     socialFilter.style.fontSize = "16px";
     socialFilter.style.lineHeight = "12px";
-    socialFilter.style.display = "none";
+    // socialFilter.style.display = "none";
+    socialFilter.style.display = "block"
     socialFilter.style.zIndex = -1000;
-    socialFilter.style.position = "relative";
-    socialFilter.style.width = "0px";
+    // socialFilter.style.position = "relative";
+    // socialFilter.style.width = "0px";
+    socialFilter.style.width = "120px"
 
     const socialButton = document.createElement("button");
     socialButton.classList.add("dropbtn");
@@ -683,7 +776,7 @@ function createCenterControl(map) {
     socialFilter.appendChild(socialButton);
     socialFilterContainer.appendChild(socialFilter);
 
-    
+
     const socialButtonContent = document.createElement("div");
     socialButtonContent.id = "beautyDropdown";
     socialButtonContent.classList.add("vertical-menu");
@@ -708,71 +801,24 @@ function createCenterControl(map) {
     instaOption.addEventListener("click", () => {
         toggleInstragram();
     });
+    return socialFilter;
 
-
-    //Less Filter More Filter Button
-    const lessFiltersContainer = document.createElement("div");
-    const lessFilters = document.createElement("div");
-    lessFilters.id = "lessFilters";
-    //lessFilters.classList.add("px-1");
-    lessFilters.classList.add("flex-column");
-    lessFilters.classList.add("d-flex")
-    lessFilters.style.margin = "8px 0 3px";
-    // lessFilters.style.padding = "0 5px";
-    lessFilters.style.fontSize = "16px";
-    lessFilters.style.lineHeight = "12px";
-    lessFilters.style.display = "none"; //Because intiially they be moreFilters
-    lessFilters.style.zIndex = -1000;
-    lessFilters.style.position = "relative";
-    lessFilters.style.width = "0px";
-    const lessFiltersButton = document.createElement("button");
-    lessFiltersButton.classList.add("dropbtn");
-    lessFiltersButton.innerHTML = "Less Filters";
-    lessFiltersButton.addEventListener("click", () => {
-        const promoFilter = document.getElementById("promoFilter");
-        const ratingFilter = document.getElementById("ratingFilter");
-        const hourFilter = document.getElementById("hourFilter");
-        const moreFilters = document.getElementById("moreFilters");
-        const socialFilter = document.getElementById("socialFilter");
-        moreFilters.style.zIndex = "2";
-        moreFilters.style.width = "100%";
-        moreFilters.style.padding = "0 5px";
-        moreFilters.classList.add("px-1");
-        promoFilter.style.zIndex = -1000;
-        promoFilter.style.width = "0px";
-        promoFilter.style.padding = "0px";
-        promoFilter.classList.remove("px-1");
-        ratingFilter.style.zIndex = -1000;
-        ratingFilter.style.width = "0px";
-        ratingFilter.style.padding = "0px";
-        ratingFilter.classList.remove("px-1");
-        hourFilter.style.zIndex = -1000;
-        hourFilter.style.width = "0px";
-        hourFilter.style.padding = "0px";
-        hourFilter.classList.remove("px-1");
-        socialFilter.style.zIndex = -1000;
-        socialFilter.style.width = "0px";
-        socialFilter.style.padding = "0px";
-        socialFilter.classList.remove("px-1");
-        lessFilters.style.zIndex = -1000;
-        lessFilters.style.width = "0px";
-        lessFilters.style.padding = "0px";
-        lessFilters.classList.remove("px-1");
-    });
-    lessFilters.appendChild(lessFiltersButton);
-    lessFiltersContainer.appendChild(lessFilters);
-    controlDiv.appendChild(dropdownCategory);
-    controlDiv.appendChild(dropdown);
-    controlDiv.appendChild(moreFiltersContainer);
-    controlDiv.appendChild(promoFilterContainer);
-    controlDiv.appendChild(ratingFilterContainer);
-    controlDiv.appendChild(hourFilterContainer);
-    controlDiv.appendChild(socialFilterContainer);
-    controlDiv.appendChild(lessFiltersContainer);
-    controlDiv.classList.add("rounded-end-5", "pe-4");
-    controlDiv.classList.add("bg-white")
-    return controlDiv;
 }
+function contactUsFunc(map) {
+    const contactUsContainer = document.createElement("div");
+    contactUsContainer.id = "containus";
+    contactUsContainer.classList.add("px-1");
+    contactUsContainer.classList.add("flex-column", "dropbtn");
+    contactUsContainer.classList.add("d-flex")
+    contactUsContainer.style.margin = "8px 0 0px";
+    contactUsContainer.style.padding = "0 5px";
+    contactUsContainer.style.fontSize = "12px";
+    contactUsContainer.style.lineHeight = "12px";
+    contactUsContainer.innerHTML = "Contact Us to get your Place Added!";
+
+    return contactUsContainer;
+}
+
 async function findPlace(type) {
 
     if (currentSelection == type) {
@@ -864,7 +910,7 @@ async function processResultsLocal(type, map) {
                 });
                 marker.addListener("click", () => {
                     toggleHighlight(marker, currentPlace);
-                   // console.log(currentPlace.photoURL)
+                    // console.log(currentPlace.photoURL)
                 });
                 marker.name = currentPlace.Nama;
                 marker.rating = currentPlace.rating;
@@ -921,11 +967,11 @@ function buildContent(property, type) {
         content.style.backgroundSize = "contain"
     }
     content.innerHTML = `
-        <div class="icon rounded-3 ${instaCheck ? "": "active"}" style =" ${instaCheck ? "opacity: 0;": "opacity: 1;"}">
+        <div class="icon rounded-3 ${instaCheck ? "" : "active"}" style =" ${instaCheck ? "opacity: 0;" : "opacity: 1;"}">
             <i aria-hidden="true" class="fa fa-icon ${typeIconProcessor(property.subcategory)}" title="${property.Nama}"></i>
             <span class="fa-sr-only">${property.Nama}</span>
         </div>
-        <div class="rounded-4 insta-container ${instaCheck ? "active": ""}"  style =" ${instaCheck ? "opacity: 1;": "opacity: 0;"}">
+        <div class="rounded-4 insta-container ${instaCheck ? "active" : ""}"  style =" ${instaCheck ? "opacity: 1;" : "opacity: 0;"}">
             <div class="mt-1">
                 <span class="mt-2" style="color: rgb(225, 48, 108); font-size: 12px"><center>${property.IGFollowers == "IGFollowers" ? 0 : property.IGFollowers}</center></span>
             </div>
@@ -983,9 +1029,9 @@ function toggleHighlight(markerView, property) {
             view.content.classList.remove("highlight");
             view.zIndex = null;
             otherInnerDiv.style.opacity = 0;
-            if(otherIconDiv.classList.contains("active")){
+            if (otherIconDiv.classList.contains("active")) {
                 otherIconDiv.style.opacity = 1;
-            } else if (otherInstaDiv.classList.contains("active")){
+            } else if (otherInstaDiv.classList.contains("active")) {
                 otherInstaDiv.style.opacity = 1;
             } else {
                 otherIconDiv.style.opacity = 1;
@@ -1000,9 +1046,9 @@ function toggleHighlight(markerView, property) {
         markerView.content.classList.remove("highlight");
         markerView.zIndex = null;
         innerDiv.style.opacity = 0;
-        if(iconDiv.classList.contains("active")){
+        if (iconDiv.classList.contains("active")) {
             iconDiv.style.opacity = 1;
-        } else if (instaDiv.classList.contains("active")){
+        } else if (instaDiv.classList.contains("active")) {
             instaDiv.style.opacity = 1;
         } else {
             iconDiv.style.opacity = 1;
@@ -1012,9 +1058,9 @@ function toggleHighlight(markerView, property) {
         markerView.content.classList.add("highlight");
         markerView.zIndex = 100;
         innerDiv.style.opacity = 1;
-        if(iconDiv.classList.contains("active")){
+        if (iconDiv.classList.contains("active")) {
             iconDiv.style.opacity = 0;
-        } else if (instaDiv.classList.contains("active")){
+        } else if (instaDiv.classList.contains("active")) {
             instaDiv.style.opacity = 0;
         } else {
             iconDiv.style.opacity = 0;
@@ -1171,7 +1217,7 @@ function filterMarkers(markers) {
                             case "Friday":
                                 if (marker.openingHours.Fri < specificOpeningTime || marker.closingHours.Fri > specificClosingTime) {
                                     console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Friday")
-    
+
                                     showMarker = false;
                                 }
                                 break;
@@ -1350,7 +1396,7 @@ const checkElementsAndSetupListeners = () => {
         });
 
         specificTimeCheck.addEventListener("change", () => {
-            openingHoursFilter = "specificTime";    
+            openingHoursFilter = "specificTime";
             console.log(openingHoursFilter);
 
             if (specificTimeCheck.disabled) {
