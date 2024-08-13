@@ -162,6 +162,7 @@ async function initMap() {
     // map.controls[google.maps.ControlPosition.TOP_LEFT].push(lessFiltersCategory);
     const contactUs = contactUsFunc(map);
     map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(contactUs);
+
 }
 function dropdownCategoryFunc(map) {
     const dropdownCategory = document.createElement("div");
@@ -896,7 +897,16 @@ async function processResultsLocal(type, map) {
                 });
                 marker.addListener("click", () => {
                     toggleHighlight(marker, currentPlace);
+                    getDirections(currentPlace.Lat, currentPlace.Long);
+
                     //console.log(currentPlace.photoURL)
+                    // setTimeout(() => {
+                    //     document.getElementById(`get-directions-${currentPlace.Nama}`).addEventListener("click", () => {
+                    //         getDirections(currentPlace.Lat, currentPlace.Long);
+                    //     });
+                    // }, 2000);
+                        
+                    
                 });
                 marker.name = currentPlace.Nama;
                 marker.rating = currentPlace.rating;
@@ -952,6 +962,7 @@ async function processResultsLocal(type, map) {
                 marker.addListener("click", () => {
                     toggleHighlight(marker, currentPlace);
                     //console.log(currentPlace.photoURL)
+                    showDirections(currentPlace);
                 });
                 marker.name = currentPlace.Nama;
                 marker.rating = currentPlace.rating;
@@ -1013,6 +1024,9 @@ function buildContent(property, type) {
                     <div>
                         <a href="${property.Website}" target="_blank">Website</a>               
                     </div>` : ''} 
+                    <div>
+                        <button onclick=""get-directions-${property.Nama}">Get Directions</button>
+                    </div>
                 </div>
 
             </div>
@@ -1366,6 +1380,57 @@ function timeOpenProcessor(place) {
         }
     }
 }
+
+function getDirections(lat, lng) {
+    getUserLocation(userLocation => {
+        if (!userLocation) {
+            console.error("Could not get user location.");
+            return;
+        }
+
+        const directionsService = new google.maps.DirectionsService();
+        const directionsRenderer = new google.maps.DirectionsRenderer();
+        directionsRenderer.setMap(map);
+
+        const request = {
+            origin: userLocation,
+            destination: { lat: lat, lng: lng },
+            travelMode: google.maps.TravelMode.DRIVING
+        };
+
+        directionsService.route(request, (result, status) => {
+            if (status === google.maps.DirectionsStatus.OK) {
+                directionsRenderer.setDirections(result);
+            } else {
+                console.error("Directions request failed due to ", status);
+            }
+        });
+    });
+}
+
+function getUserLocation(callback) {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            position => {
+                const userLocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                callback(userLocation);
+            },
+            error => {
+                console.error("Error getting user location:", error);
+                callback(null);
+            }
+        );
+    } else {
+        console.error("Geolocation is not supported by this browser.");
+        callback(null);
+    }
+}
+
+
+
 loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
 window.initMap = initMap;
 
