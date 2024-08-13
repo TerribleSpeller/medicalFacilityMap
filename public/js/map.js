@@ -356,7 +356,7 @@ function dropdownSubCategoryFunc(map) {
                     otherButton.style.backgroundColor = "";
                 }
             });
-            if(button.style.backgroundColor === "rgb(161, 161, 161)"){
+            if (button.style.backgroundColor === "rgb(161, 161, 161)") {
                 button.style.backgroundColor = "";
             } else {
                 button.style.backgroundColor = "#A1A1A1";
@@ -385,7 +385,7 @@ function dropdownSubCategoryFunc(map) {
                     otherButton.style.backgroundColor = "";
                 }
             });
-            if(button.style.backgroundColor === "rgb(161, 161, 161)"){
+            if (button.style.backgroundColor === "rgb(161, 161, 161)") {
                 button.style.backgroundColor = "";
             } else {
                 button.style.backgroundColor = "#A1A1A1";
@@ -413,7 +413,7 @@ function dropdownSubCategoryFunc(map) {
                     otherButton.style.backgroundColor = "";
                 }
             });
-            if(button.style.backgroundColor === "rgb(161, 161, 161)"){
+            if (button.style.backgroundColor === "rgb(161, 161, 161)") {
                 button.style.backgroundColor = "";
             } else {
                 button.style.backgroundColor = "#A1A1A1";
@@ -543,6 +543,7 @@ function RatingFunc(map) {
 
     const RatingDiv = document.createElement("div");
     RatingDiv.classList.add("vertical-menu-long", "border", "border-black")
+    RatingDiv.id = "RatingDivFill"
     RatingDiv.style.margin = "1.0px auto";
     RatingDiv.style.padding = "10px";
     RatingDiv.style.fontSize = "16px";
@@ -565,6 +566,12 @@ function RatingFunc(map) {
             RatingDiv.style.display = "none";
         }
     });
+
+    // ratingRange.addEventListener("input", () => {
+    //     document.getElementById("result").textContent = ratingRange.value;
+    //     ratingFilterNumber = ratingRange.value;
+    //     filterMarkers(markers, ratingFilterNumber);
+    // });
 
     return ratingFilter;
 }
@@ -613,7 +620,7 @@ function hourFunc(map) {
     anytimeOption.style.margin = "1.0px auto";
     openingHoursContainer.appendChild(anytimeOption);
     anytimeOption.addEventListener("click", () => {
-        if(anytimeOption.style.backgroundColor === "rgb(161, 161, 161)"){
+        if (anytimeOption.style.backgroundColor === "rgb(161, 161, 161)") {
             anytimeOption.style.backgroundColor = "#F0F0F0";
         } else {
             anytimeOption.style.backgroundColor = "#A1A1A1";
@@ -630,7 +637,7 @@ function hourFunc(map) {
     nowOption.style.margin = "1.0px auto";
     openingHoursContainer.appendChild(nowOption);
     nowOption.addEventListener("click", () => {
-        if(nowOption.style.backgroundColor === "rgb(161, 161, 161)"){
+        if (nowOption.style.backgroundColor === "rgb(161, 161, 161)") {
             nowOption.style.backgroundColor = "#F0F0F0";
         } else {
             nowOption.style.backgroundColor = "#A1A1A1";
@@ -647,7 +654,7 @@ function hourFunc(map) {
     hours24Option.style.margin = "1.0px auto";
     openingHoursContainer.appendChild(hours24Option);
     hours24Option.addEventListener("click", () => {
-        if(hours24Option.style.backgroundColor === "rgb(161, 161, 161)"){
+        if (hours24Option.style.backgroundColor === "rgb(161, 161, 161)") {
             hours24Option.style.backgroundColor = "#F0F0F0";
         } else {
             hours24Option.style.backgroundColor = "#A1A1A1";
@@ -738,7 +745,7 @@ function hourFunc(map) {
             openingTimeInput.disabled = true;
             closingTimeInput.disabled = true;
             specificDayOption.style.backgroundColor = "#F0F0F0";
-            
+
 
         }
     });
@@ -746,7 +753,7 @@ function hourFunc(map) {
     hourButton.addEventListener("click", () => {
         if (openingHourstContainerContainer.style.display === "none") {
             openingHourstContainerContainer.style.display = "block";
-        
+
         } else {
             openingHourstContainerContainer.style.display = "none";
         }
@@ -790,6 +797,14 @@ function socialFunc(map) {
     instaOption.style.margin = "1.0px auto";
     socialButtonContent.appendChild(instaOption);
 
+    instaOption.addEventListener("click", () => {
+        if (instaOption.style.backgroundColor === "rgb(161, 161, 161)") {
+            instaOption.style.backgroundColor = "#F0F0F0";
+        } else {
+            instaOption.style.backgroundColor = "#A1A1A1";
+        }
+    });
+
     socialButton.addEventListener("click", () => {
         if (socialButtonContent.style.display === "none") {
             socialButtonContent.style.display = "block";
@@ -818,7 +833,6 @@ function contactUsFunc(map) {
 
     return contactUsContainer;
 }
-
 async function findPlace(type) {
 
     if (currentSelection == type) {
@@ -1102,7 +1116,6 @@ function onDateChange() {
     return filterMarkers(markers); //Because onchange is nuts
 }
 function filterMarkers(markers) {
-    console.log("Called")
     markers.forEach(marker => {
         const rating = marker.rating;
         const openingHours = marker.openingHours;
@@ -1120,8 +1133,7 @@ function filterMarkers(markers) {
         if (openingHoursFilter !== "Anytime") {
             const now = new Date();
             const day = now.getDay(); // 0 (Sunday) to 6 (Saturday)
-            const time = now.getHours() * 60 + now.getMinutes(); // Minutes since midnight
-
+            const time = now.getHours() * 60 + now.getMinutes();
             if (marker.openingHours != null) {
                 if (openingHoursFilter === "Now") {
                     if (marker.allDay == true) {
@@ -1366,13 +1378,22 @@ const checkElementsAndSetupListeners = () => {
     const specificTimeCheck = document.getElementById("daySelect");
     const specificOpeningTime = document.getElementById("openingTimeInput");
     const specificClosingTime = document.getElementById("closingTimeInput");
+    const ratingDiv = document.getElementById("RatingDivFill");
 
     if (ratingRange && anytimeOptionButton && nowOptionButton && hours24OptionButton && specificDayOptionButton && specificTimeCheck && specificOpeningTime && specificClosingTime) {
         // Set up event listeners
         ratingRange.addEventListener("input", () => {
             document.getElementById("result").textContent = ratingRange.value;
             ratingFilterNumber = ratingRange.value;
+            // console.log(ratingFilterNumber)
             filterMarkers(markers, ratingFilterNumber);
+            var ratingNum = Number(ratingFilterNumber);
+            // console.log(ratingNum)
+            if (ratingNum < 1) {
+                ratingDiv.style.backgroundColor = "#f0f0f0";
+            } else {
+                ratingDiv.style.backgroundColor = "#A1A1A1";
+            }
         });
 
         anytimeOptionButton.addEventListener("click", () => {
