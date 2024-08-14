@@ -97,6 +97,9 @@ let openingHoursFilter = "Anytime"; //And anytime
 let instaCheck = false;
 let specificDayCheck = false;
 let markers = [];
+let directionsRenderer = null;
+let originMarker = null;
+
 
 const mapCenter = { lat: -6.302630388, lng: 106.6505807 };
 
@@ -162,6 +165,8 @@ async function initMap() {
     // map.controls[google.maps.ControlPosition.TOP_LEFT].push(lessFiltersCategory);
     const contactUs = contactUsFunc(map);
     map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(contactUs);
+    const clearDirections = clearDirectionsFunc(map);
+    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(clearDirections);
 
 }
 function dropdownCategoryFunc(map) {
@@ -191,15 +196,17 @@ function dropdownCategoryFunc(map) {
     dropdownContentCategory.id = "Dropdown Category";
     dropdownContentCategory.classList.add("vertical-menu");
     dropdownContentCategory.style.width = "125px";
-    dropdownContentCategory.style.display = "none";
+    // dropdownContentCategory.style.display = "none";
     dropdownCategory.appendChild(dropdownContentCategory);
 
     revealButtonCateogyr.addEventListener("click", () => {
-        if (dropdownContentCategory.style.display === "none") {
-            dropdownContentCategory.style.display = "block";
-        } else {
-            dropdownContentCategory.style.display = "none";
-        }
+
+        dropdownContentCategory.classList.toggle("active");
+        // if (dropdownContentCategory.style.display === "none") {
+        //     dropdownContentCategory.style.display = "block";
+        // } else {
+        //     dropdownContentCategory.style.display = "none";
+        // }
     });
 
     categoryOptions.forEach(option => {
@@ -226,14 +233,14 @@ function dropdownCategoryFunc(map) {
                     var targetMenu = document.getElementById(option.value + "Dropdown");
                     targetMenu.classList.remove("active");
                     targetMenu.style.display = "none";
+
                     var otherButton = document.getElementById(option.value + "Button");
                     if (otherButton) { // Check if otherButton exists
                         otherButton.style.backgroundColor = ""; // Reset background color
                     }
                 });
-
-                targetMenu.classList.add("active");
                 targetMenu.style.display = "block";
+                targetMenu.classList.add("active");
                 button.style.backgroundColor = "#A1A1A1"; // Set background color
 
             }
@@ -293,14 +300,14 @@ function dropdownSubCategoryFunc(map) {
     const dropdownContent = document.createElement("div");
     dropdownContent.id = "medicalDropdown";
     dropdownContent.classList.add("vertical-menu");
-    dropdownContent.style.display = "none";
+    // dropdownContent.style.display = "none";
     dropdownContent.style.width = "134px";
     dropdown.appendChild(dropdownContent);
 
     const dropdownContent2 = document.createElement("div");
     dropdownContent2.id = "wellnessDropdown";
     dropdownContent2.classList.add("vertical-menu");
-    dropdownContent2.style.display = "none";
+    // dropdownContent2.style.display = "none";
     dropdownContent2.style.width = "134px";
     dropdown.appendChild(dropdownContent2);
 
@@ -308,7 +315,7 @@ function dropdownSubCategoryFunc(map) {
     const dropdownContent3 = document.createElement("div");
     dropdownContent3.id = "beautyDropdown";
     dropdownContent3.classList.add("vertical-menu");
-    dropdownContent3.style.display = "none";
+    // dropdownContent3.style.display = "none";
     dropdownContent3.style.width = "134px";
     dropdown.appendChild(dropdownContent3);
 
@@ -320,22 +327,31 @@ function dropdownSubCategoryFunc(map) {
             } else {
                 dropdownContent.style.display = "none";
             }
+            // dropdownContent.classList.add("active");
+            // dropdownContent2.classList.remove("active");
+            // dropdownContent3.classList.remove("active");
+
         } else if (dropdownContent2.classList.contains("active")) {
             if (dropdownContent2.style.display === "none") {
                 dropdownContent2.style.display = "block";
             } else {
                 dropdownContent2.style.display = "none";
             }
+            // dropdownContent.classList.remove("active");
+            // dropdownContent2.classList.add("active");
+            // dropdownContent3.classList.remove("active");
         } else if (dropdownContent3.classList.contains("active")) {
             if (dropdownContent3.style.display === "none") {
                 dropdownContent3.style.display = "block";
             } else {
                 dropdownContent3.style.display = "none";
             }
+            // dropdownContent3.classList.toggle("active");
+
         } else {
-            dropdownContent.style.display = "none";
-            dropdownContent2.style.display = "none";
-            dropdownContent3.style.display = "none";
+            dropdownContent.classList.remove("active");
+            dropdownContent2.classList.remove("active");
+            dropdownContent3.classList.remove("active");
         }
 
     });
@@ -447,17 +463,17 @@ function moreFiltersFunc(map) {
         const ratingFilter = document.getElementById("ratingFilter");
         const hourFilter = document.getElementById("hourFilter");
         const socialFilter = document.getElementById("socialFilter");
+        const filters = [promoFilter, ratingFilter, hourFilter, socialFilter];
         if (moreFiltersButton.innerHTML == "Hide Filters") {
-            promoFilter.style.zIndex = "-500";
-            ratingFilter.style.zIndex = "-500";
-            hourFilter.style.zIndex = "-500";
-            socialFilter.style.zIndex = "-500";
+            filters.forEach(filter => {
+                filter.classList.add("hidden");
+            });
             moreFiltersButton.innerHTML = "Show Filters";
         } else {
-            promoFilter.style.zIndex = "1";
-            ratingFilter.style.zIndex = "1";
-            hourFilter.style.zIndex = "1";
-            socialFilter.style.zIndex = "1";
+            filters.forEach(filter => {
+                filter.style.zIndex = 1;
+                filter.classList.remove("hidden");
+            });
             moreFiltersButton.innerHTML = "Hide Filters";
         }
 
@@ -474,14 +490,15 @@ function promoFunc(map) {
     promoFilter.id = "promoFilter";
     //promoFilter.classList.add("px-1");
     promoFilter.classList.add("flex-column");
-    promoFilter.classList.add("d-flex")
+    promoFilter.classList.add("d-flex");
+    promoFilter.classList.add("filter", "hidden");
     promoFilter.style.margin = "8px 0 3px";
     promoFilter.style.padding = "0 5px";
     promoFilter.style.fontSize = "16px";
     promoFilter.style.lineHeight = "12px";
     // promoFilter.style.display = "none";
     promoFilter.style.display = "block";
-    promoFilter.style.zIndex = -500;
+    // promoFilter.style.zIndex = -500;
     // promoFilter.style.width = "0px";
     promoFilter.style.width = "120px"
     // promoFilter.style.left = "255px";
@@ -524,14 +541,15 @@ function RatingFunc(map) {
     ratingFilter.id = "ratingFilter";
     //ratingFilter.classList.add("px-1");
     ratingFilter.classList.add("flex-column");
-    ratingFilter.classList.add("d-flex")
+    ratingFilter.classList.add("d-flex");
+    ratingFilter.classList.add("filter", "hidden");
     ratingFilter.style.margin = "8px 0 3px";
     // ratingFilter.style.padding = "0 5px";
     ratingFilter.style.fontSize = "16px";
     ratingFilter.style.lineHeight = "12px";
     // ratingFilter.style.display = "none";
     ratingFilter.style.display = "block";
-    ratingFilter.style.zIndex = -1000;
+    // ratingFilter.style.zIndex = -1000;
     // ratingFilter.style.position = "relative";
     // ratingFilter.style.width = "0px";
     ratingFilter.style.width = "120px";
@@ -582,14 +600,15 @@ function hourFunc(map) {
     hourFilter.id = "hourFilter";
     // hourFilter.classList.add("px-1");
     hourFilter.classList.add("flex-column");
-    hourFilter.classList.add("d-flex")
+    hourFilter.classList.add("d-flex");
+    hourFilter.classList.add("filter", "hidden");
     hourFilter.style.margin = "8px 0px 3px 6px";
     // hourFilter.style.padding = "0 5px";
     hourFilter.style.fontSize = "16px";
     hourFilter.style.lineHeight = "12px";
     // hourFilter.style.display = "none";
     hourFilter.style.display = "block";
-    hourFilter.style.zIndex = -1000;
+    // hourFilter.style.zIndex = -1000;
     // hourFilter.style.position = "relative";
     // hourFilter.style.width = "0px";
     hourFilter.style.width = "120px";
@@ -767,13 +786,14 @@ function socialFunc(map) {
     const socialFilter = document.createElement("div");
     socialFilter.id = "socialFilter";
     socialFilter.classList.add("flex-column");
-    socialFilter.classList.add("d-flex")
+    socialFilter.classList.add("d-flex");
+    socialFilter.classList.add("filter", "hidden");
     socialFilter.style.margin = "8px 0px 3px 6px";
     socialFilter.style.fontSize = "16px";
     socialFilter.style.lineHeight = "12px";
     // socialFilter.style.display = "none";
     socialFilter.style.display = "block"
-    socialFilter.style.zIndex = -1000;
+    // socialFilter.style.zIndex = -1000;
     // socialFilter.style.position = "relative";
     // socialFilter.style.width = "0px";
     socialFilter.style.width = "120px"
@@ -833,6 +853,39 @@ function contactUsFunc(map) {
     contactUsContainer.innerHTML = "Contact Us to get your Place Added!";
 
     return contactUsContainer;
+}
+function clearDirectionsFunc(map) {
+    const clearDirectionsContainer = document.createElement("div");
+    const clearDirections = document.createElement("div");
+    clearDirections.id = "clearDirections";
+    clearDirections.classList.add("px-1");
+    clearDirections.classList.add("flex-column");
+    clearDirections.classList.add("d-flex")
+    clearDirections.style.margin = "8px 0 3px";
+    clearDirections.style.padding = "0 5px";
+    clearDirections.style.fontSize = "16px";
+    clearDirections.style.lineHeight = "12px";
+    clearDirections.style.width = "140px";
+
+
+    const clearDirectionsButton = document.createElement("button");
+    clearDirectionsButton.id = "clearDirectionsButton";
+    clearDirectionsButton.classList.add("dropbtn");
+    clearDirectionsButton.innerHTML = "Clear Directions";
+    clearDirectionsButton.disabled = true;
+    clearDirectionsButton.addEventListener("click", () => {
+        if (directionsRenderer) {
+            directionsRenderer.setMap(null); //Clear previous directions
+        }
+        if (originMarker) {
+            originMarker.setMap(null);
+        }
+    });
+
+    clearDirections.appendChild(clearDirectionsButton);
+    clearDirectionsContainer.appendChild(clearDirections);
+
+    return clearDirectionsContainer;
 }
 async function findPlace(type) {
 
@@ -895,18 +948,16 @@ async function processResultsLocal(type, map) {
                     content: buildContent(currentPlace, type),
                     position: { lat: currentPlace.Lat, lng: currentPlace.Long }
                 });
-                marker.addListener("click", () => {
-                    toggleHighlight(marker, currentPlace);
-                    getDirections(currentPlace.Lat, currentPlace.Long);
-
-                    //console.log(currentPlace.photoURL)
-                    // setTimeout(() => {
-                    //     document.getElementById(`get-directions-${currentPlace.Nama}`).addEventListener("click", () => {
-                    //         getDirections(currentPlace.Lat, currentPlace.Long);
-                    //     });
-                    // }, 2000);
-                        
-                    
+                marker.addListener("click", (event) => {
+                    if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'A') {
+                        event.domEvent.stopPropagation();
+                        const buttonId = event.domEvent.target.id;
+                        if (currentPlace && event.domEvent.target.tagName === 'BUTTON') {
+                            getDirections(currentPlace.Lat, currentPlace.Long);
+                        }
+                    } else {
+                        toggleHighlight(marker, currentPlace);
+                    }
                 });
                 marker.name = currentPlace.Nama;
                 marker.rating = currentPlace.rating;
@@ -932,9 +983,16 @@ async function processResultsLocal(type, map) {
                     content: buildContent(currentPlace, type),
                     position: { lat: currentPlace.Lat, lng: currentPlace.Long }
                 });
-                marker.addListener("click", () => {
-                    toggleHighlight(marker, currentPlace);
-                    // console.log(currentPlace.photoURL)
+                marker.addListener("click", (event) => {
+                    if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'A') {
+                        event.domEvent.stopPropagation();
+                        const buttonId = event.domEvent.target.id;
+                        if (currentPlace && event.domEvent.target.tagName === 'BUTTON') {
+                            getDirections(currentPlace.Lat, currentPlace.Long);
+                        }
+                    } else {
+                        toggleHighlight(marker, currentPlace);
+                    }
                 });
                 marker.name = currentPlace.Nama;
                 marker.rating = currentPlace.rating;
@@ -959,10 +1017,16 @@ async function processResultsLocal(type, map) {
                     content: buildContent(currentPlace, type),
                     position: { lat: currentPlace.Lat, lng: currentPlace.Long }
                 });
-                marker.addListener("click", () => {
-                    toggleHighlight(marker, currentPlace);
-                    //console.log(currentPlace.photoURL)
-                    showDirections(currentPlace);
+                marker.addListener("click", (event) => {
+                    if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'A') {
+                        event.domEvent.stopPropagation();
+                        const buttonId = event.domEvent.target.id;
+                        if (currentPlace && event.domEvent.target.tagName === 'BUTTON') {
+                            getDirections(currentPlace.Lat, currentPlace.Long);
+                        }
+                    } else {
+                        toggleHighlight(marker, currentPlace);
+                    }
                 });
                 marker.name = currentPlace.Nama;
                 marker.rating = currentPlace.rating;
@@ -1380,34 +1444,44 @@ function timeOpenProcessor(place) {
         }
     }
 }
-
 function getDirections(lat, lng) {
+    document.getElementById("clearDirectionsButton").disabled = false;
     getUserLocation(userLocation => {
         if (!userLocation) {
             console.error("Could not get user location.");
             return;
         }
-
         const directionsService = new google.maps.DirectionsService();
-        const directionsRenderer = new google.maps.DirectionsRenderer();
-        directionsRenderer.setMap(map);
-
+        if (directionsRenderer) {
+            directionsRenderer.setMap(null); //Clear previous directions
+        }
+        directionsRenderer = new google.maps.DirectionsRenderer({
+            map: map,
+            suppressMarkers: true, //Prevent generating markers
+            preserveViewport: true
+        });
         const request = {
             origin: userLocation,
             destination: { lat: lat, lng: lng },
             travelMode: google.maps.TravelMode.DRIVING
         };
-
         directionsService.route(request, (result, status) => {
             if (status === google.maps.DirectionsStatus.OK) {
                 directionsRenderer.setDirections(result);
+                if (originMarker) {
+                    originMarker.setMap(null);
+                }
+                originMarker = new google.maps.Marker({
+                    position: userLocation,
+                    map: map,
+                    title: "Your Location"
+                });
             } else {
                 console.error("Directions request failed due to ", status);
             }
         });
     });
 }
-
 function getUserLocation(callback) {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
