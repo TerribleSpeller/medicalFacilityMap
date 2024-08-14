@@ -1089,9 +1089,14 @@ function buildContent(property, type) {
 
                 </div>
                 <div class="d-flex justify-content-between">
-                    <div  id="${property.Nama}-website">
-                        <button class="btn btn-outline-warning btn-lg" onclick="window.open('${property.Website}', '_blank');"><span class="text-primary" style="font-size:14px;">Website</span></button>
-                    </div>
+                    ${ property.Website ?
+                        `<div id="${property.Nama}-website">
+                            <button class="btn btn-outline-warning btn-lg" onclick="window.open('${property.Website}', '_blank');"><span class="text-primary" style="font-size:14px;">Website</span></button>
+                        </div>`
+                        :
+                        ""
+                    }
+
                     <button  id="${property.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${property.Nama}-direction-span" style="font-size:14px;">Get Directions</span></button>
                 </div>
                
