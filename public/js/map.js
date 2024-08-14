@@ -99,6 +99,8 @@ let specificDayCheck = false;
 let markers = [];
 let directionsRenderer = null;
 let originMarker = null;
+let totalDistance = 0;
+let totalDuration = 0;
 
 
 const mapCenter = { lat: -6.302630388, lng: 106.6505807 };
@@ -167,7 +169,8 @@ async function initMap() {
     map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(contactUs);
     const clearDirections = clearDirectionsFunc(map);
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(clearDirections);
-
+    const distance = mapDistanceFunc(map);
+    map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(distance);
 }
 function dropdownCategoryFunc(map) {
     const dropdownCategory = document.createElement("div");
@@ -379,6 +382,14 @@ function dropdownSubCategoryFunc(map) {
                 button.style.backgroundColor = "#A1A1A1";
             }
             findPlace(button.value);
+            //To Remove Directions
+            if (directionsRenderer) {
+                directionsRenderer.setMap(null); //Clear previous directions
+            }
+            if (originMarker) {
+                originMarker.setMap(null);
+            }
+            document.getElementById("mapDistanceContainer").style.display = "none";
         });
 
         dropdownContent.appendChild(button);
@@ -408,6 +419,14 @@ function dropdownSubCategoryFunc(map) {
                 button.style.backgroundColor = "#A1A1A1";
             }
             findPlace(button.value);
+            //To Remove Directions
+            if (directionsRenderer) {
+                directionsRenderer.setMap(null); //Clear previous directions
+            }
+            if (originMarker) {
+                originMarker.setMap(null);
+            }
+            document.getElementById("mapDistanceContainer").style.display = "none";
         });
 
         dropdownContent2.appendChild(button);
@@ -436,6 +455,14 @@ function dropdownSubCategoryFunc(map) {
                 button.style.backgroundColor = "#A1A1A1";
             }
             findPlace(button.value);
+            //To Remove Directions
+            if (directionsRenderer) {
+                directionsRenderer.setMap(null); //Clear previous directions
+            }
+            if (originMarker) {
+                originMarker.setMap(null);
+            }
+            document.getElementById("mapDistanceContainer").style.display = "none";
         });
 
         dropdownContent3.appendChild(button);
@@ -882,6 +909,7 @@ function clearDirectionsFunc(map) {
         if (originMarker) {
             originMarker.setMap(null);
         }
+        document.getElementById("mapDistanceContainer").style.display = "none";
     });
 
     clearDirections.appendChild(clearDirectionsButton);
@@ -957,8 +985,8 @@ async function processResultsLocal(type, map) {
                         // const buttonId = event.domEvent.target.id;
                         // console.log(event.domEvent.target.id)
                         // console.log(currentPlace.Nama)
-                        if (currentPlace &&  (event.domEvent.target.id === `${currentPlace.Nama}-direction` || event.domEvent.target.id === `${currentPlace.Nama}-direction-span`)) {
-                            getDirections(currentPlace.Lat, currentPlace.Long);
+                        if (currentPlace && (event.domEvent.target.id === `${currentPlace.Nama}-direction` || event.domEvent.target.id === `${currentPlace.Nama}-direction-span`)) {
+                            getDirections(currentPlace, currentPlace.Lat, currentPlace.Long);
                         }
                     } else {
                         toggleHighlight(marker, currentPlace);
@@ -989,11 +1017,13 @@ async function processResultsLocal(type, map) {
                     position: { lat: currentPlace.Lat, lng: currentPlace.Long }
                 });
                 marker.addListener("click", (event) => {
-                    if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'A') {
+                    if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'SPAN') {
                         event.domEvent.stopPropagation();
-                        const buttonId = event.domEvent.target.id;
-                        if (currentPlace && event.domEvent.target.tagName === 'BUTTON') {
-                            getDirections(currentPlace.Lat, currentPlace.Long);
+                        // const buttonId = event.domEvent.target.id;
+                        // console.log(event.domEvent.target.id)
+                        // console.log(currentPlace.Nama)
+                        if (currentPlace && (event.domEvent.target.id === `${currentPlace.Nama}-direction` || event.domEvent.target.id === `${currentPlace.Nama}-direction-span`)) {
+                            getDirections(currentPlace, currentPlace.Lat, currentPlace.Long);
                         }
                     } else {
                         toggleHighlight(marker, currentPlace);
@@ -1023,11 +1053,13 @@ async function processResultsLocal(type, map) {
                     position: { lat: currentPlace.Lat, lng: currentPlace.Long }
                 });
                 marker.addListener("click", (event) => {
-                    if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'A') {
+                    if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'SPAN') {
                         event.domEvent.stopPropagation();
-                        const buttonId = event.domEvent.target.id;
-                        if (currentPlace && event.domEvent.target.tagName === 'BUTTON') {
-                            getDirections(currentPlace.Lat, currentPlace.Long);
+                        // const buttonId = event.domEvent.target.id;
+                        // console.log(event.domEvent.target.id)
+                        // console.log(currentPlace.Nama)
+                        if (currentPlace && (event.domEvent.target.id === `${currentPlace.Nama}-direction` || event.domEvent.target.id === `${currentPlace.Nama}-direction-span`)) {
+                            getDirections(currentPlace, currentPlace.Lat, currentPlace.Long);
                         }
                     } else {
                         toggleHighlight(marker, currentPlace);
@@ -1089,13 +1121,13 @@ function buildContent(property, type) {
 
                 </div>
                 <div class="d-flex justify-content-between">
-                    ${ property.Website ?
-                        `<div id="${property.Nama}-website">
+                    ${property.Website ?
+            `<div id="${property.Nama}-website">
                             <button class="btn btn-outline-warning btn-lg" onclick="window.open('${property.Website}', '_blank');"><span class="text-primary" style="font-size:14px;">Website</span></button>
                         </div>`
-                        :
-                        ""
-                    }
+            :
+            ""
+        }
 
                     <button  id="${property.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${property.Nama}-direction-span" style="font-size:14px;">Get Directions</span></button>
                 </div>
@@ -1451,7 +1483,7 @@ function timeOpenProcessor(place) {
         }
     }
 }
-async function getDirections(lat, lng) {
+async function getDirections(place, lat, lng) {
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
     document.getElementById("clearDirectionsButton").disabled = false;
     getUserLocation(userLocation => {
@@ -1484,6 +1516,28 @@ async function getDirections(lat, lng) {
                     position: userLocation,
                     content: buildUserContent()
                 })
+                const route = result.routes[0];
+
+                totalDistance = 0;
+                totalDuration = 0;
+                route.legs.forEach(leg => {
+                    totalDistance += leg.distance.value; // distance in meters
+                    totalDuration += leg.duration.value; // duration in seconds
+                });
+
+                totalDistance = (totalDistance / 1000).toFixed(3);
+                let totalDurationHour = (totalDuration / 3600).toFixed(1);
+                console.log(`Total Distance: ${totalDistance} kms`);
+                console.log(`Total Duration: ${totalDurationHour} hours`);
+                document.getElementById("mapDistanceContainer").style.display = "block";
+                document.getElementById("mapDistanceDetails").innerHTML = `Destination: ${place.Nama}`;
+                if (totalDurationHour < 1) {
+                    document.getElementById("mapDistanceSpan").innerHTML = `${totalDistance} Kms | ${(totalDuration / 60).toFixed(1)} Minutes`;
+
+                } else {
+                    document.getElementById("mapDistanceSpan").innerHTML = `${totalDistance} Kms | ${totalDurationHour} Hour(s)`;
+                }
+
             } else {
                 console.error("Directions request failed due to ", status);
             }
@@ -1510,7 +1564,6 @@ function getUserLocation(callback) {
         callback(null);
     }
 }
-
 function buildUserContent() {
     const content = document.createElement("div");
     content.classList.add("property");
@@ -1522,6 +1575,35 @@ function buildUserContent() {
     `
     return content;
 }
+function mapDistanceFunc(map) {
+    const mapDistanceContainer = document.createElement("div");
+    mapDistanceContainer.id = "mapDistanceContainer";
+    mapDistanceContainer.classList.add("px-1");
+    mapDistanceContainer.classList.add("flex-column")
+    mapDistanceContainer.style.backgroundColor = "#1e2d80";
+    mapDistanceContainer.style.margin = "8px 0 0px";
+    mapDistanceContainer.style.padding = "0 5px";
+    // mapDistanceContainer.style.fontSize = "30px";
+    mapDistanceContainer.style.lineHeight = "20px";
+    mapDistanceContainer.style.height = "60px";
+    mapDistanceContainer.style.display = "none";
+    const mapDistanceDetails = document.createElement("div");
+    mapDistanceDetails.id = "mapDistanceDetails";
+    mapDistanceDetails.classList.add("m-2");
+    mapDistanceDetails.style.color = "white";
+    mapDistanceDetails.style.fontSize = "18px";
+    mapDistanceDetails.innerHTML = "Destination:";
+    const mapDistanceSpan = document.createElement("div");
+    mapDistanceSpan.classList.add("m-2");
+    mapDistanceSpan.id = "mapDistanceSpan";
+    mapDistanceSpan.style.color = "white";
+    mapDistanceSpan.style.fontSize = "14px";
+    mapDistanceSpan.innerHTML = `${totalDistance} Kms | ${totalDuration} Hour`;
+    mapDistanceContainer.appendChild(mapDistanceDetails);
+    mapDistanceContainer.appendChild(mapDistanceSpan);
+    return mapDistanceContainer;
+}
+
 
 
 
