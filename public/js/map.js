@@ -951,12 +951,13 @@ async function processResultsLocal(type, map) {
                     position: { lat: currentPlace.Lat, lng: currentPlace.Long }
                 });
                 marker.addListener("click", (event) => {
-                    if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'A') {
+                    // console.log(event)
+                    if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'SPAN') {
                         event.domEvent.stopPropagation();
                         // const buttonId = event.domEvent.target.id;
                         // console.log(event.domEvent.target.id)
                         // console.log(currentPlace.Nama)
-                        if (currentPlace &&  event.domEvent.target.id === `${currentPlace.Nama}-direction`) {
+                        if (currentPlace &&  (event.domEvent.target.id === `${currentPlace.Nama}-direction` || event.domEvent.target.id === `${currentPlace.Nama}-direction-span`)) {
                             getDirections(currentPlace.Lat, currentPlace.Long);
                         }
                     } else {
@@ -1091,24 +1092,13 @@ function buildContent(property, type) {
                     <div  id="${property.Nama}-website">
                         <button class="btn btn-outline-warning btn-lg" onclick="window.open('${property.Website}', '_blank');"><span class="text-primary" style="font-size:14px;">Website</span></button>
                     </div>
-                    <div>
-                        <button id="${property.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary" style="font-size:14px;">Get Directions</span></button>
-                    </div>
+                    <button  id="${property.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${property.Nama}-direction-span" style="font-size:14px;">Get Directions</span></button>
                 </div>
                
             </div>
         </div>
 
     `;
-
-    //     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
-    //     ${property.Website ? `
-    //     <div>
-    //         <a href="${property.Website}" target="_blank">Website</a>               
-    //     </div>` : ''} 
-
-    //event.domEvent.target.id === 'specificButtonId'
-    // </div>
     return content;
 }
 function setMapOnAll(map) {
