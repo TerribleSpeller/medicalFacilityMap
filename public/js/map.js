@@ -829,8 +829,10 @@ function socialFunc(map) {
     socialButton.addEventListener("click", () => {
         if (socialButtonContent.style.display === "none") {
             socialButtonContent.style.display = "block";
+            socialButtonContent.classList.add("active");
         } else {
             socialButtonContent.style.display = "none";
+            socialButtonContent.classList.remove("active");
         }
     });
 
@@ -1444,7 +1446,8 @@ function timeOpenProcessor(place) {
         }
     }
 }
-function getDirections(lat, lng) {
+async function getDirections(lat, lng) {
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
     document.getElementById("clearDirectionsButton").disabled = false;
     getUserLocation(userLocation => {
         if (!userLocation) {
@@ -1471,11 +1474,11 @@ function getDirections(lat, lng) {
                 if (originMarker) {
                     originMarker.setMap(null);
                 }
-                originMarker = new google.maps.Marker({
-                    position: userLocation,
+                originMarker = new AdvancedMarkerElement({
                     map: map,
-                    title: "Your Location"
-                });
+                    position: userLocation,
+                    content: buildUserContent()
+                })
             } else {
                 console.error("Directions request failed due to ", status);
             }
@@ -1501,6 +1504,18 @@ function getUserLocation(callback) {
         console.error("Geolocation is not supported by this browser.");
         callback(null);
     }
+}
+
+function buildUserContent() {
+    const content = document.createElement("div");
+    content.classList.add("property");
+    content.classList.add("rounded-3");
+    content.innerHTML = `
+        <div class="icon rounded-3">
+            <i aria-hidden="true" class="fa fa-icon fa-user" title=""></i>
+        </div>
+    `
+    return content;
 }
 
 
