@@ -237,14 +237,16 @@ function dropdownCategoryFunc(map) {
                 categoryOptions.forEach(option => {
                     var targetMenu = document.getElementById(option.value + "Dropdown");
                     targetMenu.classList.remove("active");
-                    targetMenu.style.display = "none";
+                    // targetMenu.style.display = "none";
+                    targetMenu.style.height = "0%";
 
                     var otherButton = document.getElementById(option.value + "Button");
                     if (otherButton) { // Check if otherButton exists
                         otherButton.style.backgroundColor = ""; // Reset background color
                     }
                 });
-                targetMenu.style.display = "block";
+                // targetMenu.style.display = "block";
+                targetMenu.style.height = "100%";
                 targetMenu.classList.add("active");
                 button.style.backgroundColor = "#A1A1A1"; // Set background color
 
@@ -306,14 +308,18 @@ function dropdownSubCategoryFunc(map) {
     dropdownContent.id = "medicalDropdown";
     dropdownContent.classList.add("vertical-menu");
     // dropdownContent.style.display = "none";
+    dropdownContent.style.display = "block";
     dropdownContent.style.width = "134px";
+    dropdownContent.style.height = "0%";
     dropdown.appendChild(dropdownContent);
 
     const dropdownContent2 = document.createElement("div");
     dropdownContent2.id = "wellnessDropdown";
     dropdownContent2.classList.add("vertical-menu");
     // dropdownContent2.style.display = "none";
+    dropdownContent2.style.display = "block";
     dropdownContent2.style.width = "134px";
+    dropdownContent2.style.height = "0%";
     dropdown.appendChild(dropdownContent2);
 
 
@@ -321,42 +327,45 @@ function dropdownSubCategoryFunc(map) {
     dropdownContent3.id = "beautyDropdown";
     dropdownContent3.classList.add("vertical-menu");
     // dropdownContent3.style.display = "none";
+    dropdownContent3.style.display = "block";
     dropdownContent3.style.width = "134px";
+    dropdownContent3.style.height = "0%";
     dropdown.appendChild(dropdownContent3);
 
 
     revealButton.addEventListener("click", () => {
         if (dropdownContent.classList.contains("active")) {
-            if (dropdownContent.style.display === "none") {
-                dropdownContent.style.display = "block";
-            } else {
-                dropdownContent.style.display = "none";
-            }
-            // dropdownContent.classList.add("active");
-            // dropdownContent2.classList.remove("active");
-            // dropdownContent3.classList.remove("active");
+            dropdownContent.style.transition =  'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
+            dropdownContent2.style.transition =  'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
+            dropdownContent3.style.transition =  'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
 
+            if (dropdownContent.style.opacity == "0") {
+                dropdownContent.style.transform = "translateY(0%)";
+                dropdownContent.style.opacity = "1";
+            } else {
+                dropdownContent.style.transform = "translateY(-200%)";
+                dropdownContent.style.opacity = "0";
+            }
         } else if (dropdownContent2.classList.contains("active")) {
-            if (dropdownContent2.style.display === "none") {
-                dropdownContent2.style.display = "block";
+            if (dropdownContent2.style.opacity == "0") {
+                dropdownContent2.style.transform = "translateY(0%)";
+                dropdownContent2.style.opacity = "1";
             } else {
-                dropdownContent2.style.display = "none";
+                dropdownContent2.style.transform = "translateY(-200%)";
+                dropdownContent2.style.opacity = "0";
             }
-            // dropdownContent.classList.remove("active");
-            // dropdownContent2.classList.add("active");
-            // dropdownContent3.classList.remove("active");
         } else if (dropdownContent3.classList.contains("active")) {
-            if (dropdownContent3.style.display === "none") {
-                dropdownContent3.style.display = "block";
+            if (dropdownContent3.style.opacity == "0") {
+                dropdownContent3.style.transform = "translateY(0%)";
+                dropdownContent3.style.opacity = "1";
             } else {
-                dropdownContent3.style.display = "none";
+                dropdownContent3.style.transform = "translateY(-200%)";
+                dropdownContent3.style.opacity = "0";
             }
-            // dropdownContent3.classList.toggle("active");
-
         } else {
-            dropdownContent.classList.remove("active");
-            dropdownContent2.classList.remove("active");
-            dropdownContent3.classList.remove("active");
+            dropdownContent.style.height = "0%";
+            dropdownContent2.style.height = "0%";
+            dropdownContent3.style.height = "0%";
         }
 
     });
@@ -391,7 +400,8 @@ function dropdownSubCategoryFunc(map) {
             if (originMarker) {
                 originMarker.setMap(null);
             }
-            document.getElementById("mapDistanceContainer").style.display = "none";
+            // document.getElementById("mapDistanceContainer").style.display = "none";
+            document.getElementById("mapDistanceContainer").style.height = "0px";
         });
 
         dropdownContent.appendChild(button);
@@ -428,7 +438,8 @@ function dropdownSubCategoryFunc(map) {
             if (originMarker) {
                 originMarker.setMap(null);
             }
-            document.getElementById("mapDistanceContainer").style.display = "none";
+            // document.getElementById("mapDistanceContainer").style.display = "none";
+            document.getElementById("mapDistanceContainer").style.height = "0px";
         });
 
         dropdownContent2.appendChild(button);
@@ -464,7 +475,9 @@ function dropdownSubCategoryFunc(map) {
             if (originMarker) {
                 originMarker.setMap(null);
             }
-            document.getElementById("mapDistanceContainer").style.display = "none";
+            // document.getElementById("mapDistanceContainer").style.display = "none";
+            document.getElementById("mapDistanceContainer").style.height = "0px";
+
         });
 
         dropdownContent3.appendChild(button);
@@ -912,7 +925,9 @@ function clearDirectionsFunc(map) {
         if (originMarker) {
             originMarker.setMap(null);
         }
-        document.getElementById("mapDistanceContainer").style.display = "none";
+        // document.getElementById("mapDistanceContainer").style.display = "none";
+        document.getElementById("mapDistanceContainer").style.height = "0px";
+
     });
 
     clearDirections.appendChild(clearDirectionsButton);
@@ -1008,7 +1023,7 @@ async function processResultsLocal(type, map) {
                                 if(promoBox.classList.contains("highlight")){
                                     promoBox.style.opacity = "1";
                                     promoBox.offsetHeight;
-                                    promoBox.style.transition = 'transform 0.3s ease, opacity 0.5s ease, height 0.5s ease';
+                                    promoBox.style.transition = 'transform 0.5s ease, opacity 0.5s ease, height 0.5s ease';
                                     promoBox.style.height = "30px";
                                     promoBox.style.transform = "translateX(0%)";
                                     promoBox.classList.remove("highlight");
@@ -1701,7 +1716,8 @@ async function getDirections(place, lat, lng) {
                 let totalDurationHour = (totalDuration / 3600).toFixed(1);
                 console.log(`Total Distance: ${totalDistance} kms`);
                 console.log(`Total Duration: ${totalDurationHour} hours`);
-                document.getElementById("mapDistanceContainer").style.display = "block";
+                // document.getElementById("mapDistanceContainer").style.display = "block";
+                document.getElementById("mapDistanceContainer").style.height = "60px";
                 document.getElementById("mapDistanceDetails").innerHTML = `Destination: ${place.Nama}`;
                 if (totalDurationHour < 1) {
                     document.getElementById("mapDistanceSpan").innerHTML = `${totalDistance} Kms | ${(totalDuration / 60).toFixed(1)} Minutes`;
@@ -1755,10 +1771,12 @@ function mapDistanceFunc(map) {
     mapDistanceContainer.style.backgroundColor = "#1e2d80";
     mapDistanceContainer.style.margin = "8px 0 0px";
     mapDistanceContainer.style.padding = "0 5px";
+    mapDistanceContainer.style.transition = "height 0.5s ease";
     // mapDistanceContainer.style.fontSize = "30px";
     mapDistanceContainer.style.lineHeight = "20px";
-    mapDistanceContainer.style.height = "60px";
-    mapDistanceContainer.style.display = "none";
+    // mapDistanceContainer.style.height = "60px";
+    mapDistanceContainer.style.height = "0px";
+    mapDistanceContainer.style.display = "display";
     const mapDistanceDetails = document.createElement("div");
     mapDistanceDetails.id = "mapDistanceDetails";
     mapDistanceDetails.classList.add("m-2");
