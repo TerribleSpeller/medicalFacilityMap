@@ -1930,6 +1930,16 @@ body {
 /*
  * Property styles in unhighlighted state.
  */
+
+ .property-center {
+    height:30px;
+    width: 90px;
+ }
+
+ .property-center.hightlight {
+    height:300px;
+    width: 900px;
+ }
 .property {
     align-items: center;
     background-color: #FFFFFF;
@@ -2401,4 +2411,8 @@ input[type="range"]::-moz-range-thumb {
     width: 120px;
     height: 40px;
 
+}
+
+.promo-text {
+    font-size: 12px;
 }

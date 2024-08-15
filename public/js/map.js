@@ -1,6 +1,7 @@
 import detailsMedical from "./detailsMedical.js";
 import detailsBeauty from "./detailsBeauty.js";
 import detailsWellness from "./detailsWellness.js";
+import detailsPromos from "./detailsPromos.js";
 
 const mapBounds = [
     { lat: -6.3014897268225445, lng: 106.69998806230103 }, //TOll
@@ -101,6 +102,7 @@ let directionsRenderer = null;
 let originMarker = null;
 let totalDistance = 0;
 let totalDuration = 0;
+let promoRatingCheck = false;
 
 
 const mapCenter = { lat: -6.302630388, lng: 106.6505807 };
@@ -227,7 +229,7 @@ function dropdownCategoryFunc(map) {
         button.addEventListener("click", () => {
             //findPlace(button.value);
             var targetMenu = document.getElementById(button.value + "Dropdown");
-            console.log(targetMenu)
+            // console.log(targetMenu)
             if (targetMenu.classList.contains("active")) {
                 targetMenu.classList.remove("active");
                 button.style.backgroundColor = "";
@@ -538,6 +540,7 @@ function promoFunc(map) {
 
     const PromoDiv = document.createElement("div");
     PromoDiv.classList.add("vertical-menu-long", "border", "border-black");
+    PromoDiv.id = "PromoDivFill"
     PromoDiv.style.margin = "1.0px auto";
     PromoDiv.style.padding = "10px";
     PromoDiv.style.fontSize = "16px";
@@ -548,8 +551,8 @@ function promoFunc(map) {
     PromoDiv.style.backgroundColor = "#f0f0f0"
     PromoDiv.innerHTML = `
         <div class="checkbox-wrapper-1" style="background-color=#f0f0f0;">
-            <input id="example-1" class="substituted" type="checkbox" aria-hidden="true" />
-            <label for="example-1">Show?</label>
+            <input id="promoRating" class="substituted" type="checkbox" aria-hidden="true" />
+            <label for="promoRating">Show?</label>
         </div>
         `
     promoFilter.appendChild(PromoDiv);
@@ -920,9 +923,9 @@ function clearDirectionsFunc(map) {
 async function findPlace(type) {
 
     if (currentSelection == type) {
-        console.log("Same Selection as Before.")
+        // console.log("Same Selection as Before.")
     } else {
-        console.log("Diff Cateogry")
+        // console.log("Diff Cateogry")
         currentSelection = type;
         deleteMarkers();
     }
@@ -973,6 +976,16 @@ async function processResultsLocal(type, map) {
                 console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type)
             } else {
                 console.log("Type Match: ", currentPlace.subcategory, " vs ", type)
+                let publicArrayNumber = 0;
+                for (let j = 0; j < detailsPromos.length; j++) {
+                    //console.log(detailsPromos[j].tenantName)
+                    if (detailsPromos[j].tenantName === currentPlace.Nama) {
+                        currentPlace.promo = true;
+                        currentPlace.promoDetails = detailsPromos[j];
+                        publicArrayNumber = j;
+                        // console.log(currentPlace.promoDetails)
+                    } 
+                }
                 const marker = new AdvancedMarkerElement({
                     map: map,
                     content: buildContent(currentPlace, type),
@@ -988,17 +1001,47 @@ async function processResultsLocal(type, map) {
                         if (currentPlace && (event.domEvent.target.id === `${currentPlace.Nama}-direction` || event.domEvent.target.id === `${currentPlace.Nama}-direction-span`)) {
                             getDirections(currentPlace, currentPlace.Lat, currentPlace.Long);
                         }
+                        if (marker.promo) {
+                            if (event.domEvent.target.id === `${currentPlace.Nama}-translatePromoBox` || event.domEvent.target.id === `${currentPlace.Nama}-promo-span`) {
+                                console.log("Test")
+                                const promoBox = document.getElementById(`${currentPlace.Nama}-promoBox`);
+                                if(promoBox.classList.contains("highlight")){
+                                    promoBox.style.opacity = "1";
+                                    promoBox.offsetHeight;
+                                    promoBox.style.transition = 'transform 0.3s ease, opacity 0.5s ease, height 0.5s ease';
+                                    promoBox.style.height = "30px";
+                                    promoBox.style.transform = "translateX(0%)";
+                                    promoBox.classList.remove("highlight");
+                                    promoBox.style.opacity = "0";
+                                    promoBox.style.zIndex = "-10";
+                                } else {
+                                    promoBox.style.transition = 'transform 0.3s ease, opacity 0.5s ease';
+                                    promoBox.style.transform = 'translateX(-100%)';
+                                    promoBox.classList.add("highlight")
+                                    promoBox.style.opacity = "1";
+                                    promoBox.style.height = "300px"    
+                                    promoBox.style.zIndex = "1";
+                                }
+                            }
+                        }
                     } else {
                         toggleHighlight(marker, currentPlace);
                     }
                 });
+                // const promoBox5 = document.getElementById(`${currentPlace.Nama}-promoBox`);
+                // promoBox5.style.width = "10px";
                 marker.name = currentPlace.Nama;
                 marker.rating = currentPlace.rating;
                 marker.openingHours = currentPlace.openingHours;
                 marker.closingHours = currentPlace.closingHours;
                 marker.allDay = currentPlace.allDay;
                 marker.IGFollowers = currentPlace.IGFollowers;
+                if (currentPlace.promo) {
+                    marker.promo = true;
+                    marker.promoLoc = detailsPromos[publicArrayNumber];
+                }
                 markers.push(marker);
+                // console.log(marker.promo);
 
             }
         }
@@ -1011,12 +1054,23 @@ async function processResultsLocal(type, map) {
                 console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type)
             } else {
                 console.log("Type Match: ", currentPlace.subcategory, " vs ", type)
+                let publicArrayNumber = 0;
+                for (let j = 0; j < detailsPromos.length; j++) {
+                    //console.log(detailsPromos[j].tenantName)
+                    if (detailsPromos[j].tenantName === currentPlace.Nama) {
+                        currentPlace.promo = true;
+                        currentPlace.promoDetails = detailsPromos[j];
+                        publicArrayNumber = j;
+                        console.log(currentPlace.promoDetails)
+                    } 
+                }
                 const marker = new AdvancedMarkerElement({
                     map: map,
                     content: buildContent(currentPlace, type),
                     position: { lat: currentPlace.Lat, lng: currentPlace.Long }
                 });
                 marker.addListener("click", (event) => {
+                    // console.log(event)
                     if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'SPAN') {
                         event.domEvent.stopPropagation();
                         // const buttonId = event.domEvent.target.id;
@@ -1025,17 +1079,47 @@ async function processResultsLocal(type, map) {
                         if (currentPlace && (event.domEvent.target.id === `${currentPlace.Nama}-direction` || event.domEvent.target.id === `${currentPlace.Nama}-direction-span`)) {
                             getDirections(currentPlace, currentPlace.Lat, currentPlace.Long);
                         }
+                        if (marker.promo) {
+                            if (event.domEvent.target.id === `${currentPlace.Nama}-translatePromoBox` || event.domEvent.target.id === `${currentPlace.Nama}-promo-span`) {
+                                console.log("Test")
+                                const promoBox = document.getElementById(`${currentPlace.Nama}-promoBox`);
+                                if(promoBox.classList.contains("highlight")){
+                                    promoBox.style.opacity = "1";
+                                    promoBox.offsetHeight;
+                                    promoBox.style.transition = 'transform 0.3s ease, opacity 0.5s ease, height 0.5s ease';
+                                    promoBox.style.height = "30px";
+                                    promoBox.style.transform = "translateX(0%)";
+                                    promoBox.classList.remove("highlight");
+                                    promoBox.style.opacity = "0";
+                                    promoBox.style.zIndex = "-10";
+                                } else {
+                                    promoBox.style.transition = 'transform 0.3s ease, opacity 0.5s ease';
+                                    promoBox.style.transform = 'translateX(-100%)';
+                                    promoBox.classList.add("highlight")
+                                    promoBox.style.opacity = "1";
+                                    promoBox.style.height = "300px"    
+                                    promoBox.style.zIndex = "1";
+                                }
+                            }
+                        }
                     } else {
                         toggleHighlight(marker, currentPlace);
                     }
                 });
+                // const promoBox5 = document.getElementById(`${currentPlace.Nama}-promoBox`);
+                // promoBox5.style.width = "10px";
                 marker.name = currentPlace.Nama;
                 marker.rating = currentPlace.rating;
                 marker.openingHours = currentPlace.openingHours;
                 marker.closingHours = currentPlace.closingHours;
                 marker.allDay = currentPlace.allDay;
                 marker.IGFollowers = currentPlace.IGFollowers;
+                if (currentPlace.promo) {
+                    marker.promo = true;
+                    marker.promoLoc = detailsPromos[publicArrayNumber];
+                }
                 markers.push(marker);
+                // console.log(marker.promo);
             }
         }
     }
@@ -1047,12 +1131,23 @@ async function processResultsLocal(type, map) {
                 console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type)
             } else {
                 console.log("Type Match: ", currentPlace.subcategory, " vs ", type)
+                let publicArrayNumber = 0;
+                for (let j = 0; j < detailsPromos.length; j++) {
+                    //console.log(detailsPromos[j].tenantName)
+                    if (detailsPromos[j].tenantName === currentPlace.Nama) {
+                        currentPlace.promo = true;
+                        currentPlace.promoDetails = detailsPromos[j];
+                        publicArrayNumber = j;
+                        console.log(currentPlace.promoDetails)
+                    } 
+                }
                 const marker = new AdvancedMarkerElement({
                     map: map,
                     content: buildContent(currentPlace, type),
                     position: { lat: currentPlace.Lat, lng: currentPlace.Long }
                 });
                 marker.addListener("click", (event) => {
+                    // console.log(event)
                     if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'SPAN') {
                         event.domEvent.stopPropagation();
                         // const buttonId = event.domEvent.target.id;
@@ -1061,17 +1156,47 @@ async function processResultsLocal(type, map) {
                         if (currentPlace && (event.domEvent.target.id === `${currentPlace.Nama}-direction` || event.domEvent.target.id === `${currentPlace.Nama}-direction-span`)) {
                             getDirections(currentPlace, currentPlace.Lat, currentPlace.Long);
                         }
+                        if (marker.promo) {
+                            if (event.domEvent.target.id === `${currentPlace.Nama}-translatePromoBox` || event.domEvent.target.id === `${currentPlace.Nama}-promo-span`) {
+                                console.log("Test")
+                                const promoBox = document.getElementById(`${currentPlace.Nama}-promoBox`);
+                                if(promoBox.classList.contains("highlight")){
+                                    promoBox.style.opacity = "1";
+                                    promoBox.offsetHeight;
+                                    promoBox.style.transition = 'transform 0.3s ease, opacity 0.5s ease, height 0.5s ease';
+                                    promoBox.style.height = "30px";
+                                    promoBox.style.transform = "translateX(0%)";
+                                    promoBox.classList.remove("highlight");
+                                    promoBox.style.opacity = "0";
+                                    promoBox.style.zIndex = "-10";
+                                } else {
+                                    promoBox.style.transition = 'transform 0.3s ease, opacity 0.5s ease';
+                                    promoBox.style.transform = 'translateX(-100%)';
+                                    promoBox.classList.add("highlight")
+                                    promoBox.style.opacity = "1";
+                                    promoBox.style.height = "300px"    
+                                    promoBox.style.zIndex = "1";
+                                }
+                            }
+                        }
                     } else {
                         toggleHighlight(marker, currentPlace);
                     }
                 });
+                // const promoBox5 = document.getElementById(`${currentPlace.Nama}-promoBox`);
+                // promoBox5.style.width = "10px";
                 marker.name = currentPlace.Nama;
                 marker.rating = currentPlace.rating;
                 marker.openingHours = currentPlace.openingHours;
                 marker.closingHours = currentPlace.closingHours;
                 marker.allDay = currentPlace.allDay;
                 marker.IGFollowers = currentPlace.IGFollowers;
+                if (currentPlace.promo) {
+                    marker.promo = true;
+                    marker.promoLoc = detailsPromos[publicArrayNumber];
+                }
                 markers.push(marker);
+                // console.log(marker.promo);
             }
         }
     }
@@ -1093,7 +1218,7 @@ function buildContent(property, type) {
         content.style.backgroundSize = "contain"
     }
     content.innerHTML = `
-        <div class="icon rounded-3 ${instaCheck ? "" : "active"}" style =" ${instaCheck ? "opacity: 0;" : "opacity: 1;"}">
+        <div class="icon rounded-3 ${instaCheck ? "" : "active"}" style =" ${instaCheck ? "opacity: 0;" : "opacity: 1;"} position:absolute">
             <i aria-hidden="true" class="fa fa-icon ${typeIconProcessor(property.subcategory)}" title="${property.Nama}"></i>
             <span class="fa-sr-only">${property.Nama}</span>
         </div>
@@ -1102,7 +1227,7 @@ function buildContent(property, type) {
                 <span class="mt-2" style="color: rgb(225, 48, 108); font-size: 12px"><center>${property.IGFollowers == "IGFollowers" ? 0 : property.IGFollowers}</center></span>
             </div>
         </div>
-        <div class="details-container" >
+        <div class="details-container">
             <div class="details">
                 <div class="price">${property.Nama}</div>
                 <div class="time">${timeOpenProcessor(property)}</div>
@@ -1120,22 +1245,42 @@ function buildContent(property, type) {
                     </div>
 
                 </div>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex flex-row justify-content-start">
                     ${property.Website ?
-            `<div id="${property.Nama}-website">
-                            <button class="btn btn-outline-warning btn-lg" onclick="window.open('${property.Website}', '_blank');"><span class="text-primary" style="font-size:14px;">Website</span></button>
-                        </div>`
+                    `<div id="${property.Nama}-website">
+                        <button class="btn btn-outline-warning btn-lg" onclick="window.open('${property.Website}', '_blank');"><span class="text-primary" style="font-size:12px;">Website</span></button>
+                    </div>`
+                    :
+                    ""
+                    }
+                    <button  id="${property.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${property.Nama}-direction-span" style="font-size:12px;"> Directions</span></button>
+                    ${ property.promo ?  `<button id="${property.Nama}-translatePromoBox" class="btn btn-outline-warning" style="width:100%;"><span class="text-primary"  id="${property.Nama}-promo-span" style="font-size:12px;" >Promo</span></button>` : ""
+                    }
+
+                </div>
+            </div>
+        </div>
+        <div class="promo-box rounded-3 details-container" id="${property.Nama}-promoBox" style="width:100%; z-index:-10; 
+        ${property.promo ? `background-image: url(${property.promoDetails.promoPic}); background-position: center top` : `background-image: url('../img/noImage.png');`}"
+        >   ${property.promo ?
+            `
+            <div class="details-container" style="opacity:1;">
+                <div class="details">
+                    <div class="promo-title">${property.promoDetails.promoName} |  ${property.promoDetails.promoPrice}</div>
+                    <hr></hr>
+                    <div class="promo-text">${property.promoDetails.promoDesc}</div>
+
+                </div>
+            </div>
+            `
             :
             ""
-        }
+            }
 
-                    <button  id="${property.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${property.Nama}-direction-span" style="font-size:14px;">Get Directions</span></button>
-                </div>
-               
-            </div>
         </div>
 
     `;
+
     return content;
 }
 function setMapOnAll(map) {
@@ -1147,7 +1292,7 @@ function hideMarkers() {
     setMapOnAll(null);
 }
 function deleteMarkers() {
-    console.log(markers)
+    //console.log(markers)
     hideMarkers();
     markers = [];
 }
@@ -1157,6 +1302,7 @@ function toggleHighlight(markerView, property) {
             const otherInnerDiv = view.content.querySelector('.details-container');
             const otherIconDiv = view.content.querySelector('.icon');
             const otherInstaDiv = view.content.querySelector('.insta-container');
+            const otherContainerDiv = view.content.querySelector('.promo-box');
             view.content.classList.remove("highlight");
             view.zIndex = null;
             otherInnerDiv.style.opacity = 0;
@@ -1167,16 +1313,24 @@ function toggleHighlight(markerView, property) {
             } else {
                 otherIconDiv.style.opacity = 1;
             }
+            otherContainerDiv.style.opacity = 0;
+            otherContainerDiv.style.height = "30px";
+            otherContainerDiv.style.transform = "translateX(100%)";
+            otherContainerDiv.classList.remove("highlight");
         }
     });
     const innerDiv = markerView.content.querySelector('.details-container');
     const iconDiv = markerView.content.querySelector('.icon');
     const instaDiv = markerView.content.querySelector('.insta-container')
+    const promoDiv = markerView.content.querySelector('.promo-box');
+    // console.log(markerView.content)
+
     //console.log(innerDiv)
     if (markerView.content.classList.contains("highlight")) {
         markerView.content.classList.remove("highlight");
         markerView.zIndex = null;
         innerDiv.style.opacity = 0;
+        // ContainerDiv.style.height = "30px";
         if (iconDiv.classList.contains("active")) {
             iconDiv.style.opacity = 1;
         } else if (instaDiv.classList.contains("active")) {
@@ -1185,10 +1339,22 @@ function toggleHighlight(markerView, property) {
             iconDiv.style.opacity = 1;
         }
 
+        if(promoDiv.classList.contains("highlight")){
+            promoDiv.style.height = "30px";
+            promoDiv.style.transition = 'transform 0.3s ease,  opacity 0.5s ease, height 0.5s ease';
+            promoDiv.style.transform = "translateX(0%)";
+            promoDiv.classList.remove("highlight");
+            promoDiv.style.opacity = "0";
+        }
+
+        
+
     } else {
+        // ContainerDiv.classList.add("highlight");
         markerView.content.classList.add("highlight");
         markerView.zIndex = 100;
         innerDiv.style.opacity = 1;
+        // ContainerDiv.style.height = "300px";
         if (iconDiv.classList.contains("active")) {
             iconDiv.style.opacity = 0;
         } else if (instaDiv.classList.contains("active")) {
@@ -1238,6 +1404,12 @@ function filterMarkers(markers) {
         const openingHours = marker.openingHours;
 
         let showMarker = true;
+
+        if(promoRatingCheck) {
+            if (!marker.promo) {
+                showMarker = false;
+            }
+        }
         // Filter by rating (This is tdumb but it works)
         if (ratingFilterNumber > 0 && rating < ratingFilterNumber) {
             showMarker = false;
@@ -1604,9 +1776,6 @@ function mapDistanceFunc(map) {
     return mapDistanceContainer;
 }
 
-
-
-
 loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
 window.initMap = initMap;
 
@@ -1620,8 +1789,23 @@ const checkElementsAndSetupListeners = () => {
     const specificOpeningTime = document.getElementById("openingTimeInput");
     const specificClosingTime = document.getElementById("closingTimeInput");
     const ratingDiv = document.getElementById("RatingDivFill");
+    const promoDiv = document.getElementById("promoRating");
 
-    if (ratingRange && anytimeOptionButton && nowOptionButton && hours24OptionButton && specificDayOptionButton && specificTimeCheck && specificOpeningTime && specificClosingTime) {
+    if (ratingRange && anytimeOptionButton && nowOptionButton && hours24OptionButton && specificDayOptionButton && specificTimeCheck && specificOpeningTime && specificClosingTime && promoDiv) {
+        promoDiv.addEventListener("change", function(event) {
+            if (event.target.checked) {
+                // Handle the checkbox being checked
+                promoDiv.style.backgroundColor = "yellow"; // Example action
+                promoRatingCheck = true;
+                filterMarkers(markers);
+            } else {
+                // Handle the checkbox being unchecked
+                promoDiv.style.backgroundColor = ""; // Reset to default
+                promoRatingCheck = false;
+                filterMarkers(markers);
+            }
+        });
+
         // Set up event listeners
         ratingRange.addEventListener("input", () => {
             document.getElementById("result").textContent = ratingRange.value;
