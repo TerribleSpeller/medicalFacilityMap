@@ -868,6 +868,7 @@ function socialFunc(map) {
     socialFilter.style.margin = "8px 0px 3px 6px";
     socialFilter.style.fontSize = "16px";
     socialFilter.style.lineHeight = "12px";
+    socialFilter.style.zIndex = 2;
     // socialFilter.style.display = "none";
     socialFilter.style.display = "block"
     // socialFilter.style.zIndex = -1000;
@@ -878,6 +879,7 @@ function socialFunc(map) {
     const socialButton = document.createElement("button");
     socialButton.classList.add("dropbtn");
     socialButton.innerHTML = "Socials";
+    socialButton.zIndex = 2;
     socialFilter.appendChild(socialButton);
     socialFilterContainer.appendChild(socialFilter);
 
@@ -885,7 +887,12 @@ function socialFunc(map) {
     const socialButtonContent = document.createElement("div");
     socialButtonContent.id = "beautyDropdown";
     socialButtonContent.classList.add("vertical-menu");
-    socialButtonContent.style.display = "none";
+    socialButtonContent.style.display = "block";
+    socialButtonContent.style.transition = "height 0.5s ease, opacity 1.0s ease, transform 0.5s ease";
+    socialButtonContent.style.height = "0%";
+    socialButtonContent.style.opacity = "0";
+    socialButtonContent.style.transform = "translateY(-100%)";
+    socialButtonContent.style.zIndex = "-1";
     socialFilter.appendChild(socialButtonContent);
 
     const instaOption = document.createElement("button");
@@ -904,12 +911,24 @@ function socialFunc(map) {
     });
 
     socialButton.addEventListener("click", () => {
-        if (socialButtonContent.style.display === "none") {
-            socialButtonContent.style.display = "block";
+        if (socialButtonContent.style.height === "0%") {
+            // socialButtonContent.style.display = "block";
+            socialButtonContent.style.height = "100%";
+            socialButtonContent.style.opacity = "1";
+            socialButtonContent.style.transform = "translateY(0%)";
             socialButtonContent.classList.add("active");
+            socialButtonContent.style.zIndex = 1;
+
         } else {
-            socialButtonContent.style.display = "none";
-            socialButtonContent.classList.remove("active");
+            // socialButtonContent.style.display = "none";
+            socialButtonContent.style.height = "0%";
+            socialButtonContent.style.opacity = "0";
+            socialButtonContent.style.transform = "translateY(-100%)";
+            socialButtonContent.style.zIndex = "-1";
+            setTimeout(() => {
+                socialButtonContent.classList.remove("active");
+            },500);
+
         }
     });
 
