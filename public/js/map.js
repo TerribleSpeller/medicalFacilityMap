@@ -547,6 +547,7 @@ function promoFunc(map) {
 
     const PromosButton = document.createElement("button");
     PromosButton.classList.add("dropbtn");
+    PromosButton.style.zIndex = 2;
     PromosButton.innerHTML = "Promos";
     promoFilter.appendChild(PromosButton);
     promoFilterContainer.appendChild(promoFilter);
@@ -554,12 +555,16 @@ function promoFunc(map) {
     const PromoDiv = document.createElement("div");
     PromoDiv.classList.add("vertical-menu-long", "border", "border-black");
     PromoDiv.id = "PromoDivFill"
+    PromoDiv.style.transition = "transform 0.5s ease, opacity 0.3s ease, height 0.5s ease";
     PromoDiv.style.margin = "1.0px auto";
     PromoDiv.style.padding = "10px";
     PromoDiv.style.fontSize = "16px";
     PromoDiv.style.cursor = "pointer";
     PromoDiv.style.width = "110px";
-    PromoDiv.style.display = "none";
+    PromoDiv.style.display = "block";
+    PromoDiv.style.height = "0%";
+    PromoDiv.style.opacity = "0";
+    PromoDiv.style.transform = "translateY(-100%)";
     PromoDiv.style.position = "relative";
     PromoDiv.style.backgroundColor = "#f0f0f0"
     PromoDiv.innerHTML = `
@@ -570,10 +575,16 @@ function promoFunc(map) {
         `
     promoFilter.appendChild(PromoDiv);
     PromosButton.addEventListener("click", () => {
-        if (PromoDiv.style.display === "none") {
-            PromoDiv.style.display = "block";
+        if (PromoDiv.style.height == "0%") {
+            PromoDiv.style.height = "100%";
+            PromoDiv.style.opacity = "1";
+            PromoDiv.style.transform = "translateY(0%)";
+            PromoDiv.style.zIndex = "1";
         } else {
-            PromoDiv.style.display = "none";
+            PromoDiv.style.height = "0%";
+            PromoDiv.style.opacity = "0";
+            PromoDiv.style.transform = "translateY(-100%)";
+            PromoDiv.style.zIndex = "-1";
         }
     });
     return promoFilter;
@@ -599,21 +610,26 @@ function RatingFunc(map) {
 
     const RatingButton = document.createElement("button");
     RatingButton.classList.add("dropbtn");
+    RatingButton.style.zIndex = 2;
     RatingButton.innerHTML = "Rating";
     ratingFilter.appendChild(RatingButton);
     ratingFilterContainer.appendChild(ratingFilter);
 
     const RatingDiv = document.createElement("div");
     RatingDiv.classList.add("vertical-menu-long", "border", "border-black")
-    RatingDiv.id = "RatingDivFill"
+    RatingDiv.id = "RatingDivFill";
+    RatingDiv.style.transition = "transform 0.5s ease, opacity 0.3s ease, height 0.5s ease";
     RatingDiv.style.margin = "1.0px auto";
     RatingDiv.style.padding = "10px";
     RatingDiv.style.fontSize = "16px";
     RatingDiv.style.cursor = "pointer";
-    RatingDiv.style.display = "none";
+    RatingDiv.style.display = "block";
+    RatingDiv.style.height = "0%";
+    RatingDiv.style.opacity = "0";
+    RatingDiv.style.transform = "translateY(-100%)";
     RatingDiv.style.position = "relative";
     RatingDiv.style.backgroundColor = "#f0f0f0"
-    RatingDiv.style.height = "62px";
+    //RatingDiv.style.height = "62px";
     RatingDiv.innerHTML = `
         <div class="slidecontainer " style="background-color=#f0f0f0;">
             <input type="range" min="0" max="5" value="0" class="slider" id="ratingRange">
@@ -622,10 +638,16 @@ function RatingFunc(map) {
     ratingFilter.appendChild(RatingDiv);
 
     RatingButton.addEventListener("click", () => {
-        if (RatingDiv.style.display === "none") {
-            RatingDiv.style.display = "block";
+        if (RatingDiv.style.height == "0%") {
+            RatingDiv.style.height = "100%";
+            RatingDiv.style.opacity = "1";
+            RatingDiv.style.transform = "translateY(0%)";
+            RatingDiv.style.zIndex = "1";
         } else {
-            RatingDiv.style.display = "none";
+            RatingDiv.style.height = "0%";
+            RatingDiv.style.opacity = "0";
+            RatingDiv.style.transform = "translateY(-100%)";
+            RatingDiv.style.zIndex = "-1";
         }
     });
 
