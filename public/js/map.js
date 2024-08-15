@@ -681,19 +681,26 @@ function hourFunc(map) {
     const hourButton = document.createElement("button");
     hourButton.classList.add("dropbtn");
     hourButton.innerHTML = "Open Times";
+    hourButton.style.zIndex = 2;
     hourFilter.appendChild(hourButton);
     hourFilterContainer.appendChild(hourFilter);
     //For specific times
     const openingHourstContainerContainer = document.createElement("div");
     openingHourstContainerContainer.id = "openingHourstContainerContainer";
-    openingHourstContainerContainer.style.display = "none";
+    openingHourstContainerContainer.style.display = "block";
+    openingHourstContainerContainer.style.height = "0%";
+    openingHourstContainerContainer.style.transition = "height 0.5s ease, opacity 1.0s ease, transform 0.5s ease";
+    openingHourstContainerContainer.style.transform = "translateY(-100%)";
+    openingHourstContainerContainer.style.opacity = "0";
+    openingHourstContainerContainer.style.zIndex = "-1";
+
 
     const openingHoursContainer = document.createElement("div");
     openingHoursContainer.id = "openingHoursContainer";
     openingHoursContainer.classList.add("flex-column", "d-flex");
     openingHoursContainer.style.fontSize = "16px";
     openingHoursContainer.style.lineHeight = "12px";
-    openingHoursContainer.style.display = "none";
+    openingHoursContainer.style.display = "block";
     //openingHoursContainer.style.zIndex = -1000;
     openingHoursContainer.style.position = "relative";
     openingHoursContainer.style.width = "0px";
@@ -836,11 +843,16 @@ function hourFunc(map) {
     });
 
     hourButton.addEventListener("click", () => {
-        if (openingHourstContainerContainer.style.display === "none") {
-            openingHourstContainerContainer.style.display = "block";
-
+        if (openingHourstContainerContainer.style.height == "0%") {
+            openingHourstContainerContainer.style.height = "100%";
+            openingHourstContainerContainer.style.opacity = "1";
+            openingHourstContainerContainer.style.transform = "translateY(0%)";
+            openingHourstContainerContainer.style.zIndex = "1";
         } else {
-            openingHourstContainerContainer.style.display = "none";
+            openingHourstContainerContainer.style.height = "0%";
+            openingHourstContainerContainer.style.opacity = "0";
+            openingHourstContainerContainer.style.transform = "translateY(-100%)";
+            openingHourstContainerContainer.style.zIndex = "-1";
         }
     });
 
