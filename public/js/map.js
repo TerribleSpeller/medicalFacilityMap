@@ -5,9 +5,9 @@ import detailsPromos from "./detailsPromos.js";
 
 const mapBounds = [
     { lat: -6.3014897268225445, lng: 106.69998806230103 }, //TOll
-    { lat: - 6.309217160868853, lng: 106.70650074544457 },
-    { lat: - 6.3457350359951565, lng: 106.70900436795642 },
-    { lat: -6.346283202023245, lng: 106.67177855877847 },
+    { lat: -6.30992450638211, lng: 106.70965631777047 },
+    { lat: -6.347035154971834, lng: 106.70921542545092 },
+    { lat: -6.347019218128426, lng:  106.67193086276096 },
     { lat: -6.339416434449146, lng: 106.67214761859503 },
     { lat: -6.331418448454544, lng: 106.67343819607758 },
     { lat: -6.32738168205835, lng: 106.67154028801502 },
@@ -120,15 +120,15 @@ async function initMap() {
     map = new Map(document.getElementById("map"), {
         center: mapCenter,
         zoom: 14,
-        minZoom: 14,
-        restriction: {
-            latLngBounds: {
-                west: 106.58962119204718,
-                north: -6.256977574626499,
-                south: -6.348283202023245,
-                east: 106.71154028801502,
-            }
-        },
+        minZoom: 13,
+        // restriction: {
+        //     latLngBounds: {
+        //         west: 106.58962119204718,
+        //         north: -6.256977574626499,
+        //         south: -6.348283202023245,
+        //         east: 106.71154028801502,
+        //     }
+        // },
         disableDefaultUI: true,
         mapId: "f7d3a585e09d991",
         clickableIcons: false,
