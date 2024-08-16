@@ -168,11 +168,13 @@ async function initMap() {
     // const lessFiltersCategory = lessFiltersFunc(map);
     // map.controls[google.maps.ControlPosition.TOP_LEFT].push(lessFiltersCategory);
     const contactUs = contactUsFunc(map);
-    map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(contactUs);
+    map.controls[google.maps.ControlPosition.BOTTOM_RIGHT ].push(contactUs);
     const clearDirections = clearDirectionsFunc(map);
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(clearDirections);
     const distance = mapDistanceFunc(map);
-    map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(distance);
+    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(distance);
+    const listDiv = selectedList(map);
+    map.controls[google.maps.ControlPosition.LEFT_CENTER].push(listDiv);
 }
 function dropdownCategoryFunc(map) {
     const dropdownCategory = document.createElement("div");
@@ -379,20 +381,26 @@ function dropdownSubCategoryFunc(map) {
         button.style.fontSize = "14px";
         button.style.width = "134px";
         button.style.cursor = "pointer";
+        // const dropdown = document.getElementById("medicalDropdown");
 
         button.addEventListener("click", () => {
             options.forEach(opt => {
                 const otherButton = document.querySelector(`button[value="${opt.value}"]`);
                 if (otherButton) {
-                    otherButton.style.backgroundColor = "";
+                    otherButton.classList.remove("buttonActive");
                 }
             });
-            if (button.style.backgroundColor === "rgb(161, 161, 161)") {
-                button.style.backgroundColor = "";
+            if (button.classList.contains("buttonActive")) {
+                button.classList.remove("buttonActive");
+                deleteMarkers();
             } else {
-                button.style.backgroundColor = "#A1A1A1";
+                button.classList.add("buttonActive");
+                findPlace(button.value);
+                dropdownContent.style.transform = "translateY(-200%)";
+                dropdownContent.style.opacity = "0";   
+                console.log(options)
+                selectedListPopulatorFunc(options)
             }
-            findPlace(button.value);
             //To Remove Directions
             if (directionsRenderer) {
                 directionsRenderer.setMap(null); //Clear previous directions
@@ -417,20 +425,24 @@ function dropdownSubCategoryFunc(map) {
         button.style.width = "134px";
 
         button.style.cursor = "pointer";
+        // const dropdown = document.getElementById("wellnessDropdown");
 
         button.addEventListener("click", () => {
             options2well.forEach(opt => {
                 const otherButton = document.querySelector(`button[value="${opt.value}"]`);
                 if (otherButton) {
-                    otherButton.style.backgroundColor = "";
+                    otherButton.classList.remove("buttonActive");
                 }
             });
-            if (button.style.backgroundColor === "rgb(161, 161, 161)") {
-                button.style.backgroundColor = "";
+            if (button.classList.contains("buttonActive")) {
+                button.classList.remove("buttonActive");
+                deleteMarkers();
             } else {
-                button.style.backgroundColor = "#A1A1A1";
+                button.classList.add("buttonActive");
+                findPlace(button.value);
+                dropdownContent2.style.transform = "translateY(-200%)";
+                dropdownContent2.style.opacity = "0";   
             }
-            findPlace(button.value);
             //To Remove Directions
             if (directionsRenderer) {
                 directionsRenderer.setMap(null); //Clear previous directions
@@ -454,20 +466,24 @@ function dropdownSubCategoryFunc(map) {
         button.style.fontSize = "14px";
         button.style.width = "134px";
         button.style.cursor = "pointer";
+        // const dropdown = document.getElementById("beautyDropdown");
 
         button.addEventListener("click", () => {
             options3beauty.forEach(opt => {
                 const otherButton = document.querySelector(`button[value="${opt.value}"]`);
                 if (otherButton) {
-                    otherButton.style.backgroundColor = "";
+                    otherButton.classList.remove("buttonActive");
                 }
             });
-            if (button.style.backgroundColor === "rgb(161, 161, 161)") {
-                button.style.backgroundColor = "";
+            if (button.classList.contains("buttonActive")) {
+                button.classList.remove("buttonActive");
+                deleteMarkers();
             } else {
-                button.style.backgroundColor = "#A1A1A1";
-            }
-            findPlace(button.value);
+                button.classList.add("buttonActive");
+                findPlace(button.value);
+                dropdownContent3.style.transform = "translateY(-200%)";
+                dropdownContent3.style.opacity = "0";           
+             }
             //To Remove Directions
             if (directionsRenderer) {
                 directionsRenderer.setMap(null); //Clear previous directions
@@ -1846,8 +1862,30 @@ function mapDistanceFunc(map) {
     mapDistanceContainer.appendChild(mapDistanceSpan);
     return mapDistanceContainer;
 }
+function selectedList(map) {
+    const selectedListContainer = document.createElement("div");
+    selectedListContainer.id = "selectedListContainer";
+    selectedListContainer.style.backgroundColor = "#1e2d80";
+    selectedListContainer.style.margin = "0";
+    selectedListContainer.style.width = "0%";
+    selectedListContainer.style.height = "100%";
 
-loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
+    return selectedListContainer;
+}
+
+function selectedListPopulatorFunc(chosenCategory) {
+    const target = document.getElementById("selectedListContainer");
+    chosenCategory.forEach(opt => {
+        const newDiv = document.createElement("div")
+        newDiv.innerHTML = opt[0];
+        target.append(newDiv)
+    })
+
+    target.style.width = "100%"
+}
+
+
+// loadGoogleMapsAPI(process.env.GOOGLE_MAP_API_KEY, 'initMap');
 window.initMap = initMap;
 
 const checkElementsAndSetupListeners = () => {
@@ -1940,3 +1978,21 @@ const checkElementsAndSetupListeners = () => {
 // Check every second if the elements are available
 const intervalId = setInterval(checkElementsAndSetupListeners, 1000);
 
+try {
+    const response = await fetch('/config');
+    const data = await response.json();
+    const apiKey = data.mapKey;
+
+    // Load Google Maps API
+    // const script = document.createElement('script');
+    // script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
+    // script.async = true;
+    // document.head.appendChild(script);
+    // console.log(typeof(apiKey))
+    // console.log(data)
+    loadGoogleMapsAPI(apiKey, 'initMap');
+
+  } catch (error) {
+    console.error('Error loading Google Maps API:', error);
+    
+  }

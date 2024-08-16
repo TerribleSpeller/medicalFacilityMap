@@ -2416,3 +2416,7 @@ input[type="range"]::-moz-range-thumb {
 .promo-text {
     font-size: 12px;
 }
+
+.buttonActive {
+    background-color: #A1A1A1;
+}
