@@ -1982,14 +1982,6 @@ try {
     const response = await fetch('/config');
     const data = await response.json();
     const apiKey = data.mapKey;
-
-    // Load Google Maps API
-    // const script = document.createElement('script');
-    // script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
-    // script.async = true;
-    // document.head.appendChild(script);
-    // console.log(typeof(apiKey))
-    // console.log(data)
     loadGoogleMapsAPI(apiKey, 'initMap');
 
   } catch (error) {
