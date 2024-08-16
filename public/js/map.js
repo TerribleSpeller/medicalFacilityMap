@@ -1884,8 +1884,8 @@ function selectedListPopulatorFunc(chosenCategory) {
     target.style.width = "100%"
 }
 
+loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
 
-// loadGoogleMapsAPI(process.env.GOOGLE_MAP_API_KEY, 'initMap');
 window.initMap = initMap;
 
 const checkElementsAndSetupListeners = () => {
@@ -1978,13 +1978,3 @@ const checkElementsAndSetupListeners = () => {
 // Check every second if the elements are available
 const intervalId = setInterval(checkElementsAndSetupListeners, 1000);
 
-try {
-    const response = await fetch('/api/config');
-    const data = await response.json();
-    const apiKey = data.mapKey;
-    loadGoogleMapsAPI(apiKey, 'initMap');
-
-  } catch (error) {
-    console.error('Error loading Google Maps API:', error);
-    
-  }
