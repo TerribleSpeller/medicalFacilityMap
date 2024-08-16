@@ -7,7 +7,7 @@ const mapBounds = [
     { lat: -6.3014897268225445, lng: 106.69998806230103 }, //TOll
     { lat: -6.30992450638211, lng: 106.70965631777047 },
     { lat: -6.347035154971834, lng: 106.70921542545092 },
-    { lat: -6.347019218128426, lng:  106.67193086276096 },
+    { lat: -6.347019218128426, lng: 106.67193086276096 },
     { lat: -6.339416434449146, lng: 106.67214761859503 },
     { lat: -6.331418448454544, lng: 106.67343819607758 },
     { lat: -6.32738168205835, lng: 106.67154028801502 },
@@ -168,13 +168,14 @@ async function initMap() {
     // const lessFiltersCategory = lessFiltersFunc(map);
     // map.controls[google.maps.ControlPosition.TOP_LEFT].push(lessFiltersCategory);
     const contactUs = contactUsFunc(map);
-    map.controls[google.maps.ControlPosition.BOTTOM_RIGHT ].push(contactUs);
+    map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(contactUs);
     const clearDirections = clearDirectionsFunc(map);
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(clearDirections);
     const distance = mapDistanceFunc(map);
     map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(distance);
     const listDiv = selectedList(map);
-    map.controls[google.maps.ControlPosition.LEFT_CENTER].push(listDiv);
+    map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(listDiv);
+
 }
 function dropdownCategoryFunc(map) {
     const dropdownCategory = document.createElement("div");
@@ -337,9 +338,9 @@ function dropdownSubCategoryFunc(map) {
 
     revealButton.addEventListener("click", () => {
         if (dropdownContent.classList.contains("active")) {
-            dropdownContent.style.transition =  'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
-            dropdownContent2.style.transition =  'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
-            dropdownContent3.style.transition =  'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
+            dropdownContent.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
+            dropdownContent2.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
+            dropdownContent3.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
 
             if (dropdownContent.style.opacity == "0") {
                 dropdownContent.style.transform = "translateY(0%)";
@@ -397,9 +398,8 @@ function dropdownSubCategoryFunc(map) {
                 button.classList.add("buttonActive");
                 findPlace(button.value);
                 dropdownContent.style.transform = "translateY(-200%)";
-                dropdownContent.style.opacity = "0";   
+                dropdownContent.style.opacity = "0";
                 console.log(options)
-                selectedListPopulatorFunc(options)
             }
             //To Remove Directions
             if (directionsRenderer) {
@@ -441,7 +441,7 @@ function dropdownSubCategoryFunc(map) {
                 button.classList.add("buttonActive");
                 findPlace(button.value);
                 dropdownContent2.style.transform = "translateY(-200%)";
-                dropdownContent2.style.opacity = "0";   
+                dropdownContent2.style.opacity = "0";
             }
             //To Remove Directions
             if (directionsRenderer) {
@@ -482,8 +482,8 @@ function dropdownSubCategoryFunc(map) {
                 button.classList.add("buttonActive");
                 findPlace(button.value);
                 dropdownContent3.style.transform = "translateY(-200%)";
-                dropdownContent3.style.opacity = "0";           
-             }
+                dropdownContent3.style.opacity = "0";
+            }
             //To Remove Directions
             if (directionsRenderer) {
                 directionsRenderer.setMap(null); //Clear previous directions
@@ -943,7 +943,7 @@ function socialFunc(map) {
             socialButtonContent.style.zIndex = "-1";
             setTimeout(() => {
                 socialButtonContent.classList.remove("active");
-            },500);
+            }, 500);
 
         }
     });
@@ -1053,6 +1053,7 @@ async function findPlace(type) {
 async function processResultsLocal(type, map) {
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
     deleteMarkers();
+    removeCurrentPlaceList();
     if (type == "Rumah Sakit" || type == "klinik medical" || type == "klinik ibu & anak" || type == "klinik gigi" || type == "Klinik Fisioterapi" || type == "Klinik Tumbuh Kembang Anak" || type == "Laboratorium") {
         for (let i = 0; i < detailsMedical.info.length; i++) {
             const currentPlace = detailsMedical.info[i];
@@ -1068,8 +1069,10 @@ async function processResultsLocal(type, map) {
                         currentPlace.promoDetails = detailsPromos[j];
                         publicArrayNumber = j;
                         // console.log(currentPlace.promoDetails)
-                    } 
+                    }
                 }
+                addCurrentPlaceToList(currentPlace);
+
                 const marker = new AdvancedMarkerElement({
                     map: map,
                     content: buildContent(currentPlace, type),
@@ -1089,7 +1092,7 @@ async function processResultsLocal(type, map) {
                             if (event.domEvent.target.id === `${currentPlace.Nama}-translatePromoBox` || event.domEvent.target.id === `${currentPlace.Nama}-promo-span`) {
                                 console.log("Test")
                                 const promoBox = document.getElementById(`${currentPlace.Nama}-promoBox`);
-                                if(promoBox.classList.contains("highlight")){
+                                if (promoBox.classList.contains("highlight")) {
                                     promoBox.style.opacity = "1";
                                     promoBox.offsetHeight;
                                     promoBox.style.transition = 'transform 0.5s ease, opacity 0.5s ease, height 0.5s ease';
@@ -1103,7 +1106,7 @@ async function processResultsLocal(type, map) {
                                     promoBox.style.transform = 'translateX(-100%)';
                                     promoBox.classList.add("highlight")
                                     promoBox.style.opacity = "1";
-                                    promoBox.style.height = "300px"    
+                                    promoBox.style.height = "300px"
                                     promoBox.style.zIndex = "1";
                                 }
                             }
@@ -1146,8 +1149,9 @@ async function processResultsLocal(type, map) {
                         currentPlace.promoDetails = detailsPromos[j];
                         publicArrayNumber = j;
                         console.log(currentPlace.promoDetails)
-                    } 
+                    }
                 }
+                addCurrentPlaceToList(currentPlace);
                 const marker = new AdvancedMarkerElement({
                     map: map,
                     content: buildContent(currentPlace, type),
@@ -1167,7 +1171,7 @@ async function processResultsLocal(type, map) {
                             if (event.domEvent.target.id === `${currentPlace.Nama}-translatePromoBox` || event.domEvent.target.id === `${currentPlace.Nama}-promo-span`) {
                                 console.log("Test")
                                 const promoBox = document.getElementById(`${currentPlace.Nama}-promoBox`);
-                                if(promoBox.classList.contains("highlight")){
+                                if (promoBox.classList.contains("highlight")) {
                                     promoBox.style.opacity = "1";
                                     promoBox.offsetHeight;
                                     promoBox.style.transition = 'transform 0.3s ease, opacity 0.5s ease, height 0.5s ease';
@@ -1181,7 +1185,7 @@ async function processResultsLocal(type, map) {
                                     promoBox.style.transform = 'translateX(-100%)';
                                     promoBox.classList.add("highlight")
                                     promoBox.style.opacity = "1";
-                                    promoBox.style.height = "300px"    
+                                    promoBox.style.height = "300px"
                                     promoBox.style.zIndex = "1";
                                 }
                             }
@@ -1223,8 +1227,10 @@ async function processResultsLocal(type, map) {
                         currentPlace.promoDetails = detailsPromos[j];
                         publicArrayNumber = j;
                         console.log(currentPlace.promoDetails)
-                    } 
+                    }
                 }
+                addCurrentPlaceToList(currentPlace);
+
                 const marker = new AdvancedMarkerElement({
                     map: map,
                     content: buildContent(currentPlace, type),
@@ -1244,7 +1250,7 @@ async function processResultsLocal(type, map) {
                             if (event.domEvent.target.id === `${currentPlace.Nama}-translatePromoBox` || event.domEvent.target.id === `${currentPlace.Nama}-promo-span`) {
                                 console.log("Test")
                                 const promoBox = document.getElementById(`${currentPlace.Nama}-promoBox`);
-                                if(promoBox.classList.contains("highlight")){
+                                if (promoBox.classList.contains("highlight")) {
                                     promoBox.style.opacity = "1";
                                     promoBox.offsetHeight;
                                     promoBox.style.transition = 'transform 0.3s ease, opacity 0.5s ease, height 0.5s ease';
@@ -1258,7 +1264,7 @@ async function processResultsLocal(type, map) {
                                     promoBox.style.transform = 'translateX(-100%)';
                                     promoBox.classList.add("highlight")
                                     promoBox.style.opacity = "1";
-                                    promoBox.style.height = "300px"    
+                                    promoBox.style.height = "300px"
                                     promoBox.style.zIndex = "1";
                                 }
                             }
@@ -1331,15 +1337,15 @@ function buildContent(property, type) {
                 </div>
                 <div class="d-flex flex-row justify-content-start">
                     ${property.Website ?
-                    `<div id="${property.Nama}-website">
+            `<div id="${property.Nama}-website">
                         <button class="btn btn-outline-warning btn-lg" onclick="window.open('${property.Website}', '_blank');"><span class="text-primary" style="font-size:12px;">Website</span></button>
                     </div>`
-                    :
-                    ""
-                    }
+            :
+            ""
+        }
                     <button  id="${property.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${property.Nama}-direction-span" style="font-size:12px;"> Directions</span></button>
-                    ${ property.promo ?  `<button id="${property.Nama}-translatePromoBox" class="btn btn-outline-warning" style="width:100%;"><span class="text-primary"  id="${property.Nama}-promo-span" style="font-size:12px;" >Promo</span></button>` : ""
-                    }
+                    ${property.promo ? `<button id="${property.Nama}-translatePromoBox" class="btn btn-outline-warning" style="width:100%;"><span class="text-primary"  id="${property.Nama}-promo-span" style="font-size:12px;" >Promo</span></button>` : ""
+        }
 
                 </div>
             </div>
@@ -1359,7 +1365,7 @@ function buildContent(property, type) {
             `
             :
             ""
-            }
+        }
 
         </div>
 
@@ -1423,7 +1429,7 @@ function toggleHighlight(markerView, property) {
             iconDiv.style.opacity = 1;
         }
 
-        if(promoDiv.classList.contains("highlight")){
+        if (promoDiv.classList.contains("highlight")) {
             promoDiv.style.height = "30px";
             promoDiv.style.transition = 'transform 0.3s ease,  opacity 0.5s ease, height 0.5s ease';
             promoDiv.style.transform = "translateX(0%)";
@@ -1431,7 +1437,7 @@ function toggleHighlight(markerView, property) {
             promoDiv.style.opacity = "0";
         }
 
-        
+
 
     } else {
         // ContainerDiv.classList.add("highlight");
@@ -1489,7 +1495,7 @@ function filterMarkers(markers) {
 
         let showMarker = true;
 
-        if(promoRatingCheck) {
+        if (promoRatingCheck) {
             if (!marker.promo) {
                 showMarker = false;
             }
@@ -1863,26 +1869,114 @@ function mapDistanceFunc(map) {
     return mapDistanceContainer;
 }
 function selectedList(map) {
+    const selectedListContainerContainer = document.createElement("div");
+    selectedListContainerContainer.id = "selectedListContainerContainer";
+    selectedListContainerContainer.classList.add("flex-row", "d-flex");
+    selectedListContainerContainer.style.height = "70%";
+    selectedListContainerContainer.style.transition = "width 0.5s ease";
+
     const selectedListContainer = document.createElement("div");
+    selectedListContainer.classList.add("ps-2");
     selectedListContainer.id = "selectedListContainer";
-    selectedListContainer.style.backgroundColor = "#1e2d80";
+    selectedListContainer.style.backgroundColor = "#FFFFFF";
     selectedListContainer.style.margin = "0";
     selectedListContainer.style.width = "0%";
-    selectedListContainer.style.height = "100%";
+    selectedListContainer.style.transition = "width 0.5s ease";
+    // selectedListContainer.style.height = "70%";
 
-    return selectedListContainer;
+    //The fancy button
+
+    const selectedListExpandCloseButtonContainer = document.createElement("div");
+    selectedListExpandCloseButtonContainer.id = "selectedListExpandCloseButtonContainer";
+    selectedListExpandCloseButtonContainer.classList.add("d-flex","align-items-center");
+    selectedListExpandCloseButtonContainer.style.backgroundColor="#1e2d80";
+
+    const selectedListExpandCloseButton = document.createElement("div");
+    selectedListExpandCloseButton.id = "selectedListExpandCloseButton";
+    selectedListExpandCloseButton.classList.add("btn","btn-white","btn-lg");
+    selectedListExpandCloseButton.innerHTML = `<i class="fa-solid fa-chevron-left text-light" style="font-size:24px;"></i>`;
+    selectedListExpandCloseButton.style.width = "3rem";
+    selectedListExpandCloseButton.style.height = "3rem";
+    selectedListExpandCloseButton.addEventListener("click", () => {
+        if (selectedListContainer.style.width === "30%") {
+            selectedListContainer.style.width = "0%";
+            selectedListExpandCloseButton.innerHTML = `<i class="fa-solid fa-chevron-right text-light" style="font-size:24px;"></i>`;
+        } else {
+            selectedListContainer.style.width = "30%";
+            selectedListExpandCloseButton.innerHTML = `<i class="fa-solid fa-chevron-left text-light" style="font-size:24px;"></i>`;
+        }
+    });
+
+    selectedListContainerContainer.appendChild(selectedListContainer);
+    selectedListExpandCloseButtonContainer.appendChild(selectedListExpandCloseButton);
+    selectedListContainerContainer.appendChild(selectedListExpandCloseButtonContainer);
+    return selectedListContainerContainer;
 }
 
-function selectedListPopulatorFunc(chosenCategory) {
+function addCurrentPlaceToList(currentPlace) {
     const target = document.getElementById("selectedListContainer");
-    chosenCategory.forEach(opt => {
-        const newDiv = document.createElement("div")
-        newDiv.innerHTML = opt[0];
-        target.append(newDiv)
-    })
+    const newDiv = document.createElement("div");
+    // newDiv.innerHTML = currentPlace.Nama; // Assuming each place has a 'name' property
+    newDiv.innerHTML = `
+        <div class="bg-white">
+            <div class="flex-row d-flex">
+                <div class="flex-column d-flex" style="width:7x10%;">
+                    <div class="p-1">
+                        <span style="font-size: 1rem;">${currentPlace.Nama}</span>
+                    </div>
+                    <div class="p-1">
+                        <span style="font-size: 0.875rem;">${currentPlace.rating ? `Rating: ${generateStars(currentPlace.rating)} | ${currentPlace.rating}` : 'No rating available'} (${currentPlace.reviews})</span>
+                    </div>
+                    <div class="p-1">
+                        <span style="font-size: 0.875rem;">${currentPlace.subcategory} | ${currentPlace.Address}</span>
+                    </div>
+                    <div class="p-1">
+                        <span style="font-size: 0.875rem;">${timeOpenProcessor(currentPlace)}</span>
+                    </div>
+                </div>
+                <div class="flex-row d-flex">
+                    <div class="d-flex align-items-center">
+                        ${currentPlace.Website ?
+                            `<div id="${currentPlace.Nama}-website">
+                            <button class="btn btn-outline-warning btn-lg" onclick="window.open('${currentPlace.Website}', '_blank');"><span class="text-primary" ><i class="fa-solid  fa-window-maximize" style="font-size:24px;"></i></span></button>
+                                    </div>`
+                            :
+                            ""
+                        }
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button  id="${currentPlace.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${currentPlace.Nama}-direction-span"><i class="fa-solid fa-diamond-turn-right" style="font-size:24px;" id="${currentPlace.Nama}-direction-icon"> </i></span></button>
+                    </div>
 
-    target.style.width = "100%"
+                </div>
+            </div>
+            <hr>
+        </div>
+    `
+    target.append(newDiv);
+    target.style.overflow = "scroll";
+    target.style.width = "30%";
+
+    newDiv.addEventListener("click", (event) => {
+        let target = event.target;
+        while (target && target !== newDiv) {
+            if (target.id === `${currentPlace.Nama}-direction` || target.id === `${currentPlace.Nama}-direction-span` || target.id === `${currentPlace.Nama}-direction-icon`) {
+                event.stopPropagation();
+                getDirections(currentPlace, currentPlace.Lat, currentPlace.Long);
+                break;
+            }
+            target = target.parentElement;
+        }
+    });
+
+
 }
+
+function removeCurrentPlaceList() {
+    const target = document.getElementById("selectedListContainer");
+    target.innerHTML = ""
+}
+
 
 loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
 
@@ -1901,7 +1995,7 @@ const checkElementsAndSetupListeners = () => {
     const promoDiv = document.getElementById("promoRating");
 
     if (ratingRange && anytimeOptionButton && nowOptionButton && hours24OptionButton && specificDayOptionButton && specificTimeCheck && specificOpeningTime && specificClosingTime && promoDiv) {
-        promoDiv.addEventListener("change", function(event) {
+        promoDiv.addEventListener("change", function (event) {
             if (event.target.checked) {
                 // Handle the checkbox being checked
                 promoDiv.style.backgroundColor = "yellow"; // Example action
