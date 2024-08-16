@@ -1979,7 +1979,7 @@ const checkElementsAndSetupListeners = () => {
 const intervalId = setInterval(checkElementsAndSetupListeners, 1000);
 
 try {
-    const response = await fetch('/config');
+    const response = await fetch('/api/config');
     const data = await response.json();
     const apiKey = data.mapKey;
     loadGoogleMapsAPI(apiKey, 'initMap');
