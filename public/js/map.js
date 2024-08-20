@@ -131,7 +131,7 @@ async function initMap() {
         // },
         disableDefaultUI: true,
         mapId: "f7d3a585e09d991",
-        clickableIcons: false,
+        clickableIcons: true,
     });
 
     infowindow = new google.maps.InfoWindow();
