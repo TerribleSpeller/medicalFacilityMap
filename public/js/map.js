@@ -175,7 +175,6 @@ async function initMap() {
     map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(distance);
     const listDiv = selectedList(map);
     map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(listDiv);
-
 }
 function dropdownCategoryFunc(map) {
     const dropdownCategory = document.createElement("div");
@@ -206,7 +205,6 @@ function dropdownCategoryFunc(map) {
     dropdownContentCategory.style.width = "125px";
     // dropdownContentCategory.style.display = "none";
     dropdownCategory.appendChild(dropdownContentCategory);
-
     revealButtonCateogyr.addEventListener("click", () => {
 
         dropdownContentCategory.classList.toggle("active");
@@ -228,7 +226,6 @@ function dropdownCategoryFunc(map) {
         button.style.padding = "px";
         button.style.fontSize = "16px";
         button.style.cursor = "pointer";
-
         button.addEventListener("click", () => {
             //findPlace(button.value);
             var targetMenu = document.getElementById(button.value + "Dropdown");
@@ -238,7 +235,6 @@ function dropdownCategoryFunc(map) {
                 button.style.backgroundColor = "";
                 targetMenu.style.transform = "translateY(0%)";
                 targetMenu.style.opacity = "1";
-
             } else {
                 categoryOptions.forEach(option => {
                     var targetMenu = document.getElementById(option.value + "Dropdown");
@@ -265,7 +261,6 @@ function dropdownCategoryFunc(map) {
                 targetMenu.style.opacity = "1"
                 targetMenu.classList.add("active");
                 button.style.backgroundColor = "#A1A1A1"; // Set background color
-                //
                 categoryOptions.forEach(opt => {
                     var targetMenuToRemove = document.getElementById(opt.value + "Dropdown");
                     var children = targetMenuToRemove.children;
@@ -308,7 +303,6 @@ function dropdownSubCategoryFunc(map) {
         { value: 'Klinik Fisioterapi', text: 'Fisioterapi' },
         { value: 'Klinik Tumbuh Kembang Anak', text: 'Klinik Tumbuh Kembang Anak' },
         { value: 'Laboratorium', text: 'Laboratorium' },
-
     ];
 
     const options2well = [
@@ -323,7 +317,6 @@ function dropdownSubCategoryFunc(map) {
         { value: 'Massage &/ Spa', text: 'Massage & Spa' },
         { value: 'Massage sakit & cedera', text: 'Massage sakit & cedera' },
         { value: 'Massage &/ Spa Baby', text: 'Massage & Spa Baby' },
-
     ];
 
     const options3beauty = [
@@ -339,7 +332,6 @@ function dropdownSubCategoryFunc(map) {
     dropdownContent.style.width = "134px";
     dropdownContent.style.height = "0%";
     dropdown.appendChild(dropdownContent);
-
     const dropdownContent2 = document.createElement("div");
     dropdownContent2.id = "wellnessDropdown";
     dropdownContent2.classList.add("vertical-menu");
@@ -348,8 +340,6 @@ function dropdownSubCategoryFunc(map) {
     dropdownContent2.style.width = "134px";
     dropdownContent2.style.height = "0%";
     dropdown.appendChild(dropdownContent2);
-
-
     const dropdownContent3 = document.createElement("div");
     dropdownContent3.id = "beautyDropdown";
     dropdownContent3.classList.add("vertical-menu");
@@ -358,16 +348,12 @@ function dropdownSubCategoryFunc(map) {
     dropdownContent3.style.width = "134px";
     dropdownContent3.style.height = "0%";
     dropdown.appendChild(dropdownContent3);
-
     dropdownContent.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
     dropdownContent2.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
     dropdownContent3.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
 
-
     revealButton.addEventListener("click", () => {
         if (dropdownContent.classList.contains("active")) {
-
-
             if (dropdownContent.style.opacity == "0") {
                 dropdownContent.style.transform = "translateY(0%)";
                 dropdownContent.style.opacity = "1";
@@ -396,7 +382,6 @@ function dropdownSubCategoryFunc(map) {
             dropdownContent2.style.height = "0%";
             dropdownContent3.style.height = "0%";
         }
-
     });
 
     options.forEach(option => {
@@ -431,7 +416,6 @@ function dropdownSubCategoryFunc(map) {
                 const targetMenu = document.getElementById("medicalButton");
                 targetMenu.style.backgroundColor = "";
                 dropdownContent.classList.remove("active");
-
             }
             //To Remove Directions
             if (directionsRenderer) {
@@ -443,7 +427,6 @@ function dropdownSubCategoryFunc(map) {
             // document.getElementById("mapDistanceContainer").style.display = "none";
             document.getElementById("mapDistanceContainer").style.height = "0px";
         });
-
         dropdownContent.appendChild(button);
     });
 
@@ -455,7 +438,6 @@ function dropdownSubCategoryFunc(map) {
         button.style.margin = "1.0px auto";
         button.style.fontSize = "14px";
         button.style.width = "134px";
-
         button.style.cursor = "pointer";
         // const dropdown = document.getElementById("wellnessDropdown");
 
@@ -491,7 +473,6 @@ function dropdownSubCategoryFunc(map) {
             // document.getElementById("mapDistanceContainer").style.display = "none";
             document.getElementById("mapDistanceContainer").style.height = "0px";
         });
-
         dropdownContent2.appendChild(button);
     });
 
@@ -537,9 +518,7 @@ function dropdownSubCategoryFunc(map) {
             }
             // document.getElementById("mapDistanceContainer").style.display = "none";
             document.getElementById("mapDistanceContainer").style.height = "0px";
-
         });
-
         dropdownContent3.appendChild(button);
     });
     return dropdown;
@@ -1162,7 +1141,6 @@ async function processResultsLocal(type, map) {
 
                 marker.addListener("hover", (event) => {
                     console.log("Amongus")
-
                 })
                 // const promoBox5 = document.getElementById(`${currentPlace.Nama}-promoBox`);
                 // promoBox5.style.width = "10px";
@@ -1180,7 +1158,6 @@ async function processResultsLocal(type, map) {
                 }
                 markers.push(marker);
                 // console.log(marker.promo);
-
             }
         }
     }
