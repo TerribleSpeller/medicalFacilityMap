@@ -269,7 +269,7 @@ function dropdownCategoryFunc(map) {
                 categoryOptions.forEach(opt => {
                     var targetMenuToRemove = document.getElementById(opt.value + "Dropdown");
                     var children = targetMenuToRemove.children;
-                    console.log("Clicked")
+                    //console.log("Clicked")
                     // console.log(children)
                     if (targetMenu != targetMenuToRemove) {
                         for (var i = 0; i < children.length; i++) {
@@ -1148,6 +1148,7 @@ async function processResultsLocal(type, map) {
                 marker.allDay = currentPlace.allDay;
                 marker.IGFollowers = currentPlace.IGFollowers;
                 currentPlace.marker = marker;
+                marker.currentPlace = currentPlace;
                 if (currentPlace.promo) {
                     marker.promo = true;
                     marker.promoLoc = detailsPromos[publicArrayNumber];
@@ -1227,7 +1228,8 @@ async function processResultsLocal(type, map) {
                 marker.closingHours = currentPlace.closingHours;
                 marker.allDay = currentPlace.allDay;
                 marker.IGFollowers = currentPlace.IGFollowers;
-                                currentPlace.marker = marker;
+                currentPlace.marker = marker;
+                marker.currentPlace = currentPlace;
                 if (currentPlace.promo) {
                     marker.promo = true;
                     marker.promoLoc = detailsPromos[publicArrayNumber];
@@ -1307,7 +1309,8 @@ async function processResultsLocal(type, map) {
                 marker.closingHours = currentPlace.closingHours;
                 marker.allDay = currentPlace.allDay;
                 marker.IGFollowers = currentPlace.IGFollowers;
-                                currentPlace.marker = marker;
+                currentPlace.marker = marker;
+                marker.currentPlace = currentPlace;
                 if (currentPlace.promo) {
                     marker.promo = true;
                     marker.promoLoc = detailsPromos[publicArrayNumber];
@@ -1517,25 +1520,26 @@ function onDateChange() {
     return filterMarkers(markers); //Because onchange is nuts
 }
 function filterMarkers(markers) {
+    removeCurrentPlaceList();
     markers.forEach(marker => {
         const rating = marker.rating;
         const openingHours = marker.openingHours;
-
         let showMarker = true;
 
         if (promoRatingCheck) {
             if (!marker.promo) {
                 showMarker = false;
-            }
+            } 
         }
         // Filter by rating (This is tdumb but it works)
         if (ratingFilterNumber > 0 && rating < ratingFilterNumber) {
             showMarker = false;
-        }
+            // console.log(marker.currentPlace);
+        } 
 
         if (ratingFilterNumber > 0 && !rating) {
             showMarker = false;
-        }
+        } 
 
         if (openingHoursFilter !== "Anytime") {
             const now = new Date();
@@ -1597,6 +1601,9 @@ function filterMarkers(markers) {
                 } else if (openingHoursFilter === "24 Hours") {
                     if (!marker.allDay) {
                         showMarker = false;
+                    }else {
+
+
                     }
 
                 } else {
@@ -1613,24 +1620,28 @@ function filterMarkers(markers) {
                                 if (marker.openingHours.Mon < specificOpeningTime || marker.closingHours.Mon > specificClosingTime) {
                                     console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Monday")
                                     showMarker = false;
+                                } else {
                                 }
                                 break;
                             case "Tuesday":
                                 if (marker.openingHours.Tue < specificOpeningTime || marker.closingHours.Tue > specificClosingTime) {
                                     console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Tuesday")
                                     showMarker = false;
+                                } else {
                                 }
                                 break;
                             case "Wednesday":
                                 if (marker.openingHours.Wed < specificOpeningTime || marker.closingHours.Wed > specificClosingTime) {
                                     console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Wednesday")
                                     showMarker = false;
+                                } else {
                                 }
                                 break;
                             case "Thursday":
                                 if (marker.openingHours.Thu < specificOpeningTime || marker.closingHours.Thu > specificClosingTime) {
                                     console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Thursday")
                                     showMarker = false;
+                                } else {
                                 }
                                 break;
                             case "Friday":
@@ -1638,18 +1649,21 @@ function filterMarkers(markers) {
                                     console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Friday")
 
                                     showMarker = false;
+                                } else {
                                 }
                                 break;
                             case "Saturday":
                                 if (marker.openingHours.Sat < specificOpeningTime || marker.closingHours.Sat > specificClosingTime) {
                                     console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Saturday")
                                     showMarker = false;
+                                } else {
                                 }
                                 break;
                             case "Sunday":
                                 if (marker.openingHours.Sun < specificOpeningTime || marker.closingHours.Sun > specificClosingTime) {
                                     console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Sunday")
                                     showMarker = false;
+                                } else {
                                 }
                                 break;
                             default:
@@ -1664,6 +1678,7 @@ function filterMarkers(markers) {
         }
         if (showMarker) {
             marker.setMap(map);
+            addCurrentPlaceToList(marker.currentPlace);
         } else {
             marker.setMap(null); //Why is it like this? IDK
         }
@@ -1969,15 +1984,15 @@ function addCurrentPlaceToList(currentPlace) {
                 <div class="flex-row d-flex" style="width:20%;">
                     <div class="d-flex align-items-center fill" style="width:100%;">
                         ${currentPlace.Website ?
-                            `<div id="${currentPlace.Nama}-website">
+            `<div id="${currentPlace.Nama}-website">
                                             <button class="btn btn-outline-warning btn-lg" onclick="window.open('${currentPlace.Website}', '_blank');"><span class="text-primary" ><i class="fa-solid  fa-window-maximize" style="font-size:24px;"></i></span></button>
                                                     </div>`
-                            :
-                            `<div style="opacity:0;">
+            :
+            `<div style="opacity:0;">
                                                 <button class="btn btn-outline-warning btn-lg" onclick="window.open('${currentPlace.Website}', '_blank');" disabled><span class="text-primary" ><i class="fa-solid  fa-window-maximize" style="font-size:24px;"></i></span></button>
                                             </div>
                                             `
-                        }
+        }
                     </div>
                     <div class="d-flex align-items-center" style="width:100%;">
                         <button  id="${currentPlace.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${currentPlace.Nama}-direction-span"><i class="fa-solid fa-diamond-turn-right" style="font-size:24px;" id="${currentPlace.Nama}-direction-icon"> </i></span></button>
@@ -1999,7 +2014,7 @@ function addCurrentPlaceToList(currentPlace) {
                 getDirections(currentPlace, currentPlace.Lat, currentPlace.Long);
                 break;
             }
-            if(target.id === `${currentPlace.Nama}-center-map`){
+            if (target.id === `${currentPlace.Nama}-center-map`) {
                 centerMap(currentPlace.Lat, currentPlace.Long);
                 toggleHighlight(currentPlace.marker, currentPlace);
             }
@@ -2010,14 +2025,17 @@ function addCurrentPlaceToList(currentPlace) {
 
 function removeCurrentPlaceList() {
     const target = document.getElementById("selectedListContainer");
-    target.innerHTML = ""
+    if(target) {
+        target.innerHTML = ""
+
+    }
 }
 
 function centerMap(lat, lng) {
     const adjustedLng = lng - 0.020;
     const adjustedLat = lat + 0.010;
     map.setCenter({ lat: adjustedLat, lng: adjustedLng });
-        map.setZoom(14);
+    map.setZoom(14);
 
 }
 
