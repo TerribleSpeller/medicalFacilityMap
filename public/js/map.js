@@ -423,7 +423,8 @@ function dropdownSubCategoryFunc(map) {
                 findPlace(button.value);
                 setTimeout(() => {
                     filterMarkers(markers);
-                }, 10);                dropdownContent.style.transform = "translateY(-200%)";
+                }, 2); 
+                dropdownContent.style.transform = "translateY(-200%)";
                 dropdownContent.style.opacity = "0";
                 console.log(options)
             }
@@ -468,7 +469,8 @@ function dropdownSubCategoryFunc(map) {
                 findPlace(button.value);
                 setTimeout(() => {
                     filterMarkers(markers);
-                }, 10);                dropdownContent2.style.transform = "translateY(-200%)";
+                }, 2); 
+                dropdownContent2.style.transform = "translateY(-200%)";
                 dropdownContent2.style.opacity = "0";
             }
             //To Remove Directions
@@ -511,7 +513,7 @@ function dropdownSubCategoryFunc(map) {
                 findPlace(button.value);
                 setTimeout(() => {
                     filterMarkers(markers);
-                }, 10);
+                }, 2);
                 dropdownContent3.style.transform = "translateY(-200%)";
                 dropdownContent3.style.opacity = "0";
             }
@@ -1536,17 +1538,17 @@ async function filterMarkers(markers) {
         if (promoRatingCheck) {
             if (!marker.promo) {
                 showMarker = false;
-            } 
+            }
         }
         // Filter by rating (This is tdumb but it works)
         if (ratingFilterNumber > 0 && rating < ratingFilterNumber) {
             showMarker = false;
             // console.log(marker.currentPlace);
-        } 
+        }
 
         if (ratingFilterNumber > 0 && !rating) {
             showMarker = false;
-        } 
+        }
 
         if (openingHoursFilter !== "Anytime") {
             const now = new Date();
@@ -1608,7 +1610,7 @@ async function filterMarkers(markers) {
                 } else if (openingHoursFilter === "24 Hours") {
                     if (!marker.allDay) {
                         showMarker = false;
-                    }else {
+                    } else {
 
 
                     }
@@ -2032,7 +2034,7 @@ function addCurrentPlaceToList(currentPlace) {
 
 function removeCurrentPlaceList() {
     const target = document.getElementById("selectedListContainer");
-    if(target) {
+    if (target) {
         target.innerHTML = ""
 
     }
