@@ -359,12 +359,14 @@ function dropdownSubCategoryFunc(map) {
     dropdownContent3.style.height = "0%";
     dropdown.appendChild(dropdownContent3);
 
+    dropdownContent.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
+    dropdownContent2.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
+    dropdownContent3.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
+
 
     revealButton.addEventListener("click", () => {
         if (dropdownContent.classList.contains("active")) {
-            dropdownContent.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
-            dropdownContent2.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
-            dropdownContent3.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
+
 
             if (dropdownContent.style.opacity == "0") {
                 dropdownContent.style.transform = "translateY(0%)";
@@ -423,10 +425,13 @@ function dropdownSubCategoryFunc(map) {
                 findPlace(button.value);
                 setTimeout(() => {
                     filterMarkers(markers);
-                }, 2); 
+                }, 2);
                 dropdownContent.style.transform = "translateY(-200%)";
                 dropdownContent.style.opacity = "0";
-                console.log(options)
+                const targetMenu = document.getElementById("medicalButton");
+                targetMenu.style.backgroundColor = "";
+                dropdownContent.classList.remove("active");
+
             }
             //To Remove Directions
             if (directionsRenderer) {
@@ -469,9 +474,13 @@ function dropdownSubCategoryFunc(map) {
                 findPlace(button.value);
                 setTimeout(() => {
                     filterMarkers(markers);
-                }, 2); 
+                }, 2);
                 dropdownContent2.style.transform = "translateY(-200%)";
                 dropdownContent2.style.opacity = "0";
+                const targetMenu = document.getElementById("beautyButton");
+                targetMenu.style.backgroundColor = "";
+                dropdownContent2.classList.remove("active");
+
             }
             //To Remove Directions
             if (directionsRenderer) {
@@ -516,6 +525,10 @@ function dropdownSubCategoryFunc(map) {
                 }, 2);
                 dropdownContent3.style.transform = "translateY(-200%)";
                 dropdownContent3.style.opacity = "0";
+                const targetMenu = document.getElementById("wellnessButton");
+                targetMenu.style.backgroundColor = "";
+                dropdownContent3.classList.remove("active");
+
             }
             //To Remove Directions
             if (directionsRenderer) {
@@ -1148,6 +1161,11 @@ async function processResultsLocal(type, map) {
                         toggleHighlight(marker, currentPlace);
                     }
                 });
+
+                marker.addListener("hover", (event) => {
+                    console.log("Amongus")
+
+                })
                 // const promoBox5 = document.getElementById(`${currentPlace.Nama}-promoBox`);
                 // promoBox5.style.width = "10px";
                 marker.name = currentPlace.Nama;
@@ -1405,11 +1423,17 @@ function buildContent(property, type) {
             :
             ""
         }
-
         </div>
-
     `;
-
+    content.addEventListener("mouseenter", () => {
+        for (let marker of markers) {
+            if (marker.name === property.Nama) {
+                if (!marker.content.classList.contains("highlight")) {
+                    toggleHighlight(marker);
+                }
+            }
+        }
+    });
     return content;
 }
 function setMapOnAll(map) {
@@ -1476,9 +1500,6 @@ function toggleHighlight(markerView, property) {
             promoDiv.classList.remove("highlight");
             promoDiv.style.opacity = "0";
         }
-
-
-
     } else {
         // ContainerDiv.classList.add("highlight");
         markerView.content.classList.add("highlight");
@@ -1492,7 +1513,6 @@ function toggleHighlight(markerView, property) {
         } else {
             iconDiv.style.opacity = 0;
         }
-
     }
 }
 function toggleInstragram() {
@@ -1968,7 +1988,6 @@ function selectedList(map) {
     selectedListContainerContainer.appendChild(selectedListExpandCloseButtonContainer);
     return selectedListContainerContainer;
 }
-
 function addCurrentPlaceToList(currentPlace) {
     const target = document.getElementById("selectedListContainer");
     const newDiv = document.createElement("div");
@@ -2031,7 +2050,6 @@ function addCurrentPlaceToList(currentPlace) {
         }
     });
 }
-
 function removeCurrentPlaceList() {
     const target = document.getElementById("selectedListContainer");
     if (target) {
@@ -2039,7 +2057,6 @@ function removeCurrentPlaceList() {
 
     }
 }
-
 function centerMap(lat, lng) {
     const adjustedLng = lng - 0.020;
     const adjustedLat = lat + 0.010;
@@ -2047,12 +2064,8 @@ function centerMap(lat, lng) {
     map.setZoom(14);
 
 }
-
-
 loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
-
 window.initMap = initMap;
-
 const checkElementsAndSetupListeners = () => {
     const ratingRange = document.getElementById("ratingRange");
     const anytimeOptionButton = document.getElementById("anytimeOptionButton");
