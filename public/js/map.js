@@ -477,10 +477,9 @@ function dropdownSubCategoryFunc(map) {
                 }, 2);
                 dropdownContent2.style.transform = "translateY(-200%)";
                 dropdownContent2.style.opacity = "0";
-                const targetMenu = document.getElementById("beautyButton");
-                targetMenu.style.backgroundColor = "";
+                const targetButton2 = document.getElementById("wellnessButton");
+                targetButton2.style.backgroundColor = "";
                 dropdownContent2.classList.remove("active");
-
             }
             //To Remove Directions
             if (directionsRenderer) {
@@ -525,10 +524,9 @@ function dropdownSubCategoryFunc(map) {
                 }, 2);
                 dropdownContent3.style.transform = "translateY(-200%)";
                 dropdownContent3.style.opacity = "0";
-                const targetMenu = document.getElementById("wellnessButton");
-                targetMenu.style.backgroundColor = "";
+                const targetMenu3 = document.getElementById("beautyButton");
+                targetMenu3.style.backgroundColor = "";
                 dropdownContent3.classList.remove("active");
-
             }
             //To Remove Directions
             if (directionsRenderer) {
