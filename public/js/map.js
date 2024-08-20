@@ -132,6 +132,7 @@ async function initMap() {
         disableDefaultUI: true,
         mapId: "f7d3a585e09d991",
         clickableIcons: true,
+        gestureHandling: 'greedy' //To scroll without ctrl
     });
 
     infowindow = new google.maps.InfoWindow();
@@ -1369,22 +1370,21 @@ function buildContent(property, type) {
                 </div>
                 <div class="d-flex flex-row justify-content-start">
                     ${property.Website ?
-            `<div id="${property.Nama}-website">
+                    `<div id="${property.Nama}-website">
                         <button class="btn btn-outline-warning btn-lg" onclick="window.open('${property.Website}', '_blank');"><span class="text-primary" style="font-size:12px;">Website</span></button>
                     </div>`
-            :
-            ""
-        }
+                    :
+                    ""
+                    }
                     <button  id="${property.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${property.Nama}-direction-span" style="font-size:12px;"> Directions</span></button>
                     ${property.promo ? `<button id="${property.Nama}-translatePromoBox" class="btn btn-outline-warning" style="width:100%;"><span class="text-primary"  id="${property.Nama}-promo-span" style="font-size:12px;" >Promo</span></button>` : ""
-        }
-
+                     }
                 </div>
             </div>
         </div>
         <div class="promo-box rounded-3 details-container" id="${property.Nama}-promoBox" style="width:100%; z-index:-10; 
-        ${property.promo ? `background-image: url(${property.promoDetails.promoPic}); background-position: center top` : `background-image: url('../img/noImage.png');`}"
-        >   ${property.promo ?
+        ${property.promo ? `background-image: url(${property.promoDetails.promoPic}); background-position: center top` : `background-image: url('../img/noImage.png');`}">
+           ${property.promo ?
             `
             <div class="details-container" style="opacity:1;">
                 <div class="details">
