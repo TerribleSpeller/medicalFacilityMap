@@ -329,7 +329,7 @@ const detailsWellness = {
             phoneNo: "085945195117",
             Lat: -6.29664591150558,
             Long: 106.6752354968785,
-            rating: "4,8",
+            rating: "4.8",
             reviews: "66",
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMflOSuEMXKswoQl-zifQLQp9CHi2yMB_KZ4pZ7=w408-h544-k-no"
@@ -1585,7 +1585,7 @@ const detailsWellness = {
             phoneNo: "",
             Lat: -6.304001142410083,
             Long: 106.61386553901686,
-            rating: "4,7",
+            rating: "4.7",
             reviews: "62",
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMgQB-Fq-AqN63X0a74b0TYfqdnHV5A3Jv0bKL7=w426-h240-k-no"
@@ -3163,7 +3163,7 @@ const detailsWellness = {
             phoneNo: "",
             Lat: -6.304206534074179,
             Long: 106.67985509389977,
-            rating: "4,2",
+            rating: "4.2",
             reviews: "101",
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-yopgEZ2_ym2H8J0sjCZ9PdKzyC_9LW4KfioX=w408-h544-k-no"
