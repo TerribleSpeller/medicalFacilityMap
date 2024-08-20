@@ -421,7 +421,9 @@ function dropdownSubCategoryFunc(map) {
             } else {
                 button.classList.add("buttonActive");
                 findPlace(button.value);
-                dropdownContent.style.transform = "translateY(-200%)";
+                setTimeout(() => {
+                    filterMarkers(markers);
+                }, 10);                dropdownContent.style.transform = "translateY(-200%)";
                 dropdownContent.style.opacity = "0";
                 console.log(options)
             }
@@ -464,7 +466,9 @@ function dropdownSubCategoryFunc(map) {
             } else {
                 button.classList.add("buttonActive");
                 findPlace(button.value);
-                dropdownContent2.style.transform = "translateY(-200%)";
+                setTimeout(() => {
+                    filterMarkers(markers);
+                }, 10);                dropdownContent2.style.transform = "translateY(-200%)";
                 dropdownContent2.style.opacity = "0";
             }
             //To Remove Directions
@@ -505,6 +509,9 @@ function dropdownSubCategoryFunc(map) {
             } else {
                 button.classList.add("buttonActive");
                 findPlace(button.value);
+                setTimeout(() => {
+                    filterMarkers(markers);
+                }, 10);
                 dropdownContent3.style.transform = "translateY(-200%)";
                 dropdownContent3.style.opacity = "0";
             }
@@ -1519,7 +1526,7 @@ function generateStars(rating) {
 function onDateChange() {
     return filterMarkers(markers); //Because onchange is nuts
 }
-function filterMarkers(markers) {
+async function filterMarkers(markers) {
     removeCurrentPlaceList();
     markers.forEach(marker => {
         const rating = marker.rating;
