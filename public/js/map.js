@@ -236,12 +236,23 @@ function dropdownCategoryFunc(map) {
             if (targetMenu.classList.contains("active")) {
                 targetMenu.classList.remove("active");
                 button.style.backgroundColor = "";
+                targetMenu.style.transform = "translateY(0%)";
+                targetMenu.style.opacity = "1";
+
             } else {
                 categoryOptions.forEach(option => {
                     var targetMenu = document.getElementById(option.value + "Dropdown");
                     targetMenu.classList.remove("active");
                     // targetMenu.style.display = "none";
-                    targetMenu.style.height = "0%";
+                    // targetMenu.style.height = "0%";
+                    targetMenu.style.transform = "translateY(-200%)";
+                    targetMenu.style.opacity = "0";
+
+                    //Remove background color
+                    var children = targetMenu.children;
+                    for (var i = 0; i < children.length; i++) {
+                        children[i].style.backgroundColor = "";
+                    }
 
                     var otherButton = document.getElementById(option.value + "Button");
                     if (otherButton) { // Check if otherButton exists
@@ -249,10 +260,23 @@ function dropdownCategoryFunc(map) {
                     }
                 });
                 // targetMenu.style.display = "block";
-                targetMenu.style.height = "100%";
+                // targetMenu.style.height = "100%";
+                targetMenu.style.transform = "translateY(0%)";
+                targetMenu.style.opacity = "1"
                 targetMenu.classList.add("active");
                 button.style.backgroundColor = "#A1A1A1"; // Set background color
-
+                //
+                categoryOptions.forEach(opt => {
+                    var targetMenuToRemove = document.getElementById(opt.value + "Dropdown");
+                    var children = targetMenuToRemove.children;
+                    console.log("Clicked")
+                    // console.log(children)
+                    if (targetMenu != targetMenuToRemove) {
+                        for (var i = 0; i < children.length; i++) {
+                            children[i].classList.remove("buttonActive");
+                        }
+                    };
+                });
             }
         });
 
@@ -1873,7 +1897,9 @@ function selectedList(map) {
     selectedListContainerContainer.id = "selectedListContainerContainer";
     selectedListContainerContainer.classList.add("flex-row", "d-flex");
     selectedListContainerContainer.style.height = "70%";
-    selectedListContainerContainer.style.transition = "width 0.5s ease";
+    selectedListContainerContainer.style.width = "40%";
+    selectedListContainerContainer.style.transform = "translateX(-90%)";
+    selectedListContainerContainer.style.transition = "width 0.5s ease, transform 0.5s ease";
 
     const selectedListContainer = document.createElement("div");
     selectedListContainer.classList.add("ps-2");
@@ -1881,29 +1907,31 @@ function selectedList(map) {
     selectedListContainer.style.backgroundColor = "#FFFFFF";
     selectedListContainer.style.margin = "0";
     selectedListContainer.style.width = "0%";
-    selectedListContainer.style.transition = "width 0.5s ease";
+    selectedListContainer.style.transition = "width 0.5s ease, transform 0.5s ease";
     // selectedListContainer.style.height = "70%";
 
     //The fancy button
 
     const selectedListExpandCloseButtonContainer = document.createElement("div");
     selectedListExpandCloseButtonContainer.id = "selectedListExpandCloseButtonContainer";
-    selectedListExpandCloseButtonContainer.classList.add("d-flex","align-items-center");
-    selectedListExpandCloseButtonContainer.style.backgroundColor="#1e2d80";
+    selectedListExpandCloseButtonContainer.classList.add("d-flex", "align-items-center");
+    selectedListExpandCloseButtonContainer.style.backgroundColor = "#1e2d80";
 
     const selectedListExpandCloseButton = document.createElement("div");
     selectedListExpandCloseButton.id = "selectedListExpandCloseButton";
-    selectedListExpandCloseButton.classList.add("btn","btn-white","btn-lg");
-    selectedListExpandCloseButton.innerHTML = `<i class="fa-solid fa-chevron-left text-light" style="font-size:24px;"></i>`;
+    selectedListExpandCloseButton.classList.add("btn", "btn-white", "btn-lg");
+    selectedListExpandCloseButton.innerHTML = `<i class="fa-solid fa-chevron-right text-light" style="font-size:24px;"></i>`;
     selectedListExpandCloseButton.style.width = "3rem";
     selectedListExpandCloseButton.style.height = "3rem";
     selectedListExpandCloseButton.addEventListener("click", () => {
-        if (selectedListContainer.style.width === "30%") {
-            selectedListContainer.style.width = "0%";
-            selectedListExpandCloseButton.innerHTML = `<i class="fa-solid fa-chevron-right text-light" style="font-size:24px;"></i>`;
-        } else {
-            selectedListContainer.style.width = "30%";
+        if (selectedListContainerContainer.style.transform === "translateX(-90%)") {
+            selectedListContainerContainer.style.transform = "translateX(0%)";
             selectedListExpandCloseButton.innerHTML = `<i class="fa-solid fa-chevron-left text-light" style="font-size:24px;"></i>`;
+
+        } else {
+            selectedListContainerContainer.style.transform = "translateX(-90%)";
+            selectedListExpandCloseButton.innerHTML = `<i class="fa-solid fa-chevron-right text-light" style="font-size:24px;"></i>`;
+
         }
     });
 
@@ -1920,7 +1948,7 @@ function addCurrentPlaceToList(currentPlace) {
     newDiv.innerHTML = `
         <div class="bg-white">
             <div class="flex-row d-flex">
-                <div class="flex-column d-flex" style="width:7x10%;">
+                <div class="flex-column d-flex" style="width:65%;">
                     <div class="p-1">
                         <span style="font-size: 1rem;">${currentPlace.Nama}</span>
                     </div>
@@ -1934,20 +1962,22 @@ function addCurrentPlaceToList(currentPlace) {
                         <span style="font-size: 0.875rem;">${timeOpenProcessor(currentPlace)}</span>
                     </div>
                 </div>
-                <div class="flex-row d-flex">
-                    <div class="d-flex align-items-center">
+                <div class="flex-row d-flex" style="width:20%;">
+                    <div class="d-flex align-items-center fill" style="width:100%;">
                         ${currentPlace.Website ?
-                            `<div id="${currentPlace.Nama}-website">
+            `<div id="${currentPlace.Nama}-website">
                             <button class="btn btn-outline-warning btn-lg" onclick="window.open('${currentPlace.Website}', '_blank');"><span class="text-primary" ><i class="fa-solid  fa-window-maximize" style="font-size:24px;"></i></span></button>
                                     </div>`
-                            :
-                            ""
-                        }
+            :
+            `<div style="opacity:0;">
+                                <button class="btn btn-outline-warning btn-lg" onclick="window.open('${currentPlace.Website}', '_blank');" disabled><span class="text-primary" ><i class="fa-solid  fa-window-maximize" style="font-size:24px;"></i></span></button>
+                            </div>
+                            `
+        }
                     </div>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center" style="width:100%;">
                         <button  id="${currentPlace.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${currentPlace.Nama}-direction-span"><i class="fa-solid fa-diamond-turn-right" style="font-size:24px;" id="${currentPlace.Nama}-direction-icon"> </i></span></button>
                     </div>
-
                 </div>
             </div>
             <hr>
@@ -1955,7 +1985,7 @@ function addCurrentPlaceToList(currentPlace) {
     `
     target.append(newDiv);
     target.style.overflow = "scroll";
-    target.style.width = "30%";
+    target.style.width = "100%";
 
     newDiv.addEventListener("click", (event) => {
         let target = event.target;
