@@ -1147,6 +1147,7 @@ async function processResultsLocal(type, map) {
                 marker.closingHours = currentPlace.closingHours;
                 marker.allDay = currentPlace.allDay;
                 marker.IGFollowers = currentPlace.IGFollowers;
+                currentPlace.marker = marker;
                 if (currentPlace.promo) {
                     marker.promo = true;
                     marker.promoLoc = detailsPromos[publicArrayNumber];
@@ -1226,6 +1227,7 @@ async function processResultsLocal(type, map) {
                 marker.closingHours = currentPlace.closingHours;
                 marker.allDay = currentPlace.allDay;
                 marker.IGFollowers = currentPlace.IGFollowers;
+                                currentPlace.marker = marker;
                 if (currentPlace.promo) {
                     marker.promo = true;
                     marker.promoLoc = detailsPromos[publicArrayNumber];
@@ -1305,6 +1307,7 @@ async function processResultsLocal(type, map) {
                 marker.closingHours = currentPlace.closingHours;
                 marker.allDay = currentPlace.allDay;
                 marker.IGFollowers = currentPlace.IGFollowers;
+                                currentPlace.marker = marker;
                 if (currentPlace.promo) {
                     marker.promo = true;
                     marker.promoLoc = detailsPromos[publicArrayNumber];
@@ -1411,6 +1414,7 @@ function deleteMarkers() {
     markers = [];
 }
 function toggleHighlight(markerView, property) {
+    // console.log(markerView.name);
     markers.forEach(view => {
         if (view.name != markerView.name) {
             const otherInnerDiv = view.content.querySelector('.details-container');
@@ -1950,7 +1954,7 @@ function addCurrentPlaceToList(currentPlace) {
             <div class="flex-row d-flex">
                 <div class="flex-column d-flex" style="width:65%;">
                     <div class="p-1">
-                        <span style="font-size: 1rem;">${currentPlace.Nama}</span>
+                         <button id="${currentPlace.Nama}-center-map" class="btn" style="padding:0;"><span style="font-size: 1rem;">${currentPlace.Nama}</span></button>
                     </div>
                     <div class="p-1">
                         <span style="font-size: 0.875rem;">${currentPlace.rating ? `Rating: ${generateStars(currentPlace.rating)} | ${currentPlace.rating}` : 'No rating available'} (${currentPlace.reviews})</span>
@@ -1965,15 +1969,15 @@ function addCurrentPlaceToList(currentPlace) {
                 <div class="flex-row d-flex" style="width:20%;">
                     <div class="d-flex align-items-center fill" style="width:100%;">
                         ${currentPlace.Website ?
-            `<div id="${currentPlace.Nama}-website">
-                            <button class="btn btn-outline-warning btn-lg" onclick="window.open('${currentPlace.Website}', '_blank');"><span class="text-primary" ><i class="fa-solid  fa-window-maximize" style="font-size:24px;"></i></span></button>
-                                    </div>`
-            :
-            `<div style="opacity:0;">
-                                <button class="btn btn-outline-warning btn-lg" onclick="window.open('${currentPlace.Website}', '_blank');" disabled><span class="text-primary" ><i class="fa-solid  fa-window-maximize" style="font-size:24px;"></i></span></button>
-                            </div>
-                            `
-        }
+                            `<div id="${currentPlace.Nama}-website">
+                                            <button class="btn btn-outline-warning btn-lg" onclick="window.open('${currentPlace.Website}', '_blank');"><span class="text-primary" ><i class="fa-solid  fa-window-maximize" style="font-size:24px;"></i></span></button>
+                                                    </div>`
+                            :
+                            `<div style="opacity:0;">
+                                                <button class="btn btn-outline-warning btn-lg" onclick="window.open('${currentPlace.Website}', '_blank');" disabled><span class="text-primary" ><i class="fa-solid  fa-window-maximize" style="font-size:24px;"></i></span></button>
+                                            </div>
+                                            `
+                        }
                     </div>
                     <div class="d-flex align-items-center" style="width:100%;">
                         <button  id="${currentPlace.Nama}-direction" class="btn btn-outline-warning btn-lg" ><span class="text-primary"  id="${currentPlace.Nama}-direction-span"><i class="fa-solid fa-diamond-turn-right" style="font-size:24px;" id="${currentPlace.Nama}-direction-icon"> </i></span></button>
@@ -1995,16 +1999,26 @@ function addCurrentPlaceToList(currentPlace) {
                 getDirections(currentPlace, currentPlace.Lat, currentPlace.Long);
                 break;
             }
+            if(target.id === `${currentPlace.Nama}-center-map`){
+                centerMap(currentPlace.Lat, currentPlace.Long);
+                toggleHighlight(currentPlace.marker, currentPlace);
+            }
             target = target.parentElement;
         }
     });
-
-
 }
 
 function removeCurrentPlaceList() {
     const target = document.getElementById("selectedListContainer");
     target.innerHTML = ""
+}
+
+function centerMap(lat, lng) {
+    const adjustedLng = lng - 0.020;
+    const adjustedLat = lat + 0.010;
+    map.setCenter({ lat: adjustedLat, lng: adjustedLng });
+        map.setZoom(14);
+
 }
 
 
