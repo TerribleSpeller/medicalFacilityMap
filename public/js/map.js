@@ -103,6 +103,7 @@ let originMarker = null;
 let totalDistance = 0;
 let totalDuration = 0;
 let promoRatingCheck = false;
+let isFocused = false;
 
 
 const mapCenter = { lat: -6.302630388, lng: 106.6505807 };
@@ -1334,6 +1335,7 @@ function buildContent(property, type) {
         //console.log(property.photoURL)
         content.style.backgroundImage = `url(${property.photoURL}), url("../img/noImage.png")`;
         content.style.backgroundPosition = "center top";
+        content.style.backgroundPositionY = "-30%"
         content.style.backgroundSize = "contain"
     } else {
         content.style.backgroundImage = `url("../img/noImage.png")`;
@@ -1409,6 +1411,17 @@ function buildContent(property, type) {
             }
         }
     });
+
+    content.addEventListener("focus", () => {
+        isFocused = true;
+    });
+    
+    content.addEventListener("blur", () => {
+        isFocused = false;
+    });
+
+
+
     return content;
 }
 function setMapOnAll(map) {
@@ -2052,6 +2065,7 @@ const checkElementsAndSetupListeners = () => {
     const specificClosingTime = document.getElementById("closingTimeInput");
     const ratingDiv = document.getElementById("RatingDivFill");
     const promoDiv = document.getElementById("promoRating");
+    
 
     if (ratingRange && anytimeOptionButton && nowOptionButton && hours24OptionButton && specificDayOptionButton && specificTimeCheck && specificOpeningTime && specificClosingTime && promoDiv) {
         promoDiv.addEventListener("change", function (event) {
@@ -2123,8 +2137,31 @@ const checkElementsAndSetupListeners = () => {
             filterMarkers(markers);
         });
 
+        document.addEventListener("click", (event) => {
+            let isMarkerClicked = false;
+        
+            // Check if the click target is one of the markers
+            for (let marker of markers) {
+                if (marker.content.contains(event.target)) {
+                    isMarkerClicked = true;
+                    break;
+                }
+            }
+        
+            // If no marker was clicked, toggle highlight for relevant markers
+            if (!isMarkerClicked) {
+                for (let marker of markers) {
+                        if (marker.content.classList.contains("highlight")) {
+                            toggleHighlight(marker);
+                        }
+                }
+            }
+        }, true); 
+
         // Clear the interval once the listeners are set up
         clearInterval(intervalId);
+
+
     }
 };
 
