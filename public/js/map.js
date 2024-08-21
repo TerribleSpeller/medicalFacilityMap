@@ -2,6 +2,8 @@ import detailsMedical from "./detailsMedical.js";
 import detailsBeauty from "./detailsBeauty.js";
 import detailsWellness from "./detailsWellness.js";
 import detailsPromos from "./detailsPromos.js";
+import categoryOptionsExport from "./categories.js"
+import {subcateMed, subcateWell, subcateBeu } from  "./categories.js"
 
 const mapBounds = [
     { lat: -6.3014897268225445, lng: 106.69998806230103 }, //TOll
@@ -193,11 +195,7 @@ function dropdownCategoryFunc(map) {
     revealButtonCateogyr.innerHTML = "Categories";
     dropdownCategory.appendChild(revealButtonCateogyr);
 
-    const categoryOptions = [
-        { value: 'medical', text: 'Medical' },
-        { value: 'beauty', text: 'Beauty' },
-        { value: 'wellness', text: 'Wellness' }
-    ];
+    const categoryOptions = categoryOptionsExport;
 
     const dropdownContentCategory = document.createElement("div");
     dropdownContentCategory.id = "Dropdown Category";
@@ -295,34 +293,40 @@ function dropdownSubCategoryFunc(map) {
     revealButton.innerHTML = "Subcategories";
     dropdown.appendChild(revealButton);
 
-    const options = [
-        { value: 'Rumah Sakit', text: 'Hospital' },
-        { value: 'klinik medical', text: 'Medical Clinic' },
-        { value: 'klinik ibu & anak', text: 'Maternity Clinic' },
-        { value: 'klinik gigi', text: 'Dentist' },
-        { value: 'Klinik Fisioterapi', text: 'Fisioterapi' },
-        { value: 'Klinik Tumbuh Kembang Anak', text: 'Klinik Tumbuh Kembang Anak' },
-        { value: 'Laboratorium', text: 'Laboratorium' },
-    ];
+    // const options = [
+    //     { value: 'Rumah Sakit', text: 'Hospital' },
+    //     { value: 'klinik medical', text: 'Medical Clinic' },
+    //     { value: 'klinik ibu & anak', text: 'Maternity Clinic' },
+    //     { value: 'klinik gigi', text: 'Dentist' },
+    //     { value: 'Klinik Fisioterapi', text: 'Fisioterapi' },
+    //     { value: 'Klinik Tumbuh Kembang Anak', text: 'Klinik Tumbuh Kembang Anak' },
+    //     { value: 'Laboratorium', text: 'Laboratorium' },
+    // ];
 
-    const options2well = [
-        { value: 'Basket Ball Court', text: 'Basketball Court' },
-        { value: 'Club House', text: 'Club House' },
-        { value: 'Gym', text: 'Gym' },
-        { value: 'Pilates Studio', text: 'Pilates Studio' },
-        { value: 'Stadion', text: 'Stadion' },
-        { value: 'Swimming Pool', text: 'Swimming Pool' },
-        { value: 'Tennis Court', text: 'Tennis Court' },
-        { value: 'Yoga Studio', text: 'Yoga Studio' },
-        { value: 'Massage &/ Spa', text: 'Massage & Spa' },
-        { value: 'Massage sakit & cedera', text: 'Massage sakit & cedera' },
-        { value: 'Massage &/ Spa Baby', text: 'Massage & Spa Baby' },
-    ];
+    // const options2well = [
+    //     { value: 'Basket Ball Court', text: 'Basketball Court' },
+    //     { value: 'Club House', text: 'Club House' },
+    //     { value: 'Gym', text: 'Gym' },
+    //     { value: 'Pilates Studio', text: 'Pilates Studio' },
+    //     { value: 'Stadion', text: 'Stadion' },
+    //     { value: 'Swimming Pool', text: 'Swimming Pool' },
+    //     { value: 'Tennis Court', text: 'Tennis Court' },
+    //     { value: 'Yoga Studio', text: 'Yoga Studio' },
+    //     { value: 'Massage &/ Spa', text: 'Massage & Spa' },
+    //     { value: 'Massage sakit & cedera', text: 'Massage sakit & cedera' },
+    //     { value: 'Massage &/ Spa Baby', text: 'Massage & Spa Baby' },
+    // ];
 
-    const options3beauty = [
-        { value: 'klinik gigi & kecantikan', text: 'Klinik Kecantikan & Gigi' },
-        { value: 'Klinik Kulit & Kecantikan', text: 'Skincare' },
-    ];
+    // const options3beauty = [
+    //     { value: 'klinik gigi & kecantikan', text: 'Klinik Kecantikan & Gigi' },
+    //     { value: 'Klinik Kulit & Kecantikan', text: 'Skincare' },
+    // ];
+
+    
+    const options = subcateMed;
+    const options2well = subcateWell;
+    const options3beauty = subcateBeu;
+
 
     const createDropdown = (id, options, targetButtonId) => {
         const dropdownContent = document.createElement("div");
@@ -380,7 +384,6 @@ function dropdownSubCategoryFunc(map) {
     
         return dropdownContent;
     };
-    
     const handleRevealButtonClick = (dropdownContents) => {
         revealButton.addEventListener("click", () => {
             dropdownContents.forEach(dropdownContent => {
