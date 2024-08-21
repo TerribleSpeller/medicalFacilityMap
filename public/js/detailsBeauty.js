@@ -575,7 +575,69 @@ const detailsBeauty = {
                 Fri: 20,
                 Sat: 20,
                 Sun: 20,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Filine Julia",
+                  "author_url": "https://www.google.com/maps/contrib/115701045342603897476/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLvsrvhQAcVpYzub2sq8HnPgSnV1T9nsveOQsHJEdatj_jPXy8=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "Awesome scaling service by Drg. Vivi. Clean and nice clinic!",
+                  "time": 1719288393,
+                  "translated": false
+                },
+                {
+                  "author_name": "Julia Yasmin",
+                  "author_url": "https://www.google.com/maps/contrib/111367344015137334704/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocISNzLkkvOZkHheGgGHdUe5uOLY8mqx9Vx5S6uoa0aKAH3yxA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "9 months ago",
+                  "text": "Amazing service! First time treatment here! And definitely coming again.. worth it",
+                  "time": 1698827312,
+                  "translated": false
+                },
+                {
+                  "author_name": "reini mailisa",
+                  "author_url": "https://www.google.com/maps/contrib/116003239528281244103/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK3dZvNHGKnGq4zmQFzmsJAUmPDm_FJsUg6-K3hfj5xZisETQ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Excellent service. Taking brightening facial and laser blackdoll. Treatment nya sangat pro. N pastinya..definetely will be back again. 🙏😇",
+                  "time": 1669545819,
+                  "translated": false
+                },
+                {
+                  "author_name": "Ashilla Asyahdeeen",
+                  "author_url": "https://www.google.com/maps/contrib/105031296052461186940/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIOyoMJPnoXjeC8fT4WWOQg9h_SmKbM8o2EEI6Moil_l7acYA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "6 months ago",
+                  "text": "Excellent service, with good attitude staff🔥",
+                  "time": 1708075641,
+                  "translated": false
+                },
+                {
+                  "author_name": "Mardelia Mulyono",
+                  "author_url": "https://www.google.com/maps/contrib/111452870595893382494/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU3cQix6Rro3jx3sVQe22dLZ7J8WCcoCwLunovTUq9-vbtCEKpP=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Great service, kind and very helpful throughout the treatment. The place is very clean as well",
+                  "time": 1674112936,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Akhasya by Arsy Beauty",
@@ -703,7 +765,69 @@ const detailsBeauty = {
                 Fri: 18,
                 Sat: 18,
                 Sun: 0,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Shirley Cheung",
+                  "author_url": "https://www.google.com/maps/contrib/101283996008532013693/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL95Dn3Dew9RSCVF3RDUrShE82rTud0Ss5jEQpVLc2LF0rIrrNq=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Well manage clinic.\n\nGood service, Clean, worker in good manner and well trained, and the doctor is very friendly.\n\nI think this is the best clinic i ever experienced comparing to alot of big clinic in Jakarta area, quite surprised with the service they have.",
+                  "time": 1658478200,
+                  "translated": false
+                },
+                {
+                  "author_name": "Jane Freyabby",
+                  "author_url": "https://www.google.com/maps/contrib/100979529237843029821/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWpTMtooFV0GbJm3XymUe7zIOCoTK1oy-E2-grNxkAl27nil3WU=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "Cozy, Tranquil, Homy Environment with extra ordinary friendly and mastery beautician doctor and assistants throughout handling the facial care and treatment.",
+                  "time": 1596293814,
+                  "translated": false
+                },
+                {
+                  "author_name": "Liem Ying Tang",
+                  "author_url": "https://www.google.com/maps/contrib/101214229874361654696/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI4fDcLcxgfm3jD0RZTgC46l6XLdaEmvDq56UjBk5N6bln1xw=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 4,
+                  "relative_time_description": "4 years ago",
+                  "text": "Nice service, good n friendly terapist, trusted dermatoligist, a lot of promo every month. Recomended place to.do facial treatment",
+                  "time": 1567957650,
+                  "translated": false
+                },
+                {
+                  "author_name": "Anita",
+                  "author_url": "https://www.google.com/maps/contrib/107015099770085895039/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXdy3W3OxvOzAiOHvkiBkc9Nlxwywj9RxJxX9NAYUVxPfbyePBh=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Overall treatment , products are very good .. recommended aesthetic clinic",
+                  "time": 1646640665,
+                  "translated": false
+                },
+                {
+                  "author_name": "Regina Septiana",
+                  "author_url": "https://www.google.com/maps/contrib/109665472231986043668/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXzBwNU9iIgGJ-fW3bnB3lImmew1e7IVlxGJykaVpua4kmvQfqd=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "Good service and best beauty clinic. You have to try guys! ☺☺",
+                  "time": 1604477239,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Fits911 Beauty Center",

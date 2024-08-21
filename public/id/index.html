@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <!--Yoinked-->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <script type="module" src="../js/map.js"></script>
 
 </header>
 
@@ -806,21 +807,15 @@
 
     </div>
     <main class="" id="Body">
-        <div class="margin-maker">
-            <div class="container main-padding map-search-container map-overlay-container" style="">
-                <div class="">
-                    <div class="searchbox searchbox-container overlay-elements ">
-                        <div class="cool-background-giver">
-                            <input type="text" class="searchboxInput" id="locationInput" placeholder="Masukkan lokasi di BSD" style="width: 100%">
-                            <button onclick="updateMap()" class="btn-secondary"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                    </div>
-                </div>
-                                    <div class="map-container map">
-                        <iframe id ="maptesttwo" src="https://maps.google.com/maps?t=&z=14&ie=UTF8&iwloc=&output=embed&ll=-6.29447675559863, 106.67423599242338" width="100%" height="600" style="border:0;" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div> 
- 
-            </div>
+        <div class="container main-padding" style="">
+            <!-- <div class="searchbox">
+                <input type="text" class="searchboxInput" id="locationInput" placeholder="Enter a location in BSD">
+                <button onclick="updateMap()" class="btn-secondary">Search</button>
+            </div> -->
+
+
+            <div id="map"></div>
+
         </div>
         <div id="buffer-text" class="pb-5">
             <span></span>

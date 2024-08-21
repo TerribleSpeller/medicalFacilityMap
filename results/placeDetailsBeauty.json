@@ -1,0 +1,864 @@
+[
+  {
+    "Nama": "Dreams Dermis Klinik Estetika"
+  },
+  {
+    "Nama": "BM Derma Clinic BSD"
+  },
+  {
+    "Nama": "B Clinic BSD"
+  },
+  {
+    "Nama": "Sozo Skin Clinic",
+    "Details": {
+      "address_components": [
+        {
+          "long_name": "lantai 2",
+          "short_name": "lantai 2",
+          "types": [
+            "subpremise"
+          ]
+        },
+        {
+          "long_name": "No.27",
+          "short_name": "No.27",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Bintaro Jaya",
+          "short_name": "Bintaro Jaya",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Pondok Ranji",
+          "short_name": "Pd. Ranji",
+          "types": [
+            "administrative_area_level_4",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Kecamatan Ciputat Timur",
+          "short_name": "Kec. Ciputat Tim.",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "tanggerang selatan",
+          "short_name": "tanggerang selatan",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Banten",
+          "short_name": "Banten",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Indonesia",
+          "short_name": "ID",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "15224",
+          "short_name": "15224",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "adr_address": "Jl. Bintaro Utama V Blok EA 2, <span class=\"street-address\">Bintaro Jaya No.27 lantai 2</span>, <span class=\"extended-address\">Pd. Ranji, Kec. Ciputat Tim.</span>, <span class=\"locality\">tanggerang selatan</span>, <span class=\"region\">Banten</span> <span class=\"postal-code\">15224</span>, <span class=\"country-name\">Indonesia</span>",
+      "business_status": "OPERATIONAL",
+      "current_opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "date": "2024-08-25",
+              "day": 0,
+              "time": "2000"
+            },
+            "open": {
+              "date": "2024-08-25",
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-26",
+              "day": 1,
+              "time": "2000"
+            },
+            "open": {
+              "date": "2024-08-26",
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-27",
+              "day": 2,
+              "time": "2000"
+            },
+            "open": {
+              "date": "2024-08-27",
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-21",
+              "day": 3,
+              "time": "2000"
+            },
+            "open": {
+              "date": "2024-08-21",
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-22",
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "date": "2024-08-22",
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-23",
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "date": "2024-08-23",
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-24",
+              "day": 6,
+              "time": "2000"
+            },
+            "open": {
+              "date": "2024-08-24",
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 8:00 PM",
+          "Tuesday: 10:00 AM – 8:00 PM",
+          "Wednesday: 10:00 AM – 8:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 8:00 PM",
+          "Saturday: 10:00 AM – 8:00 PM",
+          "Sunday: 10:00 AM – 8:00 PM"
+        ]
+      },
+      "formatted_address": "Jl. Bintaro Utama V Blok EA 2, Bintaro Jaya No.27 lantai 2, Pd. Ranji, Kec. Ciputat Tim., tanggerang selatan, Banten 15224, Indonesia",
+      "formatted_phone_number": "0851-7522-5664",
+      "geometry": {
+        "location": {
+          "lat": -6.270295000000002,
+          "lng": 106.731017
+        },
+        "viewport": {
+          "northeast": {
+            "lat": -6.268882469708498,
+            "lng": 106.7323262302915
+          },
+          "southwest": {
+            "lat": -6.271580430291503,
+            "lng": 106.7296282697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "international_phone_number": "+62 851-7522-5664",
+      "name": "Sozo Skin Clinic - Bintaro",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2000"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2000"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2000"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2000"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2000"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 8:00 PM",
+          "Tuesday: 10:00 AM – 8:00 PM",
+          "Wednesday: 10:00 AM – 8:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 8:00 PM",
+          "Saturday: 10:00 AM – 8:00 PM",
+          "Sunday: 10:00 AM – 8:00 PM"
+        ]
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115668162109878863482\">Sozo Skin Clinic - Bintaro</a>"
+          ],
+          "photo_reference": "AelY_Cu-iDpvGZ2HzCANHyzxzAvRigwa2Mv9aVF1jxZWpD1MXDcMzIrSlhKQ5xQao1M-ivEeo-7W2mBLUFuixvE5G0nPpqrGhyXXfm-sR57kGdCDdt2__ql_kn7p8OTDEUMyznFtKGIjkuSVMLk9iYevxH5DasUCEVr0dO6OEzqs11U4vA0R",
+          "width": 1080
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113811258740009429740\">Swastika Nohara</a>"
+          ],
+          "photo_reference": "AelY_CvALiAjIaqxAwGWZJUqLX23Cdy4fv7EmAnGwOmJ65Y9q0d-G1NWVfZholedv95T-03FBOhUYb12M146wu6pTJgFqUhxysjJ_ZgPt5n6MpMu68HCYXQXHCDGN6wSVNb7BvrosD-hjudhrFqTLtUPx685JcuNnJ49MoZM5HB0wux3i4q3",
+          "width": 3024
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104062896977095129775\">luluida pratiwi</a>"
+          ],
+          "photo_reference": "AelY_CsLGJrPeYTw73s1w7HOTKf1bMuNlt8qJ_f-Db3RMf_EblWgX3cATrAW3UHOCG1kdgOVPQ2V9Dw_WD1Yo37JlDMOAx-3xr1UgJRyZmN64NOsAaAR-nIx8_3NnQUkWYxlyaHqup5hnNKw1Dm6Hs3hYf16cPsnlBic8PnMgfU4B1iNGBaL",
+          "width": 3024
+        },
+        {
+          "height": 1200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115264473289526067790\">Bagaskoro</a>"
+          ],
+          "photo_reference": "AelY_CtfWx6DCAsAh5Z830sjz6ZnTDmj6O1KcZIZXkF8N48E7_GisiugxknBqp5p8BObFCoRKgAtTqyMI6dXaZdcXhF96WejDa6VOKibsbyBlD41IUcYH8E3SW3ye-j5xwoSEKmvlTig_3RzgIz7wP9z5DSZg-brU8CzhlqU9ylb_HqCLkSs",
+          "width": 1600
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104796093365719557367\">artisrik arief</a>"
+          ],
+          "photo_reference": "AelY_CtNWQffyq7u2TeGi26IV2KB7QJ9XmdDTPj8n9lKQMvMSZj3e8NjBGORVeMUsMpuw_do_cvnXm6JwqpJproFDYLCe-AGMKF5TcTUDiD8Gz2AknVfkkAHzb4pAgK_BDYp5fAoqz2SXF2Sjore9FHTRCeOyz_1j6KKT8WHlIm80hBz27lp",
+          "width": 3024
+        },
+        {
+          "height": 1920,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105607272632428374773\">Dian Novita</a>"
+          ],
+          "photo_reference": "AelY_CtqifVxRlO7z3zCNTxUIx8ghqV8HxsjkPpDnnCrwltCA-tRxNZ2xXL9RW3XF_j3ffdmZownfSbdBliSIbO0OO4mqFq0vsR7URpegrR3RALJL6gWsCmNFcaPdBUnF1DO_L12SJeAqDhOO7vD-dIBdVyxFgJc6cA3GPyzP7yDXhTMKf7r",
+          "width": 1080
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109270995671206407647\">oktavianus meida</a>"
+          ],
+          "photo_reference": "AelY_CsrAta-nJjnSUNCRXHeo5FZa94nOM0L5G_niGSPNbGrZT3gDvvrYP2g5w5Zl7Ejga9-fnYaKiICCySk2hcPg13Kx5cwyjhd1-QfjJDSCX5iMvtnQNlAZ7PU2HLvKc4vETXr5h44J4yMfScmOdil9trRkN0e-P_uZIwESNQoZoMnmPhe",
+          "width": 3072
+        },
+        {
+          "height": 3840,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109630257258064813760\">Nazilah</a>"
+          ],
+          "photo_reference": "AelY_CsTPXZ48WVZqCKR7iEhpc2lPKTbM8xEZxbzn_FRU-rQ8NEGLt3JeKtj_q8KX4TdyU6VTEI7HYLyPJ2KrsjdnOrBTXjN1ICnCNvym2jWRwqeWgFPNSzdX8wnkcC_9j53jzOwrgmgMCpUpBU6LCcRJwJC8txohvrha26AZxTvgZswavbv",
+          "width": 2160
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113811258740009429740\">Swastika Nohara</a>"
+          ],
+          "photo_reference": "AelY_CulULoeyiZpXjuHnk7uaDICYSg2_8nelQxo6rn7gdcTtbaDsNJnB4flthJ1EgPpiScu0-ZajUJodpTD6asO4IrVVPktKc4pNwAYOf04pjoub438oHBqG2eqqnpwgDPVg4UhNGKyVI7niXrwuHQ7nXP4ZQROLyMztWOjgy3qYT-84Slj",
+          "width": 3024
+        },
+        {
+          "height": 2000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104062896977095129775\">luluida pratiwi</a>"
+          ],
+          "photo_reference": "AelY_Cttgtb4A7vcufc9y1WzePxwM6eSwq8ns6WwvPHCWWpCfH7aRi8Phf-8gekFOJjywXrFXBgxIo_LCpscazzITaTD9eT0ZEoUROxouDFYaR_yNREHO81H9d2m9V4FpPddczpfRneARYqqHlO5dT9VHv1YDzVwqgaKeIEufB4nAplhZgSU",
+          "width": 1125
+        }
+      ],
+      "place_id": "ChIJ75EsDtLxaS4RdCo8zCQZ2FA",
+      "plus_code": {
+        "compound_code": "PPHJ+VC Pondok Ranji, South Tangerang City, Banten, Indonesia",
+        "global_code": "6P58PPHJ+VC"
+      },
+      "rating": 4.7,
+      "reference": "ChIJ75EsDtLxaS4RdCo8zCQZ2FA",
+      "reviews": [
+        {
+          "author_name": "Filine Julia",
+          "author_url": "https://www.google.com/maps/contrib/115701045342603897476/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLvsrvhQAcVpYzub2sq8HnPgSnV1T9nsveOQsHJEdatj_jPXy8=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Awesome scaling service by Drg. Vivi. Clean and nice clinic!",
+          "time": 1719288393,
+          "translated": false
+        },
+        {
+          "author_name": "Julia Yasmin",
+          "author_url": "https://www.google.com/maps/contrib/111367344015137334704/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocISNzLkkvOZkHheGgGHdUe5uOLY8mqx9Vx5S6uoa0aKAH3yxA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Amazing service! First time treatment here! And definitely coming again.. worth it",
+          "time": 1698827312,
+          "translated": false
+        },
+        {
+          "author_name": "reini mailisa",
+          "author_url": "https://www.google.com/maps/contrib/116003239528281244103/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK3dZvNHGKnGq4zmQFzmsJAUmPDm_FJsUg6-K3hfj5xZisETQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Excellent service. Taking brightening facial and laser blackdoll. Treatment nya sangat pro. N pastinya..definetely will be back again. 🙏😇",
+          "time": 1669545819,
+          "translated": false
+        },
+        {
+          "author_name": "Ashilla Asyahdeeen",
+          "author_url": "https://www.google.com/maps/contrib/105031296052461186940/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIOyoMJPnoXjeC8fT4WWOQg9h_SmKbM8o2EEI6Moil_l7acYA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Excellent service, with good attitude staff🔥",
+          "time": 1708075641,
+          "translated": false
+        },
+        {
+          "author_name": "Mardelia Mulyono",
+          "author_url": "https://www.google.com/maps/contrib/111452870595893382494/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU3cQix6Rro3jx3sVQe22dLZ7J8WCcoCwLunovTUq9-vbtCEKpP=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great service, kind and very helpful throughout the treatment. The place is very clean as well",
+          "time": 1674112936,
+          "translated": false
+        }
+      ],
+      "types": [
+        "point_of_interest",
+        "health",
+        "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=5825433763839748724",
+      "user_ratings_total": 297,
+      "utc_offset": 420,
+      "vicinity": "Jl. Bintaro Utama V Blok EA 2, Bintaro Jaya No.27 lantai 2, Pondok Ranji",
+      "website": "https://sozoskinclinic.com/"
+    }
+  },
+  {
+    "Nama": "Farmanina Aesthetic & Hair Clinic BSD"
+  },
+  {
+    "Nama": "Clinderma Aesthetic Clinic",
+    "Details": {
+      "address_components": [
+        {
+          "long_name": "Jalan Pahlawan Seribu",
+          "short_name": "Jl. Pahlawan Seribu",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Lengkong Wetan",
+          "short_name": "Lengkong Wetan",
+          "types": [
+            "administrative_area_level_4",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Kecamatan Serpong",
+          "short_name": "Kec. Serpong",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Kota Tangerang Selatan",
+          "short_name": "Kota Tangerang Selatan",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Banten",
+          "short_name": "Banten",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Indonesia",
+          "short_name": "ID",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "15310",
+          "short_name": "15310",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "adr_address": "<span class=\"street-address\">Jl. Pahlawan Seribu</span>, <span class=\"extended-address\">Lengkong Wetan, Kec. Serpong</span>, <span class=\"locality\">Kota Tangerang Selatan</span>, <span class=\"region\">Banten</span> <span class=\"postal-code\">15310</span>, <span class=\"country-name\">Indonesia</span>",
+      "business_status": "OPERATIONAL",
+      "current_opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "date": "2024-08-26",
+              "day": 1,
+              "time": "1800"
+            },
+            "open": {
+              "date": "2024-08-26",
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-27",
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "date": "2024-08-27",
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-21",
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "date": "2024-08-21",
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-22",
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "date": "2024-08-22",
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-23",
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "date": "2024-08-23",
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "date": "2024-08-24",
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "date": "2024-08-24",
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: 9:00 AM – 6:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "formatted_address": "Jl. Pahlawan Seribu, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15310, Indonesia",
+      "formatted_phone_number": "(021) 53161153",
+      "geometry": {
+        "location": {
+          "lat": -6.274453400000001,
+          "lng": 106.6582636
+        },
+        "viewport": {
+          "northeast": {
+            "lat": -6.273127969708497,
+            "lng": 106.6596041302915
+          },
+          "southwest": {
+            "lat": -6.275825930291502,
+            "lng": 106.6569061697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "international_phone_number": "+62 21 53161153",
+      "name": "Clinderma Aesthetic Clinic",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1800"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: 9:00 AM – 6:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "photos": [
+        {
+          "height": 1280,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109726768108062086614\">Clinderma Aesthetic Clinic</a>"
+          ],
+          "photo_reference": "AelY_CvPiRchv4pc4ZKMXFvS2OlWG6QnvTqlr_TA9cBkFX68X43YT74Inszj-vNg2pyP6aq5_ZTONRCskxEIx8SLn9S5yErxnT3i58Fvr_SlRTwaWFxSR5aVOwe2azSdbwTYHjMImt3zR5ayig94mlxnmxBMx4Nic9NbS46ZGzB_tf0sSEMS",
+          "width": 958
+        },
+        {
+          "height": 705,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104507809254314136868\">martinus putra mulia</a>"
+          ],
+          "photo_reference": "AelY_CvHHgEJD3RdqXlGk_h3-xsw-cBK2SbMUjBkYwxtME-AjDIDyOEaiNTxsTgR2QBFsRPu6513ExoqlzoZ9UXu9wOGeRvBG7n-cHlXwcBxvX9qoaEo39gBPS8oY60MKBhhcndSo6tu9b0Jalej00lXG92VJ_umgCpvItSZzVGSMXW9l0YX",
+          "width": 1331
+        },
+        {
+          "height": 735,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104507809254314136868\">martinus putra mulia</a>"
+          ],
+          "photo_reference": "AelY_Ctfsm4pLQWwNCfOzuzMFDE7eoD98iotUMprjVZCGlRXWmuvbcKRuPaNpLkdfaipjPDdETWWkOabKyt-uSnOXIrHQ1S8V6HKVieMeKCovD4NbbKyQykdkbLdW_VRthxGSY9V0aZuYd4Izpk6SOB5cP5yxMKDHvgMyTWVvztzCdbqb2g1",
+          "width": 750
+        },
+        {
+          "height": 4160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112896877443518723944\">Anton Utomo</a>"
+          ],
+          "photo_reference": "AelY_Cs9HT_8bTO7UzxwTkKkg31fbHCeL45U2kWdKa7QhtmV7sNLf5pfFoLgSzoBOwG-4yybnQPA49eynejW3B0aDeoe1dO_tmAbeGJLSc_7WKnT9HIPzF6aKBproI_MFayaCTqJ4-iDPVS1fOqMU7dI_p1KtqgzCj1KJFCk00P-DhAeybPO",
+          "width": 3120
+        },
+        {
+          "height": 1280,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109726768108062086614\">Clinderma Aesthetic Clinic</a>"
+          ],
+          "photo_reference": "AelY_CvHPt163uCX60Uuw3FXkaep9X5rwnYxLWUHL5d056B8PwqJ-DjBIHTWHoBKcOlSpRp_4OdXgzcnY2IOEd9tfYZsA9bCseLGWjclqaUboxg-maS3Vg2JUkWsV7eCEMSahpsT5XQi2HYv44WsEWgQmnQTrzMf5R6zShODGaqsRnK9z1yF",
+          "width": 1280
+        },
+        {
+          "height": 1108,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109726768108062086614\">Clinderma Aesthetic Clinic</a>"
+          ],
+          "photo_reference": "AelY_Cs_F9pn6W6KJy9hm5lxdIcFv2zEqKQAVjEPA75IilIQjlqu-fyXFIXcxU2WgjNzvj8ZAvWTDRGQUng3xkUUThVtiiZG22tjZzcYPyBqpqv4t-tR3t4AVkaiqejjsgjVwa0fcXVZql-rGhGY2G--R0WANRKf38fWHURkNztIympiYyxC",
+          "width": 1041
+        },
+        {
+          "height": 681,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109726768108062086614\">Clinderma Aesthetic Clinic</a>"
+          ],
+          "photo_reference": "AelY_Ctcu8Q88WkH6lzvTfiRsXEH8OAMvFVMVkYT5E5-vTPm1MmOK4WYH5k2s1jBJtL3MZb4cMe3Ls7-jCxqQIHNG3V40WMjqQYbzq6INpYblP8y69mxgS0WFitdowHYRQHBrKQEqmqF3jylK5JdRY3g3CW3SV3YqA08nvxExiXeZKqjLQGX",
+          "width": 681
+        },
+        {
+          "height": 503,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104507809254314136868\">martinus putra mulia</a>"
+          ],
+          "photo_reference": "AelY_CtBTu44-yGnfWmWqtLg2uyHwFWnZk8r8Xy8biIQCTxLKow33z1_svZPOBa5mQBwEeGGKohoriaaHTsUTByMDSEoLoivoe3jeqnanweDAhbQ-R-8RtnWH3DG8sNaW0L0V8St0gNrGvQUgetiZ1cgH3QgIYJTQe3ovkK1SO4cBCAJpeXB",
+          "width": 750
+        },
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109726768108062086614\">Clinderma Aesthetic Clinic</a>"
+          ],
+          "photo_reference": "AelY_CseL_rSw1HK5xA2o9xdZ6SsjotYw5CrlFhkWuLP0RkJxVIfQbM0JnB86PZDAe3NxpnZTq4kZaVMAR4NT441F-BjkLh1bOzv6kSpg1xVkYsQjfrmac_Izclaak4wZEabVMWld1TrfofM8dZVXm-edAE7rp6dut1knSusgcxer5jrmX8J",
+          "width": 1080
+        },
+        {
+          "height": 1280,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109726768108062086614\">Clinderma Aesthetic Clinic</a>"
+          ],
+          "photo_reference": "AelY_CvlGPCSFfy5ARXqYhcWXb8S5G25lVotV6zpsnK9rZyPWu9ab8m_Vw8VDV7aqgRCk9sHn4huaspJ_VVODax0_yVSVA4xR4yKb91gm9VBeXxHUtLNvoe5rFHE4GvKEstYdCXPYAPwwYSQYrXMcz4tteVF3mgajjn9T6EySgldSD6WS-qt",
+          "width": 1280
+        }
+      ],
+      "place_id": "ChIJd8-JDAz7aS4RRnUe5Vj98oU",
+      "plus_code": {
+        "compound_code": "PMG5+68 Lengkong Wetan, South Tangerang City, Banten, Indonesia",
+        "global_code": "6P58PMG5+68"
+      },
+      "rating": 5,
+      "reference": "ChIJd8-JDAz7aS4RRnUe5Vj98oU",
+      "reviews": [
+        {
+          "author_name": "Shirley Cheung",
+          "author_url": "https://www.google.com/maps/contrib/101283996008532013693/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL95Dn3Dew9RSCVF3RDUrShE82rTud0Ss5jEQpVLc2LF0rIrrNq=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Well manage clinic.\n\nGood service, Clean, worker in good manner and well trained, and the doctor is very friendly.\n\nI think this is the best clinic i ever experienced comparing to alot of big clinic in Jakarta area, quite surprised with the service they have.",
+          "time": 1658478200,
+          "translated": false
+        },
+        {
+          "author_name": "Jane Freyabby",
+          "author_url": "https://www.google.com/maps/contrib/100979529237843029821/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWpTMtooFV0GbJm3XymUe7zIOCoTK1oy-E2-grNxkAl27nil3WU=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Cozy, Tranquil, Homy Environment with extra ordinary friendly and mastery beautician doctor and assistants throughout handling the facial care and treatment.",
+          "time": 1596293814,
+          "translated": false
+        },
+        {
+          "author_name": "Liem Ying Tang",
+          "author_url": "https://www.google.com/maps/contrib/101214229874361654696/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI4fDcLcxgfm3jD0RZTgC46l6XLdaEmvDq56UjBk5N6bln1xw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "4 years ago",
+          "text": "Nice service, good n friendly terapist, trusted dermatoligist, a lot of promo every month. Recomended place to.do facial treatment",
+          "time": 1567957650,
+          "translated": false
+        },
+        {
+          "author_name": "Anita",
+          "author_url": "https://www.google.com/maps/contrib/107015099770085895039/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXdy3W3OxvOzAiOHvkiBkc9Nlxwywj9RxJxX9NAYUVxPfbyePBh=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Overall treatment , products are very good .. recommended aesthetic clinic",
+          "time": 1646640665,
+          "translated": false
+        },
+        {
+          "author_name": "Regina Septiana",
+          "author_url": "https://www.google.com/maps/contrib/109665472231986043668/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXzBwNU9iIgGJ-fW3bnB3lImmew1e7IVlxGJykaVpua4kmvQfqd=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Good service and best beauty clinic. You have to try guys! ☺☺",
+          "time": 1604477239,
+          "translated": false
+        }
+      ],
+      "types": [
+        "point_of_interest",
+        "health",
+        "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=9652055509651322182",
+      "user_ratings_total": 41,
+      "utc_offset": 420,
+      "vicinity": "Jalan Pahlawan Seribu, Lengkong Wetan",
+      "wheelchair_accessible_entrance": false
+    }
+  }
+]

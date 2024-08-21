@@ -104,8 +104,6 @@ let totalDistance = 0;
 let totalDuration = 0;
 let promoRatingCheck = false;
 let isFocused = false;
-
-
 const mapCenter = { lat: -6.302630388, lng: 106.6505807 };
 
 function loadGoogleMapsAPI(apiKey, callback) {
@@ -326,203 +324,88 @@ function dropdownSubCategoryFunc(map) {
         { value: 'Klinik Kulit & Kecantikan', text: 'Skincare' },
     ];
 
-    const dropdownContent = document.createElement("div");
-    dropdownContent.id = "medicalDropdown";
-    dropdownContent.classList.add("vertical-menu");
-    // dropdownContent.style.display = "none";
-    dropdownContent.style.display = "block";
-    dropdownContent.style.width = "134px";
-    dropdownContent.style.height = "0%";
-    dropdown.appendChild(dropdownContent);
-    const dropdownContent2 = document.createElement("div");
-    dropdownContent2.id = "wellnessDropdown";
-    dropdownContent2.classList.add("vertical-menu");
-    // dropdownContent2.style.display = "none";
-    dropdownContent2.style.display = "block";
-    dropdownContent2.style.width = "134px";
-    dropdownContent2.style.height = "0%";
-    dropdown.appendChild(dropdownContent2);
-    const dropdownContent3 = document.createElement("div");
-    dropdownContent3.id = "beautyDropdown";
-    dropdownContent3.classList.add("vertical-menu");
-    // dropdownContent3.style.display = "none";
-    dropdownContent3.style.display = "block";
-    dropdownContent3.style.width = "134px";
-    dropdownContent3.style.height = "0%";
-    dropdown.appendChild(dropdownContent3);
-    dropdownContent.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
-    dropdownContent2.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
-    dropdownContent3.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
-
-    revealButton.addEventListener("click", () => {
-        if (dropdownContent.classList.contains("active")) {
-            if (dropdownContent.style.opacity == "0") {
-                dropdownContent.style.transform = "translateY(0%)";
-                dropdownContent.style.opacity = "1";
-            } else {
-                dropdownContent.style.transform = "translateY(-200%)";
-                dropdownContent.style.opacity = "0";
-            }
-        } else if (dropdownContent2.classList.contains("active")) {
-            if (dropdownContent2.style.opacity == "0") {
-                dropdownContent2.style.transform = "translateY(0%)";
-                dropdownContent2.style.opacity = "1";
-            } else {
-                dropdownContent2.style.transform = "translateY(-200%)";
-                dropdownContent2.style.opacity = "0";
-            }
-        } else if (dropdownContent3.classList.contains("active")) {
-            if (dropdownContent3.style.opacity == "0") {
-                dropdownContent3.style.transform = "translateY(0%)";
-                dropdownContent3.style.opacity = "1";
-            } else {
-                dropdownContent3.style.transform = "translateY(-200%)";
-                dropdownContent3.style.opacity = "0";
-            }
-        } else {
-            dropdownContent.style.height = "0%";
-            dropdownContent2.style.height = "0%";
-            dropdownContent3.style.height = "0%";
-        }
-    });
-
-    options.forEach(option => {
-        const button = document.createElement("button");
-        button.value = option.value;
-        button.textContent = option.text;
-        button.classList.add("vertical-menu-long")
-        button.style.margin = "1.0px auto";
-        button.style.fontSize = "14px";
-        button.style.width = "134px";
-        button.style.cursor = "pointer";
-        // const dropdown = document.getElementById("medicalDropdown");
-
-        button.addEventListener("click", () => {
-            options.forEach(opt => {
-                const otherButton = document.querySelector(`button[value="${opt.value}"]`);
-                if (otherButton) {
-                    otherButton.classList.remove("buttonActive");
+    const createDropdown = (id, options, targetButtonId) => {
+        const dropdownContent = document.createElement("div");
+        dropdownContent.id = id;
+        dropdownContent.classList.add("vertical-menu");
+        dropdownContent.style.display = "block";
+        dropdownContent.style.width = "134px";
+        dropdownContent.style.height = "0%";
+        dropdownContent.style.transition = 'transform 0.5s ease, opacity 0.3s ease, height 0.5s ease';
+        dropdown.appendChild(dropdownContent);
+    
+        options.forEach(option => {
+            const button = document.createElement("button");
+            button.value = option.value;
+            button.textContent = option.text;
+            button.classList.add("vertical-menu-long");
+            button.style.margin = "1.0px auto";
+            button.style.fontSize = "14px";
+            button.style.width = "134px";
+            button.style.cursor = "pointer";
+    
+            button.addEventListener("click", () => {
+                options.forEach(opt => {
+                    const otherButton = document.querySelector(`button[value="${opt.value}"]`);
+                    if (otherButton) {
+                        otherButton.classList.remove("buttonActive");
+                    }
+                });
+                if (button.classList.contains("buttonActive")) {
+                    button.classList.remove("buttonActive");
+                    deleteMarkers();
+                } else {
+                    button.classList.add("buttonActive");
+                    findPlace(button.value);
+                    setTimeout(() => {
+                        filterMarkers(markers);
+                    }, 2);
+                    dropdownContent.style.transform = "translateY(-200%)";
+                    dropdownContent.style.opacity = "0";
+                    const targetButton = document.getElementById(targetButtonId);
+                    targetButton.style.backgroundColor = "";
+                    dropdownContent.classList.remove("active");
+                }
+                if (directionsRenderer) {
+                    directionsRenderer.setMap(null); //Clear prev directions
+                }
+                if (originMarker) {
+                    originMarker.setMap(null);
+                }
+                document.getElementById("mapDistanceContainer").style.height = "0px";
+            });
+            dropdownContent.appendChild(button);
+        });
+        //mfw copy pasting code works
+    
+        return dropdownContent;
+    };
+    
+    const handleRevealButtonClick = (dropdownContents) => {
+        revealButton.addEventListener("click", () => {
+            dropdownContents.forEach(dropdownContent => {
+                if (dropdownContent.classList.contains("active")) {
+                    if (dropdownContent.style.opacity == "0") {
+                        dropdownContent.style.transform = "translateY(0%)";
+                        dropdownContent.style.opacity = "1";
+                    } else {
+                        dropdownContent.style.transform = "translateY(-200%)";
+                        dropdownContent.style.opacity = "0";
+                    }
+                } else {
+                    dropdownContent.style.height = "0%";
                 }
             });
-            if (button.classList.contains("buttonActive")) {
-                button.classList.remove("buttonActive");
-                deleteMarkers();
-            } else {
-                button.classList.add("buttonActive");
-                findPlace(button.value);
-                setTimeout(() => {
-                    filterMarkers(markers);
-                }, 2);
-                dropdownContent.style.transform = "translateY(-200%)";
-                dropdownContent.style.opacity = "0";
-                const targetMenu = document.getElementById("medicalButton");
-                targetMenu.style.backgroundColor = "";
-                dropdownContent.classList.remove("active");
-            }
-            //To Remove Directions
-            if (directionsRenderer) {
-                directionsRenderer.setMap(null); //Clear previous directions
-            }
-            if (originMarker) {
-                originMarker.setMap(null);
-            }
-            // document.getElementById("mapDistanceContainer").style.display = "none";
-            document.getElementById("mapDistanceContainer").style.height = "0px";
         });
-        dropdownContent.appendChild(button);
-    });
+    };
+    
+    const dropdownContents = [];
+    dropdownContents.push(createDropdown("medicalDropdown", options, "medicalButton"));
+    dropdownContents.push(createDropdown("wellnessDropdown", options2well, "wellnessButton"));
+    dropdownContents.push(createDropdown("beautyDropdown", options3beauty, "beautyButton"));
+    
+    handleRevealButtonClick(dropdownContents);
 
-    options2well.forEach(option => {
-        const button = document.createElement("button");
-        button.value = option.value;
-        button.textContent = option.text;
-        button.classList.add("vertical-menu-long")
-        button.style.margin = "1.0px auto";
-        button.style.fontSize = "14px";
-        button.style.width = "134px";
-        button.style.cursor = "pointer";
-        // const dropdown = document.getElementById("wellnessDropdown");
-
-        button.addEventListener("click", () => {
-            options2well.forEach(opt => {
-                const otherButton = document.querySelector(`button[value="${opt.value}"]`);
-                if (otherButton) {
-                    otherButton.classList.remove("buttonActive");
-                }
-            });
-            if (button.classList.contains("buttonActive")) {
-                button.classList.remove("buttonActive");
-                deleteMarkers();
-            } else {
-                button.classList.add("buttonActive");
-                findPlace(button.value);
-                setTimeout(() => {
-                    filterMarkers(markers);
-                }, 2);
-                dropdownContent2.style.transform = "translateY(-200%)";
-                dropdownContent2.style.opacity = "0";
-                const targetButton2 = document.getElementById("wellnessButton");
-                targetButton2.style.backgroundColor = "";
-                dropdownContent2.classList.remove("active");
-            }
-            //To Remove Directions
-            if (directionsRenderer) {
-                directionsRenderer.setMap(null); //Clear previous directions
-            }
-            if (originMarker) {
-                originMarker.setMap(null);
-            }
-            // document.getElementById("mapDistanceContainer").style.display = "none";
-            document.getElementById("mapDistanceContainer").style.height = "0px";
-        });
-        dropdownContent2.appendChild(button);
-    });
-
-    options3beauty.forEach(option => {
-        const button = document.createElement("button");
-        button.value = option.value;
-        button.textContent = option.text;
-        button.classList.add("vertical-menu-long")
-        button.style.margin = "1.0px auto";
-        button.style.fontSize = "14px";
-        button.style.width = "134px";
-        button.style.cursor = "pointer";
-        // const dropdown = document.getElementById("beautyDropdown");
-
-        button.addEventListener("click", () => {
-            options3beauty.forEach(opt => {
-                const otherButton = document.querySelector(`button[value="${opt.value}"]`);
-                if (otherButton) {
-                    otherButton.classList.remove("buttonActive");
-                }
-            });
-            if (button.classList.contains("buttonActive")) {
-                button.classList.remove("buttonActive");
-                deleteMarkers();
-            } else {
-                button.classList.add("buttonActive");
-                findPlace(button.value);
-                setTimeout(() => {
-                    filterMarkers(markers);
-                }, 2);
-                dropdownContent3.style.transform = "translateY(-200%)";
-                dropdownContent3.style.opacity = "0";
-                const targetMenu3 = document.getElementById("beautyButton");
-                targetMenu3.style.backgroundColor = "";
-                dropdownContent3.classList.remove("active");
-            }
-            //To Remove Directions
-            if (directionsRenderer) {
-                directionsRenderer.setMap(null); //Clear previous directions
-            }
-            if (originMarker) {
-                originMarker.setMap(null);
-            }
-            // document.getElementById("mapDistanceContainer").style.display = "none";
-            document.getElementById("mapDistanceContainer").style.height = "0px";
-        });
-        dropdownContent3.appendChild(button);
-    });
     return dropdown;
 }
 function moreFiltersFunc(map) {
@@ -2052,6 +1935,24 @@ function centerMap(lat, lng) {
     map.setZoom(14);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
 window.initMap = initMap;
 const checkElementsAndSetupListeners = () => {

@@ -31,7 +31,55 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Medika Pahala",
+                    "author_url": "https://www.google.com/maps/contrib/108163056312925918607/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX_PyTen3ow3kB5_IUV4hzAME7R3A-nsw8SSqzgug1tmF39I1lTeg=s128-c0x00000000-cc-rp-mo-ba5",
+                    "rating": 3,
+                    "relative_time_description": "2 years ago",
+                    "text": "This field looks like no one is managing it and is abandoned, there is a lot of rubbish around it. The ring is slightly tilted because the metal support is broken. But it can still be used.",
+                    "time": 1634982856,
+                    "translated": true
+                },
+                {
+                    "author_name": "Axell Hubert Calleon",
+                    "author_url": "https://www.google.com/maps/contrib/111951252319163496686/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKTDdujgArO9EGfjiUHFYADcx2iz2rkGTq_Df4hEgQXsjTcxQ=s128-c0x00000000-cc-rp-mo",
+                    "rating": 2,
+                    "relative_time_description": "3 weeks ago",
+                    "text": "OK, but 55 thousand per person and the field is dirty and damaged",
+                    "time": 1722084435,
+                    "translated": true
+                },
+                {
+                    "author_name": "Teguh Rinekso",
+                    "author_url": "https://www.google.com/maps/contrib/113331106472505730478/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXkiVQsk4OGdEKsyhfBtswwQawLHpwxGleh7IieoL8kgva8eZnQ=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "4 years ago",
+                    "text": "Is the field rented or free...?",
+                    "time": 1579531560,
+                    "translated": true
+                },
+                {
+                    "author_name": "Sofyan Marwah",
+                    "author_url": "https://www.google.com/maps/contrib/116264451314527526442/reviews",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXFmgZQXgZxMA6MDhXg82zNkX0F5XYsuaItBKIt5VFbtO56I3_2=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "6 months ago",
+                    "text": "",
+                    "time": 1706956353,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Celebrity Fitness",
@@ -63,7 +111,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 20,
                 Sun: 20,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Nguyen Hoang Anh",
+                    "author_url": "https://www.google.com/maps/contrib/107423921324156171044/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW-YiXi-DO1KcVDlC69IWZUNYSdU1a5LTk2Vo0hobMHub5aH4c=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 4,
+                    "relative_time_description": "a year ago",
+                    "text": "I'm not a membership because just stayed in Indonesia for 2 weeks, but bought tickets with the price of 250k for one-time entry. the price is acceptable for me. We can not compare with a long-term contract.\n\nThe problem is I was not allow to join the bodypump and bodycombat classes as a salesman there mentioned. I understand this is a regulation.\n\nBut then a reception manager, Ms Lintang, has supported me. I think she booked the classes for me under her name. That's great. A flexible solution for both sides.\n\nThe equipment is so so, but the Lesmills classes were very nice.",
+                    "time": 1679757478,
+                    "translated": false
+                },
+                {
+                    "author_name": "Zulfikar Annur Ahmad",
+                    "author_url": "https://www.google.com/maps/contrib/116205681938862576870/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVrhLyCyN0bbREP2-rPB2L15dcNt3WYvsavnhj9GM3JB9RmC9U4=s128-c0x00000000-cc-rp-mo-ba5",
+                    "rating": 4,
+                    "relative_time_description": "2 years ago",
+                    "text": "Price to value is quite okay for a gym. The plus point is located inside of shopping mall so will be convenience for parking and  do other stuff at once.\n\nExpect limited number of machines, thus I only give 4 star, so you will need to train more using freeweight.\n\nThere are basketball court inside and punching bag so you can do boxing training also.",
+                    "time": 1653965914,
+                    "translated": false
+                },
+                {
+                    "author_name": "Immanuel Ambhara",
+                    "author_url": "https://www.google.com/maps/contrib/111657527949603449437/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVCvIe9WN6lGRAfoSrWFS9304F9ApGijWmRfdaB8LjRpKZ3AaD5Mw=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 2,
+                    "relative_time_description": "2 years ago",
+                    "text": "Rated 2-stars due to the lack of enforcement for wearing masks. I understand that it's hard to breathe from behind the mask when working out, but we are in a public place full of people. Only personal trainers and staff wear masks. Among the members working out, you can only find 1 or 2 actually wear masks. I won't even discuss about those working out in the studio.",
+                    "time": 1653657880,
+                    "translated": false
+                },
+                {
+                    "author_name": "Penebar Musik",
+                    "author_url": "https://www.google.com/maps/contrib/109535431472188987894/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUgfjHdhtAx_IdibuW_joF1hkJTSE7rlt6MOHXXmnQn0xYuqsCMFw=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 4,
+                    "relative_time_description": "3 years ago",
+                    "text": "Nice place to do sport at strategic area after or before lunch/shopping. The mirror wall at upper floor needs curtain, not really like too dazzled",
+                    "time": 1601102393,
+                    "translated": false
+                },
+                {
+                    "author_name": "Naryuni",
+                    "author_url": "https://www.google.com/maps/contrib/111169817958498028909/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWO-_Xku5abDkFfGcrR3iQ5oqNrX_GhC_fe891-Bvjw4pEphnevGA=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "5 years ago",
+                    "text": "Great place for doing some excercise. Many class for you to choose (main studio, yoga studio, hot yoga or cycling studio). Quite complete for sports equipment and they have basket field too.",
+                    "time": 1564858228,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Elite Basketball",
@@ -95,7 +205,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 21,
                 Sun: 21,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Sulisthio Tjong",
+                    "author_url": "https://www.google.com/maps/contrib/101846019910870071095/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWOTirR4IePHDQIFx9tmYnYlCKsfMnKsOvyM7xZZ8GBwasWkVwu=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 5,
+                    "relative_time_description": "5 months ago",
+                    "text": "Well maintained, very good and clean, bit far away inside the buildings complex...",
+                    "time": 1710130257,
+                    "translated": false
+                },
+                {
+                    "author_name": "Ari",
+                    "author_url": "https://www.google.com/maps/contrib/102695563597869162491/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXTzDQcFt3p4fykpsEGvLS7XkoK_IOL-LsNtV9OeWb-eD0UxBMENQ=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "I dunno this place actual name is elite basketball until this notification from google. I play on this place because it is part facility for being member gold gym at the breeze.\nI really like play here even I very bad at basketball.\nAnd I dunno wheres part to criticize about this place. It was high quality place more than enough for fun gaming.",
+                    "time": 1642059064,
+                    "translated": false
+                },
+                {
+                    "author_name": "Hadit Fikri",
+                    "author_url": "https://www.google.com/maps/contrib/109066760620569081717/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUJMqyZpPFgS4q_YTRYXGT3zxesRwd9H2r9Ayzup3QzmB_P-B-P=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 4,
+                    "relative_time_description": "2 years ago",
+                    "text": "Well... I don't think the name is elite basketball because most of the security don't know this place..\n\nBut if you ask for the Basket Gold Gym they will be more familiar.\n\nThe place is nice, i think it's a good place for practice and take some pick up games.",
+                    "time": 1644233088,
+                    "translated": false
+                },
+                {
+                    "author_name": "Kitakuma Basket",
+                    "author_url": "https://www.google.com/maps/contrib/115007085534063660398/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXjL-lmh8dEhPrPW8de1TkN_yEq0Rg8dXQQ73LDE5WGo_OTs2QFYQ=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "This court is clean, neat and great to play bball due to their court keeper, sometimes their users should have responsible for the garbage they brought. This indoor court have aircon and drink corner to get cold agua after bouncing and shooting some balls. The rent price is not to expensive for 2-4 team playing together. Their location is the best, lots of tree outside, you can enjoy river scenery through the glass wall while playing, and after playing you can gain some fat back for various restaurant and foodstall arround. Shower room is available nearby.",
+                    "time": 1655416337,
+                    "translated": false
+                },
+                {
+                    "author_name": "Steven Brown",
+                    "author_url": "https://www.google.com/maps/contrib/103617127976943653470/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWDEtmOL-IN7tP44MtOGlZRjGdW3kp-NnzYjz1uuAd0UvqpQpSUwg=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 4,
+                    "relative_time_description": "5 years ago",
+                    "text": "Nice clean court",
+                    "time": 1541834635,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Greencove Sport Club",
@@ -127,7 +299,69 @@ const detailsWellness = {
                 Fri: 18,
                 Sat: 18,
                 Sun: 18,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Ibrahim Gunawan",
+                    "author_url": "https://www.google.com/maps/contrib/114017556814855918535/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVd5wmy1yzuEGZrCuTjo1xYXAY8Lr81Ha8Mtb1R26Yo2TjZ45OG_A=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "Jetty Green Cove",
+                    "time": 1624330166,
+                    "translated": false
+                },
+                {
+                    "author_name": "Albertus Widyanto",
+                    "author_url": "https://www.google.com/maps/contrib/109728904126099914470/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5mqUIzQ8H5F5NfHxqxU6cHoUWoE7Z8OYZCqLZaDF3xTV_-gP2=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "5 years ago",
+                    "text": "Luv it",
+                    "time": 1565532347,
+                    "translated": false
+                },
+                {
+                    "author_name": "dedy dyana",
+                    "author_url": "https://www.google.com/maps/contrib/101842868716046525486/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVJkmkDwBngfrqUCIGEizeMRdoQT2Q7W9h-VGc6X1nQjzAIR2ICkg=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Nice place 👍",
+                    "time": 1635920169,
+                    "translated": false
+                },
+                {
+                    "author_name": "Mamang Chanel",
+                    "author_url": "https://www.google.com/maps/contrib/114864545669309578636/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUxb_fZgTnjPGP8RHa1N2KTlD6cbiQ7lqtVGJwUi7G0upYXC3wh=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "4 years ago",
+                    "text": "Ok",
+                    "time": 1585145039,
+                    "translated": false
+                },
+                {
+                    "author_name": "Satun Tri Rahma",
+                    "author_url": "https://www.google.com/maps/contrib/117291904109321337207/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVItfbDc5mAwXqVfxZs5f_Bh9i5f8StaMEwmNEC0374xQ328ibc=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 5,
+                    "relative_time_description": "4 years ago",
+                    "text": "Ok",
+                    "time": 1581950178,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "KYZN BSD @ Quantis Clubhouse",
@@ -159,7 +393,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Christo Lim",
+                    "author_url": "https://www.google.com/maps/contrib/105732213729152258120/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUntnvdYcTgYIVBLOAFYnfJfPIzSiW3kQ4l4ZiPQmOwScDUHhmX=s128-c0x00000000-cc-rp-mo-ba7",
+                    "rating": 4,
+                    "relative_time_description": "a year ago",
+                    "text": "Spacious swimming pool but there are a lot of mosquitos in the afternoon at outdoor area. There are also multiple area that you can play basketball, badminton, tennis and other contact sports. There are also gym but the equipment is not as complete as other famous brand gym. They have sauna area, which is good and shower rooms.",
+                    "time": 1691068234,
+                    "translated": false
+                },
+                {
+                    "author_name": "Shabrina Rina",
+                    "author_url": "https://www.google.com/maps/contrib/115483200964728017315/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX9BxLtMeHMOS0uuC3ZNM5jVusgYUatVUz12wuIYsRYgC4v_0aY=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "7 months ago",
+                    "text": "The ambience is nice and clean. Moreover, the staffs are friendly and helpful. Their services are excellent. You can relieve your stress while exercising and relaxing your body. Or you might want to have a private coach for exercising or training your body, then try here.",
+                    "time": 1704363756,
+                    "translated": false
+                },
+                {
+                    "author_name": "bianda nathania",
+                    "author_url": "https://www.google.com/maps/contrib/112462926642320445811/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXYgW7jt2cvblJ_zHAwBJxpEABCLnjQZHMRTtqBY1MOnHZgpsQu=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Me and family having really great experience here.\n\nBig and CLEAN swimming pool.\nComplete facilities (gym, tennis, badminton, basket court)\nClean shower room (this is important right)\nPolite staff, and easy to purchase the ticket since they have a great app (kyzn)\nDisabilities friendly\nKids friendly\nVery pretty lights view at night\n\nOh ya, the place also surrounded with resto, sport station and daily supermarket.\n\nDefinitely will come back again, recommeded 👍",
+                    "time": 1651371820,
+                    "translated": false
+                },
+                {
+                    "author_name": "Bill H",
+                    "author_url": "https://www.google.com/maps/contrib/111070796100855053159/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUX7K3n0lwW_Pa2YM51_DVkKfrOA1EfUjxPYFKbj9nUVV6HZfmh=s128-c0x00000000-cc-rp-mo",
+                    "rating": 1,
+                    "relative_time_description": "a month ago",
+                    "text": "Misleading marketing and poor clarification attempt just as what the other one-star reviewers have described in a more thorough and specific manner.\n\nFront desk management should have made a more modular and visualized easy-to-read flowcharts of what the packages are, their limitations, and the corresponding prices.\n\nThe club has been running for two years by now, any kind of amateurish managerial mistake should NOT be tolerable. Especially considering the high prestige and the upper-middle to upper class target market of the club, such tolerance for rookie mistake should be cut down to microgram level.",
+                    "time": 1719830333,
+                    "translated": false
+                },
+                {
+                    "author_name": "Aditya Zulfahmi",
+                    "author_url": "https://www.google.com/maps/contrib/113477349527822042499/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV3sodUUvWy37nwFwegh-EDYTxDRqOO1IMnmGJpqVm9imLO0_wE=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 1,
+                    "relative_time_description": "7 months ago",
+                    "text": "LOCATION: easy to access, enough parking lot\nFACILITY: court only (rubber court), vending machine for drinks.\nPRICE: crazily insane. IDR 80,000 per hour EXCLUDE daily pass. Daily pass (IDR 80,000 per person).\n\nOVERALL EXPERIENCE: for non-member, not worth it. There are plenty of badminton court around. The court is not ‘world class’ to justify its price. But if you’re looking for privacy, it may be a good place (the price says so). Will not visit again.",
+                    "time": 1703552649,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Lapangan Basket 12.5",
@@ -191,7 +487,29 @@ const detailsWellness = {
                 Fri: 18,
                 Sat: 18,
                 Sun: 18,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Ayra Shirlly",
+                    "author_url": "https://www.google.com/maps/contrib/111741260720838302956/reviews",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLhwVLELmXHBahupizTK45FJ7CumZh5RkvVsJY64B7u6kKklQ=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "",
+                    "time": 1650434361,
+                    "translated": false
+                },
+                {
+                    "author_name": "Irawan Pras",
+                    "author_url": "https://www.google.com/maps/contrib/100044970605600857571/reviews",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUq66yJJntB8YBGdN5eeNyjhumDd1YOwEi_ExKN1u0t6qltqoeQNQ=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "4 years ago",
+                    "text": "",
+                    "time": 1584611375,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Lapangan Basket Carribean Islands deLatinos BSD",
@@ -223,7 +541,65 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "M. Fadjar 'Fari' Rijadi",
+                    "author_url": "https://www.google.com/maps/contrib/108696994607028663296/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVteStqfW40PGaKypym3xuVHwExZ8-Mg-SwcFdBTxx5klgvXx7c=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 4,
+                    "relative_time_description": "2 years ago",
+                    "text": "For housing cluster residents only",
+                    "time": 1646655447,
+                    "translated": false
+                },
+                {
+                    "author_name": "Kapitan Vic",
+                    "author_url": "https://www.google.com/maps/contrib/104306568589224110527/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL4tv4QYE6Ah3n_0eOE3qUyJLNebQzRbTbzo6fs2uaQ5AW3=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Two thumbs up",
+                    "time": 1636932670,
+                    "translated": false
+                },
+                {
+                    "author_name": "Dian permata Dewi",
+                    "author_url": "https://www.google.com/maps/contrib/104116848612520067206/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVHh1JEfJ5nHEB1ORFzv5eIbX4m2YlQuwWbMNHotjWlod32W0KG=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 3,
+                    "relative_time_description": "2 years ago",
+                    "text": "Beautiful place",
+                    "time": 1631980888,
+                    "translated": true
+                },
+                {
+                    "author_name": "Zsazsa",
+                    "author_url": "https://www.google.com/maps/contrib/114039776973058309282/reviews",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWyCYYfNG-FVby3Y7geVW4rEz0IJBkDHl6jQ84UdRta_N5yrbQW=s128-c0x00000000-cc-rp-mo",
+                    "rating": 4,
+                    "relative_time_description": "9 months ago",
+                    "text": "",
+                    "time": 1700306498,
+                    "translated": false
+                },
+                {
+                    "author_name": "Heru Indriatno",
+                    "author_url": "https://www.google.com/maps/contrib/101561232643124070241/reviews",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWCRAey4WJ90tNIDhL2IvkzWgyFm2KXqlQqmx-EiPdLTl8uHAE=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "",
+                    "time": 1670729847,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Lapangan Basket Studento",
@@ -287,7 +663,67 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "lord wibawa",
+                    "author_url": "https://www.google.com/maps/contrib/111724182945734677606/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVkenKwBJqQ4Ams4e6g7zFRBinT2d_1tuMt56L6xq9wq57y1Ng8=s128-c0x00000000-cc-rp-mo-ba5",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "Nice Courts... Happy Birthday..",
+                    "time": 1629450925,
+                    "translated": false
+                },
+                {
+                    "author_name": "Rusdi Indradewa",
+                    "author_url": "https://www.google.com/maps/contrib/111572939033974822487/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKIHuy1Dn9iCBeVX_8jJtEWgHFAmVWZSU4bOZTbh4xw8kYwAg=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Good court, good coach",
+                    "time": 1667745968,
+                    "translated": false
+                },
+                {
+                    "author_name": "Engel Maggi",
+                    "author_url": "https://www.google.com/maps/contrib/109388002733864803315/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJxlVhGYKgM6Uic9tz25owT59UYOihtu7VCILg_08770KwWuw=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "The field is good",
+                    "time": 1685875494,
+                    "translated": true
+                },
+                {
+                    "author_name": "Ahmad Lie",
+                    "author_url": "https://www.google.com/maps/contrib/109792077654346625284/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWAMVHQWz1mRrX-eUNrvMFztoYriM_P0HAkDGXTKhktilyKFSmzuA=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "7 months ago",
+                    "text": "Excellent",
+                    "time": 1704518346,
+                    "translated": true
+                },
+                {
+                    "author_name": "Dani Ramdani",
+                    "author_url": "https://www.google.com/maps/contrib/110951580021593829641/reviews",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIHu8fFMw7CjmxdEADeSgbvNbee9B-HkPLnVTufsxWCdN9smw=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "in the last week",
+                    "text": "",
+                    "time": 1723972813,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Navapark Country Club - Basket Ball Court",
@@ -319,7 +755,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Kong Honggo Wijaya",
+                    "author_url": "https://www.google.com/maps/contrib/118234660885749180284/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWfMf8n_uSceqgIinR6lpFSMvEaHMmvM3Uklg67w0xefvzMk50e=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "3 months ago",
+                    "text": "I actually visited the Maystar. Atmosphere is good, mostly outdoor except the restaurant. This place actually for member only except for few places like the restaurant... For most part I only see a ballet course and a house marketing",
+                    "time": 1714551120,
+                    "translated": false
+                },
+                {
+                    "author_name": "Djo Closet",
+                    "author_url": "https://www.google.com/maps/contrib/105667483126358486525/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUC6NtkEef7LqPb6vtLsNx_YXFp4SHn2CTdlYib8bIXqWXgGQ=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "5 years ago",
+                    "text": "Nice place. New in the neighborhood. And the best thing is, May Star restaurant happens to establish here. Such a good idea. The country club itself is not yet opened to public when i made my visit here. All i can see is a nice view of the pool from the restaurant. Brilliant one!",
+                    "time": 1548309353,
+                    "translated": false
+                },
+                {
+                    "author_name": "Vince Hien",
+                    "author_url": "https://www.google.com/maps/contrib/116175104548161302732/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWAhv4F54Tp1cznrkjqKa2TRj59HPSRA5XsXhQUQMY1jJNwSo40iQ=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "6 months ago",
+                    "text": "Got membership since last year and now I can do workouts and swimming anytime I like. So convenient. Nice place with exclusive atmosphere throughout.",
+                    "time": 1707964951,
+                    "translated": false
+                },
+                {
+                    "author_name": "Ashton Pillay",
+                    "author_url": "https://www.google.com/maps/contrib/110211118229576735155/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJNrloWQ7zC75BGg4g3OHL3lPQpyq4Sjaznn5lJkdzFxJ15Og=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "2 months ago",
+                    "text": "The gym is adequate,  staff are exceptional and the pools are amazing.",
+                    "time": 1718283320,
+                    "translated": false
+                },
+                {
+                    "author_name": "vince ko",
+                    "author_url": "https://www.google.com/maps/contrib/117783452864856637242/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWs6TIvq6MaOG9hAGayhCOo6J2f28Xd9rRa1W8rEV50dv5c4H29TA=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "We often used, it is quiet with modern and stylish facilities. The best healing space. 👍🏊🏻‍♂️⛹🏻⛳️🏸🏓🏐🎱🎧🎤🎺🎨🎮👌➕🍽😋💯",
+                    "time": 1602037023,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Puspita Loka Sports Center",
@@ -351,7 +849,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "toyz 360",
+                    "author_url": "https://www.google.com/maps/contrib/112718201730876490617/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIn9n0WC0Cx1hhWZTiD0tv50EExkSEx5VKsEzTMXwmCs96hJA=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Well maintained sport center, 1 basketball court, 2 tennis court, 1 mini football , archery range , kids playing area , parking area and speaker on some tree ! :) clean and tidy. Open not only for resident but also public the price are make sense and can do bookings also using FiBO",
+                    "time": 1637489116,
+                    "translated": false
+                },
+                {
+                    "author_name": "Kitakuma Basket",
+                    "author_url": "https://www.google.com/maps/contrib/115007085534063660398/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXjL-lmh8dEhPrPW8de1TkN_yEq0Rg8dXQQ73LDE5WGo_OTs2QFYQ=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "It is great place to play outdoor bball. Eventhough, it is an outdoor court, but trees arround makes the weather cool. Floor is nice and clean (when it rains, the keeper will wipe it), the ring is new but maybe some players dunk on it, misplace happened. So for shooting practice it might not be so comfortable. You can order for court booking online. It will cost you Rp. 80-95 thousand, not so expensive if you book the whole court for you alone. However, you can not book it on Tuesday and Wednesday, those are day for the residents. Oh ya, you need to install One Smile app to book. There are also tennis court and J sport academy for soccer training. The rest room is clean and drink corner is also available. If by chance you need to pray, place called balai warga is available. But bring your own, praying utensils.",
+                    "time": 1666747245,
+                    "translated": false
+                },
+                {
+                    "author_name": "Hadit Fikri",
+                    "author_url": "https://www.google.com/maps/contrib/109066760620569081717/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUJMqyZpPFgS4q_YTRYXGT3zxesRwd9H2r9Ayzup3QzmB_P-B-P=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Terrific courts... Well maintained and clean\n\nBut the basketball rims are a little bow down.",
+                    "time": 1644232872,
+                    "translated": false
+                },
+                {
+                    "author_name": "Aditya Andrie",
+                    "author_url": "https://www.google.com/maps/contrib/108219586090274579477/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUCvd5XinjZtxPqiNpcXjaBBLhgb4cLCSYS3c_5sbflFYuigr2X=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "11 months ago",
+                    "text": "Tennis and basketball court, they also have mini soccer field as well. There is child playground but not too big, and it is all outdoor",
+                    "time": 1694213170,
+                    "translated": false
+                },
+                {
+                    "author_name": "Aditya Situmeang (yedijas)",
+                    "author_url": "https://www.google.com/maps/contrib/110218060201436812133/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUWQp_r7J2p44bt2NIjUti7dTgFH4XRWnGBX6rTWAmwFerZrKyvFw=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 4,
+                    "relative_time_description": "11 months ago",
+                    "text": "pricey to play tennis, but worth the ticket war",
+                    "time": 1695653633,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Serpong Green Park Basketball Court",
@@ -543,7 +1103,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Heiko Jockers",
+                    "author_url": "https://www.google.com/maps/contrib/113446281958980710302/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWXFfzyTSBlVuPYAHWJ8S8yLowXgxvKYrgbRnDDXQKGowXOqk_fYQ=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "4 months ago",
+                    "text": "For us as residents in any of the various Avani housing clusters a nice place. Odd shaped pool but good for smaller kids with a kiddy pool at the end. Tennis court above (1) was resurfaced few months ago and is now in perfect condition. Gym is ok, would need some added equipment but plenty open floorspace for yoga or stretching etc. Club house is often used as wedding venue incl pool area, then resident members can't use the facilities, no compensation offered. Some Afghan refugees were granted access a few months back for a few weeks, caused trouble, believe has been discontinued.",
+                    "time": 1712469802,
+                    "translated": false
+                },
+                {
+                    "author_name": "Ehsan Alizada",
+                    "author_url": "https://www.google.com/maps/contrib/113930000921170027267/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWkBbi4wUulPMoeJsJMh7bGnav-PzNx5t4ZUvxo_zfHJ1UxxGJ2fQ=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "6 years ago",
+                    "text": "Fitness, swimming pool, and Tennis court. Its fitness is clean, air conditioned and big enough to do some cardio exercises. However, its swimming pool is not actually big, its depth is maximum 170 cm.\n\nRemember that you need to play your own motivation songs using flash disk or a dedicated audio cable to connect your hand phone to the sound system.",
+                    "time": 1504621768,
+                    "translated": false
+                },
+                {
+                    "author_name": "Jackson FH",
+                    "author_url": "https://www.google.com/maps/contrib/103247986921541081238/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV-vDi1Wbv6NBjGR7-NPBgSqnwEDDbyWyd-weTQByWoz9nrPM-z=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 4,
+                    "relative_time_description": "3 years ago",
+                    "text": "A tranquil walking and biking track. Next to a section of Cisadane river.",
+                    "time": 1601778006,
+                    "translated": false
+                },
+                {
+                    "author_name": "Wahyu Rahmadansyah",
+                    "author_url": "https://www.google.com/maps/contrib/115219131886163805692/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWNy_N5i9hpwCt1mO-p5zL6qTncier1RIlNV4RqI-VJzJHAxja0ww=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 4,
+                    "relative_time_description": "a year ago",
+                    "text": "My family use it for garden wedding venue. Facility is okay, some decay can be seen but overall the place is nice and reasonable for it's price.",
+                    "time": 1671468891,
+                    "translated": false
+                },
+                {
+                    "author_name": "david afpama",
+                    "author_url": "https://www.google.com/maps/contrib/106946272477726904359/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ-AaI1d7EJ4QBEXD9JsFmgjVHr3a_IHUzmtDbxa7JBOOhEwg=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "6 years ago",
+                    "text": "Nice place and there are Tirta Jaya Banten Swimming Club",
+                    "time": 1528353781,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Club House Bora Bora",
@@ -607,7 +1229,69 @@ const detailsWellness = {
                 Fri: 19.5,
                 Sat: 19.5,
                 Sun: 19.5,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Nicholas Kurniawan",
+                    "author_url": "https://www.google.com/maps/contrib/102607459124132693130/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWlykK6KW-ialgOmEUea-qjYkbQSbruvmJeTztt-TbIfUMPVDE=s128-c0x00000000-cc-rp-mo-ba5",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Nice sport club for foresta resident. There's quite large swimming pool, tennis court, and a gym here, including treadmill and weight exercise.\n\nBring your own towel and sanitary kit as they don't provide any.",
+                    "time": 1652271662,
+                    "translated": false
+                },
+                {
+                    "author_name": "Angga Avila",
+                    "author_url": "https://www.google.com/maps/contrib/100562612312764596017/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVVWkcfaH_9dKtN6_pDbYHDN-lZ5Wcixi5pjfM5wctmljwz3-kr=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 3,
+                    "relative_time_description": "7 years ago",
+                    "text": "Gym and pool. Pool medium sized. Not too clean. Overall OK experience. Fitting room and shower available. Gym has basic equipment available.",
+                    "time": 1491190923,
+                    "translated": false
+                },
+                {
+                    "author_name": "Koplink KS",
+                    "author_url": "https://www.google.com/maps/contrib/114494752793824530301/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKlRK_7RoLAwYxUbe13rFMT3r2CPeR_ApsFBBGazDLI0c-Y2Ik=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Nice place for swimming, but only limited for 1 hrs only during Covid situation. Good practice to allow other member doing practice as well.",
+                    "time": 1642034796,
+                    "translated": false
+                },
+                {
+                    "author_name": "Lucas Burhan",
+                    "author_url": "https://www.google.com/maps/contrib/110916583046107125289/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW3qG5kOfa3usuaepMFVsjhlOVAvaKdNZ2xoPQmd96I8A2QPq8e=s128-c0x00000000-cc-rp-mo-ba5",
+                    "rating": 5,
+                    "relative_time_description": "6 years ago",
+                    "text": "Good place for fitness and swimming if you are one of the resident of Foresta area. People are nice, the pool is clean, the gym is standard with ac.",
+                    "time": 1519544591,
+                    "translated": false
+                },
+                {
+                    "author_name": "Wim Tan",
+                    "author_url": "https://www.google.com/maps/contrib/107441861920265265422/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWdSyxACtl3mzcIlZHAVpj0sihX-W8OH319Se6ESyqSiaCZ14umpw=s128-c0x00000000-cc-rp-mo-ba5",
+                    "rating": 5,
+                    "relative_time_description": "4 years ago",
+                    "text": "For a free sports club, they offer one of the best facilities and service.",
+                    "time": 1572789969,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Club House Vanya Park",
@@ -639,7 +1323,69 @@ const detailsWellness = {
                 Fri: 19,
                 Sat: 19,
                 Sun: 19,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Tara Elquiero",
+                    "author_url": "https://www.google.com/maps/contrib/109036207487392713012/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWBA_OcGr8mwUsNDugJRklRk8klfqVpfN6z2jim6Ma6Ve7GMJk4=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "A place to have a swimming lesson. It has 2 swimming pools. Nice and clean bathroom.",
+                    "time": 1683882088,
+                    "translated": false
+                },
+                {
+                    "author_name": "Keripik Ebi",
+                    "author_url": "https://www.google.com/maps/contrib/103960952944532798695/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWbXlGVHZeGvfRLv1wbEg7GxyqmoOtFr46uwpE6P7K0sQ3Bsddv=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 2,
+                    "relative_time_description": "a year ago",
+                    "text": "Even though it is relatively new, it is a shame that this club house is not well maintained. Wallpaper is peeling and moldy. The sofa is also full of stains. Even though the location is strategic and the facilities are quite complete.",
+                    "time": 1687991218,
+                    "translated": true
+                },
+                {
+                    "author_name": "Hariyanto KTM",
+                    "author_url": "https://www.google.com/maps/contrib/104480987405142616046/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWR7eqs79sxUDWV_-HSrhTClS9N-c61Y4jhhZKVbR4nqTUWrmm2Nw=s128-c0x00000000-cc-rp-mo-ba7",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Clean and attractive to relax after a long day's work. There is a children's room, swimming pool and lobby to enjoy coffee or tea",
+                    "time": 1653788122,
+                    "translated": true
+                },
+                {
+                    "author_name": "Richardo Ivan",
+                    "author_url": "https://www.google.com/maps/contrib/106699875380662509047/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVSLLd2moZuLfV4ggVVaz08wR8Y_HWtEQrstM_0TJxYYREOM8Dj=s128-c0x00000000-cc-rp-mo",
+                    "rating": 1,
+                    "relative_time_description": "a year ago",
+                    "text": "Have tested the subscription for 3 months:\n- Very few tools\n- When the AC is off it becomes stuffy & smells of sweat\n- If it rains, where will it get muddy because the user is wearing wet sandals?\n- closes at 8, so on weekdays time is tight",
+                    "time": 1683424702,
+                    "translated": true
+                },
+                {
+                    "author_name": "Erick",
+                    "author_url": "https://www.google.com/maps/contrib/113332746490798966112/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVuI0ZKfux5Miva50fNRg7zDiaLXLOVkUY3jYmtCyvGH8gMoO3DDw=s128-c0x00000000-cc-rp-mo-ba5",
+                    "rating": 2,
+                    "relative_time_description": "a year ago",
+                    "text": "for Vanya residents per 3 months price 650,000 (price 28 February 2022)\n\nMy review update after 3 months of trial:\n\nMinuses:\n-Membership for the trial must be 3 months min, it cannot be 1 month or 1 week\n-Schedule: The gym closes at 6 pm (this is hilarious). People who come home from work, or go home for a walk on the weekend, how can they get to the gym?\n\nPlus:\n-Clean equipment and place, close to Vanya residents, basic equipment (not as complete as a gym of course\n\nbecause there were too many minuses, I didn't extend it, the clubhouse opening schedule didn't meet my work schedule on weekdays and traveling on weekends\n\nI hope that residents and prospective residents will pay attention to this clubhouse problem",
+                    "time": 1669597760,
+                    "translated": true
+                }
+            ],
         },
         {
             Nama: "De Park Sports Club",
@@ -671,7 +1417,69 @@ const detailsWellness = {
                 Fri: 21,
                 Sat: 21,
                 Sun: 21,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Yeremia Hotmartua",
+                    "author_url": "https://www.google.com/maps/contrib/115415013455209601634/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVmqD1KkLaFi_cTiUlM4Gqul4YM-oisi-FMJ5n9kF69ygjywhst=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 3,
+                    "relative_time_description": "4 months ago",
+                    "text": "Expensive price for standart facilities. Comparing to the another sport club in BSD",
+                    "time": 1711565659,
+                    "translated": false
+                },
+                {
+                    "author_name": "Richard Wiriyanto",
+                    "author_url": "https://www.google.com/maps/contrib/106875063126007716432/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVPH1PKClHuISLjg_YblppUOE9bJzljUw5siRzaNONlADOt0hJEyA=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Nice activity center for de park residence. Quiet. Could use some coffee shop tho.",
+                    "time": 1692366378,
+                    "translated": false
+                },
+                {
+                    "author_name": "Alvin Andryan Phielip",
+                    "author_url": "https://www.google.com/maps/contrib/108759516004682924333/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIFHi6NccX2QRfehCaaA5N47x9M16KnGvwMnrU0DOcGjPVi1g=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "4 months ago",
+                    "text": "Nice ambience, nice food",
+                    "time": 1712034753,
+                    "translated": false
+                },
+                {
+                    "author_name": "Cynthia Sim",
+                    "author_url": "https://www.google.com/maps/contrib/111401014602977820683/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJra2Buulnl8vRwI4tDJdPLpZwlNH05y2NQ2nnmMt3wtZIarg=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 3,
+                    "relative_time_description": "a year ago",
+                    "text": "Fitness machine is bit old, clean pool and big exciting pool, ..",
+                    "time": 1674735070,
+                    "translated": false
+                },
+                {
+                    "author_name": "Kartika Saraswati (MISCHA)",
+                    "author_url": "https://www.google.com/maps/contrib/107737640406113750826/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLB35s-xjTqywwC6VsK5gKob3SfzfzV75tNIEI17DV6XHHqOA=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "5 years ago",
+                    "text": "Swimming Pool, Gym, Kids Playground, Park, Great place for family.\nThe gym open till 9pm",
+                    "time": 1557286478,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Giardina Club House Foresta BSD city",
@@ -703,7 +1511,69 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Akhmad Rais",
+                    "author_url": "https://www.google.com/maps/contrib/106062815149086191078/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWceo80ko4LfLpsr24ioBHXze2gqhscKG_hF9vqJuhZs4-102K4cQ=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Good evening ladies and gentlemen. If there are problems with not having the electronics serviced, you can contact us on 081212112119",
+                    "time": 1681476829,
+                    "translated": true
+                },
+                {
+                    "author_name": "Dian Alfiansyah",
+                    "author_url": "https://www.google.com/maps/contrib/102316085885218049557/reviews",
+                    "language": "en-US",
+                    "original_language": "ms",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU9_QpYdNFz7QM1GzAChw9jziIZaRwnGNxFmuz7AGUasrn-4dOb=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "The place is cool and the air is cool",
+                    "time": 1675482406,
+                    "translated": true
+                },
+                {
+                    "author_name": "IgustiR 007",
+                    "author_url": "https://www.google.com/maps/contrib/115546674350089243055/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_6SM1r5J_T3_1TEPco9B8fRGuaFxWdQkx9wWAl1LNtg34rr4X=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "I really like taking a nap here, it's cool",
+                    "time": 1613487900,
+                    "translated": true
+                },
+                {
+                    "author_name": "ADAMS wow",
+                    "author_url": "https://www.google.com/maps/contrib/106545837238858082823/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV7nh1Jc47WTOXp4l5pPv7P2GGkLdpb0oCq1oZaQooVjSuWxEJyWA=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "Very cozy..",
+                    "time": 1621436393,
+                    "translated": true
+                },
+                {
+                    "author_name": "Budi Alzena",
+                    "author_url": "https://www.google.com/maps/contrib/108069352879708376600/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWWqIPkXwKUlhpof4KQUywpKyZm21KNZiqNr0YiNSBfc-vBqsc=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Please..",
+                    "time": 1632329961,
+                    "translated": true
+                }
+            ],
         },
         // {
         //     Nama: "Icon Club Sporthouse",
@@ -766,7 +1636,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Christo Lim",
+                    "author_url": "https://www.google.com/maps/contrib/105732213729152258120/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUntnvdYcTgYIVBLOAFYnfJfPIzSiW3kQ4l4ZiPQmOwScDUHhmX=s128-c0x00000000-cc-rp-mo-ba7",
+                    "rating": 4,
+                    "relative_time_description": "a year ago",
+                    "text": "Spacious swimming pool but there are a lot of mosquitos in the afternoon at outdoor area. There are also multiple area that you can play basketball, badminton, tennis and other contact sports. There are also gym but the equipment is not as complete as other famous brand gym. They have sauna area, which is good and shower rooms.",
+                    "time": 1691068234,
+                    "translated": false
+                },
+                {
+                    "author_name": "Shabrina Rina",
+                    "author_url": "https://www.google.com/maps/contrib/115483200964728017315/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX9BxLtMeHMOS0uuC3ZNM5jVusgYUatVUz12wuIYsRYgC4v_0aY=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "7 months ago",
+                    "text": "The ambience is nice and clean. Moreover, the staffs are friendly and helpful. Their services are excellent. You can relieve your stress while exercising and relaxing your body. Or you might want to have a private coach for exercising or training your body, then try here.",
+                    "time": 1704363756,
+                    "translated": false
+                },
+                {
+                    "author_name": "bianda nathania",
+                    "author_url": "https://www.google.com/maps/contrib/112462926642320445811/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXYgW7jt2cvblJ_zHAwBJxpEABCLnjQZHMRTtqBY1MOnHZgpsQu=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Me and family having really great experience here.\n\nBig and CLEAN swimming pool.\nComplete facilities (gym, tennis, badminton, basket court)\nClean shower room (this is important right)\nPolite staff, and easy to purchase the ticket since they have a great app (kyzn)\nDisabilities friendly\nKids friendly\nVery pretty lights view at night\n\nOh ya, the place also surrounded with resto, sport station and daily supermarket.\n\nDefinitely will come back again, recommeded 👍",
+                    "time": 1651371820,
+                    "translated": false
+                },
+                {
+                    "author_name": "Bill H",
+                    "author_url": "https://www.google.com/maps/contrib/111070796100855053159/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUX7K3n0lwW_Pa2YM51_DVkKfrOA1EfUjxPYFKbj9nUVV6HZfmh=s128-c0x00000000-cc-rp-mo",
+                    "rating": 1,
+                    "relative_time_description": "a month ago",
+                    "text": "Misleading marketing and poor clarification attempt just as what the other one-star reviewers have described in a more thorough and specific manner.\n\nFront desk management should have made a more modular and visualized easy-to-read flowcharts of what the packages are, their limitations, and the corresponding prices.\n\nThe club has been running for two years by now, any kind of amateurish managerial mistake should NOT be tolerable. Especially considering the high prestige and the upper-middle to upper class target market of the club, such tolerance for rookie mistake should be cut down to microgram level.",
+                    "time": 1719830333,
+                    "translated": false
+                },
+                {
+                    "author_name": "Aditya Zulfahmi",
+                    "author_url": "https://www.google.com/maps/contrib/113477349527822042499/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV3sodUUvWy37nwFwegh-EDYTxDRqOO1IMnmGJpqVm9imLO0_wE=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 1,
+                    "relative_time_description": "7 months ago",
+                    "text": "LOCATION: easy to access, enough parking lot\nFACILITY: court only (rubber court), vending machine for drinks.\nPRICE: crazily insane. IDR 80,000 per hour EXCLUDE daily pass. Daily pass (IDR 80,000 per person).\n\nOVERALL EXPERIENCE: for non-member, not worth it. There are plenty of badminton court around. The court is not ‘world class’ to justify its price. But if you’re looking for privacy, it may be a good place (the price says so). Will not visit again.",
+                    "time": 1703552649,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Les Belles Maisons - Club House",
@@ -798,7 +1730,69 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Taruli Tambunan",
+                    "author_url": "https://www.google.com/maps/contrib/102175057974412074646/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWmJiTATIYubr2NbQXeiNPtgDB8IrfGys8HPgJXl0FpbJXNn4edFw=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "8 months ago",
+                    "text": "Very Calming place for Residential... Green Clean Secure",
+                    "time": 1701446932,
+                    "translated": false
+                },
+                {
+                    "author_name": "Syech Al Zildjian",
+                    "author_url": "https://www.google.com/maps/contrib/106444794295779427021/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWM2zI3BPe7VNeZn2S8JoIov5gGWtcygxBje4OqEH8IWsreOIgX=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 4,
+                    "relative_time_description": "a year ago",
+                    "text": "Good view. Swimming pool is too small.",
+                    "time": 1677394452,
+                    "translated": false
+                },
+                {
+                    "author_name": "Mori Bori",
+                    "author_url": "https://www.google.com/maps/contrib/117433691161842235541/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUOC63HcXloRklHIsU4X3JbTJigxgZIJHDoXQxv_bijB2FKjIg9=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "6 months ago",
+                    "text": "It's a home(?)",
+                    "time": 1708330618,
+                    "translated": false
+                },
+                {
+                    "author_name": "ardiyansyah rakun",
+                    "author_url": "https://www.google.com/maps/contrib/102465326458467138523/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVcJ6R4XZOtvoEEBQ6m1TOWd4Gs9tk0tkl44RnLPQBDddi3UiYh=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "Good and secluded",
+                    "time": 1602763453,
+                    "translated": false
+                },
+                {
+                    "author_name": "Ai Rosyidah",
+                    "author_url": "https://www.google.com/maps/contrib/103072880541002739218/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVnHdt_GCb0YSYCQK3URSTauOAIuWip_Wi62SHzNK2wVZo50IDd=s128-c0x00000000-cc-rp-mo",
+                    "rating": 1,
+                    "relative_time_description": "2 months ago",
+                    "text": "It's a shame that during the interview you get insulted about your work experience.",
+                    "time": 1718629101,
+                    "translated": true
+                }
+            ],
         },
         {
             Nama: "Meadow Terrace Sport Club - The Green BSD City",
@@ -830,12 +1824,136 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText : [
+                {
+                    "author_name": "Bolomito",
+                    "author_url": "https://www.google.com/maps/contrib/107253451684844819103/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWgjZAh8nkWik4i883ZQTTPkpKrK00O6idqvO2m3IynNDDVk7580Q=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 4,
+                    "relative_time_description": "a month ago",
+                    "text": "Good place for gymming, booking the tennis court is quite hard, the swimming pool is occupied by a swimming school from 15 to 19ish pm almost everyday would not recommend swimming at those hours. Overall a good sport centre for the casuals\n\nCourts can now be booked from the OneSmile Apps available on the playstore",
+                    "time": 1719421668,
+                    "translated": false
+                },
+                {
+                    "author_name": "Bismo Baroto",
+                    "author_url": "https://www.google.com/maps/contrib/114072383544176836587/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXolAM3W8m9kKNwxWilvba3btooiomwj1-F1XmBonWaPu51iWdOFg=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 4,
+                    "relative_time_description": "11 months ago",
+                    "text": "Nice sports club in BSD area.. 50m pool, gym, basketball court, etc.. located in The Green  cluster housing.",
+                    "time": 1693137578,
+                    "translated": false
+                },
+                {
+                    "author_name": "Astrela Risaputri Prasetyo",
+                    "author_url": "https://www.google.com/maps/contrib/113908884681541016063/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVpaREMpqKEZLLu2h7fxe9gCudABDsaazu5GN18WNW3lXv4qTpS=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "Greatest swimming pool ever! And as a student from Indonesia, we came there every swimming class! everything is super clean. although my friend found a dead frog in the shower near the pool, and the baby swimming pool is a little unused so it's really dirty.  i like showering i inside the building and my grandma likes it because i like to come here with my grandma, my grandma thinks it's all clean.",
+                    "time": 1606171610,
+                    "translated": false
+                },
+                {
+                    "author_name": "Ziya Tarmizi",
+                    "author_url": "https://www.google.com/maps/contrib/116427316828970924153/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU9XfAClSdqIaeKtWk-xVW99P8nyD00H8ppqD99Prok89E6uRKi=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 4,
+                    "relative_time_description": "2 years ago",
+                    "text": "My baby got swimming lessons here. The place is inside residential area of The Green BSD. Price per person IDR 65k (infant is free of charge). There is a canteen. The bathroom needs some reparations because the room looks old and if it’s rain it leaks, also the shower water isn’t strong if it’s used together with another shower in another room.",
+                    "time": 1650013304,
+                    "translated": false
+                },
+                {
+                    "author_name": "Kristalicia Rizki",
+                    "author_url": "https://www.google.com/maps/contrib/102407907212610356225/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUyy71RYP8HrrKYsZHolLedxrfnGGnE08dbiHUpm_PFpbGMxOAV3A=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "11 months ago",
+                    "text": "Great and clean pool. The entrance fee on the weekend is 65k/person (for adult). You can also borrow a locker here (no additional fee). There are less people in the afternoon.",
+                    "time": 1694069571,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Navapark Country Club",
             subcategory: "Club House",
-            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
+            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, },
+            reviewsText: [
+                {
+                    "author_name": "Kong Honggo Wijaya",
+                    "author_url": "https://www.google.com/maps/contrib/118234660885749180284/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWfMf8n_uSceqgIinR6lpFSMvEaHMmvM3Uklg67w0xefvzMk50e=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "3 months ago",
+                    "text": "I actually visited the Maystar. Atmosphere is good, mostly outdoor except the restaurant. This place actually for member only except for few places like the restaurant... For most part I only see a ballet course and a house marketing",
+                    "time": 1714551120,
+                    "translated": false
+                },
+                {
+                    "author_name": "Djo Closet",
+                    "author_url": "https://www.google.com/maps/contrib/105667483126358486525/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUC6NtkEef7LqPb6vtLsNx_YXFp4SHn2CTdlYib8bIXqWXgGQ=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "5 years ago",
+                    "text": "Nice place. New in the neighborhood. And the best thing is, May Star restaurant happens to establish here. Such a good idea. The country club itself is not yet opened to public when i made my visit here. All i can see is a nice view of the pool from the restaurant. Brilliant one!",
+                    "time": 1548309353,
+                    "translated": false
+                },
+                {
+                    "author_name": "Vince Hien",
+                    "author_url": "https://www.google.com/maps/contrib/116175104548161302732/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWAhv4F54Tp1cznrkjqKa2TRj59HPSRA5XsXhQUQMY1jJNwSo40iQ=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "6 months ago",
+                    "text": "Got membership since last year and now I can do workouts and swimming anytime I like. So convenient. Nice place with exclusive atmosphere throughout.",
+                    "time": 1707964951,
+                    "translated": false
+                },
+                {
+                    "author_name": "Ashton Pillay",
+                    "author_url": "https://www.google.com/maps/contrib/110211118229576735155/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJNrloWQ7zC75BGg4g3OHL3lPQpyq4Sjaznn5lJkdzFxJ15Og=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "2 months ago",
+                    "text": "The gym is adequate,  staff are exceptional and the pools are amazing.",
+                    "time": 1718283320,
+                    "translated": false
+                },
+                {
+                    "author_name": "vince ko",
+                    "author_url": "https://www.google.com/maps/contrib/117783452864856637242/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWs6TIvq6MaOG9hAGayhCOo6J2f28Xd9rRa1W8rEV50dv5c4H29TA=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "We often used, it is quiet with modern and stylish facilities. The best healing space. 👍🏊🏻‍♂️⛹🏻⛳️🏸🏓🏐🎱🎧🎤🎺🎨🎮👌➕🍽😋💯",
+                    "time": 1602037023,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Palazetto Sport Club Foresta BSD City",
@@ -867,7 +1985,69 @@ const detailsWellness = {
                 Fri: 20,
                 Sat: 20,
                 Sun: 20,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Krishna FIRE",
+                    "author_url": "https://www.google.com/maps/contrib/101235080484828823580/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWR9174VMrjY4O6UvbAG6CoZkeUUCqPkbdXU41p3Kj0x8tVXAlt=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Love it, just like my own pool and gym, especially on afternoon weekday. The sportclub has a circle whirpool, if you wish to get warm water, get it on weekend. Beside swimming pool and gym, it also has a tennis hardcourt, table tennis and yoga/dance room. This is not for public, but only for Foresta cluster resident. Book your facility first via Smile apps. After make a booking, do not forget to scan the arrival confirmation barcode. Otherwise, your membership will be temporary suspended for seven days.",
+                    "time": 1689174939,
+                    "translated": false
+                },
+                {
+                    "author_name": "Andreas Diyen",
+                    "author_url": "https://www.google.com/maps/contrib/105368122591731779209/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIY7JsfUnqa2DcVCESYBdsz5iPmp6XB-PlWHhMcqRQq_gyGRg=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "4 months ago",
+                    "text": "Nice sport club within foresta. The ambience, pool, kids pool are really good.",
+                    "time": 1711383156,
+                    "translated": false
+                },
+                {
+                    "author_name": "Befriko Murdianto",
+                    "author_url": "https://www.google.com/maps/contrib/108663873860636359378/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUl811q43UIExIvc7EQTNTnbEge3TNPDwsSBQvXMi2pN7Ec9d1m=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Favorite place for exercise or swimming with family. Hot whirlpool is available.",
+                    "time": 1681600828,
+                    "translated": false
+                },
+                {
+                    "author_name": "Hee Lee",
+                    "author_url": "https://www.google.com/maps/contrib/101176577929814329478/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWPouTz83StSOlGkoQTomHnRqK7fgOVU4ol6__L_toJhzL8gl_C=s128-c0x00000000-cc-rp-mo",
+                    "rating": 1,
+                    "relative_time_description": "a year ago",
+                    "text": "The swimming pool has not been maintained very well lately.  The water is dirty.  In particular, children who use it are noisy, messy, and have no manners.  very unpleasant",
+                    "time": 1676101568,
+                    "translated": false
+                },
+                {
+                    "author_name": "Deka Thomas",
+                    "author_url": "https://www.google.com/maps/contrib/106878982842970725712/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAVqVIFKjZOGVbWsY8RC9UpZKQqupBV_tY33QRx8KYI8s_Wl0g=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 4,
+                    "relative_time_description": "a year ago",
+                    "text": "Nice sports club, but the fitness sport is very small, and it only has few fitness equipment. But the swimming pool is pretty large, pretty modern club house.",
+                    "time": 1675495296,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Samasana Clubhouse at The Zora BSD City",
@@ -899,7 +2079,69 @@ const detailsWellness = {
                 Fri: 20,
                 Sat: 20,
                 Sun: 20,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "anderson yaputra",
+                    "author_url": "https://www.google.com/maps/contrib/117872105100196649811/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXLqL4rh9pG_d2Ai7JDQ9Qwcqpgd2eki7XkBoBDm8WS96NivKm_=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "One of the best club house at BSD Residential, have many choice facility, such as Onsen, Lounge, Pool, Gym, Sauna, etc",
+                    "time": 1677986441,
+                    "translated": false
+                },
+                {
+                    "author_name": "Zico Rizki",
+                    "author_url": "https://www.google.com/maps/contrib/117249202417580441943/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXqHV-koQo6ZupxpEczphpVXghwVcpgGmkRxGgtmdtqsgGaXFBX=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Very nice club-house. Private for the home-owners in Zora BSD only",
+                    "time": 1673774669,
+                    "translated": false
+                },
+                {
+                    "author_name": "irhas ilham",
+                    "author_url": "https://www.google.com/maps/contrib/113610356445488066373/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLOAYOzQeSG-qabOOCQP3lzwSPyBmEY3_pLVH2P2HdvA9Vl8A=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "4 months ago",
+                    "text": "The Best Luxury Residential",
+                    "time": 1712581868,
+                    "translated": false
+                },
+                {
+                    "author_name": "Willy Tedja",
+                    "author_url": "https://www.google.com/maps/contrib/108309477197953171086/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLIbZYumCmQCFHydGrNsZ4PFA21RAIOKjlQh9mWZkKO1_UXjA=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Nice clubhouse. The facilities are complete & have trainer in the gym",
+                    "time": 1666599059,
+                    "translated": false
+                },
+                {
+                    "author_name": "Cintya Bathari",
+                    "author_url": "https://www.google.com/maps/contrib/117362283759870825892/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU5k9_8AK6G360rsWPPDWpL3dtKawplMeCkIVfoQi2Bbvws9A=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "This is awesome with warm ambience. Love those every cool spot 👍",
+                    "time": 1621346892,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "The Avani Club House",
@@ -931,7 +2173,69 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Heiko Jockers",
+                    "author_url": "https://www.google.com/maps/contrib/113446281958980710302/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWXFfzyTSBlVuPYAHWJ8S8yLowXgxvKYrgbRnDDXQKGowXOqk_fYQ=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "4 months ago",
+                    "text": "For us as residents in any of the various Avani housing clusters a nice place. Odd shaped pool but good for smaller kids with a kiddy pool at the end. Tennis court above (1) was resurfaced few months ago and is now in perfect condition. Gym is ok, would need some added equipment but plenty open floorspace for yoga or stretching etc. Club house is often used as wedding venue incl pool area, then resident members can't use the facilities, no compensation offered. Some Afghan refugees were granted access a few months back for a few weeks, caused trouble, believe has been discontinued.",
+                    "time": 1712469802,
+                    "translated": false
+                },
+                {
+                    "author_name": "Ehsan Alizada",
+                    "author_url": "https://www.google.com/maps/contrib/113930000921170027267/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWkBbi4wUulPMoeJsJMh7bGnav-PzNx5t4ZUvxo_zfHJ1UxxGJ2fQ=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "6 years ago",
+                    "text": "Fitness, swimming pool, and Tennis court. Its fitness is clean, air conditioned and big enough to do some cardio exercises. However, its swimming pool is not actually big, its depth is maximum 170 cm.\n\nRemember that you need to play your own motivation songs using flash disk or a dedicated audio cable to connect your hand phone to the sound system.",
+                    "time": 1504621768,
+                    "translated": false
+                },
+                {
+                    "author_name": "Jackson FH",
+                    "author_url": "https://www.google.com/maps/contrib/103247986921541081238/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV-vDi1Wbv6NBjGR7-NPBgSqnwEDDbyWyd-weTQByWoz9nrPM-z=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 4,
+                    "relative_time_description": "3 years ago",
+                    "text": "A tranquil walking and biking track. Next to a section of Cisadane river.",
+                    "time": 1601778006,
+                    "translated": false
+                },
+                {
+                    "author_name": "Wahyu Rahmadansyah",
+                    "author_url": "https://www.google.com/maps/contrib/115219131886163805692/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWNy_N5i9hpwCt1mO-p5zL6qTncier1RIlNV4RqI-VJzJHAxja0ww=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 4,
+                    "relative_time_description": "a year ago",
+                    "text": "My family use it for garden wedding venue. Facility is okay, some decay can be seen but overall the place is nice and reasonable for it's price.",
+                    "time": 1671468891,
+                    "translated": false
+                },
+                {
+                    "author_name": "david afpama",
+                    "author_url": "https://www.google.com/maps/contrib/106946272477726904359/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ-AaI1d7EJ4QBEXD9JsFmgjVHr3a_IHUzmtDbxa7JBOOhEwg=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "6 years ago",
+                    "text": "Nice place and there are Tirta Jaya Banten Swimming Club",
+                    "time": 1528353781,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Vermont parkland sportshall",
@@ -963,7 +2267,69 @@ const detailsWellness = {
                 Fri: 21,
                 Sat: 21,
                 Sun: 0,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "yosefa h",
+                    "author_url": "https://www.google.com/maps/contrib/106024907428836017102/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIIKmWaKZ0jFrQwgdvM2xYntihdFDpyFfbL4tgGa-16T4SyCA=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "3 months ago",
+                    "text": "This is private sport club only for residents. Do not open for public.",
+                    "time": 1715351810,
+                    "translated": false
+                },
+                {
+                    "author_name": "Psymon Peers",
+                    "author_url": "https://www.google.com/maps/contrib/111742476623138757431/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW2-HXbqOHxCqQm1h36lRP_igiSfTfDs_Xag4DNynpgvCEMVNktuA=s128-c0x00000000-cc-rp-mo-ba5",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Nice people, good courts, pool is always the right temperature",
+                    "time": 1631797976,
+                    "translated": false
+                },
+                {
+                    "author_name": "Shailendra Yadav",
+                    "author_url": "https://www.google.com/maps/contrib/116067319299100823499/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXbGyzEYMFlpzKzmSXHyH7KjMD3mdzOf9nPNENlaUjfwXj_ZVtr=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "5 years ago",
+                    "text": "Very nice place .. surrounded by lush green trees",
+                    "time": 1559575759,
+                    "translated": false
+                },
+                {
+                    "author_name": "Yovita Liu ThinkThing",
+                    "author_url": "https://www.google.com/maps/contrib/117984510803552107474/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV0oqsdEePjAhnmbAB0l4IQnz4AslVp_49HbqPsrPHTD3ZQUyJoMg=s128-c0x00000000-cc-rp-mo-ba5",
+                    "rating": 3,
+                    "relative_time_description": "5 years ago",
+                    "text": "Good facilities, unfortunately poorly maintained.",
+                    "time": 1557350327,
+                    "translated": true
+                },
+                {
+                    "author_name": "Asrul Sidik",
+                    "author_url": "https://www.google.com/maps/contrib/110563708956494264599/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV1fM-l4bhpgJsvYVhqDFcFQKjy57unCok-FFBPcso0_rsyjbiY=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "4 years ago",
+                    "text": "Coaching tennis 085292914200",
+                    "time": 1595563313,
+                    "translated": true
+                }
+            ],
         },
         {
             Nama: "Amigo Gym",
@@ -1059,7 +2425,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 20,
                 Sun: 20,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Nguyen Hoang Anh",
+                    "author_url": "https://www.google.com/maps/contrib/107423921324156171044/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW-YiXi-DO1KcVDlC69IWZUNYSdU1a5LTk2Vo0hobMHub5aH4c=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 4,
+                    "relative_time_description": "a year ago",
+                    "text": "I'm not a membership because just stayed in Indonesia for 2 weeks, but bought tickets with the price of 250k for one-time entry. the price is acceptable for me. We can not compare with a long-term contract.\n\nThe problem is I was not allow to join the bodypump and bodycombat classes as a salesman there mentioned. I understand this is a regulation.\n\nBut then a reception manager, Ms Lintang, has supported me. I think she booked the classes for me under her name. That's great. A flexible solution for both sides.\n\nThe equipment is so so, but the Lesmills classes were very nice.",
+                    "time": 1679757478,
+                    "translated": false
+                },
+                {
+                    "author_name": "Zulfikar Annur Ahmad",
+                    "author_url": "https://www.google.com/maps/contrib/116205681938862576870/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVrhLyCyN0bbREP2-rPB2L15dcNt3WYvsavnhj9GM3JB9RmC9U4=s128-c0x00000000-cc-rp-mo-ba5",
+                    "rating": 4,
+                    "relative_time_description": "2 years ago",
+                    "text": "Price to value is quite okay for a gym. The plus point is located inside of shopping mall so will be convenience for parking and  do other stuff at once.\n\nExpect limited number of machines, thus I only give 4 star, so you will need to train more using freeweight.\n\nThere are basketball court inside and punching bag so you can do boxing training also.",
+                    "time": 1653965914,
+                    "translated": false
+                },
+                {
+                    "author_name": "Immanuel Ambhara",
+                    "author_url": "https://www.google.com/maps/contrib/111657527949603449437/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVCvIe9WN6lGRAfoSrWFS9304F9ApGijWmRfdaB8LjRpKZ3AaD5Mw=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 2,
+                    "relative_time_description": "2 years ago",
+                    "text": "Rated 2-stars due to the lack of enforcement for wearing masks. I understand that it's hard to breathe from behind the mask when working out, but we are in a public place full of people. Only personal trainers and staff wear masks. Among the members working out, you can only find 1 or 2 actually wear masks. I won't even discuss about those working out in the studio.",
+                    "time": 1653657880,
+                    "translated": false
+                },
+                {
+                    "author_name": "Penebar Musik",
+                    "author_url": "https://www.google.com/maps/contrib/109535431472188987894/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUgfjHdhtAx_IdibuW_joF1hkJTSE7rlt6MOHXXmnQn0xYuqsCMFw=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 4,
+                    "relative_time_description": "3 years ago",
+                    "text": "Nice place to do sport at strategic area after or before lunch/shopping. The mirror wall at upper floor needs curtain, not really like too dazzled",
+                    "time": 1601102393,
+                    "translated": false
+                },
+                {
+                    "author_name": "Naryuni",
+                    "author_url": "https://www.google.com/maps/contrib/111169817958498028909/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWO-_Xku5abDkFfGcrR3iQ5oqNrX_GhC_fe891-Bvjw4pEphnevGA=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "5 years ago",
+                    "text": "Great place for doing some excercise. Many class for you to choose (main studio, yoga studio, hot yoga or cycling studio). Quite complete for sports equipment and they have basket field too.",
+                    "time": 1564858228,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Curves BSD",
@@ -1123,7 +2551,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "M. Luthfi Farriz",
+                    "author_url": "https://www.google.com/maps/contrib/106322850431620204503/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIQdyZgKIXl-TVnw-QKgRLOkIcdhMWSSjpbWJhEEhDyb7RA6Ys=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "a month ago",
+                    "text": "Y’ll need to workout at this amazing affordable fitness in Indonesia 😍😍😍",
+                    "time": 1719714800,
+                    "translated": false
+                },
+                {
+                    "author_name": "Muhammad Aziz",
+                    "author_url": "https://www.google.com/maps/contrib/107865581853715998480/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUDeXBxBkX3c6d7YM4GCkCPytAv73Pgiexznh852Y3DsW8dOetU=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "a month ago",
+                    "text": "Cool places, various equipments you can try, available on many places, 1 members can access all their branch. Recommended gym in town!",
+                    "time": 1719749393,
+                    "translated": false
+                },
+                {
+                    "author_name": "Marlon Julian",
+                    "author_url": "https://www.google.com/maps/contrib/101028087409715167433/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJrnFTkVll9MaR46l12LrAOnjRrPl30lqtyudUEcaxAjTaKQw=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "10 months ago",
+                    "text": "Just started my membership, looking forward to have a regular gym visit 😁🤩",
+                    "time": 1696079471,
+                    "translated": false
+                },
+                {
+                    "author_name": "Noberta Nissa",
+                    "author_url": "https://www.google.com/maps/contrib/108375458266321494445/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUFLsJ3cUM2rN4NabCIOh8aea7MBDSzXK7PL8TtEGqLmgIG54pi=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "5 months ago",
+                    "text": "Best fitness studio in town.",
+                    "time": 1709539533,
+                    "translated": false
+                },
+                {
+                    "author_name": "Hani Nurlaela",
+                    "author_url": "https://www.google.com/maps/contrib/103086271564797909234/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXpbf8OVQUuMqwGtW0clNfbxeywSHbUDD3AdrzC__pAetnoyBLM=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "2 months ago",
+                    "text": "Good!!",
+                    "time": 1716894668,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "FIT HUB BSD",
@@ -1155,7 +2645,69 @@ const detailsWellness = {
                 Fri: 23,
                 Sat: 21,
                 Sun: 20,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Fernaldi Jonathan",
+                    "author_url": "https://www.google.com/maps/contrib/113434928208481882149/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVRG5K4rvN3oISMkePjjmNuNKIJyNr7G2Ce3TyEmPXKDsrL1MaW=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "I haven't experienced other gyms, but I think fit hub has give me a great impression and the experience for the first timer and amatur like me",
+                    "time": 1682758890,
+                    "translated": false
+                },
+                {
+                    "author_name": "Sukianto Tan",
+                    "author_url": "https://www.google.com/maps/contrib/113079161372856534161/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWlTuHrKsDgILD9V8_6lQTgFLz_bzkM_mPq9C6lx52C06toXZhK=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "7 months ago",
+                    "text": "Recommended gym in BSD. Affordable price, decent equipments and friendly staff. All the coaches also very helpful and friendly. I’ve been a member for one year and with this price point, personally I think you couldn’t get better offer anywhere else. Also I think it’s not too crowded even after the work hours. I still can use all the equipments that I need for my training comfortably. Parking lot also quite spacious compared to other gym as well. 👍👍👍",
+                    "time": 1704394977,
+                    "translated": false
+                },
+                {
+                    "author_name": "efi dwi indari",
+                    "author_url": "https://www.google.com/maps/contrib/103294096877306292766/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL7qBgX1t9H7_zSXVUj3UYL68UPCFa4HAAYbfsIJGfGBfrnBg=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "a month ago",
+                    "text": "An affordable place to do gym and sport classes with  well-maintained equipmen and friendly staffs",
+                    "time": 1720576349,
+                    "translated": false
+                },
+                {
+                    "author_name": "Kenny Cahyani",
+                    "author_url": "https://www.google.com/maps/contrib/110772603316531823222/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWohCOPWiqVBPd63DnShLWZn5YfNInPrf1zXYocvmqimO6SVHZ0=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "7 months ago",
+                    "text": "All club membership with affordable price and according to the facilities. Clean and  well maintained. Love Fithub BSD , especially my awesome Personal trainer 💪",
+                    "time": 1704299204,
+                    "translated": false
+                },
+                {
+                    "author_name": "Devina Soekamto",
+                    "author_url": "https://www.google.com/maps/contrib/106608442695167454753/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWSZ0aroCyMhRYny1SmnSVY6WsaxUpA9VzdB8gxgRpveCVLT4O3=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 3,
+                    "relative_time_description": "10 months ago",
+                    "text": "Class AC was hot it was like a sauna. Parking space around was mostly full. Lesser equipments than other branches",
+                    "time": 1696095156,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Fitness Plus Intermark",
@@ -1187,7 +2739,69 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Hendra Sain",
+                    "author_url": "https://www.google.com/maps/contrib/102537346799483480073/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJqfxHbe1NzqxIuVQ9QJRfSGNJijXwN1Ix4qgJ0oKJKHPWBeA=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "One of the BEST MEGA GYM at BSD SERPONG - TANGSEL area with a good equipments & comfort building..\"WHAT ARE YOU WAITING FOR? LET'S COME & JOIN for membership everyone\" 😃💪😊✌️",
+                    "time": 1692254231,
+                    "translated": false
+                },
+                {
+                    "author_name": "Hari Santika",
+                    "author_url": "https://www.google.com/maps/contrib/110034247406347977279/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWY6mc5I7rOc_r3YKo2OFdNV8npKDIZKW3zV89yN3f5ZzXyKbu2=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Most hype megagym by local pride, can’t wait🫶🏽",
+                    "time": 1692253929,
+                    "translated": false
+                },
+                {
+                    "author_name": "Beni Setiawan",
+                    "author_url": "https://www.google.com/maps/contrib/109677730542382307247/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWtkpGzkyUioIrG03IgQF5LJDYAkEFUuxbE9EtkZPNPr4Ol-5mO=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Will be the best Gym in Jtown. Can’t wait!",
+                    "time": 1692254924,
+                    "translated": false
+                },
+                {
+                    "author_name": "prasada bharaditya",
+                    "author_url": "https://www.google.com/maps/contrib/113030605476118042971/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW-f_pw5LOWuXaEtwPGrrRZnf8dnXplsseOP18PblYrDX5yuAqr=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Can't for this branch, definitely good and affordable price🙌🏻",
+                    "time": 1692254252,
+                    "translated": false
+                },
+                {
+                    "author_name": "agus hendrawan",
+                    "author_url": "https://www.google.com/maps/contrib/117768020775562442044/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWVGBYIGPKEiOQY6lkfTke8vrd-UL1RD61RfBx-4Da-fAg_dA4=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Look luxurious Fitness Plus Intermark BSD😍💪🏻",
+                    "time": 1692269118,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Gold's Gym",
@@ -1219,12 +2833,136 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Kong Honggo Wijaya",
+                    "author_url": "https://www.google.com/maps/contrib/118234660885749180284/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWfMf8n_uSceqgIinR6lpFSMvEaHMmvM3Uklg67w0xefvzMk50e=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "3 months ago",
+                    "text": "I actually visited the Maystar. Atmosphere is good, mostly outdoor except the restaurant. This place actually for member only except for few places like the restaurant... For most part I only see a ballet course and a house marketing",
+                    "time": 1714551120,
+                    "translated": false
+                },
+                {
+                    "author_name": "Djo Closet",
+                    "author_url": "https://www.google.com/maps/contrib/105667483126358486525/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUC6NtkEef7LqPb6vtLsNx_YXFp4SHn2CTdlYib8bIXqWXgGQ=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "5 years ago",
+                    "text": "Nice place. New in the neighborhood. And the best thing is, May Star restaurant happens to establish here. Such a good idea. The country club itself is not yet opened to public when i made my visit here. All i can see is a nice view of the pool from the restaurant. Brilliant one!",
+                    "time": 1548309353,
+                    "translated": false
+                },
+                {
+                    "author_name": "Vince Hien",
+                    "author_url": "https://www.google.com/maps/contrib/116175104548161302732/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWAhv4F54Tp1cznrkjqKa2TRj59HPSRA5XsXhQUQMY1jJNwSo40iQ=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "6 months ago",
+                    "text": "Got membership since last year and now I can do workouts and swimming anytime I like. So convenient. Nice place with exclusive atmosphere throughout.",
+                    "time": 1707964951,
+                    "translated": false
+                },
+                {
+                    "author_name": "Ashton Pillay",
+                    "author_url": "https://www.google.com/maps/contrib/110211118229576735155/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJNrloWQ7zC75BGg4g3OHL3lPQpyq4Sjaznn5lJkdzFxJ15Og=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "2 months ago",
+                    "text": "The gym is adequate,  staff are exceptional and the pools are amazing.",
+                    "time": 1718283320,
+                    "translated": false
+                },
+                {
+                    "author_name": "vince ko",
+                    "author_url": "https://www.google.com/maps/contrib/117783452864856637242/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWs6TIvq6MaOG9hAGayhCOo6J2f28Xd9rRa1W8rEV50dv5c4H29TA=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "We often used, it is quiet with modern and stylish facilities. The best healing space. 👍🏊🏻‍♂️⛹🏻⛳️🏸🏓🏐🎱🎧🎤🎺🎨🎮👌➕🍽😋💯",
+                    "time": 1602037023,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Navapark Country Club - Gym",
             subcategory: "Gym",
-            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
+            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, },
+            reviewsText: [
+                {
+                    "author_name": "Kong Honggo Wijaya",
+                    "author_url": "https://www.google.com/maps/contrib/118234660885749180284/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWfMf8n_uSceqgIinR6lpFSMvEaHMmvM3Uklg67w0xefvzMk50e=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "3 months ago",
+                    "text": "I actually visited the Maystar. Atmosphere is good, mostly outdoor except the restaurant. This place actually for member only except for few places like the restaurant... For most part I only see a ballet course and a house marketing",
+                    "time": 1714551120,
+                    "translated": false
+                },
+                {
+                    "author_name": "Djo Closet",
+                    "author_url": "https://www.google.com/maps/contrib/105667483126358486525/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUC6NtkEef7LqPb6vtLsNx_YXFp4SHn2CTdlYib8bIXqWXgGQ=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "5 years ago",
+                    "text": "Nice place. New in the neighborhood. And the best thing is, May Star restaurant happens to establish here. Such a good idea. The country club itself is not yet opened to public when i made my visit here. All i can see is a nice view of the pool from the restaurant. Brilliant one!",
+                    "time": 1548309353,
+                    "translated": false
+                },
+                {
+                    "author_name": "Vince Hien",
+                    "author_url": "https://www.google.com/maps/contrib/116175104548161302732/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWAhv4F54Tp1cznrkjqKa2TRj59HPSRA5XsXhQUQMY1jJNwSo40iQ=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "6 months ago",
+                    "text": "Got membership since last year and now I can do workouts and swimming anytime I like. So convenient. Nice place with exclusive atmosphere throughout.",
+                    "time": 1707964951,
+                    "translated": false
+                },
+                {
+                    "author_name": "Ashton Pillay",
+                    "author_url": "https://www.google.com/maps/contrib/110211118229576735155/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJNrloWQ7zC75BGg4g3OHL3lPQpyq4Sjaznn5lJkdzFxJ15Og=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "2 months ago",
+                    "text": "The gym is adequate,  staff are exceptional and the pools are amazing.",
+                    "time": 1718283320,
+                    "translated": false
+                },
+                {
+                    "author_name": "vince ko",
+                    "author_url": "https://www.google.com/maps/contrib/117783452864856637242/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWs6TIvq6MaOG9hAGayhCOo6J2f28Xd9rRa1W8rEV50dv5c4H29TA=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "3 years ago",
+                    "text": "We often used, it is quiet with modern and stylish facilities. The best healing space. 👍🏊🏻‍♂️⛹🏻⛳️🏸🏓🏐🎱🎧🎤🎺🎨🎮👌➕🍽😋💯",
+                    "time": 1602037023,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Palazetto Sport Club, Foresta BSD City Gym",
@@ -1256,7 +2994,69 @@ const detailsWellness = {
                 Fri: 20,
                 Sat: 20,
                 Sun: 20,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Krishna FIRE",
+                    "author_url": "https://www.google.com/maps/contrib/101235080484828823580/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWR9174VMrjY4O6UvbAG6CoZkeUUCqPkbdXU41p3Kj0x8tVXAlt=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Love it, just like my own pool and gym, especially on afternoon weekday. The sportclub has a circle whirpool, if you wish to get warm water, get it on weekend. Beside swimming pool and gym, it also has a tennis hardcourt, table tennis and yoga/dance room. This is not for public, but only for Foresta cluster resident. Book your facility first via Smile apps. After make a booking, do not forget to scan the arrival confirmation barcode. Otherwise, your membership will be temporary suspended for seven days.",
+                    "time": 1689174939,
+                    "translated": false
+                },
+                {
+                    "author_name": "Andreas Diyen",
+                    "author_url": "https://www.google.com/maps/contrib/105368122591731779209/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIY7JsfUnqa2DcVCESYBdsz5iPmp6XB-PlWHhMcqRQq_gyGRg=s128-c0x00000000-cc-rp-mo-ba4",
+                    "rating": 5,
+                    "relative_time_description": "4 months ago",
+                    "text": "Nice sport club within foresta. The ambience, pool, kids pool are really good.",
+                    "time": 1711383156,
+                    "translated": false
+                },
+                {
+                    "author_name": "Befriko Murdianto",
+                    "author_url": "https://www.google.com/maps/contrib/108663873860636359378/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUl811q43UIExIvc7EQTNTnbEge3TNPDwsSBQvXMi2pN7Ec9d1m=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "a year ago",
+                    "text": "Favorite place for exercise or swimming with family. Hot whirlpool is available.",
+                    "time": 1681600828,
+                    "translated": false
+                },
+                {
+                    "author_name": "Hee Lee",
+                    "author_url": "https://www.google.com/maps/contrib/101176577929814329478/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWPouTz83StSOlGkoQTomHnRqK7fgOVU4ol6__L_toJhzL8gl_C=s128-c0x00000000-cc-rp-mo",
+                    "rating": 1,
+                    "relative_time_description": "a year ago",
+                    "text": "The swimming pool has not been maintained very well lately.  The water is dirty.  In particular, children who use it are noisy, messy, and have no manners.  very unpleasant",
+                    "time": 1676101568,
+                    "translated": false
+                },
+                {
+                    "author_name": "Deka Thomas",
+                    "author_url": "https://www.google.com/maps/contrib/106878982842970725712/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAVqVIFKjZOGVbWsY8RC9UpZKQqupBV_tY33QRx8KYI8s_Wl0g=s128-c0x00000000-cc-rp-mo-ba6",
+                    "rating": 4,
+                    "relative_time_description": "a year ago",
+                    "text": "Nice sports club, but the fitness sport is very small, and it only has few fitness equipment. But the swimming pool is pretty large, pretty modern club house.",
+                    "time": 1675495296,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Ronin Strength Gym",
@@ -1352,7 +3152,69 @@ const detailsWellness = {
                 Fri: 20,
                 Sat: 16,
                 Sun: 16,
-            }
+            },
+            reviewsText: [
+                {
+                    "author_name": "Reyditha Romaya",
+                    "author_url": "https://www.google.com/maps/contrib/112560194441028511212/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU_tiU20SFx9-YYtovJIDBTwyMGO9g317VB7NF660_RKH9onpA=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "2 months ago",
+                    "text": "Best private pilates place in town! Would 100% reccomend Code Pilates to everyone. Thanks for having me since 2023 🫶🏻",
+                    "time": 1717506617,
+                    "translated": false
+                },
+                {
+                    "author_name": "Vivian Chen",
+                    "author_url": "https://www.google.com/maps/contrib/105898257145545551826/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU2U3ZZWkHPbKbbCDkwkNu7ALa_w56OS50gn28ARrknyDL6LFeq=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "2 months ago",
+                    "text": "I came here for prenatal pilates with senior instructor Clara. She is an amazing instructor, extremely knowledgeable, professional and friendly! She's been certified in many different areas of pilates and it shows during class. She's always making sure you feel comfortable but also challenged at the same time. The studio is nice and clean, and all the staff are very friendly! They have multiple types of equipment for different kinds of pilates. I highly recommend! I will definitely be going back for postnatal pilates 🫶🏻",
+                    "time": 1718105305,
+                    "translated": false
+                },
+                {
+                    "author_name": "Rere",
+                    "author_url": "https://www.google.com/maps/contrib/112933351017723741794/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWFGmlyyfukqCeUhhkvOr5LPdl8x9xyXZ7ClPOXyaMSKYDlUTwE=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "2 months ago",
+                    "text": "Super good place for pilates. Affordable price and complete equipments. I’ve been here almost a year and my body posture is getting better than before. The most important thing my instructor knows what she’s doing to help me 😊",
+                    "time": 1716687438,
+                    "translated": false
+                },
+                {
+                    "author_name": "Meilia Wanady",
+                    "author_url": "https://www.google.com/maps/contrib/104830418108195026470/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9zWqM5bHZsXV1vYP5fhUwynoOFgBfKBJ9g4CuJcSIKKuoz0Dw=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "4 months ago",
+                    "text": "Good place for a private pilates session",
+                    "time": 1711863111,
+                    "translated": false
+                },
+                {
+                    "author_name": "Ruth Dian Kurniasari",
+                    "author_url": "https://www.google.com/maps/contrib/109105738187842003310/reviews",
+                    "language": "en-US",
+                    "original_language": "id",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUFhYc6zEFXb-yCFvc2sUxXU-0Qaf3ziw2aRPOEOkJklVmpRA=s128-c0x00000000-cc-rp-mo",
+                    "rating": 5,
+                    "relative_time_description": "2 months ago",
+                    "text": "Really happy with Pilates here. Clean, cool, comfortable. The coach is also painstaking and patient, really pays attention to body posture and always encourages you (hello Kezia, my best Pilates teacher! 🤗). Every session is always addictive!",
+                    "time": 1716639424,
+                    "translated": true
+                }
+            ],
         },
         {
             Nama: "Flow Pilates",
@@ -1384,7 +3246,63 @@ const detailsWellness = {
                 Fri: 18,
                 Sat: 18,
                 Sun: 0,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "chris valendra",
+                  "author_url": "https://www.google.com/maps/contrib/115304534640558359839/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK0e3-LWFz1IOmDcf92y1nAvsjt1_Jx9N__QziY8tZPyFgYkA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Very Professional, worth to visit",
+                  "time": 1654758859,
+                  "translated": false
+                },
+                {
+                  "author_name": "Gary Sulistyo",
+                  "author_url": "https://www.google.com/maps/contrib/114920021585638615260/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUUYH2TR1V_DWxyT90-WqP4dNVftzBBP3ATt3wm3qpUDSFMP9oF=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "New Pilates and Barre studio.",
+                  "time": 1565519633,
+                  "translated": false
+                },
+                {
+                  "author_name": "Titi Hardiman",
+                  "author_url": "https://www.google.com/maps/contrib/115132715420674834194/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLdTJ3HOrVsQP-dc3cSHTAzmypMyM9FLRR4ropVdDGdTBelMQ=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "",
+                  "time": 1575510942,
+                  "translated": false
+                },
+                {
+                  "author_name": "Retha Sylviana",
+                  "author_url": "https://www.google.com/maps/contrib/118280159025184626122/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVj5kPbETdhqGKkMBQIDF9XfovOHoG2D_FtOV62QiH5YSJKX0cp=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "4 weeks ago",
+                  "text": "",
+                  "time": 1721693730,
+                  "translated": false
+                },
+                {
+                  "author_name": "Karen Z",
+                  "author_url": "https://www.google.com/maps/contrib/113473966093836778362/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJDwlkoIE1JkD2_Gts0QyIHqzTRo2nNzC5v3fyRiQ_w1uSOKuiN=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "",
+                  "time": 1631790484,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Khing Studio",
@@ -1416,7 +3334,69 @@ const detailsWellness = {
                 Fri: 19,
                 Sat: 19,
                 Sun: 0,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "eka savitri",
+                  "author_url": "https://www.google.com/maps/contrib/116466965172497474241/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU6xnqm-QaGABmLCh6KmDAHU9-uBUSeADHSaOsXJvADWwl_RFoR=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "9 months ago",
+                  "text": "been her client just a year ago and all I can say is she is a very good to assess the client's body posture. Though I only have once a week session, but I always feel better with my body everytime I left the class. Every session is different as the complain is also varies, at least from my side. will definitely recommend Khing Pilates Studio to everyone that need the private session around BSD area.",
+                  "time": 1700812802,
+                  "translated": false
+                },
+                {
+                  "author_name": "Patricia Sutrisno",
+                  "author_url": "https://www.google.com/maps/contrib/115835334242077947142/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVtEZHqF_Wm1rz2cSWfhNpzJ5E59nrOMMyHKZcDEWgXuabNeRLs=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "I had lower back and upper leg problems due to tight muscles from exercise and bad posture. Khing worked with me to identify the problematic areas and patiently tried different ways of releasing the tightness. She also taught me exercises to do at home so I can maintain the result. Her studio is excellent! Very nicely designed, super clean and cozy, well-equipped with many pilates instrument that you can use to suit your needs. I came home feeling relaxed and energized after every session with her ❤️❤️",
+                  "time": 1683891320,
+                  "translated": false
+                },
+                {
+                  "author_name": "julianty wijaya",
+                  "author_url": "https://www.google.com/maps/contrib/111528470249371298883/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL5Koof0KVpQdanTsRga-oJtZEKL4doR1_DZAm0R_Ou7dY2eg=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Bu Khing is experienced pilates instructor that has more than 20 years knowledge and skill. Not only to fix your body physically but also teach you how to fix your body posture and alignment by allowing positive mindset in your daily life. The studio is super clean, has complete set of pilates equipment.Also, toilet and shower is available to use. It is very homey and relaxing. Even has Christmas decorations in the studio! Come join the class and you can feel the ambiance by yourself. Btw this review is not being sponsored ya 😊 I just give the honest comment for every pilates lovers in BSD and surroundings.",
+                  "time": 1669433000,
+                  "translated": false
+                },
+                {
+                  "author_name": "Giovani",
+                  "author_url": "https://www.google.com/maps/contrib/107163287180279945514/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUQl19QxfefbjeNs7FKDRlkmUEXOwfpRyKJ5HpDMYPSa4nZ7nUX=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "The studio is very peaceful and relaxing. I was looking for a place to help me regain my flexibility after injury and very grateful to have found it. The instructor is very great and knowledgeable, I took a couple of session and can feel my condition improved, definitely recommend this studio.",
+                  "time": 1668843500,
+                  "translated": false
+                },
+                {
+                  "author_name": "Rukiki Mariana",
+                  "author_url": "https://www.google.com/maps/contrib/110652086402979392461/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXm3T_nUPEyYfEXaZ8qJV9cG0IGEnGWu74oBgubEIERtvAL7Ob3=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "The right place for pilates. I love the ambiance that is homie & most importantly clean. Definitely worth it since they provide only best-quality instructors especially Mrs.Khing herself.  Highly recommended!",
+                  "time": 1679480530,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Mossa Studio",
@@ -1448,7 +3428,63 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            }, 
+            reviewsText: [
+                {
+                  "author_name": "Eka Yuanita",
+                  "author_url": "https://www.google.com/maps/contrib/102475827263123807791/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWk0RuOlwSZ6JtV4QtehdQh7Dy1yg3B5pP55Ng4g5m0vQ2QgCSv=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "Loved it.. clean friendly had a free ice coffee... But havent been there during covid",
+                  "time": 1613145661,
+                  "translated": false
+                },
+                {
+                  "author_name": "K A",
+                  "author_url": "https://www.google.com/maps/contrib/112423390146119631602/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKY-cl0SssDBMKDX9b3FzYjLmA8ATCR3nltKRCkjW5BidMPDJYX=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "Nice place, convenient for BSD residents.",
+                  "time": 1568094341,
+                  "translated": true
+                },
+                {
+                  "author_name": "Dina Oktaviani",
+                  "author_url": "https://www.google.com/maps/contrib/109539020785073150711/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocISx2gcuAjXPdvJc-lgv1BiRabu93LWi7_ihmsi6C7r0Z6JTRf2=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 4,
+                  "relative_time_description": "4 years ago",
+                  "text": "",
+                  "time": 1580445071,
+                  "translated": false
+                },
+                {
+                  "author_name": "Fella Falencia",
+                  "author_url": "https://www.google.com/maps/contrib/111097995099560550737/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIIV-PmLCbZbzFPu3qCv0HmN6z-D4aX_vQhv-PCDZc0W0BVyVM=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "",
+                  "time": 1576849053,
+                  "translated": false
+                },
+                {
+                  "author_name": "Aris Setiawan",
+                  "author_url": "https://www.google.com/maps/contrib/100927945632285263559/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUpIJzUZhYDXWlLD8Y8L7gQ_0KbVpe2oGTDFrZadIQ0IaO9K9lW=s128-c0x00000000-cc-rp-mo-ba6",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "",
+                  "time": 1566998297,
+                  "translated": false
+                }
+              ],
         },
         // {
         //     Nama: "MP KOLAT Carin Studio",
@@ -1543,7 +3579,69 @@ const detailsWellness = {
                 Fri: 20,
                 Sat: 14,
                 Sun: 12,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "violy",
+                  "author_url": "https://www.google.com/maps/contrib/109855538788393984371/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVqOM89OGTry6c_hFiEealctGdMsc-qJJwt5mhXPxqiEi9XoYsv=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 months ago",
+                  "text": "Have tried few pilates studio but I can say Pilates Re Bar is one of the best one, have loads of great and attentive coach, clean studio, and sun-lit room so we can get morning sunlight while working out. I always leave the studio with amazing feeling after taking pilates in Re Bar 🫶",
+                  "time": 1718332603,
+                  "translated": false
+                },
+                {
+                  "author_name": "Yessika Anggraika",
+                  "author_url": "https://www.google.com/maps/contrib/107100254318789977459/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ01FDDOcBFJqgY9Xi-A1znBpGKsYDozbqASi_X9HgBJMTqPqo=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 months ago",
+                  "text": "Thanks to Pilates Re Bar Doospace Quantis BSD, Pilates has become so addictive to me. The coach and the staff are very helpful. My favorite coach is Rubens. You will learn more about Pilates based on science. Even the studio feels so homey and cozy. Hoping more success for Pilates Re Bar Doospace Quantis BSD! And healthiness for the staff and coach!",
+                  "time": 1718326864,
+                  "translated": false
+                },
+                {
+                  "author_name": "NINA Musian",
+                  "author_url": "https://www.google.com/maps/contrib/111014587602690767327/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJMC-uqHjCrTvGYSviItyNwOqVVKSGwODW4BEU0uFQgFTezNA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "7 months ago",
+                  "text": "Pilates re bar is my me-time place .. the studio is clean with new equipment ..recommended 👍👍",
+                  "time": 1703638423,
+                  "translated": false
+                },
+                {
+                  "author_name": "Niken Edgina",
+                  "author_url": "https://www.google.com/maps/contrib/102043607239719350053/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVL_EHBIheKoZDsDJwkBprkEN5_ghk9dRucA6izZq4GQppKzLTUJQ=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "Love it here! Challenging yet fun class, nice view, spacious and airy room.",
+                  "time": 1720790724,
+                  "translated": false
+                },
+                {
+                  "author_name": "Jeanne Jeanne",
+                  "author_url": "https://www.google.com/maps/contrib/109487455348363043784/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJzhDNUBEvlJEO0Jel-hdn1-DVIVP7kokp5bmQCry0i7fxSrA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "6 months ago",
+                  "text": "First time trying pilates and love it. the place is clean, the coach is professional and attentive. staff are amazing.",
+                  "time": 1707310098,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Stadion Cisauk",
@@ -1702,7 +3800,69 @@ const detailsWellness = {
                 Fri: 21,
                 Sat: 21,
                 Sun: 21,
-            }
+            }, 
+            reviewsText: [
+                {
+                  "author_name": "Yeremia Hotmartua",
+                  "author_url": "https://www.google.com/maps/contrib/115415013455209601634/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVmqD1KkLaFi_cTiUlM4Gqul4YM-oisi-FMJ5n9kF69ygjywhst=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 3,
+                  "relative_time_description": "4 months ago",
+                  "text": "Expensive price for standart facilities. Comparing to the another sport club in BSD",
+                  "time": 1711565659,
+                  "translated": false
+                },
+                {
+                  "author_name": "Richard Wiriyanto",
+                  "author_url": "https://www.google.com/maps/contrib/106875063126007716432/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVPH1PKClHuISLjg_YblppUOE9bJzljUw5siRzaNONlADOt0hJEyA=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Nice activity center for de park residence. Quiet. Could use some coffee shop tho.",
+                  "time": 1692366378,
+                  "translated": false
+                },
+                {
+                  "author_name": "Alvin Andryan Phielip",
+                  "author_url": "https://www.google.com/maps/contrib/108759516004682924333/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIFHi6NccX2QRfehCaaA5N47x9M16KnGvwMnrU0DOcGjPVi1g=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "4 months ago",
+                  "text": "Nice ambience, nice food",
+                  "time": 1712034753,
+                  "translated": false
+                },
+                {
+                  "author_name": "Cynthia Sim",
+                  "author_url": "https://www.google.com/maps/contrib/111401014602977820683/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJra2Buulnl8vRwI4tDJdPLpZwlNH05y2NQ2nnmMt3wtZIarg=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 3,
+                  "relative_time_description": "a year ago",
+                  "text": "Fitness machine is bit old, clean pool and big exciting pool, ..",
+                  "time": 1674735070,
+                  "translated": false
+                },
+                {
+                  "author_name": "Kartika Saraswati (MISCHA)",
+                  "author_url": "https://www.google.com/maps/contrib/107737640406113750826/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLB35s-xjTqywwC6VsK5gKob3SfzfzV75tNIEI17DV6XHHqOA=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Swimming Pool, Gym, Kids Playground, Park, Great place for family.\nThe gym open till 9pm",
+                  "time": 1557286478,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Elsa Nasution Swimming School (ENSS) BSD 1",
@@ -1766,7 +3926,69 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Akhmad Rais",
+                  "author_url": "https://www.google.com/maps/contrib/106062815149086191078/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWceo80ko4LfLpsr24ioBHXze2gqhscKG_hF9vqJuhZs4-102K4cQ=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Good evening ladies and gentlemen. If there are problems with not having the electronics serviced, you can contact us on 081212112119",
+                  "time": 1681476829,
+                  "translated": true
+                },
+                {
+                  "author_name": "Dian Alfiansyah",
+                  "author_url": "https://www.google.com/maps/contrib/102316085885218049557/reviews",
+                  "language": "en-US",
+                  "original_language": "ms",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU9_QpYdNFz7QM1GzAChw9jziIZaRwnGNxFmuz7AGUasrn-4dOb=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "The place is cool and the air is cool",
+                  "time": 1675482406,
+                  "translated": true
+                },
+                {
+                  "author_name": "IgustiR 007",
+                  "author_url": "https://www.google.com/maps/contrib/115546674350089243055/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_6SM1r5J_T3_1TEPco9B8fRGuaFxWdQkx9wWAl1LNtg34rr4X=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "I really like taking a nap here, it's cool",
+                  "time": 1613487900,
+                  "translated": true
+                },
+                {
+                  "author_name": "ADAMS wow",
+                  "author_url": "https://www.google.com/maps/contrib/106545837238858082823/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV7nh1Jc47WTOXp4l5pPv7P2GGkLdpb0oCq1oZaQooVjSuWxEJyWA=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "Very cozy..",
+                  "time": 1621436393,
+                  "translated": true
+                },
+                {
+                  "author_name": "Budi Alzena",
+                  "author_url": "https://www.google.com/maps/contrib/108069352879708376600/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWWqIPkXwKUlhpof4KQUywpKyZm21KNZiqNr0YiNSBfc-vBqsc=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Please..",
+                  "time": 1632329961,
+                  "translated": true
+                }
+              ],
         },
         {
             Nama: "Greencove Sport Club Swimming Pool",
@@ -1798,7 +4020,69 @@ const detailsWellness = {
                 Fri: 18,
                 Sat: 18,
                 Sun: 18,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Ibrahim Gunawan",
+                  "author_url": "https://www.google.com/maps/contrib/114017556814855918535/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVd5wmy1yzuEGZrCuTjo1xYXAY8Lr81Ha8Mtb1R26Yo2TjZ45OG_A=s128-c0x00000000-cc-rp-mo-ba6",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "Jetty Green Cove",
+                  "time": 1624330166,
+                  "translated": false
+                },
+                {
+                  "author_name": "Albertus Widyanto",
+                  "author_url": "https://www.google.com/maps/contrib/109728904126099914470/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5mqUIzQ8H5F5NfHxqxU6cHoUWoE7Z8OYZCqLZaDF3xTV_-gP2=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Luv it",
+                  "time": 1565532347,
+                  "translated": false
+                },
+                {
+                  "author_name": "dedy dyana",
+                  "author_url": "https://www.google.com/maps/contrib/101842868716046525486/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVJkmkDwBngfrqUCIGEizeMRdoQT2Q7W9h-VGc6X1nQjzAIR2ICkg=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Nice place 👍",
+                  "time": 1635920169,
+                  "translated": false
+                },
+                {
+                  "author_name": "Mamang Chanel",
+                  "author_url": "https://www.google.com/maps/contrib/114864545669309578636/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUxb_fZgTnjPGP8RHa1N2KTlD6cbiQ7lqtVGJwUi7G0upYXC3wh=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "Ok",
+                  "time": 1585145039,
+                  "translated": false
+                },
+                {
+                  "author_name": "Satun Tri Rahma",
+                  "author_url": "https://www.google.com/maps/contrib/117291904109321337207/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVItfbDc5mAwXqVfxZs5f_Bh9i5f8StaMEwmNEC0374xQ328ibc=s128-c0x00000000-cc-rp-mo-ba6",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "Ok",
+                  "time": 1581950178,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Kolam Renang Damai Indah Golf BSD",
@@ -1830,7 +4114,69 @@ const detailsWellness = {
                 Fri: 19,
                 Sat: 20,
                 Sun: 20,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Bimo MK",
+                  "author_url": "https://www.google.com/maps/contrib/114735512350164785534/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJlMb9H9feTzgH8P19jV7iEnTFUNr6hcGHwI22yUa7guvyk0Q=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 3,
+                  "relative_time_description": "6 years ago",
+                  "text": "It's a nice olympic size pool. They have hot shower too. Unfortunately the place needs renovation and proper maintenance. Spacious and relatively cheap and they serve a simple restaurant that serves a so-so meals. Parking shouldn't be a problem and the place its not too hard to find.",
+                  "time": 1529308781,
+                  "translated": false
+                },
+                {
+                  "author_name": "Dicky Kurniawan",
+                  "author_url": "https://www.google.com/maps/contrib/100224555233676931183/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUmTKBdyANSKIu-VrmJ_jVURBwyPp5_HBxLdTVzAlYrjkumZjqi=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Ticket for weekdays cost 50k, big & clean swimming pool, the deepest pool is 2m",
+                  "time": 1639141135,
+                  "translated": false
+                },
+                {
+                  "author_name": "Jaydee Saputra",
+                  "author_url": "https://www.google.com/maps/contrib/117825749636367301424/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWKmvHDbEWHcUiB5ob7EKKfK3-QDMipVUSjLqVJ1w9Rg2gEhSvA=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 3,
+                  "relative_time_description": "5 years ago",
+                  "text": "Review (Based on being a long time regular)\n\nHave been swimming here from way back and have been my place to swim as it offers a big and deep enough swimming pool to seriously practice professional swimming (and even diving). Water is clean and doesn't overly smell of chlorine. Shower provides hot water and bathrooms are clean which is expected for the price.\n\nSome staff are friendly but not all. Entrance fee is affordable (+-52k) , although their pricing for students (+-25k) doesn't make sense as they're only valid on weekdays, which is the usual time for students to be in school, so it's kind of redundant because the students would most likely swim on weekends anyway. No info if there is any yearly/monthly subscription as the staff never offers it.\n\nFood & beverage is overpriced, and they tastes overly mediocre on all their menus although i get that they don't specialize in food but it certainly would not hurt to get better chefs. Drinks doesn't have that much variety, only soft drinks and tea. Despite this, they also does not allow us bringing food from outside.\n\nManagement and maintenance could be better as some of the floor are already decaying and some ceramic used are already shattered which is dangerous. Chair is mossy and the metal ones are rusty. In around mid 2018 they did some renovating and i hope these problems will be sorted out but this leads to my next point.\n\nWhile the renovating is happening, there was no info whatsoever aside from a small notice on the wall. The condition of the pool is barely usable. There are dust floating everywhere on the surface of the water, leaves, and unbearable stench while resting on the side of the pool. Swimming experience is severely ruined because of this yet they give no compensation for this and still charges full price, which is absurd and made me feel like i've wasted money swimming there in that condition.\n\nOverall nice place if it was in the normal state without renovations.  Management could be improved and staff could be friendlier. Could use some modernization as place looks outdated and rivaled by other swimming pools nearby. Would rate higher if problems are fixed.",
+                  "time": 1539456446,
+                  "translated": false
+                },
+                {
+                  "author_name": "m ariana r",
+                  "author_url": "https://www.google.com/maps/contrib/101437581302200797433/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXaQ8eAOnMv-6YYg6858wFwSW1DKkwmEP1Lqrxe-5rw6e7PJgmp=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "great place to swim for fun, but it's more suitable for exercise. there's also a waterslide.",
+                  "time": 1559443022,
+                  "translated": false
+                },
+                {
+                  "author_name": "Alex Wong",
+                  "author_url": "https://www.google.com/maps/contrib/117598289877488429748/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKXw5n-0kgPUAMYblVULBy6E_EVGW0JnKJylNkmBvFMVmmZvQ=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 2,
+                  "relative_time_description": "4 years ago",
+                  "text": "Open to public. Quite a run down place especially the changing room and toilets . Considering the quality of facilities and surroindings, entrance is very rather expensive at IDR 55K per pax for an adult. The olympic length pool is segmentised at the shallower end for swimming lessons, so don't expect to do full laps.",
+                  "time": 1571843551,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Kolam renang DE LATINOS",
@@ -1862,7 +4208,69 @@ const detailsWellness = {
                 Fri: 17,
                 Sat: 17,
                 Sun: 17,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Adriansyah Adriansyah",
+                  "author_url": "https://www.google.com/maps/contrib/108746360191602403524/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKFAN4wneX8pcZjYwhAK7uFGZ1tTMOFMnMFWwalQQoYmMUyQpo=s128-c0x00000000-cc-rp-mo-ba6",
+                  "rating": 4,
+                  "relative_time_description": "2 years ago",
+                  "text": "It is clean and not too crowded ..\n\nIt is one of the best place for learning swim ..",
+                  "time": 1657446517,
+                  "translated": false
+                },
+                {
+                  "author_name": "Astrila Ikhlasia Eprina",
+                  "author_url": "https://www.google.com/maps/contrib/116688282197254605475/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWz-JBCJuNPdEvHH-muyI5B_W9MSLXXC3lG6GJRpmmKW1wKoOXd=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "I like this place. Clean and relaxing.",
+                  "time": 1670728310,
+                  "translated": false
+                },
+                {
+                  "author_name": "Riyanto",
+                  "author_url": "https://www.google.com/maps/contrib/102780035924978699166/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU32B-ONRk78tpnGs-BqUptDyiyBpztBJOPjhBYLJczvQzP0sFd=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 4,
+                  "relative_time_description": "2 years ago",
+                  "text": "Good",
+                  "time": 1652748436,
+                  "translated": false
+                },
+                {
+                  "author_name": "Eka Febriana",
+                  "author_url": "https://www.google.com/maps/contrib/113821769206312328076/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV-hN9TSY7DzYxqi5QrTGthknUCmF-kF0uWKA5_ce6-qM-mPbaa=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "7 months ago",
+                  "text": "The atmosphere is comfortable and clean...🏊",
+                  "time": 1704572121,
+                  "translated": true
+                },
+                {
+                  "author_name": "Abimanyu SPA",
+                  "author_url": "https://www.google.com/maps/contrib/101651288238303169932/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVW8gb2jnzGaW7e7dO7mUH2nwoILjcttGXo-6Zr1ghuCDaHphjW=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "A pretty good place to swim, there are ones for adults and children, the price is also cheap, 15k, very suitable for learning to swim, swimming workouts. There are several swimming clubs for serious learning. The changing and showering areas are clean, okay too",
+                  "time": 1638010818,
+                  "translated": true
+                }
+              ],
         },
         // {
         //     Nama: "Kolam Renang Komplek Panorama Serpong",
@@ -1990,12 +4398,136 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Bolomito",
+                  "author_url": "https://www.google.com/maps/contrib/107253451684844819103/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWgjZAh8nkWik4i883ZQTTPkpKrK00O6idqvO2m3IynNDDVk7580Q=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 4,
+                  "relative_time_description": "a month ago",
+                  "text": "Good place for gymming, booking the tennis court is quite hard, the swimming pool is occupied by a swimming school from 15 to 19ish pm almost everyday would not recommend swimming at those hours. Overall a good sport centre for the casuals\n\nCourts can now be booked from the OneSmile Apps available on the playstore",
+                  "time": 1719421668,
+                  "translated": false
+                },
+                {
+                  "author_name": "Bismo Baroto",
+                  "author_url": "https://www.google.com/maps/contrib/114072383544176836587/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXolAM3W8m9kKNwxWilvba3btooiomwj1-F1XmBonWaPu51iWdOFg=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 4,
+                  "relative_time_description": "11 months ago",
+                  "text": "Nice sports club in BSD area.. 50m pool, gym, basketball court, etc.. located in The Green  cluster housing.",
+                  "time": 1693137578,
+                  "translated": false
+                },
+                {
+                  "author_name": "Astrela Risaputri Prasetyo",
+                  "author_url": "https://www.google.com/maps/contrib/113908884681541016063/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVpaREMpqKEZLLu2h7fxe9gCudABDsaazu5GN18WNW3lXv4qTpS=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "Greatest swimming pool ever! And as a student from Indonesia, we came there every swimming class! everything is super clean. although my friend found a dead frog in the shower near the pool, and the baby swimming pool is a little unused so it's really dirty.  i like showering i inside the building and my grandma likes it because i like to come here with my grandma, my grandma thinks it's all clean.",
+                  "time": 1606171610,
+                  "translated": false
+                },
+                {
+                  "author_name": "Ziya Tarmizi",
+                  "author_url": "https://www.google.com/maps/contrib/116427316828970924153/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU9XfAClSdqIaeKtWk-xVW99P8nyD00H8ppqD99Prok89E6uRKi=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 4,
+                  "relative_time_description": "2 years ago",
+                  "text": "My baby got swimming lessons here. The place is inside residential area of The Green BSD. Price per person IDR 65k (infant is free of charge). There is a canteen. The bathroom needs some reparations because the room looks old and if it’s rain it leaks, also the shower water isn’t strong if it’s used together with another shower in another room.",
+                  "time": 1650013304,
+                  "translated": false
+                },
+                {
+                  "author_name": "Kristalicia Rizki",
+                  "author_url": "https://www.google.com/maps/contrib/102407907212610356225/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUyy71RYP8HrrKYsZHolLedxrfnGGnE08dbiHUpm_PFpbGMxOAV3A=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "11 months ago",
+                  "text": "Great and clean pool. The entrance fee on the weekend is 65k/person (for adult). You can also borrow a locker here (no additional fee). There are less people in the afternoon.",
+                  "time": 1694069571,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Navapark Country Club - Swimming Pool",
             subcategory: "Swimming Pool",
-            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
+            Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, },
+            reviewsText: [
+                {
+                  "author_name": "Kong Honggo Wijaya",
+                  "author_url": "https://www.google.com/maps/contrib/118234660885749180284/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWfMf8n_uSceqgIinR6lpFSMvEaHMmvM3Uklg67w0xefvzMk50e=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "3 months ago",
+                  "text": "I actually visited the Maystar. Atmosphere is good, mostly outdoor except the restaurant. This place actually for member only except for few places like the restaurant... For most part I only see a ballet course and a house marketing",
+                  "time": 1714551120,
+                  "translated": false
+                },
+                {
+                  "author_name": "Djo Closet",
+                  "author_url": "https://www.google.com/maps/contrib/105667483126358486525/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUC6NtkEef7LqPb6vtLsNx_YXFp4SHn2CTdlYib8bIXqWXgGQ=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Nice place. New in the neighborhood. And the best thing is, May Star restaurant happens to establish here. Such a good idea. The country club itself is not yet opened to public when i made my visit here. All i can see is a nice view of the pool from the restaurant. Brilliant one!",
+                  "time": 1548309353,
+                  "translated": false
+                },
+                {
+                  "author_name": "Vince Hien",
+                  "author_url": "https://www.google.com/maps/contrib/116175104548161302732/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWAhv4F54Tp1cznrkjqKa2TRj59HPSRA5XsXhQUQMY1jJNwSo40iQ=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "6 months ago",
+                  "text": "Got membership since last year and now I can do workouts and swimming anytime I like. So convenient. Nice place with exclusive atmosphere throughout.",
+                  "time": 1707964951,
+                  "translated": false
+                },
+                {
+                  "author_name": "Ashton Pillay",
+                  "author_url": "https://www.google.com/maps/contrib/110211118229576735155/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJNrloWQ7zC75BGg4g3OHL3lPQpyq4Sjaznn5lJkdzFxJ15Og=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "2 months ago",
+                  "text": "The gym is adequate,  staff are exceptional and the pools are amazing.",
+                  "time": 1718283320,
+                  "translated": false
+                },
+                {
+                  "author_name": "vince ko",
+                  "author_url": "https://www.google.com/maps/contrib/117783452864856637242/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWs6TIvq6MaOG9hAGayhCOo6J2f28Xd9rRa1W8rEV50dv5c4H29TA=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "We often used, it is quiet with modern and stylish facilities. The best healing space. 👍🏊🏻‍♂️⛹🏻⛳️🏸🏓🏐🎱🎧🎤🎺🎨🎮👌➕🍽😋💯",
+                  "time": 1602037023,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Palazetto Sport Club Foresta BSD City  Swimming Pool",
@@ -2027,7 +4559,69 @@ const detailsWellness = {
                 Fri: 20,
                 Sat: 20,
                 Sun: 20,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Krishna FIRE",
+                  "author_url": "https://www.google.com/maps/contrib/101235080484828823580/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWR9174VMrjY4O6UvbAG6CoZkeUUCqPkbdXU41p3Kj0x8tVXAlt=s128-c0x00000000-cc-rp-mo-ba6",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Love it, just like my own pool and gym, especially on afternoon weekday. The sportclub has a circle whirpool, if you wish to get warm water, get it on weekend. Beside swimming pool and gym, it also has a tennis hardcourt, table tennis and yoga/dance room. This is not for public, but only for Foresta cluster resident. Book your facility first via Smile apps. After make a booking, do not forget to scan the arrival confirmation barcode. Otherwise, your membership will be temporary suspended for seven days.",
+                  "time": 1689174939,
+                  "translated": false
+                },
+                {
+                  "author_name": "Andreas Diyen",
+                  "author_url": "https://www.google.com/maps/contrib/105368122591731779209/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIY7JsfUnqa2DcVCESYBdsz5iPmp6XB-PlWHhMcqRQq_gyGRg=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "4 months ago",
+                  "text": "Nice sport club within foresta. The ambience, pool, kids pool are really good.",
+                  "time": 1711383156,
+                  "translated": false
+                },
+                {
+                  "author_name": "Befriko Murdianto",
+                  "author_url": "https://www.google.com/maps/contrib/108663873860636359378/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUl811q43UIExIvc7EQTNTnbEge3TNPDwsSBQvXMi2pN7Ec9d1m=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Favorite place for exercise or swimming with family. Hot whirlpool is available.",
+                  "time": 1681600828,
+                  "translated": false
+                },
+                {
+                  "author_name": "Hee Lee",
+                  "author_url": "https://www.google.com/maps/contrib/101176577929814329478/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWPouTz83StSOlGkoQTomHnRqK7fgOVU4ol6__L_toJhzL8gl_C=s128-c0x00000000-cc-rp-mo",
+                  "rating": 1,
+                  "relative_time_description": "a year ago",
+                  "text": "The swimming pool has not been maintained very well lately.  The water is dirty.  In particular, children who use it are noisy, messy, and have no manners.  very unpleasant",
+                  "time": 1676101568,
+                  "translated": false
+                },
+                {
+                  "author_name": "Deka Thomas",
+                  "author_url": "https://www.google.com/maps/contrib/106878982842970725712/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAVqVIFKjZOGVbWsY8RC9UpZKQqupBV_tY33QRx8KYI8s_Wl0g=s128-c0x00000000-cc-rp-mo-ba6",
+                  "rating": 4,
+                  "relative_time_description": "a year ago",
+                  "text": "Nice sports club, but the fitness sport is very small, and it only has few fitness equipment. But the swimming pool is pretty large, pretty modern club house.",
+                  "time": 1675495296,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Phi Phi Club - Swimming Pool",
@@ -2059,7 +4653,69 @@ const detailsWellness = {
                 Fri: 21.5,
                 Sat: 21.5,
                 Sun: 21.5,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Jenny Huang",
+                  "author_url": "https://www.google.com/maps/contrib/114209871106961211359/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUED074RvwZwcRgZXe5xOlnj-JaZ16qW6TBID-on9YKuSo-3fTb3w=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 3,
+                  "relative_time_description": "2 years ago",
+                  "text": "The club so nice and pretty clean. i guess kids would love it so much. My friend stay there. Its located inside cluster sheffield in greenwich park bsd city. Per my understanding only people who live in greenwich park can go inside this club.",
+                  "time": 1644310660,
+                  "translated": false
+                },
+                {
+                  "author_name": "Grigoriy Ryabtsev",
+                  "author_url": "https://www.google.com/maps/contrib/116139521718080263920/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKjIPHbnS-WGyMMpB0_z9qZW6KKzjglfe9inMdgdf04syDglfxNQ=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "7 years ago",
+                  "text": "Newly opened place for children. Nicw swimming pool and artificial sand beaches",
+                  "time": 1482990925,
+                  "translated": false
+                },
+                {
+                  "author_name": "MR_E K",
+                  "author_url": "https://www.google.com/maps/contrib/116838914113387665530/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ_v-pYiecHd_Q0phJJqUrFiJl2m9_1r4mL4ifjprmsYUJC0GM=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "7 years ago",
+                  "text": "small but nice....my little kids have fun so much play there....",
+                  "time": 1500974562,
+                  "translated": false
+                },
+                {
+                  "author_name": "Fedriko",
+                  "author_url": "https://www.google.com/maps/contrib/113505873800284114640/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW2QReACUUBZhlJOsoRffztLQrJKh8MnP1ZH7-pCIcWyqShWII=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "7 years ago",
+                  "text": "Good place for childreb",
+                  "time": 1501929101,
+                  "translated": false
+                },
+                {
+                  "author_name": "Robert Robert",
+                  "author_url": "https://www.google.com/maps/contrib/108250202576787416482/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUD09Bs8jIOwj8VwHR7HeCYAfy6uF7FgMipd4Zp-ArtWATEfYY=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "6 years ago",
+                  "text": "Nice sports club for kids",
+                  "time": 1509331297,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Blossomvile Tennis Court",
@@ -2154,7 +4810,69 @@ const detailsWellness = {
                 Fri: 21,
                 Sat: 21,
                 Sun: 21,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Yeremia Hotmartua",
+                  "author_url": "https://www.google.com/maps/contrib/115415013455209601634/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVmqD1KkLaFi_cTiUlM4Gqul4YM-oisi-FMJ5n9kF69ygjywhst=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 3,
+                  "relative_time_description": "4 months ago",
+                  "text": "Expensive price for standart facilities. Comparing to the another sport club in BSD",
+                  "time": 1711565659,
+                  "translated": false
+                },
+                {
+                  "author_name": "Richard Wiriyanto",
+                  "author_url": "https://www.google.com/maps/contrib/106875063126007716432/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVPH1PKClHuISLjg_YblppUOE9bJzljUw5siRzaNONlADOt0hJEyA=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Nice activity center for de park residence. Quiet. Could use some coffee shop tho.",
+                  "time": 1692366378,
+                  "translated": false
+                },
+                {
+                  "author_name": "Alvin Andryan Phielip",
+                  "author_url": "https://www.google.com/maps/contrib/108759516004682924333/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIFHi6NccX2QRfehCaaA5N47x9M16KnGvwMnrU0DOcGjPVi1g=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "4 months ago",
+                  "text": "Nice ambience, nice food",
+                  "time": 1712034753,
+                  "translated": false
+                },
+                {
+                  "author_name": "Cynthia Sim",
+                  "author_url": "https://www.google.com/maps/contrib/111401014602977820683/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJra2Buulnl8vRwI4tDJdPLpZwlNH05y2NQ2nnmMt3wtZIarg=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 3,
+                  "relative_time_description": "a year ago",
+                  "text": "Fitness machine is bit old, clean pool and big exciting pool, ..",
+                  "time": 1674735070,
+                  "translated": false
+                },
+                {
+                  "author_name": "Kartika Saraswati (MISCHA)",
+                  "author_url": "https://www.google.com/maps/contrib/107737640406113750826/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLB35s-xjTqywwC6VsK5gKob3SfzfzV75tNIEI17DV6XHHqOA=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Swimming Pool, Gym, Kids Playground, Park, Great place for family.\nThe gym open till 9pm",
+                  "time": 1557286478,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "DeLatinos Tennis Court",
@@ -2186,7 +4904,65 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "M. Fadjar 'Fari' Rijadi",
+                  "author_url": "https://www.google.com/maps/contrib/108696994607028663296/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVteStqfW40PGaKypym3xuVHwExZ8-Mg-SwcFdBTxx5klgvXx7c=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 4,
+                  "relative_time_description": "2 years ago",
+                  "text": "For housing cluster residents only",
+                  "time": 1646655447,
+                  "translated": false
+                },
+                {
+                  "author_name": "Kapitan Vic",
+                  "author_url": "https://www.google.com/maps/contrib/104306568589224110527/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL4tv4QYE6Ah3n_0eOE3qUyJLNebQzRbTbzo6fs2uaQ5AW3=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Two thumbs up",
+                  "time": 1636932670,
+                  "translated": false
+                },
+                {
+                  "author_name": "Dian permata Dewi",
+                  "author_url": "https://www.google.com/maps/contrib/104116848612520067206/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVHh1JEfJ5nHEB1ORFzv5eIbX4m2YlQuwWbMNHotjWlod32W0KG=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 3,
+                  "relative_time_description": "2 years ago",
+                  "text": "Beautiful place",
+                  "time": 1631980888,
+                  "translated": true
+                },
+                {
+                  "author_name": "Zsazsa",
+                  "author_url": "https://www.google.com/maps/contrib/114039776973058309282/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWyCYYfNG-FVby3Y7geVW4rEz0IJBkDHl6jQ84UdRta_N5yrbQW=s128-c0x00000000-cc-rp-mo",
+                  "rating": 4,
+                  "relative_time_description": "9 months ago",
+                  "text": "",
+                  "time": 1700306498,
+                  "translated": false
+                },
+                {
+                  "author_name": "Heru Indriatno",
+                  "author_url": "https://www.google.com/maps/contrib/101561232643124070241/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWCRAey4WJ90tNIDhL2IvkzWgyFm2KXqlQqmx-EiPdLTl8uHAE=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "",
+                  "time": 1670729847,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Greencove Sport Club Tennis Court",
@@ -2321,7 +5097,69 @@ const detailsWellness = {
             subcategory: "Tennis Court",
             Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no",
-            allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, }
+            allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, },
+            reviewsText: [
+                {
+                  "author_name": "Kong Honggo Wijaya",
+                  "author_url": "https://www.google.com/maps/contrib/118234660885749180284/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWfMf8n_uSceqgIinR6lpFSMvEaHMmvM3Uklg67w0xefvzMk50e=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "3 months ago",
+                  "text": "I actually visited the Maystar. Atmosphere is good, mostly outdoor except the restaurant. This place actually for member only except for few places like the restaurant... For most part I only see a ballet course and a house marketing",
+                  "time": 1714551120,
+                  "translated": false
+                },
+                {
+                  "author_name": "Djo Closet",
+                  "author_url": "https://www.google.com/maps/contrib/105667483126358486525/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUC6NtkEef7LqPb6vtLsNx_YXFp4SHn2CTdlYib8bIXqWXgGQ=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Nice place. New in the neighborhood. And the best thing is, May Star restaurant happens to establish here. Such a good idea. The country club itself is not yet opened to public when i made my visit here. All i can see is a nice view of the pool from the restaurant. Brilliant one!",
+                  "time": 1548309353,
+                  "translated": false
+                },
+                {
+                  "author_name": "Vince Hien",
+                  "author_url": "https://www.google.com/maps/contrib/116175104548161302732/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWAhv4F54Tp1cznrkjqKa2TRj59HPSRA5XsXhQUQMY1jJNwSo40iQ=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "6 months ago",
+                  "text": "Got membership since last year and now I can do workouts and swimming anytime I like. So convenient. Nice place with exclusive atmosphere throughout.",
+                  "time": 1707964951,
+                  "translated": false
+                },
+                {
+                  "author_name": "Ashton Pillay",
+                  "author_url": "https://www.google.com/maps/contrib/110211118229576735155/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJNrloWQ7zC75BGg4g3OHL3lPQpyq4Sjaznn5lJkdzFxJ15Og=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "2 months ago",
+                  "text": "The gym is adequate,  staff are exceptional and the pools are amazing.",
+                  "time": 1718283320,
+                  "translated": false
+                },
+                {
+                  "author_name": "vince ko",
+                  "author_url": "https://www.google.com/maps/contrib/117783452864856637242/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWs6TIvq6MaOG9hAGayhCOo6J2f28Xd9rRa1W8rEV50dv5c4H29TA=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "We often used, it is quiet with modern and stylish facilities. The best healing space. 👍🏊🏻‍♂️⛹🏻⛳️🏸🏓🏐🎱🎧🎤🎺🎨🎮👌➕🍽😋💯",
+                  "time": 1602037023,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Quantis Clubhouse",
@@ -2353,7 +5191,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Christo Lim",
+                  "author_url": "https://www.google.com/maps/contrib/105732213729152258120/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUntnvdYcTgYIVBLOAFYnfJfPIzSiW3kQ4l4ZiPQmOwScDUHhmX=s128-c0x00000000-cc-rp-mo-ba7",
+                  "rating": 4,
+                  "relative_time_description": "a year ago",
+                  "text": "Spacious swimming pool but there are a lot of mosquitos in the afternoon at outdoor area. There are also multiple area that you can play basketball, badminton, tennis and other contact sports. There are also gym but the equipment is not as complete as other famous brand gym. They have sauna area, which is good and shower rooms.",
+                  "time": 1691068234,
+                  "translated": false
+                },
+                {
+                  "author_name": "Shabrina Rina",
+                  "author_url": "https://www.google.com/maps/contrib/115483200964728017315/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX9BxLtMeHMOS0uuC3ZNM5jVusgYUatVUz12wuIYsRYgC4v_0aY=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "7 months ago",
+                  "text": "The ambience is nice and clean. Moreover, the staffs are friendly and helpful. Their services are excellent. You can relieve your stress while exercising and relaxing your body. Or you might want to have a private coach for exercising or training your body, then try here.",
+                  "time": 1704363756,
+                  "translated": false
+                },
+                {
+                  "author_name": "bianda nathania",
+                  "author_url": "https://www.google.com/maps/contrib/112462926642320445811/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXYgW7jt2cvblJ_zHAwBJxpEABCLnjQZHMRTtqBY1MOnHZgpsQu=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Me and family having really great experience here.\n\nBig and CLEAN swimming pool.\nComplete facilities (gym, tennis, badminton, basket court)\nClean shower room (this is important right)\nPolite staff, and easy to purchase the ticket since they have a great app (kyzn)\nDisabilities friendly\nKids friendly\nVery pretty lights view at night\n\nOh ya, the place also surrounded with resto, sport station and daily supermarket.\n\nDefinitely will come back again, recommeded 👍",
+                  "time": 1651371820,
+                  "translated": false
+                },
+                {
+                  "author_name": "Bill H",
+                  "author_url": "https://www.google.com/maps/contrib/111070796100855053159/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUX7K3n0lwW_Pa2YM51_DVkKfrOA1EfUjxPYFKbj9nUVV6HZfmh=s128-c0x00000000-cc-rp-mo",
+                  "rating": 1,
+                  "relative_time_description": "a month ago",
+                  "text": "Misleading marketing and poor clarification attempt just as what the other one-star reviewers have described in a more thorough and specific manner.\n\nFront desk management should have made a more modular and visualized easy-to-read flowcharts of what the packages are, their limitations, and the corresponding prices.\n\nThe club has been running for two years by now, any kind of amateurish managerial mistake should NOT be tolerable. Especially considering the high prestige and the upper-middle to upper class target market of the club, such tolerance for rookie mistake should be cut down to microgram level.",
+                  "time": 1719830333,
+                  "translated": false
+                },
+                {
+                  "author_name": "Aditya Zulfahmi",
+                  "author_url": "https://www.google.com/maps/contrib/113477349527822042499/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV3sodUUvWy37nwFwegh-EDYTxDRqOO1IMnmGJpqVm9imLO0_wE=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 1,
+                  "relative_time_description": "7 months ago",
+                  "text": "LOCATION: easy to access, enough parking lot\nFACILITY: court only (rubber court), vending machine for drinks.\nPRICE: crazily insane. IDR 80,000 per hour EXCLUDE daily pass. Daily pass (IDR 80,000 per person).\n\nOVERALL EXPERIENCE: for non-member, not worth it. There are plenty of badminton court around. The court is not ‘world class’ to justify its price. But if you’re looking for privacy, it may be a good place (the price says so). Will not visit again.",
+                  "time": 1703552649,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Sevilla",
@@ -2449,7 +5349,69 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "demi adidrana",
+                  "author_url": "https://www.google.com/maps/contrib/103196433492767307762/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU85ezbIe76fxa8WfmFNahh2VscOXZrBk-Hmk-zKo3a01LA-Wcp=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "6 years ago",
+                  "text": "The tennis court is in the club house area near the Icon BSD... apart from the tennis court there is also a futsal court, basketball court, gym, swimming pool and a large jogging track...\nMembers are free to use the facilities, and especially cluster residents get special prices.\nSmoking is prohibited in the area..\nExperience renting a tennis court, paying individually per 2 hours, but if no one else is using it, you can use it as much as you like...\nFriendly and informative service, with good cleanliness..",
+                  "time": 1520903836,
+                  "translated": true
+                },
+                {
+                  "author_name": "Wheelers Strange",
+                  "author_url": "https://www.google.com/maps/contrib/117670624233055898654/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVx7jT6XgKAu0S2RKC8m9gdjRLlvXe9KSVBKVG3o8X-oKaHPnI=s128-c0x00000000-cc-rp-mo",
+                  "rating": 1,
+                  "relative_time_description": "11 months ago",
+                  "text": "prone to fraud, you need to control your Google business!",
+                  "time": 1693881004,
+                  "translated": true
+                },
+                {
+                  "author_name": "Arnesya Yunis Karinda",
+                  "author_url": "https://www.google.com/maps/contrib/113553695585298148244/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWvbSEZHS9KRPECHlWocLAsKlBjX1LFYwtzwW4AEod_VCfIPElk=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 2,
+                  "relative_time_description": "a year ago",
+                  "text": "The field really needs improvement",
+                  "time": 1671175554,
+                  "translated": true
+                },
+                {
+                  "author_name": "D O",
+                  "author_url": "https://www.google.com/maps/contrib/113758200814998656087/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJdT_ShcVjVln6XNrfMNgQ_t_-IWeo5xy9o1_DaY6Qhy3lK_Bo=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Is this field rented to the public?",
+                  "time": 1630240717,
+                  "translated": true
+                },
+                {
+                  "author_name": "Ali Muhtar Zamrony",
+                  "author_url": "https://www.google.com/maps/contrib/113470884739302047075/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVNCP--ok1rW9pJKu0F1rhMRFIEfUMCKn8CS0Z8Vp-LKBAe161Q=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Nice place",
+                  "time": 1564067439,
+                  "translated": true
+                }
+              ],
         },
         {
             Nama: "The Green Arena BSD",
@@ -2513,7 +5475,69 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Luki Setiawan",
+                  "author_url": "https://www.google.com/maps/contrib/116630777658905463111/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVOYNEZ3hd1gv7QKqlql1laA8S75_zY7bKJAY5OcptzgWYka7E=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "It's nice to have a variety drinks to choose-liquor store around",
+                  "time": 1675135585,
+                  "translated": false
+                },
+                {
+                  "author_name": "Abdul Majid",
+                  "author_url": "https://www.google.com/maps/contrib/104452372926923617592/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKVtD72BGbNIKRZiKeiA0h3MeGdQizKDI8bvGMhSqnv8ghPrw=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 months ago",
+                  "text": "Nice",
+                  "time": 1716043315,
+                  "translated": false
+                },
+                {
+                  "author_name": "aris foriskhi",
+                  "author_url": "https://www.google.com/maps/contrib/106586414463734229139/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUneZe62YVm7ShypWjz8nlBtIiwUgrm73guU4HQUagNTmwle3g=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Good place & good price👍🏻",
+                  "time": 1673954565,
+                  "translated": false
+                },
+                {
+                  "author_name": "Dul Adoel",
+                  "author_url": "https://www.google.com/maps/contrib/115377707638683873982/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIMQnj0CJFiiwwbhv9T3QlvWomIvQgAIj0YnC8MoprS07eXQhw=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 weeks ago",
+                  "text": "If the cashier is friendly, it's really great to subscribe👍💕",
+                  "time": 1722101784,
+                  "translated": true
+                },
+                {
+                  "author_name": "Dhani Ramadhany",
+                  "author_url": "https://www.google.com/maps/contrib/109899891318264110728/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUYdMd8yiU6UyAgSjM0OcZ8pWw3uGjjpSOJVwpHgv5fvOozh0OJ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Cozy place, really worth it for chilling with friends or with friends, and the drinks are really complete... Basically you have to try the dine in here Gokil🔥",
+                  "time": 1670915545,
+                  "translated": true
+                }
+              ],
         },
         {
             Nama: "Adya Yoga Paramhansa",
@@ -2577,7 +5601,63 @@ const detailsWellness = {
                 Fri: 19.5,
                 Sat: 14,
                 Sun: 19.5,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Feliciana Harjadi",
+                  "author_url": "https://www.google.com/maps/contrib/110952547783875536970/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV7ZXZtGa4BmqZznjSrPuTbNPAmsNQ9bYJWH5iNCj2m3_l1rfbu=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Professional instructors.\nThey also do a lot of yoga workshops and special classes.",
+                  "time": 1543514198,
+                  "translated": false
+                },
+                {
+                  "author_name": "Yosafat Sumitro",
+                  "author_url": "https://www.google.com/maps/contrib/114811613093849030468/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUwFT5Z0FkSGZjsVW4wibK_on7WV4lOjTvQ9fL_CpFciHxvmbIv=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "During the Covid pandemic the place is closed",
+                  "time": 1619509408,
+                  "translated": true
+                },
+                {
+                  "author_name": "Natalia Chandra",
+                  "author_url": "https://www.google.com/maps/contrib/105430164786993652981/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWMq8z1QMScd8J9LhkuyuMG5wWTZemkOQoqgZjO6Nf-JM5d_wEKGA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "",
+                  "time": 1686456435,
+                  "translated": false
+                },
+                {
+                  "author_name": "Rudolph Arya",
+                  "author_url": "https://www.google.com/maps/contrib/103756992147540370509/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXl2ifwreEJhDW3Cmw8JDSwA53nAUUcw9OLEW4HDltru4edIYw=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "",
+                  "time": 1567046159,
+                  "translated": false
+                },
+                {
+                  "author_name": "Elly Citra Yustina",
+                  "author_url": "https://www.google.com/maps/contrib/116900275234824349507/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKU-GpmUhIecAunUwxaHpSxXlb9EiybafL097SvM3yZs74uFQ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 4,
+                  "relative_time_description": "5 years ago",
+                  "text": "",
+                  "time": 1556792723,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Fit Soul Studio",
@@ -2609,7 +5689,69 @@ const detailsWellness = {
                 Fri: 21,
                 Sat: 21,
                 Sun: 21,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "yanly angela",
+                  "author_url": "https://www.google.com/maps/contrib/103182934138207574631/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLkEudnHGGINu69tgLRIEypBuIMJsaU7ZiFLff693rh-3INCQ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Nice place, 👍🏻",
+                  "time": 1539149884,
+                  "translated": false
+                },
+                {
+                  "author_name": "Jessi Leneka",
+                  "author_url": "https://www.google.com/maps/contrib/100186253840943728696/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVOM5P_9tCEXJmY5Dz_Prd9fLMAYF0f2Hcw4twDjbijb1s4ofrc=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "This is the coolest gym studio in BSD... super complete, feels really VIP, because the class has a maximum of 20 people. You need to try this. The place is really cute, instagrammable. The instructor is also okay. The classes are also complete, there are muaythai, piloxing, zumba, jump fit, pound fit and many more. Dy even has classes for prenatals, you know!",
+                  "time": 1567238662,
+                  "translated": true
+                },
+                {
+                  "author_name": "kelvin yusuf",
+                  "author_url": "https://www.google.com/maps/contrib/109390402789888511473/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIn1bAbwCf7w1h5hAeOl0zpyHWtSSk2XaQZLAoXOmfiC7PA4Q=s128-c0x00000000-cc-rp-mo",
+                  "rating": 1,
+                  "relative_time_description": "5 years ago",
+                  "text": "the agreement by the marketing person did not match what was promised. He said he could take leave at any time but he couldn't take it once he was in and after being asked, he blamed the manager for leaving.",
+                  "time": 1542791348,
+                  "translated": true
+                },
+                {
+                  "author_name": "Fuji SMBE",
+                  "author_url": "https://www.google.com/maps/contrib/100301674820856344221/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI-E9qGyh5pwgZWCxEjY7Y8rdCrK6XRxRDCjNjXjsjNmHmaTg=s128-c0x00000000-cc-rp-mo",
+                  "rating": 3,
+                  "relative_time_description": "a year ago",
+                  "text": "If I want to register, how do I do it? Is there anyone I can contact?",
+                  "time": 1661222721,
+                  "translated": true
+                },
+                {
+                  "author_name": "kevin delpiero",
+                  "author_url": "https://www.google.com/maps/contrib/112395487505621235147/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKhFNtK13CyrCdYwoZkHHHbbnQOp8mR9_wtvUGIjaDkHtEkiA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Very comfortable :) highly recommended for slimming the body 😆",
+                  "time": 1539150105,
+                  "translated": true
+                }
+              ],
         },
         {
             Nama: "INDIGO yoga",
@@ -2641,7 +5783,69 @@ const detailsWellness = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Nathanial Baumsteiger",
+                  "author_url": "https://www.google.com/maps/contrib/111769405146878322965/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXzkYXJtJxFSOmeB2IARjWMgZFSjxUOW5Yyw-ukSpA2v9luSSQ=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "2 weeks ago",
+                  "text": "I have Practiced consistently at Indigo for more than 10 years.\n\nThe teachers are experienced and the breadth of knowledge goes beyond the Asana practice.\n\nThe depth of the modern Kundalini Yoga practice that Lives at Indigo is incredible.\n\nThe Indigo community is expansive and the experiences are always unique and deeply personal.",
+                  "time": 1722630737,
+                  "translated": false
+                },
+                {
+                  "author_name": "Samantha Robinson",
+                  "author_url": "https://www.google.com/maps/contrib/105922165398293881016/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5U5CPsIZIcHb9ch3uHyqUk_FIRzjiJjnQDiPg9D78TIPMMzrA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "I'm so grateful I found this studio, and this review is long-overdue! I was looking for a yoga studio with a good mix of classes, community, and a focus on yoga as a whole (not just as a workout); I definitely found it here. The space is beautiful, great schedule of classes with gentle and challenging options (I especially love Power Flow 2 with Kelly), and there's a cute shop with clothing, books, teas, etc. They also do a Friday Night Healing series with classes featuring sound healing, meditation, and more. Highly recommend!",
+                  "time": 1648226394,
+                  "translated": false
+                },
+                {
+                  "author_name": "Cybele Lerman",
+                  "author_url": "https://www.google.com/maps/contrib/114399308399680932186/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW26imkfC-kNC0RhOF4CGZ3NILGwulufAQUJEB-bMNmzBkESVDb=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "The space is insanely gorgeous! Went for my friend Caleb's yoga class which was wonderful. Caleb is the best! They have a little shop in front with amazing crystals and other nice things for sale.",
+                  "time": 1656732172,
+                  "translated": false
+                },
+                {
+                  "author_name": "Megan S",
+                  "author_url": "https://www.google.com/maps/contrib/107836374124019854001/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWBrKhAueeqy2-0CQ1g4JGyOuwBBkAMiBzLuMMbFAuUMGKAdzHs=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "6 months ago",
+                  "text": "Love everything about this yoga studio! The lobby/shop is so inviting and the merch is all gorgeous (books, crystals, pillows, clothes, jewelry, tarot cards, beautiful handmade gift cards). The teachers are excellent and care about form and watch the students to help them improve.",
+                  "time": 1707428808,
+                  "translated": false
+                },
+                {
+                  "author_name": "Ann Sen",
+                  "author_url": "https://www.google.com/maps/contrib/114235126809603436394/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLQxRLoUCvMqGQO66OA1fYmnRP2zfa2il3FheoRz9-RL5CTvA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Got to check this yoga studio thru class pass and we enjoyed it! The staff and friendly and the instructors are amazing!  The atmosphere and vibe from this studio is very distinct and I always feel at peace and ease. Carly is gifted, Every time I meet her on my mat, she manages to get my body to do something that is amazingly healing and feels so right, relaxed, connected with the breath and creates so much space I did not know was there. friend (his first time to do yoga!) enjoyed Destiny's restorative yoga class, I highly recommend it. She offered this wooden chip that's placed on top of your mat and depending if you want instructors to correct you or not you have the option to say yes or no before the class starts. Overall I Love how zen this studio. I Would definitely come back and recommend it to everyone.",
+                  "time": 1681876923,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Kencana Yoga Space",
@@ -2705,7 +5909,69 @@ const detailsWellness = {
                 Fri: 21,
                 Sat: 21,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Me_ Nad",
+                  "author_url": "https://www.google.com/maps/contrib/116995378131335336395/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJRTBBxfDo_L9e5GkHK9P1TSpF-PJsHrGlUUCzm2F0XvgS6wA=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Especially for women..\nIt smells good... really girly\nThe sports are varied, there are yin yoga, water yoga, fire yoga, therapy yoga, kids yoga, prenatal yoga, muaythai, belly fit dance, line dance, zumba, poundfit, muaythai, salsation...\nThe place is comfortable, there are lockers, bathrooms, changing rooms, you can pray too...\nPrepare the mat if you don't have one...\nThe owner and admin are friendly...\nGot a souvenir too because it just opened...\nThe members are on promotion..\nAh I love it here.. come on ah..",
+                  "time": 1678145300,
+                  "translated": true
+                },
+                {
+                  "author_name": "Adelita Adella",
+                  "author_url": "https://www.google.com/maps/contrib/110941166082213893976/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXxXBiX2yvfmqioF7fGPC6Sy4eUqGgmlqq0SoOmReuvJVaYtWC9=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "The space is clean & girly. The owner is also nice. Because I came while still fasting so learning the movements was still easy for \"fat loss\"",
+                  "time": 1681055797,
+                  "translated": true
+                },
+                {
+                  "author_name": "humaira humaira",
+                  "author_url": "https://www.google.com/maps/contrib/117873080547842057916/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ6NFWalL0peIFY24YSERoVy8eUpZGffAu-Gp6caowZyGq8yA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Comfortable, especially for women..\nThe yoga equipment is complete...\nThere are many sports choices...\nI'm happy, I just found something comfortable and specifically for women like this, you can shower too, the changing room is sparkling...\nI've registered to become a member because I'm happy with the place and the choice of sports...",
+                  "time": 1674992019,
+                  "translated": true
+                },
+                {
+                  "author_name": "Nadia Ashmi",
+                  "author_url": "https://www.google.com/maps/contrib/114857166441111767451/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ-VbbVSOIJqShnBpPgmKBc5a2ZYVZod8aimwoAf7vibGUJxQ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Fragrant..\nWomen only..\nLots of sports...\nI really enjoy working out here... ❤️",
+                  "time": 1674991812,
+                  "translated": true
+                },
+                {
+                  "author_name": "vinta oktaviani",
+                  "author_url": "https://www.google.com/maps/contrib/111332900994881141163/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVpluvcGfuEqpfkEU_wkMftIh52MYF93dk5Iqud8nDx4U1JCJs=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "I really enjoy sports here, there are many kinds. Apart from yoga, there is also poundfit, zumba, muaythai, line dance, and many more. The place is also aesthetic, there is even a changing room, bathroom and prayer area, so it's really comfortable. All the staff are also friendly, thanks!",
+                  "time": 1675085837,
+                  "translated": true
+                }
+              ],
         },
         {
             Nama: "Treehaus Studio",
@@ -2769,7 +6035,69 @@ const detailsWellness = {
                 Fri: 11,
                 Sat: 10.5,
                 Sun: 18.5,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "H Kurniawan",
+                  "author_url": "https://www.google.com/maps/contrib/100423084655887140924/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJRup5nOD-eq3X2Pkrh_8uDCYlY2_PCKiUpExkAboEqzNgcyqE=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Stay healthy, do Yoga!\nYoga Liu is the best in BSD👍👍\n\nI have tried 5 yoga studios so far in BSD, and YOGALIU really is the best place to learn yoga. Great teachers and facilities.\n\nAttending private class alone usually brings me joy . Now attending regularly, it brings joy into my life ❤",
+                  "time": 1652575392,
+                  "translated": false
+                },
+                {
+                  "author_name": "Ivan Patmadiwiria",
+                  "author_url": "https://www.google.com/maps/contrib/101930245430348664733/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU6bDKbLEisFX3NAkZCXC6-pYjDI4zpiDh6uP1RBccF6eLcwFvcLg=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "A yoga class by a gorgeous yogis Theresia Liu in BSD city, near Jakarta, Indonesia. A place where I began to learn to know about myself, to heal body and soul - the real healing not the trending “healing” 😃\n(in Indonesia these days healings are meant vacation 😐).\nCurrently most classes are online due to pandemic situation. Few, I mean really selected few are off line classes for those who need direct supervision by our teacher but we must clear from Covid-19 and mostly are ancient students like myself that Ci Thres know well and we live in the neighbourhood.\nI live a better and better live today thanks to ci Thres’ yoga.",
+                  "time": 1652663350,
+                  "translated": false
+                },
+                {
+                  "author_name": "eri kusmeri",
+                  "author_url": "https://www.google.com/maps/contrib/108036003449689403009/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIt7ewHbFHQfFko1FFOf-zCQU7qRHFtBNsz9XBDUwrwVXLODg=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Highly recommended for maintaining your health and better bodyshape, realizing the best version of yourself inside & out",
+                  "time": 1652534457,
+                  "translated": false
+                },
+                {
+                  "author_name": "HENDRI -",
+                  "author_url": "https://www.google.com/maps/contrib/107817889023605898888/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUN7rI5q0gtvAK5brTAkuHUqccfrGvzuSrxiabURelSiIp2qVSu=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Good Teacher Yoga very helpfully therapist and akupuntur",
+                  "time": 1559228479,
+                  "translated": false
+                },
+                {
+                  "author_name": "Adelita Adella",
+                  "author_url": "https://www.google.com/maps/contrib/110941166082213893976/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXxXBiX2yvfmqioF7fGPC6Sy4eUqGgmlqq0SoOmReuvJVaYtWC9=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 5,
+                  "relative_time_description": "3 months ago",
+                  "text": "The place is good for yoga, the exercise is also good & educational\nBefore coming here, be sure to ask what health complaints you are experiencing, so the ticker can know and not take the wrong sequence, and thank God, after coming here, the problems can be resolved little by little.\n\nThank you, Ci 🙏🏽",
+                  "time": 1716301145,
+                  "translated": true
+                }
+              ],
         },
         {
             Nama: "Ikigai",
@@ -2833,7 +6161,69 @@ const detailsWellness = {
                 Fri: 19,
                 Sat: 19,
                 Sun: 19,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Herin Sugana",
+                  "author_url": "https://www.google.com/maps/contrib/108390685644228535101/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWZIwvdEsh3loLo4hnujlyytt5p_YzshDC0DN_K1AiUt934j23Y=s128-c0x00000000-cc-rp-mo-ba6",
+                  "rating": 5,
+                  "relative_time_description": "9 months ago",
+                  "text": "What is the most painful pain you can think of, maybe this is doubled.\nSuper painful during the treatment, but it’s totally worth. You might came here limping, but went home walking normal.\nSuper effective treatment.\n\nPrice per today (nov 2023), per treatment 500-750k depending on therapist.\n\nAccess a bit narrow road but still easy.\nMany parking lot availability.\n\nAll staffs are nice, engage, and give a lot of useful healthy tips to avoid injuries.",
+                  "time": 1699170769,
+                  "translated": false
+                },
+                {
+                  "author_name": "Christine Dian Pertiwi",
+                  "author_url": "https://www.google.com/maps/contrib/106047201195587918794/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV6v93uF0COjoRTD2l7FH6zoFd0pikJqyQ56s0LdOr7vS8VlMuc=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "6 months ago",
+                  "text": "great place to remedy your backpain, frozen shoulder and muscle adjustment! i just finished my session yesterday and was great. i had no issues before, but when i was doing the consultations with Pak Joko and also when he checked me. suprisingly, i have some muscle problems 😭 but thank you, i feel better now!! check your conditions please, before it’s late!",
+                  "time": 1706798226,
+                  "translated": false
+                },
+                {
+                  "author_name": "Gianina Hatirangga",
+                  "author_url": "https://www.google.com/maps/contrib/102468492018527776331/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVjozvozUNakqmvrXh_nFGP0TtINm5vf1pVB19nDvXy8HNr120N4g=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 months ago",
+                  "text": "have been struggling with neck pain and back pain for a few years, and Mr. PH quickly find the reason “why”. after about 60-90 minutes of remedial massage and express relaxing massage, my neck & lower back have already felt much much lighter. all the therapists were really nice and helpful. highly recommend!",
+                  "time": 1716464046,
+                  "translated": false
+                },
+                {
+                  "author_name": "Grace Tira",
+                  "author_url": "https://www.google.com/maps/contrib/107147790940159043889/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIx72dqlMNypZvxV3nYEElU48bJrmed8Op3OrAMiDFFgIHtPQ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "I got knee injured from my yoga class and PH Remedial by Pak Joseph helped me feel a lot better after one session of treatment. I can walk like normal again now. I would like to recommend this place for both sport injury treatment and normal relaxation as I already tried both and feel the difference on my body straight away.\n\nThank you again for your stretching recommendation ya pak Joseph 🙏",
+                  "time": 1690620342,
+                  "translated": false
+                },
+                {
+                  "author_name": "Kevin Nguyen",
+                  "author_url": "https://www.google.com/maps/contrib/116641240701787529818/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVlWFAyKyBmny7PYDzgBdlpXQCyU7x2VKQ4Oem_cy7NkKaYO8Y5cw=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Really grateful for the time Pak Paulus gave me in understanding and explaining the source of my problems, he set really good expectations on what treatment looked like (lifestyle changes and habits). Came out feeling much better thank you 🙏",
+                  "time": 1682419864,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Cendana Sehat Reflexy & Healthy Masssage BSD",
@@ -2865,7 +6255,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Nindita Ratna Salsabila",
+                  "author_url": "https://www.google.com/maps/contrib/111123594212282988719/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXKaVyNuCKjVFK-xV22gztzCaxkrUb43aJkcdn8Wtf40pVjGsr6=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "Had a great experience. Nice hospitality and staff. Highly recommend 😊😊",
+                  "time": 1719047553,
+                  "translated": false
+                },
+                {
+                  "author_name": "morinus",
+                  "author_url": "https://www.google.com/maps/contrib/105867232816992324998/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWvyqPYmT6IyLJGkk8J5ljgxqElIw9ybEqIx18ZCRuITGJcB37a=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "6 months ago",
+                  "text": "top service quality, friendly staff. great atmosphere, architecture and decor",
+                  "time": 1708009867,
+                  "translated": false
+                },
+                {
+                  "author_name": "Marvin F",
+                  "author_url": "https://www.google.com/maps/contrib/109141503555065653357/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJmELbDS_SH5QpbNwWfK3qjxNP-UP7ZMCsPovC6F098l7p2aA=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "2 months ago",
+                  "text": "Good massage with reasonable pricing. This is my second visit.",
+                  "time": 1716875614,
+                  "translated": false
+                },
+                {
+                  "author_name": "Wisman Tjiardy",
+                  "author_url": "https://www.google.com/maps/contrib/111413514976364521390/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXeh_Kg86JHhjfKf0dE-dyxF4XBVTFb1ZDd7YtT2-YVZIzg0vYw=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "6 months ago",
+                  "text": "Very attentive and Nice Massage and Reflexiologi. Our fave in BSD Area",
+                  "time": 1707741704,
+                  "translated": false
+                },
+                {
+                  "author_name": "Adrianus L K",
+                  "author_url": "https://www.google.com/maps/contrib/105600859434903342721/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWqkRUg5D-cggWQLs4JINrglQZveO9NOT6lNJrt2eBJsze3EL8m=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "a week ago",
+                  "text": "Good",
+                  "time": 1723384268,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Fun & Healthy Pijat & Refleksi keluarga BSD",
@@ -2897,7 +6349,69 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Pratiwi Damayanti",
+                  "author_url": "https://www.google.com/maps/contrib/106865879768398125082/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXVrlWQfTiLbgDeV8H5Al21sXHRcsbjQN-HkaPfVVxR6ZoB1Jnhxw=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a week ago",
+                  "text": "Visit this place almost every week to get good treatment from Mak Yiyin. She is the best. She makes me healthier.",
+                  "time": 1723297475,
+                  "translated": false
+                },
+                {
+                  "author_name": "Joshia Boys",
+                  "author_url": "https://www.google.com/maps/contrib/108871365681890637758/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUPkEs-jypIIYAWywNyflXeqGulcodCEktVRR29dbBD3YVN4koy=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a week ago",
+                  "text": "Pleasant service, clean clinic. They know what they’re doing.",
+                  "time": 1723271302,
+                  "translated": false
+                },
+                {
+                  "author_name": "Iqbal Ridalta Putra",
+                  "author_url": "https://www.google.com/maps/contrib/107428531180396876757/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKqkYdmNmyjC9tf3gZIhC5bTXpMGUmqicp-FBZk82bgZL4iinA=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "Massage place with better price for the same treatment, and offers more complete variations of side service (hot stone, bekam, facial masker)",
+                  "time": 1719071979,
+                  "translated": false
+                },
+                {
+                  "author_name": "Layasina Inara Dharma",
+                  "author_url": "https://www.google.com/maps/contrib/102672383328850699961/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKpo8GYu50xJwo9i_-Q4tA-zS8J3ba-40BeCrCuVVXstR3QDg=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "Very good massage lady to relieve and soothes my body.",
+                  "time": 1720238493,
+                  "translated": false
+                },
+                {
+                  "author_name": "Sari Octaviani",
+                  "author_url": "https://www.google.com/maps/contrib/111024820424061390834/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXLUNycFpdrZZY744OrjTRWiVFPX-NG3ApMTBhgsl1OpmmJh6460Q=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "7 months ago",
+                  "text": "The best back massage I have ever experienced.. You should book with Ibu Tini, excellent power and pressure.. 👍👍👍",
+                  "time": 1706013841,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Poetre Spa",
@@ -2929,7 +6443,69 @@ const detailsWellness = {
                 Fri: 18,
                 Sat: 18,
                 Sun: 18,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Mirhamn",
+                  "author_url": "https://www.google.com/maps/contrib/118096055160077372597/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUJCoL3KBB3aQpLL1Vw5MGIJ3cxM0jku80QYIHi1C3XcX7qPS3K=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "Good place for me time, nice service, friendly staff, cozy place but too small i think. The place smell like aromatic scent. The staff is friendly, do their job very good but they only have 4 therapist. If u wanna visit at the weekend it's better to booking by whatsapp number. The price is affordable and complete, no tax or charge needed. Oh ya, and one more thing: They only accept Debit/Credit card, no cash.",
+                  "time": 1599811562,
+                  "translated": false
+                },
+                {
+                  "author_name": "Riyanny Tarliman",
+                  "author_url": "https://www.google.com/maps/contrib/115546237670194448167/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVRqfq6tw_ZKv2sUcHaqvh-TjGGaL2K6Nk1WiY12ee9FmqCe9hF=s128-c0x00000000-cc-rp-mo",
+                  "rating": 1,
+                  "relative_time_description": "9 months ago",
+                  "text": "I was coming here around 5.10 PM with the expectation of hair mask for around 1 hour. After payment, she escort ke to the room, for creambath, and ignore me for around 15-20 mins. The service was super slow, massage with no power, wash my hair with no skills, while proclaim this is spa place. The only good is no one there, which i believe because they have worse services, and the mask is good. And it took me more than 1.5 hours meanwhile they are stating 45 mins duration for hair mask",
+                  "time": 1700656647,
+                  "translated": false
+                },
+                {
+                  "author_name": "Diviezetha A. Thamrin",
+                  "author_url": "https://www.google.com/maps/contrib/108568646798528441278/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-4nfKxLF43XePt3WFyctaJzBc8l7B9YqadKZ-hUVnwDmUi_LimQ=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 3,
+                  "relative_time_description": "2 years ago",
+                  "text": "The staffs were extremly nice and sweet. The masseuse (Mbak Anna) was great and attentive, she gave such a very good massage. The only drawback was the place—the bathroom in particular, was not very hygienic and dirty. The water was not so warm it was almost cold, there were hair and ants on the drainage…\n\nIf I could rate it separately:\nStaffs and service: 5 stars\nPlace, bathroom in particular: 0 or 1 star",
+                  "time": 1657017032,
+                  "translated": false
+                },
+                {
+                  "author_name": "Titania",
+                  "author_url": "https://www.google.com/maps/contrib/100743906177535213145/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI4WAEbW65igUBxCClGYlqH54pfi8-M1w6Np0b-8moqj9aX4A=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "I love everything in here! From the atmosphere, and the staffs. They gave me welcome drink and another free hot ginger in the middle of treatment. Glad to find this place! Will be back soon! 💗\n\nTreatment : Pedicure, hair mask, haircut.",
+                  "time": 1633188364,
+                  "translated": false
+                },
+                {
+                  "author_name": "Alfrecia Latumahina",
+                  "author_url": "https://www.google.com/maps/contrib/111103254110385586968/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXixUBfPMh9gLo3juslebb8e4Q6siyD4sCjtC5xic1_g0wIDTRc=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Recommended by a friend, not pricy and the staff are friendly. I got handled by Wita, asked for Brazilian and hair spa. She's amazing, and the massage is very good 👌🏽. Gonna ask for the javanese massage next time. Thank you!",
+                  "time": 1661602395,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Segar Sehat BSD",
@@ -3025,7 +6601,69 @@ const detailsWellness = {
                 Fri: 21,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Talha Amjad",
+                  "author_url": "https://www.google.com/maps/contrib/104863068391084208872/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW3IyDIK_wILT9YznqoYNeb3g2X2dZb9KpTvgH2HiFsZ7rHHDA6=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 5,
+                  "relative_time_description": "2 months ago",
+                  "text": "One of the best spas in BSD area. It's located in Pasar Modern. The staff is very kind and cooperative.\n\nThe massage service was perfect! Highly recommended place for massage and reflexology.",
+                  "time": 1716869170,
+                  "translated": false
+                },
+                {
+                  "author_name": "Di Di",
+                  "author_url": "https://www.google.com/maps/contrib/101962515759384725264/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXpqAqRtq1_uiKfr63_bBS0Gwj9PXOCxrooVYi85aw4x6kZ6dU=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "One of the best massage in BSD! Located in Pasar Modern BSD, they have a very comfortable place, good therapist, friendly staff! ❤️❤️",
+                  "time": 1719654312,
+                  "translated": false
+                },
+                {
+                  "author_name": "Putri K",
+                  "author_url": "https://www.google.com/maps/contrib/106793722868910293472/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUlMQRaIWP9FNVf1EcYIttlP81jCSrEYBkx-NmKPQpKvD1ZEoPv=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 months ago",
+                  "text": "New experience for body massage. I choosed Signature seminyak body massage and its so relaxing and calming. Just like yoga technique. Place is so good and you can feel Baliness vibes here. Will be back here again for sure 🫶",
+                  "time": 1718789952,
+                  "translated": false
+                },
+                {
+                  "author_name": "Iqbal Bagus Dwinanto",
+                  "author_url": "https://www.google.com/maps/contrib/107923903864121356531/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXw_LVI1wS9b0ji7-B4FRu0bfvR6wwpgDYoqwF4tWbXKb9s0eTD=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "The service was top-notch. The staff was professional, attentive, and genuinely cared about providing a personalized experience. My massage therapist was skilled and attentive to my needs, ensuring that I was comfortable throughout the session.\n\nEvery detail, from the calming music to the high-quality oils, contributed to a serene and rejuvenating experience. I left feeling completely relaxed and revitalized.\n\nI highly recommend to anyone looking for an exceptional massage experience in BSD. The service and ambience were truly lit!\n\nFeel free to customize it further if needed!",
+                  "time": 1721299930,
+                  "translated": false
+                },
+                {
+                  "author_name": "Celine C. Paramita",
+                  "author_url": "https://www.google.com/maps/contrib/106783961691474689452/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUzl6mkABihoAbw0VCxnc2pToIoqdm67NnNa8iFOE_ZunathVLP=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "5 months ago",
+                  "text": "Unexpectedly found this gem in pasar modern BSD area, fast respon CS, have such a comfortable atmosphere and hospitality, clean room and each people got private room. We can choose 1 from 3 oil to be our main oil.",
+                  "time": 1709978628,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Hanami Wellness and Reflexology BSD",
@@ -3121,7 +6759,69 @@ const detailsWellness = {
                 Fri: 17,
                 Sat: 17,
                 Sun: 17,
-            }
+            }, 
+            reviewsText: [
+                {
+                  "author_name": "Dian Kusuma Anggraeni",
+                  "author_url": "https://www.google.com/maps/contrib/100944970088113111558/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAmRvqXo-422KBQNw558oWUzKek7oFVTaMNpt8csjiqCm3nLh6=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "my baby was very happy.. n enjoy the treatment.. the place is clean n hygienist.. thx kyonest..",
+                  "time": 1610276969,
+                  "translated": false
+                },
+                {
+                  "author_name": "Ratna Purwaning Wardhani",
+                  "author_url": "https://www.google.com/maps/contrib/113267725985838746440/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXuIrqaBENemLh_w7HkMXpKhqmKMeZRf0AwdpWIN31aJ8b9paQ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "First time but all is good for the service, thanks ya kyonest baby spa",
+                  "time": 1601199631,
+                  "translated": false
+                },
+                {
+                  "author_name": "Irene Darsono",
+                  "author_url": "https://www.google.com/maps/contrib/109703571739816205617/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXUxxmO1XkKFF8TZRHfWZq2pLf5MA8JX8tONgdfxMER-CnA2Ula=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "First time Doing baby Spa...Clean Place...Professsional Service...Thank you...",
+                  "time": 1616148456,
+                  "translated": false
+                },
+                {
+                  "author_name": "Putu Dita",
+                  "author_url": "https://www.google.com/maps/contrib/111131279943614913612/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVXOAc4eTKVUf_haVbOJmCc2DW27XOOfprjpUIvd5WWOeUg_6uy=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "Good quality and professional person in charge to handle baby. Definetely will come back",
+                  "time": 1604223981,
+                  "translated": false
+                },
+                {
+                  "author_name": "Virrency Rency",
+                  "author_url": "https://www.google.com/maps/contrib/109902957101841715148/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUnV-Wtx1Q8cT9-VnL9c5zROF87JwLm87BZRkIFTFPj-F7vGVk=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a week ago",
+                  "text": "Comfortable & clean place. Very friendly massage person. My child seems to feel at home... even though it's his first time getting a massage... he'll become a regular...",
+                  "time": 1723367669,
+                  "translated": true
+                }
+              ],
         },
         {
             Nama: "Kokuo Family Massage & Reflexology Aeon Mall BSD",
@@ -3185,7 +6885,69 @@ const detailsWellness = {
                 Fri: 23,
                 Sat: 23,
                 Sun: 23,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Lingga Madu",
+                  "author_url": "https://www.google.com/maps/contrib/114264704622648460550/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX1GuxOJnUNzfCrIS4rKBdKkJVSAN6Y9DVKE6cvvYUO7oB1L5Nw=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "I was skeptical at first, but they did all the essentials well, an excellent no-frills reflexiology:\n- The room was showing signs of aging, but it’s clean, well-maintained, quiet, and cold.\n- Customer service was fast, responsive, and efficient.\n- The water temperature was just right.\n- The massage was on point, did not hurt at all, and so relaxing - I actually dozed off (protip: ask for Pak Nana)\n- Super value for money. 85k for 90 mins reflexiology.",
+                  "time": 1640244211,
+                  "translated": false
+                },
+                {
+                  "author_name": "Budi Hartono",
+                  "author_url": "https://www.google.com/maps/contrib/100819522744646321138/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWVcxnhCajqOxrjJhFk0aOXmddZnXWmYYyglW2kFRp9hLE_aDJb=s128-c0x00000000-cc-rp-mo",
+                  "rating": 4,
+                  "relative_time_description": "a year ago",
+                  "text": "Economical price. Place coild be more clean n comfy",
+                  "time": 1689665008,
+                  "translated": false
+                },
+                {
+                  "author_name": "Moskwa Prima H",
+                  "author_url": "https://www.google.com/maps/contrib/106253173438044609690/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWhXhHFFl3EE-reZ_vs5589hbmI-mL0tch9nNAoi9peHTyspIDS0A=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Nice place for getting pijat refleksi.\nWe can booking one day before.",
+                  "time": 1681728151,
+                  "translated": false
+                },
+                {
+                  "author_name": "Twen Zig",
+                  "author_url": "https://www.google.com/maps/contrib/118297494284115606080/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWY8Jn_v40DZq5oxS2cl8KbXBj83hENds2BZL3WRMJMaYEJhkw=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 4,
+                  "relative_time_description": "4 years ago",
+                  "text": "Not bad for the treatment and the masseur. But need to improve their male reception staff hospitality..",
+                  "time": 1568216772,
+                  "translated": false
+                },
+                {
+                  "author_name": "Roy Soedharma",
+                  "author_url": "https://www.google.com/maps/contrib/109047966601001702605/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJqVD5WJIOkZaM5p680IUswGxpo-ibva7QK-vSn0RiCj25zoQ=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "10 years of services never fails",
+                  "time": 1662804275,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Aika Family Massage & Reflexology",
@@ -3249,7 +7011,69 @@ const detailsWellness = {
                 Fri: 21,
                 Sat: 21,
                 Sun: 21,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Amelia",
+                  "author_url": "https://www.google.com/maps/contrib/105117611354394984773/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLlqTPNNadcX99i_rjRaibt3tpFLRo75aN7vxQe0azKQRZturU=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 months ago",
+                  "text": "Trying Relaxion for the first time, got a friendly and warm therapist, she checked through the massage session to see if any part was still painful or stiff. Nice ambiance, great pricing and package. For face massage, you’ll get sheet mask and put it on during the session. You’ll get ginger drink at the end to better the experience. Lastly, I appreciate their prompt reply on WhatsApp booking. Will come back for sure. Keep it up!",
+                  "time": 1714216071,
+                  "translated": false
+                },
+                {
+                  "author_name": "Benediktus Kenny",
+                  "author_url": "https://www.google.com/maps/contrib/112232538951590738437/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ9g9umK6JByZRLDg9TIAJByKutDCdBvGfMN3O0BMAbe9WhIw=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "Nice place to get massage, service was good. Overall was very nice would like to come back",
+                  "time": 1719488810,
+                  "translated": false
+                },
+                {
+                  "author_name": "Yohana Silvia",
+                  "author_url": "https://www.google.com/maps/contrib/104432528588607064146/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIwOoywmRGPQokCGtDCKWR_-4EW5c0bS4-BUHuCaK5jnN7j6w=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "4 months ago",
+                  "text": "excellent massage and body care. Perfect touch and hit all the right spots. Quiet and relaxing for the best relaxation. I will be back, highly recommend.",
+                  "time": 1711962283,
+                  "translated": false
+                },
+                {
+                  "author_name": "Elia Yovan",
+                  "author_url": "https://www.google.com/maps/contrib/105767980582980980123/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXlAy35SjsztKjU4Ul6yc70NWLaxSLnWJI4V4eROAqozO-HZlyrVw=s128-c0x00000000-cc-rp-mo-ba6",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Relaxion is always my first choice for reflexology in BSD. The price is affordable. Value for money. I wish this place will staying long.\n\nThe therapist, Dito, is awesome.",
+                  "time": 1692447050,
+                  "translated": false
+                },
+                {
+                  "author_name": "William Wongso",
+                  "author_url": "https://www.google.com/maps/contrib/112117640407194079057/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLJf52R8AT94wL6X2LUJKNvo_DNeZcYqa3Hkt7iVVi1ZGXwPw=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a week ago",
+                  "text": "nice massage and reasonable price",
+                  "time": 1723285737,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Martha Tilaar Salon Day Spa BSD",
@@ -3281,7 +7105,69 @@ const detailsWellness = {
                 Fri: 20,
                 Sat: 20,
                 Sun: 20,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Dummy Dummy",
+                  "author_url": "https://www.google.com/maps/contrib/104739546971781633009/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJFQsjmVuw9e1gbotOXLCn5VG5gdu6AoL9kTvCa0Q-dbFL-EA=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 4,
+                  "relative_time_description": "6 years ago",
+                  "text": "Has been member of martha tilaar since 6 years ago. Love the ambience and hospitality. So traditional!!\nMy usual treatment here:\n1. Facial once a month. Try some of its facial type. If toh offered additional mask during ypur treatment dont be ashamed to ask the price if you have limited budget\n2. Massage. Going here if need a light massage to pamper myself. Massage + sauna+ milk bath + scrub, you can choose your preference. Not recommended if you need harder massage, better go to cozy or mitra sehat.",
+                  "time": 1522683778,
+                  "translated": false
+                },
+                {
+                  "author_name": "Lydia D",
+                  "author_url": "https://www.google.com/maps/contrib/101963084387095430131/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjULU1Ja9oYrVa6d_HC1I5oPAmzShjKDA91Fu4sPSL5wLA_CwGJk=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 2,
+                  "relative_time_description": "4 years ago",
+                  "text": "Bought a spa package that was around 500k+ and the massage was very mediocre and the bathtub was leaking. So as i was soaking a few minutes later half of my body wasn't in the water anymore 😂 maybe visit their other bigger, better managed branch...",
+                  "time": 1566726581,
+                  "translated": false
+                },
+                {
+                  "author_name": "Agnes Aulia",
+                  "author_url": "https://www.google.com/maps/contrib/100692415707920362101/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWI9LxQRBIQmo-9Bn_yPFioqRKgLpXW9oILR3cCFvcEgJIRBCMz=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "6 years ago",
+                  "text": "It has good ambience and good therapists. A bit pricey for my budget but really worthy when you just want to relax and have your 'me time'.",
+                  "time": 1522986317,
+                  "translated": false
+                },
+                {
+                  "author_name": "Grace .P",
+                  "author_url": "https://www.google.com/maps/contrib/115877867774992300559/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAHWYjwZWJ2IU8-oGxeDnzFMr8iYiBNrp-MpE5Fo31RtP7XqeeNg=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 2,
+                  "relative_time_description": "4 years ago",
+                  "text": "they have complete facilities.. but the massage is so bad that my body aches even more after the treatment. Not recommended.",
+                  "time": 1575982874,
+                  "translated": false
+                },
+                {
+                  "author_name": "Vivi Jeki",
+                  "author_url": "https://www.google.com/maps/contrib/113579723233400694430/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXP24rQefYGtPPOtJxH_gm78yfaOF-bquoTwuht6vBL1QYBXrFS-w=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Service excellence, complete package and comfortable room..i like this place for relaxing my body",
+                  "time": 1663695869,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Bersih Sehat BSD",
@@ -3409,7 +7295,69 @@ const detailsWellness = {
                 Fri: 21,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "shafira azhar",
+                  "author_url": "https://www.google.com/maps/contrib/117207490965082560933/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIuKfXxq_mraDkp311j38qU6AuejhFgQjH2pz7-7U5QE3JYbA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 weeks ago",
+                  "text": "I was looking for a reflexology place and happened to see a recommendation on Google and was interested in trying it. The service chosen is reflexology for both husbands.\nThe place is clean, comfortable and the therapists, Mr. Asep and Ms. Tika, are also experienced.\nCompetitive prices and there are also reflexology and massage packages and other packages.",
+                  "time": 1722083230,
+                  "translated": true
+                },
+                {
+                  "author_name": "Priskila Gita",
+                  "author_url": "https://www.google.com/maps/contrib/116816084853810348624/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWE4f8RIGzAWOXX8GlEsMj0foq9b8i2sRlSLq5X2RtWsgCVk7KZ=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "in the last week",
+                  "text": "I've been here twice, the massage has always been ok (take package A). Hopefully the quality of reflexology services will be maintained and if it can be improved 🙏 continued success",
+                  "time": 1724048334,
+                  "translated": true
+                },
+                {
+                  "author_name": "Kylia tiani",
+                  "author_url": "https://www.google.com/maps/contrib/110340357462159380106/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXUk-xRkkCa-2t5b3Qn8aUPNIzEttOPN81sbHSskKWuJNif8cpPMQ=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "3 weeks ago",
+                  "text": "Subscribe every month with Ms. Aisani and Ms. Euis, the massage is good, you don't have to rush",
+                  "time": 1721983443,
+                  "translated": true
+                },
+                {
+                  "author_name": "destafatmala sari",
+                  "author_url": "https://www.google.com/maps/contrib/108208102170938870911/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI45jmBcGZO45q495copzK1D56B86UFyzGE__x11Yi867l4Tw=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a week ago",
+                  "text": "Coming on a weekday is more relaxed and you can go straight in, the massage is delicious, the therapist is friendly, the price is also cheap",
+                  "time": 1723029019,
+                  "translated": true
+                },
+                {
+                  "author_name": "Gabriella Florentina Christine",
+                  "author_url": "https://www.google.com/maps/contrib/117960739572424966468/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIr3rzpvSEWlAEDlLRzyyUrBRvxkTE1HN0PMcHRDFJ8ri2mDQ=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "4 months ago",
+                  "text": "The place is clean, smells good.\nYesterday I tried package A and it was really delicious.\nWhen finished, you are also given ginger water.\nMaybe you can open it in the Alam Sutera area😂",
+                  "time": 1713492723,
+                  "translated": true
+                }
+              ],
         },
         {
             Nama: "Chien Khang Thang Thai Reflexology Ararasa",

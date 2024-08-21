@@ -1,5 +1,5 @@
 const detailsMedical = {
-    category: "details",
+    category: "medical",
     info: [
         {
             Nama: "RS Eka Hospital",
@@ -287,7 +287,67 @@ const detailsMedical = {
                 Fri: 15.5,
                 Sat: 0,
                 Sun: 0,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Triyono Setiawan",
+                  "author_url": "https://www.google.com/maps/contrib/108707571628430220330/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJuzcbMC_YSKsEOIHbdlXQLNFy4nNVrTcvQxWDOayLwhZEYzA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "On 9 March 20 I came for treatment, immediately treated by a doctor with the right diagnosis so that the next day I was able to work again, strategic location in BSD, comfortable place",
+                  "time": 1583886580,
+                  "translated": true
+                },
+                {
+                  "author_name": "Rev Moko",
+                  "author_url": "https://www.google.com/maps/contrib/104190059388535974514/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKFMFXtWkMTADgiqWe0SpeBIvvCpkBPp1lMydwahVT--iekrA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "The place is comfortable and clean. The nurses are friendly and the doctors are solution-oriented.",
+                  "time": 1582602777,
+                  "translated": true
+                },
+                {
+                  "author_name": "Mega Siregar",
+                  "author_url": "https://www.google.com/maps/contrib/111523321137294018186/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUynxYpt4MgUwSN2TssiuFW-6CScKgJRn3mgidizs4KON5fNAOE_A=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "professional doctors, comfortable and strategic location",
+                  "time": 1583885393,
+                  "translated": true
+                },
+                {
+                  "author_name": "Yuli Ana",
+                  "author_url": "https://www.google.com/maps/contrib/101195164435725177910/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIvc65PYbXgfwGCTmF-wcg8UJSqsOoq4x5wwBukvFdg4oP9=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "Very comfortable in the clinic, it doesn't feel like being in a clinic",
+                  "time": 1583886230,
+                  "translated": true
+                },
+                {
+                  "author_name": "Dian Susana",
+                  "author_url": "https://www.google.com/maps/contrib/102326914547657960577/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW0gV5E3tkA4eLqY6tbw5kUtRBSMzS2UpzwPi0cU5Ptpk3iy1Q=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "4 years ago",
+                  "text": "",
+                  "time": 1582632311,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Klinik Shalom",
@@ -351,7 +411,69 @@ const detailsMedical = {
                 Fri: 17,
                 Sat: 17,
                 Sun: 0,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Temmy Rahadipoetra",
+                  "author_url": "https://www.google.com/maps/contrib/106607255646285523530/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWfxrffzaO6ttQcu9DleqBwC_jkcvVrpku7UNhr9t-mTzPwKE0=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Very nice place and good service. Thumbs up!",
+                  "time": 1637427430,
+                  "translated": false
+                },
+                {
+                  "author_name": "Diary Bundaku",
+                  "author_url": "https://www.google.com/maps/contrib/112763331730296442405/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVaOFrY6HF376NpsdF6iHW-2ewPBMlgeLtzBa7m4Qdtj979Vp9oOQ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Very nice place and good service👍",
+                  "time": 1648095482,
+                  "translated": false
+                },
+                {
+                  "author_name": "widi widd",
+                  "author_url": "https://www.google.com/maps/contrib/107059198292161905408/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWI3BeXTNcc8nz5oalovsuIIZhJ9pC4yLrKejQlXGL6rNXRr1Ca=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "A fairly new clinic in a shophouse on Golden Boulevard, very close to my place of work. and good service, very friendly doctors and officers, the place is quite comfortable, and the service is very fast, highly recommended.😊",
+                  "time": 1647325396,
+                  "translated": true
+                },
+                {
+                  "author_name": "Rany Noviani",
+                  "author_url": "https://www.google.com/maps/contrib/116162284666137038071/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXqO_ymLFlebkastK9GtSqllShSiiGMTCwfo_Y06OmqDjb2jE7C=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Dr. Giovanna's clinic.. BSD area.. very good and comfortable service.. the place is also clean 🙂",
+                  "time": 1647934015,
+                  "translated": true
+                },
+                {
+                  "author_name": "Qintara Bayu",
+                  "author_url": "https://www.google.com/maps/contrib/104048493631989628905/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUxrvx9LxZ0H_8WO7uSX4t20TerruoAIyCjlWFOTFWFqFmL8pog=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 years ago",
+                  "text": "Highly recommended for an antigen swab or PCR place, the staff are super kind and friendly, the place is also clean",
+                  "time": 1647482802,
+                  "translated": true
+                }
+              ],
         },
         {
             Nama: "Klinik Dokter Nidya",
@@ -608,7 +730,41 @@ const detailsMedical = {
                 Fri: 19,
                 Sat: 0,
                 Sun: 0,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Gym88bsd Elly",
+                  "author_url": "https://www.google.com/maps/contrib/108739214452763552943/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUnfHA_MNloa-kysjuouSWFfGBJHp-k1uSJfrLJEERCL8KUxPg=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Doctor Benny was very patient in explaining everything, full of understanding, not commercial. Thank you very much Dr Benny, hopefully many people will be helped by Dr Benny's presence🙏",
+                  "time": 1668829315,
+                  "translated": true
+                },
+                {
+                  "author_name": "Budi Waseno",
+                  "author_url": "https://www.google.com/maps/contrib/102841146188420527645/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL_YkH558MvgMzvfDs1XTh_PiXIyTyeaMtrsYgd-lWAPlymIA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 1,
+                  "relative_time_description": "a year ago",
+                  "text": "",
+                  "time": 1679629653,
+                  "translated": false
+                },
+                {
+                  "author_name": "Sandra Effendy",
+                  "author_url": "https://www.google.com/maps/contrib/114146394307755454236/reviews",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVDXIv7DQUhARLpUacMNSknf286t-ZQDSM4TlB5P5TxCJLxRYB4=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "",
+                  "time": 1542804527,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Dokter Bahtiar Suhadi",
@@ -1311,7 +1467,69 @@ const detailsMedical = {
                 Fri: 21,
                 Sat: 18,
                 Sun: 0,
-            }
+            }, 
+            reviewsText: [
+                {
+                  "author_name": "Veronica Setiady",
+                  "author_url": "https://www.google.com/maps/contrib/104515323501267471114/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI5T9WIM1Yatya7zY3K-iv3dmtdGIBsa5THc32YXAzplQolWw=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 months ago",
+                  "text": "I'm a regular customer of Aesthetic Dental Clinic. It took extra miles for me to get there from Cibubur but end up always with satisfaction. The clinic was comfy and clean, lobby was grand, doesn't feel like you're visiting a clinic. Moreover, they were equipped with trusted & modern technology. Staffs were very friendly, great hospitality. Location also good with spacious parking area. Price is competitive and worth it. My favorite dentist, Drg. Vanessa, is very informative and transparent in every action that she did. Awesome ADC and keep up the excellent works.",
+                  "time": 1714466752,
+                  "translated": false
+                },
+                {
+                  "author_name": "Fransiskus Raymond",
+                  "author_url": "https://www.google.com/maps/contrib/102762411399983073625/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLrCsxmgBuy6acUqcf0NI3WpC8ECl-I76Z1DhlUnRonCwq2ZQ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "4 months ago",
+                  "text": "As someone who values quality dental services and exceptional customer experiences, I couldn't be more thrilled with my time at Aesthetic Dental Care. From the moment I stepped through the door, I was greeted by a warm and inviting atmosphere that immediately put me at ease.\n\nThe clinic is different from the ones I have visited. It delivers a different level of sophistication and comfort, making each visit a pleasure. And I love the openness & the trustworthiness of the dentist. She provided the best advice tailored to my needs and executed each treatment with precision and care.\n\nI have done Biofilm Therapy, Celebrity Whitening and several fillings with dr. Adelia. And the results? Simply outstanding. Thanks to her expertise and attention to detail, I couldn't be happier with the outcome.",
+                  "time": 1713263210,
+                  "translated": false
+                },
+                {
+                  "author_name": "Langit Cakrabumi",
+                  "author_url": "https://www.google.com/maps/contrib/113708861143357172230/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjURj0_3tOiWqCq8MGsYYls2cB9tVsVGT0h7uS6KJU1i0HHbcMc=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 months ago",
+                  "text": "I was always unhappy with my front teeth, and I came to see dr. Adelia. Got direct veneers from her. The price is more premium than other ones I came to. But I got a very satisfying results. The veneers look so real like natural teeth! I can't be happier with my smile now!",
+                  "time": 1715561853,
+                  "translated": false
+                },
+                {
+                  "author_name": "Erlangga FR",
+                  "author_url": "https://www.google.com/maps/contrib/113298798591683808664/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUBONGQjYzHB4bSOQwEsXWv1r_u01QNnEsgVYTdRkGtGURRjLrs=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "The best dental clinic i've ever visited. Feels like a hotel👏🏼",
+                  "time": 1719050937,
+                  "translated": false
+                },
+                {
+                  "author_name": "Zoya imansha",
+                  "author_url": "https://www.google.com/maps/contrib/115729594085190569921/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWMdyTP5MdxTINfupg7aD-OFrPyESLzjzpMSKcPE6q5gBqwtuQ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "3 months ago",
+                  "text": "I used to be somewhat afraid of dentists, but this clinic changed my perspective. The doctors and nurses are extremely friendly and kind, and the administrative staff always follows up on the condition of my teeth after treatment.",
+                  "time": 1715663053,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Dokgi Dental Clinic BSD",
@@ -1726,7 +1944,69 @@ const detailsMedical = {
                 Fri: 21,
                 Sat: 21,
                 Sun: 0,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Abby G",
+                  "author_url": "https://www.google.com/maps/contrib/113900012418032828720/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX1uDNVnXocZigx2hhkSZCWMq4o_wpygly6hG4_heSyKiTa1Qwp=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 1,
+                  "relative_time_description": "a year ago",
+                  "text": "cane here because my tooth was excessively bleeding every time i brush my teeth and the doctor said “your teeth are really good! maybe just the gum” so i went to a different doctor and turns out there was a filling that was too fat - collecting food that cannot be brushed.\n\ncame to another smiling clinic in alam sutera for a root canal - 3 months later the crown chipped. def not recommended in terms of quality, price, and service.",
+                  "time": 1687888535,
+                  "translated": false
+                },
+                {
+                  "author_name": "Kuro House of Craft",
+                  "author_url": "https://www.google.com/maps/contrib/103782245356420721651/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW89f8MwjqizcYvQ2O84A44peaQeTPLIsVyhxaoDFrYSZIxjNwp=s128-c0x00000000-cc-rp-mo-ba5",
+                  "rating": 5,
+                  "relative_time_description": "5 years ago",
+                  "text": "Very good dental clinic, the dentist is very fast and ontime. No need to waiting too long. Just make an appointment first",
+                  "time": 1535201431,
+                  "translated": false
+                },
+                {
+                  "author_name": "Gia Adisti",
+                  "author_url": "https://www.google.com/maps/contrib/109815391357968978673/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJIcF65yEOiBlWVSfkhRDV-nYMIvwJEWAYySLzKLVyv4NFHtA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "11 months ago",
+                  "text": "Recomended, dokter oke,  everything good..👍👍",
+                  "time": 1693573354,
+                  "translated": false
+                },
+                {
+                  "author_name": "OmegaLUL",
+                  "author_url": "https://www.google.com/maps/contrib/111702585365535553540/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX-Jc1ryB5guGUhWhJegiQynCTlZ0v06XYOpeeVrkV5_Jt7lUoc=s128-c0x00000000-cc-rp-mo-ba4",
+                  "rating": 5,
+                  "relative_time_description": "3 years ago",
+                  "text": "Extremely satisfied with the treatment here. 5/5 stars recommended.",
+                  "time": 1615978151,
+                  "translated": false
+                },
+                {
+                  "author_name": "Master Ching Hai",
+                  "author_url": "https://www.google.com/maps/contrib/101419455107727781201/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLwj4Pu5pPb9mtrGSN2dj3jQkmqSTJsuZ26UC1yg3WNamCAlA=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "One of the best dentist for sure 🫰",
+                  "time": 1679313636,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Smiling Dental Group",
@@ -2366,7 +2646,69 @@ const detailsMedical = {
                 Fri: 21,
                 Sat: 16,
                 Sun: 16,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Regina A",
+                  "author_url": "https://www.google.com/maps/contrib/102235743218610267946/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXurVbCMLWRZCGMExZ5e97LgnQpuJ4RWLGFOQ02YgCz7Yt4ULhe=s128-c0x00000000-cc-rp-mo-ba3",
+                  "rating": 5,
+                  "relative_time_description": "5 months ago",
+                  "text": "Good hospitality and very communicative therapist! Will definitely get back again if I have any problems with my body",
+                  "time": 1709956259,
+                  "translated": false
+                },
+                {
+                  "author_name": "Handi Sutami",
+                  "author_url": "https://www.google.com/maps/contrib/116790782104477875274/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV3AAs0eci4AIE-r5Im69TJCi7S3TBJ7k20iN3bY3qDVKVa2PH58w=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "5 months ago",
+                  "text": "Made & Seno top notch!!!",
+                  "time": 1711083290,
+                  "translated": false
+                },
+                {
+                  "author_name": "Ashilla Humaira",
+                  "author_url": "https://www.google.com/maps/contrib/110070568915001018173/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUvPPFmyl1CiLoWZdlq9tZixrkDAszqJ2V2WE9PbOdkYAzz76nH=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "Friendly, very understanding and kind to give some advise how to improve and feel better...\nRecommended ❤❤❤",
+                  "time": 1678428710,
+                  "translated": false
+                },
+                {
+                  "author_name": "Ruth Alicia",
+                  "author_url": "https://www.google.com/maps/contrib/100307683426758550128/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLLOQDYD0pFRzFbTkfUr7ZFXhr0F49lLfOkvz6hCLFNU9jx7aM4=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "6 months ago",
+                  "text": "Services friendly. Clear instructions.",
+                  "time": 1707965915,
+                  "translated": false
+                },
+                {
+                  "author_name": "Refa Nathanael",
+                  "author_url": "https://www.google.com/maps/contrib/101238289763438540825/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWKqCHEbWd57k17GC-gc6nigsXzBhSeIdGxD86Z5kM9Dut3iiKE=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "5 months ago",
+                  "text": "Recommended",
+                  "time": 1710216910,
+                  "translated": false
+                }
+              ],
         },
         {
             Nama: "Klinik Tumbuh Kembang Anak Superkidz BSD",
@@ -2494,7 +2836,69 @@ const detailsMedical = {
                 Fri: 18,
                 Sat: 14,
                 Sun: 0,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Fauziana Fitria",
+                  "author_url": "https://www.google.com/maps/contrib/109021657683001073133/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKCzG-F-g2T1g7NqYfPtTrRxpraynopwHjnZnjm_cOfmYVONw=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a year ago",
+                  "text": "One of my twin daughter undergone occupational therapy with bu Titi and speech therapy with bu Neneng. Taking these therapy since 2020 and now my daughter has so many improvement. Thank you klinik anakku for providing professional care for our  special needs children.",
+                  "time": 1685538825,
+                  "translated": false
+                },
+                {
+                  "author_name": "J S",
+                  "author_url": "https://www.google.com/maps/contrib/109791805012991028388/reviews",
+                  "language": "en",
+                  "original_language": "en",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL2_6sORw-ninsy3yMQdRdkbov3oE0oLVJTd0FjZkDTXejHag=s128-c0x00000000-cc-rp-mo",
+                  "rating": 1,
+                  "relative_time_description": "a year ago",
+                  "text": "Been years, no improvement",
+                  "time": 1671441468,
+                  "translated": false
+                },
+                {
+                  "author_name": "Kentri Artika Suryandari",
+                  "author_url": "https://www.google.com/maps/contrib/116860451147086832455/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXwlK4Z8B_itKgxIoCbyhzsxulTFgUvXTp3E-4j5IWjiSJEmEQ=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "Thank you My Children's Clinic for being part of my child's therapy journey. Sensory Integration Therapy assisted by Miss Ika and Speech Therapy assisted by Mr Deyon, so my child has made significant improvements from before.\nI hope that my children's clinic will always be there to provide for children with needs like my child and will always be a leading therapy clinic that is professional in providing therapy services for children with special needs.",
+                  "time": 1721015392,
+                  "translated": true
+                },
+                {
+                  "author_name": "nihayati yeti",
+                  "author_url": "https://www.google.com/maps/contrib/112238815697251113824/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX7vfYYPw3nYic1Y6GVLNAOrLN-nbaQHfYskaDoi-yezbaB0wg2=s128-c0x00000000-cc-rp-mo-ba2",
+                  "rating": 5,
+                  "relative_time_description": "a month ago",
+                  "text": "You have entrusted your child's growth and development to My Children's Clinic in BSD. The staff and therapists are nice and friendly. Miss Aida patiently and painstakingly helped my child learn so he could follow lessons at school. So far my child has had learning difficulties. Thank God, my child has started to learn to focus more and grow according to his age.",
+                  "time": 1719234499,
+                  "translated": true
+                },
+                {
+                  "author_name": "vivin rini",
+                  "author_url": "https://www.google.com/maps/contrib/115191354698909902096/reviews",
+                  "language": "en-US",
+                  "original_language": "id",
+                  "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKagm9m_JJcHThcUhnM0uOJH1-drVQTLFmiAkK49CdipLmOtg=s128-c0x00000000-cc-rp-mo",
+                  "rating": 5,
+                  "relative_time_description": "2 months ago",
+                  "text": "If this clinic were a person, I would feel like hugging him and saying thank you 🤗🙏.\n\nAt this clinic I consulted with Doctor Setyo Handryastuti regarding my child's Speech Delay and Sensory Integration. He provides detailed, professional, supportive and educational information that I need in supporting my child, including advice on appropriate actions and those that should be avoided as well as recommended activities to support the child's optimal development.\nSo, as a parent, I was able to go through quite difficult times when I first started the phase of guiding my child.\n\nAs for the therapist, my child happens to be guided by Ms. Anjar (for Speech Delay therapy) and Ms. Aida (Sensory Integration).\nThe therapists are communicative, kind, very friendly, their approach and therapy methods are also very pleasant for children. The therapist's delivery method is also clear and easy to understand.\n\nThe staff and other admins are also very professional, informative and kids friendly. Their service is very good and their response is fast. They ensure that the therapy and consultation process for each patient runs smoothly and on time.\n\nRecommended for parents who have problems with child development.",
+                  "time": 1718988284,
+                  "translated": true
+                }
+              ],
         },
         {
             Nama: "Anak Pelangi Center",
