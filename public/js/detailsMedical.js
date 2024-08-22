@@ -2,7 +2,7 @@ const detailsMedical = {
     category: "medical",
     info: [
         {
-            Nama: "RS Eka Hospital",
+            Nama: "Eka Hospital",
             subcategory: "Rumah Sakit",
             Website: "https://www.ekahospital.com/hospital/eka-hospital-bsd",
             Address: "Central Business District, Jl. Boulevard BSD Tim. Lot IX, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15321",
@@ -31,10 +31,37 @@ const detailsMedical = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Angel Dougherty",
+                  "rating": 5,
+                  "text": "Fast response and great Doctors. I was admitted into Eka Hospital for a few days after being rushed to the emergency room. The doctor and nurses helped me immediately when my whole body had gone into some sort of cramp/paralysis state. Within 15 minutes of being in the ER, they were able to figure out what was causing me this pain and were able to medicate me to my needs. Throughout the rest of the visit, all the nurses and doctors were really great and the paperwork also went as smooth as it could be! Thank you so much to the Doctors and Nurses who’d helped me. Will definitely go here if anything el happens",
+                },
+                {
+                    "author_name": "Chibuzor Edozie",
+                    "rating": 5,
+                    "text": "My second son was born here and we had a great medical attention from Dr. Mary and the nurses. It was a fantastic experiences. The environment was neat, the room was well maintained and the Doctors and their nurses are professionals.",
+                },
+                {
+                    "author_name": "Robert Masteller",
+                    "rating": 5,
+                    "text": "On May 6, Dr.Ignatius Yansen and his team performed an angiogram . The quality and professionalism was  beyond reproach. Special recognition to Dr. Yansen for not only his professional skills but also his integrity of putting what is best for the patient and not necessarily what is best for the bottom line.  Something that is very rare USA these days.  Thank you !",
+                },
+                {
+                    "author_name": "Larasati Setyoningrum",
+                    "rating": 3,
+                    "text": "Long and slow administration process. The one thing that still makes me go here is because of the location, it is very close to my house. But if there isn’t any emergency or need fast response, I will always go to the other hospital",
+                },
+                {
+                    "author_name": "Novia Azwir",
+                    "rating": 3,
+                    "text": "Hospital where time you allocate for outpatient registration, insurance confirmation and radiology registration take longer than consultation with doctor. For hijabbers, changing dress is located outside radiology area, hospital provided short leaves shirt only for radiology purpose and you have to wait in waiting room with others. Suggest to bring a syal.",
+                },
+              ],
         },
         {
-            Nama: "RS Columbia Asia (ex Medika)",
+            Nama: "RS Columbia Asia BSD",
             subcategory: "Rumah Sakit",
             Website: "https://www.columbiaasia.com/indonesia/",
             Address: "BSD Serpong, Jl. Letnan Sutopo No.7 Kavling Komplek 3A, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -63,7 +90,34 @@ const detailsMedical = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Rosy Widiyastuti",
+                  "rating": 5,
+                  "text": "I was treated for 5 days. The service was very good. The doctors & nurses were friendly, especially Dr. Richard, a specialist in internal medicine who is the best. BPJS patients are not differentiated... they are served immediately, the rooms are good and clean, only if you want outpatient & inpatient care you have to go through health facilities, but if you have conditions It's not possible to go straight to the emergency room and be served immediately. Thank you very much. I wish you more success & more progress for Colombia Asia BSD",
+                },
+                {
+                    "author_name": "Intan Susmoyo",
+                    "rating": 5,
+                    "text": "The BPJS staff are so helpfull, fast responses and willing to explain about the term and condition in good way, amazed",
+                },
+                {
+                    "author_name": "Reysha Rei",
+                    "rating": 5,
+                    "text": "The doctor and the nurse is nice to kid i am speechless, Colombia asia BSD might be my favorite hospital",
+                },
+                {
+                    "author_name": "Andi Kuntadi",
+                    "rating": 2,
+                    "text": "Medika becomes Columbia Asia under new management. Nurse and doctors are good. But, checking out takes a whole day !!! Waited morning until 5pm to get doctor release. Waited another 4 hours until 9pm to settle the bill",
+                },
+                {
+                    "author_name": "Denas",
+                    "rating": 5,
+                    "text": "The hospital was not so crowded when it was pademi that it was safe enough for child control and vaccines. I subscribe to dr. yoga pediatrician he is very kind, detailed, gives complete information, and my child is very comfortable with him. do not forget here has a famous coffee place is family mart n kopi kenangan.",
+                },
+              ],
         },
         {
             Nama: "RSU Hermina Serpong",
@@ -95,7 +149,8 @@ const detailsMedical = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            
         },
         {
             Nama: "Rumah Indonesia Sehat (RIS) Hospital",
@@ -127,7 +182,34 @@ const detailsMedical = {
                 Fri: 8,
                 Sat: 8,
                 Sun: 8,
-            }
+            },
+            reviewsText: [
+                {
+                  "author_name": "Fionita hutapea",
+                  "rating": 5,
+                  "text": "The pharmacy is deft, the service is friendly, smiles are THE BEST",
+                },
+                {
+                    "author_name": "Intan Susmoyo",
+                    "rating": 5,
+                    "text": "On the 28th, my son and my nephew had polio here, we happened to arrive a little later in the day but we were still welcomed well, the officers were very friendly",
+                },
+                {
+                    "author_name": "Reysha Rei",
+                    "rating": 5,
+                    "text": "The doctor and the nurse is nice to kid i am speechless, Colombia asia BSD might be my favorite hospital",
+                },
+                {
+                    "author_name": "Andi Kuntadi",
+                    "rating": 2,
+                    "text": "Medika becomes Columbia Asia under new management. Nurse and doctors are good. But, checking out takes a whole day !!! Waited morning until 5pm to get doctor release. Waited another 4 hours until 9pm to settle the bill",
+                },
+                {
+                    "author_name": "Denas",
+                    "rating": 5,
+                    "text": "The hospital was not so crowded when it was pademi that it was safe enough for child control and vaccines. I subscribe to dr. yoga pediatrician he is very kind, detailed, gives complete information, and my child is very comfortable with him. do not forget here has a famous coffee place is family mart n kopi kenangan.",
+                },
+              ],
         },
         {
             Nama: "RS THT Proklamasi",

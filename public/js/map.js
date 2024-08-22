@@ -945,6 +945,8 @@ async function processType(type, details)  {
                 position: { lat: currentPlace.Lat, lng: currentPlace.Long }
             });
 
+            
+
             marker.addListener("click", (event) => {
                 if (event.domEvent.target.tagName === 'BUTTON' || event.domEvent.target.tagName === 'SPAN') {
                     event.domEvent.stopPropagation();
@@ -973,6 +975,28 @@ async function processType(type, details)  {
                             }
                         }
                     }
+                        if(event.domEvent.target.id === `${currentPlace.Nama}-ratingSpan-star` || event.domEvent.target.id === `${currentPlace.Nama}-ratingSpan` || event.domEvent.target.id === `${currentPlace.Nama}-ratingBox` ) {
+                            const ratingBox = document.getElementById(`${currentPlace.Nama}-reviewBox`);
+                            if (ratingBox.classList.contains("highlight")) {
+                                ratingBox.style.opacity = "1";
+                                ratingBox.offsetHeight;
+                                ratingBox.style.transition = 'transform 0.5s ease, opacity 0.5s ease, height 0.5s ease';
+                                ratingBox.style.height = "30px";
+                                ratingBox.style.transform = "translateX(0%)";
+                                ratingBox.classList.remove("highlight");
+                                ratingBox.style.opacity = "0";
+                                ratingBox.style.zIndex = "-10";
+                            } else {
+                                ratingBox.style.transition = 'transform 0.3s ease, opacity 0.5s ease';
+                                ratingBox.style.transform = 'translateX(100%)';
+                                ratingBox.classList.add("highlight");
+                                ratingBox.style.opacity = "1";
+                                ratingBox.style.height = "300px";
+                                ratingBox.style.zIndex = "1";
+                            }
+                        }
+                    
+
                 } else {
                     toggleHighlight(marker, currentPlace);
                 }
@@ -999,6 +1023,7 @@ async function processType(type, details)  {
     }
 };
 function buildContent(property, type) {
+    console.log(property)
     const content = document.createElement("div");
     //console.log(property)
     content.classList.add("property");
@@ -1014,6 +1039,24 @@ function buildContent(property, type) {
         content.style.backgroundPosition = "center top";
         content.style.backgroundSize = "contain"
     }
+        const reviewsHtml = property.reviewsText ? property.reviewsText.map(review => {
+            return `
+                <div class="m-2">
+                <div class="column border p-2">
+                    <div><h6>${review["author_name"]}</h6></div>
+                    <span>${generateStars(review["rating"])}</span>
+                    <p style="font-size:10px">${review["text"]}</p>
+                </div>
+                </div>
+            `;
+        }).join('') : `
+            <div class="m-2">
+                <div class="column border p-2" style="height:30px;">
+                       <p>No reviews available</p>
+                </div>
+            </div>
+             `;        
+    
     content.innerHTML = `
         <div class="icon rounded-3 ${instaCheck ? "" : "active"}" style =" ${instaCheck ? "opacity: 0;" : "opacity: 1;"} position:absolute">
             <i aria-hidden="true" class="fa fa-icon ${typeIconProcessor(property.subcategory)}" title="${property.Nama}"></i>
@@ -1030,10 +1073,10 @@ function buildContent(property, type) {
                 <div class="time">${timeOpenProcessor(property)}</div>
                 <div class="address">${property.Address}</div>
                 <div class="features">
-                     <div>
-                        <i aria-hidden="true" class="fa fa-star fa-lg star" title="size"></i>
+                    <div id ="${property.Nama}-ratingBox">
+                        <i id ="${property.Nama}-ratingSpan-star" aria-hidden="true" class="fa fa-star fa-lg star" title="size"></i>
                         <span class="fa-sr-only">size</span>
-                        <span>${property.rating ? `Rating: ${generateStars(property.rating)} | ${property.rating}` : 'No rating available'} (${property.reviews})</span>
+                        <span id ="${property.Nama}-ratingSpan">${property.rating ? `Rating: ${generateStars(property.rating)} | ${property.rating}` : 'No rating available'} (${property.reviews})</span>
                     </div>
                     <div>
                         <i aria-hidden="true" class="fa fa-bed fa-lg bed" title="bedroom"></i>
@@ -1073,7 +1116,11 @@ function buildContent(property, type) {
             ""
         }
         </div>
-    `;
+        <div class="review-box rounded-3 details-container" id="${property.Nama}-reviewBox" style="width:100%; z-index:-10; overflow:scroll;">
+            ${reviewsHtml}
+
+        </div> 
+        `;
     content.addEventListener("mouseenter", () => {
         for (let marker of markers) {
             if (marker.name === property.Nama) {
@@ -1117,6 +1164,8 @@ function toggleHighlight(markerView, property) {
             const otherIconDiv = view.content.querySelector('.icon');
             const otherInstaDiv = view.content.querySelector('.insta-container');
             const otherContainerDiv = view.content.querySelector('.promo-box');
+            const otherratingBox = view.content.querySelector(`.review-box`);
+
             view.content.classList.remove("highlight");
             view.zIndex = null;
             otherInnerDiv.style.opacity = 0;
@@ -1131,12 +1180,20 @@ function toggleHighlight(markerView, property) {
             otherContainerDiv.style.height = "30px";
             otherContainerDiv.style.transform = "translateX(100%)";
             otherContainerDiv.classList.remove("highlight");
+            otherratingBox.style.transition = 'transform 0.5s ease, opacity 0.5s ease, height 0.5s ease';
+            otherratingBox.style.height = "30px";
+            otherratingBox.style.transform = "translateX(0%)";
+            otherratingBox.classList.remove("highlight");
+            otherratingBox.style.opacity = 0;
+            otherratingBox.style.zIndex = "-10";
         }
     });
     const innerDiv = markerView.content.querySelector('.details-container');
     const iconDiv = markerView.content.querySelector('.icon');
     const instaDiv = markerView.content.querySelector('.insta-container')
     const promoDiv = markerView.content.querySelector('.promo-box');
+    const ratingBox = markerView.content.querySelector(`.review-box`);
+
     // console.log(markerView.content)
 
     //console.log(innerDiv)
@@ -1159,6 +1216,15 @@ function toggleHighlight(markerView, property) {
             promoDiv.style.transform = "translateX(0%)";
             promoDiv.classList.remove("highlight");
             promoDiv.style.opacity = "0";
+        }
+
+        if (ratingBox.classList.contains("highlight")) {
+            ratingBox.style.transition = 'transform 0.5s ease, opacity 0.5s ease, height 0.5s ease';
+            ratingBox.style.height = "30px";
+            ratingBox.style.transform = "translateX(0%)";
+            ratingBox.classList.remove("highlight");
+            ratingBox.style.opacity = "0";
+            ratingBox.style.zIndex = "-10";
         }
     } else {
         // ContainerDiv.classList.add("highlight");
@@ -1372,10 +1438,6 @@ async function filterMarkers(markers) {
             marker.setMap(null); //Why is it like this? IDK
         }
     });
-}
-function convertTimeToMinutes(time) {
-    const [hours, minutes] = time.split(":").map(Number);
-    return hours * 60 + minutes;
 }
 function typeIconProcessor(type) {
     switch (type) {
@@ -1743,13 +1805,11 @@ const checkElementsAndSetupListeners = () => {
     if (ratingRange && anytimeOptionButton && nowOptionButton && hours24OptionButton && specificDayOptionButton && specificTimeCheck && specificOpeningTime && specificClosingTime && promoDiv) {
         promoDiv.addEventListener("change", function (event) {
             if (event.target.checked) {
-                // Handle the checkbox being checked
-                promoDiv.style.backgroundColor = "yellow"; // Example action
+                promoDiv.style.backgroundColor = "yellow"; 
                 promoRatingCheck = true;
                 filterMarkers(markers);
             } else {
-                // Handle the checkbox being unchecked
-                promoDiv.style.backgroundColor = ""; // Reset to default
+                promoDiv.style.backgroundColor = ""; //Reset to default
                 promoRatingCheck = false;
                 filterMarkers(markers);
             }
@@ -1838,6 +1898,5 @@ const checkElementsAndSetupListeners = () => {
     }
 };
 
-// Check every second if the elements are available
 const intervalId = setInterval(checkElementsAndSetupListeners, 1000);
 

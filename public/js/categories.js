@@ -36,6 +36,7 @@ const subcateBeu = [
     { value: 'Klinik Kulit & Kecantikan', text: 'Skincare' },
 ];
 
+
 const categoryOptionsExport = [
     { value: 'medical', text: 'Medical', values: subcateMed, data: detailsMedical },
     { value: 'beauty', text: 'Beauty', values: subcateBeu, data: detailsBeauty},

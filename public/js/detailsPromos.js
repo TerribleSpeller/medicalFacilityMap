@@ -1,6 +1,6 @@
 const detailsPromos = [
     {
-        tenantName: "RS Eka Hospital",
+        tenantName: "Eka Hospital",
         promoName: "Festival Sehat Merdeka Bersama Eka Hospital",
         promoPrice: "Rp 1.7 Juta",
         promoDesc: "Saatnya merdeka dari penyakit, ayo periksa kesehatanmu sekarang dengan penawaran spesial. Promo ini berlaku hanya sampai 31 Agustus 2024 ya Sobat Sehat jangan lupa di share ke grup keluarga.",
