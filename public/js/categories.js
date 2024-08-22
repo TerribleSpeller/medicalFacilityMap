@@ -1,10 +1,11 @@
-const categoryOptionsExport = [
-    { value: 'medical', text: 'Medical' },
-    { value: 'beauty', text: 'Beauty' },
-    { value: 'wellness', text: 'Wellness' }
-];
+
+import detailsMedical from "./detailsMedical.js";
+import detailsBeauty from "./detailsBeauty.js";
+import detailsWellness from "./detailsWellness.js";
+
 
 const subcateMed = [
+    //Medical
     { value: 'Rumah Sakit', text: 'Hospital' },
     { value: 'klinik medical', text: 'Medical Clinic' },
     { value: 'klinik ibu & anak', text: 'Maternity Clinic' },
@@ -15,6 +16,7 @@ const subcateMed = [
 ];
 
 const subcateWell = [
+    //Wellness
     { value: 'Basket Ball Court', text: 'Basketball Court' },
     { value: 'Club House', text: 'Club House' },
     { value: 'Gym', text: 'Gym' },
@@ -29,9 +31,17 @@ const subcateWell = [
 ];
 
 const subcateBeu = [
+    //Beauty
     { value: 'klinik gigi & kecantikan', text: 'Klinik Kecantikan & Gigi' },
     { value: 'Klinik Kulit & Kecantikan', text: 'Skincare' },
 ];
+
+const categoryOptionsExport = [
+    { value: 'medical', text: 'Medical', values: subcateMed, data: detailsMedical },
+    { value: 'beauty', text: 'Beauty', values: subcateBeu, data: detailsBeauty},
+    { value: 'wellness', text: 'Wellness', values: subcateWell, data: detailsWellness}
+];
+
 
 export default categoryOptionsExport; 
 export { subcateMed, subcateWell, subcateBeu };
