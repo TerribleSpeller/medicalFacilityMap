@@ -1,9 +1,5 @@
-import detailsMedical from "./detailsMedical.js";
-import detailsBeauty from "./detailsBeauty.js";
-import detailsWellness from "./detailsWellness.js";
 import detailsPromos from "./detailsPromos.js";
 import categoryOptionsExport from "./categories.js"
-import {subcateMed, subcateWell, subcateBeu } from  "./categories.js"
 
 const mapBounds = [
     { lat: -6.3014897268225445, lng: 106.69998806230103 }, //TOll
@@ -293,40 +289,6 @@ function dropdownSubCategoryFunc(map) {
     revealButton.innerHTML = "Subcategories";
     dropdown.appendChild(revealButton);
 
-    // const options = [
-    //     { value: 'Rumah Sakit', text: 'Hospital' },
-    //     { value: 'klinik medical', text: 'Medical Clinic' },
-    //     { value: 'klinik ibu & anak', text: 'Maternity Clinic' },
-    //     { value: 'klinik gigi', text: 'Dentist' },
-    //     { value: 'Klinik Fisioterapi', text: 'Fisioterapi' },
-    //     { value: 'Klinik Tumbuh Kembang Anak', text: 'Klinik Tumbuh Kembang Anak' },
-    //     { value: 'Laboratorium', text: 'Laboratorium' },
-    // ];
-
-    // const options2well = [
-    //     { value: 'Basket Ball Court', text: 'Basketball Court' },
-    //     { value: 'Club House', text: 'Club House' },
-    //     { value: 'Gym', text: 'Gym' },
-    //     { value: 'Pilates Studio', text: 'Pilates Studio' },
-    //     { value: 'Stadion', text: 'Stadion' },
-    //     { value: 'Swimming Pool', text: 'Swimming Pool' },
-    //     { value: 'Tennis Court', text: 'Tennis Court' },
-    //     { value: 'Yoga Studio', text: 'Yoga Studio' },
-    //     { value: 'Massage &/ Spa', text: 'Massage & Spa' },
-    //     { value: 'Massage sakit & cedera', text: 'Massage sakit & cedera' },
-    //     { value: 'Massage &/ Spa Baby', text: 'Massage & Spa Baby' },
-    // ];
-
-    // const options3beauty = [
-    //     { value: 'klinik gigi & kecantikan', text: 'Klinik Kecantikan & Gigi' },
-    //     { value: 'Klinik Kulit & Kecantikan', text: 'Skincare' },
-    // ];
-
-    
-    const options = subcateMed;
-    const options2well = subcateWell;
-    const options3beauty = subcateBeu;
-
 
     const createDropdown = (id, options, targetButtonId) => {
         const dropdownContent = document.createElement("div");
@@ -403,9 +365,10 @@ function dropdownSubCategoryFunc(map) {
     };
     
     const dropdownContents = [];
-    dropdownContents.push(createDropdown("medicalDropdown", options, "medicalButton"));
-    dropdownContents.push(createDropdown("wellnessDropdown", options2well, "wellnessButton"));
-    dropdownContents.push(createDropdown("beautyDropdown", options3beauty, "beautyButton"));
+
+    categoryOptionsExport.forEach( optionPick => {
+        dropdownContents.push(createDropdown( optionPick.value + "Dropdown", optionPick.values, optionPick.value + "Button"));
+    });
     
     handleRevealButtonClick(dropdownContents);
 
@@ -925,40 +888,21 @@ async function findPlace(type) {
         deleteMarkers();
     }
 
-
-    // if (!service) {
-    //     console.error('PlacesService is not initialized.');
-    //     return;
-    // }
-
     const bounds = new google.maps.LatLngBounds(
         new google.maps.LatLng(-6.328292948434564, 106.58962119204718), // South West
         new google.maps.LatLng(-6.256977574626499, 106.70244855795238)  // North East
     );
 
-    const BSDPolygon = new google.maps.Polygon({
-        paths: mapBounds,
-    });
-
-    const request = {
-        bounds: bounds,
-        type: [type],
-        fields: ['name', 'geometry', 'rating', 'vicinity', 'photos', 'place_id', 'website', 'business_status', 'plus_code', 'reference', 'place_id', 'photoUrl', 'current_opening_hours', 'opening_hours']
-    };
-
-    // service.nearbySearch(request, (results, status, pagination) => { //Apparenrtly doesn't provide a lot of details i.e Website //Nevermind I suck, yes they do
-    //     if (status === google.maps.places.PlacesServiceStatus.OK) {
-    //         processResults(request.type, results, service, map, BSDPolygon);
-    //         if (pagination && pagination.hasNextPage) {
-    //             setTimeout(() => {
-    //                 pagination.nextPage();
-    //             }, 2000); //2 Seconds delay
-    //         }
-
-    //     } else {
-    //         console.error('Place search failed:', status);
-    //     }
+    // const BSDPolygon = new google.maps.Polygon({
+    //     paths: mapBounds,
     // });
+
+    // const request = {
+    //     bounds: bounds,
+    //     type: [type],
+    //     fields: ['name', 'geometry', 'rating', 'vicinity', 'photos', 'place_id', 'website', 'business_status', 'plus_code', 'reference', 'place_id', 'photoUrl', 'current_opening_hours', 'opening_hours']
+    // };
+
     processResultsLocal(type, map);
 }
 async function processResultsLocal(type, map) {

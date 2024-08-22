@@ -39,9 +39,8 @@ const subcateBeu = [
 const categoryOptionsExport = [
     { value: 'medical', text: 'Medical', values: subcateMed, data: detailsMedical },
     { value: 'beauty', text: 'Beauty', values: subcateBeu, data: detailsBeauty},
-    { value: 'wellness', text: 'Wellness', values: subcateWell, data: detailsWellness}
+    { value: 'wellness', text: 'Wellness', values: subcateWell, data: detailsWellness},
 ];
 
 
 export default categoryOptionsExport; 
-export { subcateMed, subcateWell, subcateBeu };
