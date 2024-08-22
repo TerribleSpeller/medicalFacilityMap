@@ -1672,7 +1672,7 @@ function selectedList(map) {
     selectedListContainerContainer.style.transition = "width 0.5s ease, transform 0.5s ease";
 
     const selectedListContainer = document.createElement("div");
-    selectedListContainer.classList.add("ps-2");
+    selectedListContainer.classList.add("ps-2", "pt-2");
     selectedListContainer.id = "selectedListContainer";
     selectedListContainer.style.backgroundColor = "#FFFFFF";
     selectedListContainer.style.margin = "0";
@@ -1719,7 +1719,7 @@ function addCurrentPlaceToList(currentPlace) {
             <div class="flex-row d-flex">
                 <div class="flex-column d-flex" style="width:65%;">
                     <div class="p-1">
-                         <button id="${currentPlace.Nama}-center-map" class="btn" style="padding:0;"><span style="font-size: 1rem;">${currentPlace.Nama}</span></button>
+                         <button id="${currentPlace.Nama}-center-map" class="btn" style="padding:0;"><h6 style="font-size: 1rem;">${currentPlace.Nama}</h6></button>
                     </div>
                     <div class="p-1">
                         <span style="font-size: 0.875rem;">${currentPlace.rating ? `Rating: ${generateStars(currentPlace.rating)} | ${currentPlace.rating}` : 'No rating available'} (${currentPlace.reviews})</span>
