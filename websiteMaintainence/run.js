@@ -1,10 +1,10 @@
-import  fs from 'fs';
+import fs from 'fs';
 import axios from 'axios';
 
 // Create an object array with the selected text
-import detailsMedical from "../../public/js/detailsMedical.js";
-import detailsBeauty from "../../public/js/detailsBeauty.js";
-import detailsWellness from "../../public/js/detailsWellness.js";
+import detailsMedical from "../public/js/detailsMedical.js";
+import detailsBeauty from "../public/js/detailsBeauty.js";
+import detailsWellness from "../public/js/detailsWellness.js";
 
 
 // Google Maps API key

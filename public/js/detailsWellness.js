@@ -14,6 +14,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMHH1-Xuw-lwjdgvUX6hUNjt8rJs3RCDVJgbPH0=w408-h544-k-no"
             , allDay: true,
+            place_id: "ChIJq3fuPbfkaS4Rdtjb1aYHOCQ",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -188,6 +189,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipPaxCZJ1kuSjNKyLRpfhSy5IX_SLg8-NrWdKv00=w408-h725-k-no"
             , allDay: false,
+            place_id: "ChIJtbyzsDX7aS4R_B1gNva_qq0",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -394,6 +396,7 @@ const detailsWellness = {
                 Sat: 22,
                 Sun: 22,
             },
+            place_id: "ChIJf9UT22r7aS4RIY2NWTe_te0",
             reviewsText: [
                 {
                     "author_name": "Christo Lim",
@@ -470,6 +473,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMq2ifFqfBZc9N32PLkyvWwg5am_IFbIDqNM-G7=w426-h240-k-no"
             , allDay: false,
+            place_id: "ChIJd3Hmx2rlaS4RXjpqAMYYENk",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -524,6 +528,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipOb0IO6LMJY3xdkYprl97H63kvuuotYY4ArsQi9=w408-h544-k-no"
             , allDay: true,
+            place_id: "ChIJfeKo2hjlaS4R9M2xSj6nJlw",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -646,6 +651,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJoQiuztbkaS4RrAvrHhuLQNA",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -738,6 +744,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJ82c6gzj7aS4R1BYfgOwrf7Y",
             openingHours: {
                 Mon: 10,
                 Tue: 6,
@@ -832,6 +839,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMflOSuEMXKswoQl-zifQLQp9CHi2yMB_KZ4pZ7=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJK4-pwRT7aS4R1vOsecYJqeE",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -1180,6 +1188,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNcSl3y-PNfxSBLElvjzaSGcrRinEKlUBiQB5Ud=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJ-5E3Lk_7aS4RVwoENO1BVq8",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -1306,6 +1315,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipPa8QifE7HAfsA6qRTCI1UdthfYF9EjnwL0aQWr=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJ71rPQz_9aS4RYSk0lbs4uyk",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -1400,6 +1410,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJ7_yDhWj7aS4RIB-42jeslrs",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -1637,6 +1648,7 @@ const detailsWellness = {
                 Sat: 22,
                 Sun: 22,
             },
+            place_id: "ChIJf9UT22r7aS4RIY2NWTe_te0",
             reviewsText: [
                 {
                     "author_name": "Christo Lim",
@@ -1713,6 +1725,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipOpgylqAQ1JDORLQ1LuZF-NXzhCAzsFY7IsE8em=w408-h544-k-no"
             , allDay: true,
+            place_id: "ChIJC9PFKdv7aS4RB9mVd84Q_D8",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -1807,6 +1820,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7kJkC1fFZciV=w408-h312-k-no"
             , allDay: false,
+            place_id: "ChIJ59_IJNfkaS4RFtlk5BO6ljk",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -1892,6 +1906,7 @@ const detailsWellness = {
             Nama: "Navapark Country Club",
             subcategory: "Club House",
             Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, },
+            place_id: "ChIJ82c6gzj7aS4R1BYfgOwrf7Y",
             reviewsText: [
                 {
                     "author_name": "Kong Honggo Wijaya",
@@ -2062,6 +2077,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNR8y2Wvnq3qRpG5UYAm0x3iHPzdLQNB1q-vAvy=w426-h240-k-no"
             , allDay: false,
+            place_id: "ChIJZRQP8pr9aS4RJR553IfJHH0",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -2156,6 +2172,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNo75KnT9KeOk2BNDyGFejViv41NcGKoDWDehtO=w408-h306-k-no"
             , allDay: true,
+            place_id: "ChIJ2WyWfMbkaS4RXgJav5C6B-U",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -2250,6 +2267,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipP07E9Adfo3XztG3jVSKPb4NGXwenBjlFZiIGlh=w408-h306-k-no"
             , allDay: true,
+            place_id: "ChIJ4wnq6Uz7aS4RY1YZ8EIGF2E",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -2408,6 +2426,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipOBhW--J6C2JSf6OMOj98Aeg7sy_qznaZbDqFft=w426-h240-k-no"
             , allDay: false,
+            place_id: "ChIJO7tppC_7aS4RVhQejNbZWn4",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -2534,6 +2553,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipPsF4lMpAo4VwP55CbslII52GiFZAw9BSRucADD=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJIUxEDSjlaS4RnG7UerXnXmM",
             openingHours: {
                 Mon: 7.5,
                 Tue: 7.5,
@@ -2628,6 +2648,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipO_9BPs62b08JqUwRae6rCjjgxTxj_fwuhastra=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJQ_MsI537aS4RliUyKkt42BU",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -2722,6 +2743,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipO1_r170T_rXZXxM_sHkEg2FtOB3YkhXKhsI6fF=w408-h306-k-no"
             , allDay: true,
+            place_id: "ChIJN4aPwTrlaS4RkyM-UYRuB78",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -2901,6 +2923,7 @@ const detailsWellness = {
             Nama: "Navapark Country Club - Gym",
             subcategory: "Gym",
             Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers", photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no", allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, },
+            place_id: "ChIJ82c6gzj7aS4R1BYfgOwrf7Y",
             reviewsText: [
                 {
                     "author_name": "Kong Honggo Wijaya",
@@ -2977,6 +3000,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJrzIpXkT7aS4Rbz1uxDC5U7w",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -3135,6 +3159,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTEc4dfXXrRq2QSzW2X1fb9SbohjTepiC0G-BJ=w408-h408-k-no"
             , allDay: false,
+            place_id: "ChIJSZtnLKf9aS4R8suvStIW2Ts",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -3229,6 +3254,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMTrf1NsXANYbExVLQmCB6fHPaDKN517SlEHdPd=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJ6fEDlJz7aS4RFKMr-akziTg",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -3317,6 +3343,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipO2qM1v5vaLyRacng9lyD9JKxAWoee1J8cgLRGa=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJ1Yuh76PlaS4RBSjogZgXxI4",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -3411,6 +3438,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipPQqmXZo2E1hGVbvpD3gPBUr5DZfGb2FM8bvnjl=w426-h240-k-no"
             , allDay: true,
+            place_id: "ChIJNZY1pwXlaS4ROOVszASlX0U",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -3486,37 +3514,6 @@ const detailsWellness = {
                 }
               ],
         },
-        // {
-        //     Nama: "MP KOLAT Carin Studio",
-        //     subcategory: "Pilates Studio",
-        //     Website: "",
-        //     Address: "
-        //     phoneNo: "",
-        //     Lat: ,
-        //     Long: ,
-        //     rating: ,
-        //     reviews: "reviews",
-        //     IGFollowers: "IGFollowers"
-        //     , allDay: false,
-        //     openingHours: {
-        //         Mon: 8,
-        //         Tue: 8,
-        //         Wed: 8,
-        //         Thu: 8,
-        //         Fri: 8,
-        //         Sat: 8,
-        //         Sun: 8,
-        //     },
-        //     closingHours: {
-        //         Mon: 8,
-        //         Tue: 8,
-        //         Wed: 8,
-        //         Thu: 8,
-        //         Fri: 8,
-        //         Sat: 8,
-        //         Sun: 8,
-        //     }
-        // },
         {
             Nama: "Pilates 2021 BSD",
             subcategory: "Pilates Studio",
@@ -3530,6 +3527,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNCf48qz2K4N56CTOzymSGwsNh7NUoYyXlS8SdA=w408-h906-k-no"
             , allDay: false,
+            place_id: "ChIJiawQg_z7aS4RdNn17UQ_els",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -3783,6 +3781,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJ7_yDhWj7aS4RIB-42jeslrs",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -3909,6 +3908,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipORUATnGc0aItwoAeAGdjSxy1h4MXcH9JMbfUjL=w533-h240-k-no"
             , allDay: true,
+            place_id: "ChIJDXGwk9L7aS4ReMy-jXMBL0U",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -4003,6 +4003,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNAIaZbQcJh9XmHhLu3H0ZoRPJl6Vd4s9EA2qt5=w408-h307-k-no"
             , allDay: false,
+            place_id: "ChIJU0qyYzP7aS4RxjzYb8vijf8",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -4097,6 +4098,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNI0Gr7LVcasO4vz4AgYdicy7mcRb8UG-dHpLLm=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJIWdILBX7aS4Rjb4DpJtMjfc",
             openingHours: {
                 Mon: 12,
                 Tue: 7,
@@ -4189,6 +4191,7 @@ const detailsWellness = {
             rating: "4.5",
             reviews: "31",
             IGFollowers: "IGFollowers",
+            place_id: "ChIJB4RDQtrlaS4RL_WSUVJVqXc",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-lpff5IbxwkYiWN_2hRkr43qKOC9698tMDnHM=w408-h544-k-no"
             , allDay: false,
             openingHours: {
@@ -4366,7 +4369,70 @@ const detailsWellness = {
                 Fri: 22,
                 Sat: 22,
                 Sun: 22,
-            }
+            },
+            place_id: "ChIJf9UT22r7aS4RIY2NWTe_te0",
+            reviewsText: [
+                {
+                    "author_name": "Christo Lim",
+                    "author_url": "https://www.google.com/maps/contrib/105732213729152258120/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUntnvdYcTgYIVBLOAFYnfJfPIzSiW3kQ4l4ZiPQmOwScDUHhmX=s128-c0x00000000-cc-rp-mo-ba7",
+                    "rating": 4,
+                    "relative_time_description": "a year ago",
+                    "text": "Spacious swimming pool but there are a lot of mosquitos in the afternoon at outdoor area. There are also multiple area that you can play basketball, badminton, tennis and other contact sports. There are also gym but the equipment is not as complete as other famous brand gym. They have sauna area, which is good and shower rooms.",
+                    "time": 1691068234,
+                    "translated": false
+                },
+                {
+                    "author_name": "Shabrina Rina",
+                    "author_url": "https://www.google.com/maps/contrib/115483200964728017315/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX9BxLtMeHMOS0uuC3ZNM5jVusgYUatVUz12wuIYsRYgC4v_0aY=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 5,
+                    "relative_time_description": "7 months ago",
+                    "text": "The ambience is nice and clean. Moreover, the staffs are friendly and helpful. Their services are excellent. You can relieve your stress while exercising and relaxing your body. Or you might want to have a private coach for exercising or training your body, then try here.",
+                    "time": 1704363756,
+                    "translated": false
+                },
+                {
+                    "author_name": "bianda nathania",
+                    "author_url": "https://www.google.com/maps/contrib/112462926642320445811/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXYgW7jt2cvblJ_zHAwBJxpEABCLnjQZHMRTtqBY1MOnHZgpsQu=s128-c0x00000000-cc-rp-mo-ba3",
+                    "rating": 5,
+                    "relative_time_description": "2 years ago",
+                    "text": "Me and family having really great experience here.\n\nBig and CLEAN swimming pool.\nComplete facilities (gym, tennis, badminton, basket court)\nClean shower room (this is important right)\nPolite staff, and easy to purchase the ticket since they have a great app (kyzn)\nDisabilities friendly\nKids friendly\nVery pretty lights view at night\n\nOh ya, the place also surrounded with resto, sport station and daily supermarket.\n\nDefinitely will come back again, recommeded 👍",
+                    "time": 1651371820,
+                    "translated": false
+                },
+                {
+                    "author_name": "Bill H",
+                    "author_url": "https://www.google.com/maps/contrib/111070796100855053159/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUX7K3n0lwW_Pa2YM51_DVkKfrOA1EfUjxPYFKbj9nUVV6HZfmh=s128-c0x00000000-cc-rp-mo",
+                    "rating": 1,
+                    "relative_time_description": "a month ago",
+                    "text": "Misleading marketing and poor clarification attempt just as what the other one-star reviewers have described in a more thorough and specific manner.\n\nFront desk management should have made a more modular and visualized easy-to-read flowcharts of what the packages are, their limitations, and the corresponding prices.\n\nThe club has been running for two years by now, any kind of amateurish managerial mistake should NOT be tolerable. Especially considering the high prestige and the upper-middle to upper class target market of the club, such tolerance for rookie mistake should be cut down to microgram level.",
+                    "time": 1719830333,
+                    "translated": false
+                },
+                {
+                    "author_name": "Aditya Zulfahmi",
+                    "author_url": "https://www.google.com/maps/contrib/113477349527822042499/reviews",
+                    "language": "en",
+                    "original_language": "en",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV3sodUUvWy37nwFwegh-EDYTxDRqOO1IMnmGJpqVm9imLO0_wE=s128-c0x00000000-cc-rp-mo-ba2",
+                    "rating": 1,
+                    "relative_time_description": "7 months ago",
+                    "text": "LOCATION: easy to access, enough parking lot\nFACILITY: court only (rubber court), vending machine for drinks.\nPRICE: crazily insane. IDR 80,000 per hour EXCLUDE daily pass. Daily pass (IDR 80,000 per person).\n\nOVERALL EXPERIENCE: for non-member, not worth it. There are plenty of badminton court around. The court is not ‘world class’ to justify its price. But if you’re looking for privacy, it may be a good place (the price says so). Will not visit again.",
+                    "time": 1703552649,
+                    "translated": false
+                }
+            ],
         },
         {
             Nama: "Meadow Terrace - Swimming Pool",
@@ -4381,6 +4447,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipPbx_0Difxyv-3viWk4VQWEv9Yj7kJkC1fFZciV=w408-h312-k-no"
             , allDay: false,
+            place_id: "ChIJ59_IJNfkaS4RFtlk5BO6ljk",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -4542,6 +4609,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMEWEvg3aB28bSvCXS0K9MjomvN8lSBYBg05lYA=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJrzIpXkT7aS4Rbz1uxDC5U7w",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -4636,6 +4704,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipPWyf-xxDMV3GoHfp5OCZA0mZ0XTfTV_mdkgkEN=w426-h240-k-no"
             , allDay: false,
+            place_id: "ChIJ6TLJWJ38aS4RRIn66HFpah0",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -4793,6 +4862,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipOEecpu-NTNurrtJRPu6sl-4UCiHuI5eKQ64jqL=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJ7_yDhWj7aS4RIB-42jeslrs",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -4887,6 +4957,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipOb0IO6LMJY3xdkYprl97H63kvuuotYY4ArsQi9=w408-h544-k-no"
             , allDay: true,
+            place_id: "ChIJfeKo2hjlaS4R9M2xSj6nJlw",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -5041,6 +5112,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJ06plySn7aS4Rit9Y5b_IQPA",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -5073,6 +5145,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMhA-J1TGEmL5mTn930vVSVA9IyrQ_Q3nSICgaH=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJ82c6gzj7aS4R1BYfgOwrf7Y",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -5098,6 +5171,7 @@ const detailsWellness = {
             Website: "http://www.navapark.id/site/countryclub", Address: "PM53+C6R, Lengkong Kulon, Pagedangan, Tangerang Regency, Banten 15331, Indonesia", phoneNo: "", Lat: -6.291071980777216, Long: 106.65285773735468, rating: "4.6", reviews: "442", IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNwvdUnPsTWf35uOF4bjw-VkdX3NHiHIOjdouSj=w408-h306-k-no",
             allDay: false, openingHours: { Mon: 10, Tue: 6, Wed: 6, Thu: 6, Fri: 6, Sat: 6, Sun: 6, }, closingHours: { Mon: 22, Tue: 22, Wed: 22, Thu: 22, Fri: 22, Sat: 22, Sun: 22, },
+            place_id: "ChIJ82c6gzj7aS4R1BYfgOwrf7Y",
             reviewsText: [
                 {
                   "author_name": "Kong Honggo Wijaya",
@@ -5174,6 +5248,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipP6o67Kt16KcI83Al6fTVs4d6n6_kDmVRQBFcZy=w408-h272-k-no"
             , allDay: false,
+            place_id: "ChIJf9UT22r7aS4RIY2NWTe_te0",
             openingHours: {
                 Mon: 6,
                 Tue: 6,
@@ -5332,6 +5407,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNXGntF4oSA0lR09u1Nv4WYU-UoA2SRqL7tTg6G=w408-h725-k-no"
             , allDay: true,
+            place_id: "ChIJ_c9zPLfkaS4ReQekAmQpZxE",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -5458,6 +5534,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNzJGGzZ6naPe_essSLmFra9grJoCiT3mzIg5zH=w408-h544-k-no"
             , allDay: true,
+            place_id: "ChIJCyX4u07laS4RDjH_LbotJj8",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -5584,6 +5661,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipPSh3pyHUVZVtKdwJQs1jkdQUnr5q8hhFpRM4Pd=w426-h240-k-no"
             , allDay: false,
+            place_id: "ChIJf0P0gQz7aS4R-hhcujk4r8g",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -5672,6 +5750,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipM0NDfW7C88rm-nDj07ML1vmO5WMwQ7adw6D8HO=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJeZfJUcv7aS4R05YbB3Vnn5g",
             openingHours: {
                 Mon: 7,
                 Tue: 7,
@@ -5892,6 +5971,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipN0EXlglPCCzVk_2NZlEKZhVJgXEb83Z6D33Cul=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJpayvc_37aS4R3DnxwpntzUA",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -6018,6 +6098,8 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMpkz4m7o4YTOB9WwULqEVF0h8hr5KqL6koidE=w427-h240-k-no"
             , allDay: false,
+            place_id: "ChIJCQPF1U37aS4Rv0OAkcME5TE",
+
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -6144,6 +6226,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNjPqm_6dXcwhkjoH4DU9z8MABT8QrywnnhxwZ5=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJt3fH1-3xaS4RA15T97E1iUE",
             openingHours: {
                 Mon: 0,
                 Tue: 13,
@@ -6238,6 +6321,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipOuSgMTRZOp4FFeN8aCDxPZNJM41wqWEwGMqK5Q=w408-h631-k-no"
             , allDay: false,
+            place_id: "ChIJaXJEpr3laS4RW9rzXETHQE0",
             openingHours: {
                 Mon: 10,
                 Tue: 10,
@@ -6332,6 +6416,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMF7JtysHZThH2ae3v4jK5IMjds1uxtrIerPph4=w408-h306-k-no"
             , allDay: false,
+            place_id: "ChIJwfcM2cnlaS4RZdxWbJkMzA0",
             openingHours: {
                 Mon: 9,
                 Tue: 9,
@@ -6426,6 +6511,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNbX1sc8zRf09uYtedr0FkK-gDwz86sTX7mrR3I=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJbUMSNyrlaS4Rq7cCOGg_qog",
             openingHours: {
                 Mon: 9.5,
                 Tue: 9.5,
@@ -6584,6 +6670,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: ""
             , allDay: false,
+            place_id: "ChIJRRHVghzlaS4R3royQ8Bm7cE",
             openingHours: {
                 Mon: 10,
                 Tue: 10,
@@ -6742,6 +6829,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipM1c7jMWQHqfWe-xq1-ewq-QxQJ4kgaYif96iGX=w427-h240-k-no"
             , allDay: false,
+            place_id: "ChIJ42Ohml7laS4RbcXhUft4RTI",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -6868,6 +6956,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipM-yopgEZ2_ym2H8J0sjCZ9PdKzyC_9LW4KfioX=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJZzWNmyvlaS4RWzlEaEqH64A",
             openingHours: {
                 Mon: 8,
                 Tue: 8,
@@ -6994,6 +7083,7 @@ const detailsWellness = {
             IGFollowers: "5476",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipOYiRMffmB4IR9lPm-7wPRIu8ox5OSvpK5gnMg5=w427-h240-k-no"
             , allDay: false,
+            place_id: "ChIJnzMhU6b7aS4RkVgs0R0fnek",
             openingHours: {
                 Mon: 10,
                 Tue: 10,
@@ -7088,6 +7178,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipPKpN_OpK-YBjUVQgV7uOBJKAkmpLPRBwByTjLs=w427-h240-k-no"
             , allDay: false,
+            place_id: "ChIJB8yX8hf7aS4R1uR-axgQrhQ",
             openingHours: {
                 Mon: 9,
                 Tue: 9,
@@ -7278,6 +7369,7 @@ const detailsWellness = {
             IGFollowers: "IGFollowers",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNigOt3r1PmoXN2zvOcBtex3KbzzNDsaVqIkT4F=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJGRMKR1b7aS4RAQjMLz3Wkvo",
             openingHours: {
                 Mon: 9,
                 Tue: 9,

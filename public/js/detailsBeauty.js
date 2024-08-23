@@ -558,6 +558,7 @@ const detailsBeauty = {
             IGFollowers: "79200",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipNXAs9iKl1CpahZQfZ2qenF7L-zzucQvC4zZgE=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJ75EsDtLxaS4RdCo8zCQZ2FA",
             openingHours: {
                 Mon: 10,
                 Tue: 10,
@@ -766,6 +767,7 @@ const detailsBeauty = {
                 Sat: 18,
                 Sun: 0,
             },
+            place_id: "ChIJd8-JDAz7aS4RRnUe5Vj98oU",
             reviewsText: [
                 {
                   "author_name": "Shirley Cheung",

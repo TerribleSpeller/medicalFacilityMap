@@ -120,7 +120,7 @@ const detailsMedical = {
               ],
         },
         {
-            Nama: "RSU Hermina Serpong",
+            Nama: "Hermina Hospital Serpong",
             subcategory: "Rumah Sakit",
             Website: "https://herminahospitals.com/id/branch/hermina-serpong.html",
             Address: "BSD Serpong, Jl. Letnan Sutopo No.7 Kavling Komplek 3A, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -153,7 +153,7 @@ const detailsMedical = {
             
         },
         {
-            Nama: "Rumah Indonesia Sehat (RIS) Hospital",
+            Nama: "RS RIS Hospital BSD",
             subcategory: "Rumah Sakit",
             Website: "https://rishospital.com/",
             Address: "Jl. Lengkong Gudang Timur Raya No.777, BSD CITY, Kec. Serpong, Kota Tangerang Selatan, Banten 15321",
@@ -212,7 +212,7 @@ const detailsMedical = {
               ],
         },
         {
-            Nama: "RS THT Proklamasi",
+            Nama: "THT Proklamasi",
             subcategory: "Rumah Sakit",
             Website: "https://rsthtproklamasibsd.id/",
             Address: "Jalan Commercial Park Central Business Of District Bsd, Jl. Pahlawan Seribu No.7, Lengkong Gudang, Kec. Serpong, Kabupaten Tangerang, Banten 15321",
@@ -244,7 +244,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Permata Dalima Hospital",
+            Nama: "PERMATA DALIMA HOSPITAL",
             subcategory: "Rumah Sakit",
             Website: "https://rspermata.co.id/hospital/rs-permata-dalima-serpong",
             Address: "Jalan Rawa Buntu Utara Sektor I.2, Blok UA No.26-27, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15311",
@@ -276,7 +276,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "RS Khusus Dharma Graha",
+            Nama: "Special Hospitals Dharma Graha",
             subcategory: "Rumah Sakit",
             Website: "https://rskjiwadharmagraha.com/",
             Address: "RS. Khusus Dharma Graha, BSD Jl. Raya Astek No.17, Lengkong Gudang Tim., Kec. Serpong, Kota Tangerang Selatan, Banten 15321",
@@ -370,6 +370,7 @@ const detailsMedical = {
                 Sat: 0,
                 Sun: 0,
             },
+            place_id: "ChIJfaCVZbL7aS4R7Qfs3wMj64U",
             reviewsText: [
                 {
                   "author_name": "Triyono Setiawan",
@@ -432,7 +433,7 @@ const detailsMedical = {
               ],
         },
         {
-            Nama: "Klinik Shalom",
+            Nama: "SHALOM CLINIC - Serve with Love",
             subcategory: "klinik medical",
             Website: "",
             Address: "Jl. Pahlawan Seribu, Ruko BSD Junction Gallery Shop A 48-50, Indonesia, Kota Tangerang Selatan, Lengkong Wetan, Serpong Sub-District, South Tangerang City, Banten 15321",
@@ -464,7 +465,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Klinik Pratama e-Clinic by dr Giovanna Eunike",
+            Nama: "Klinik Pratama e-Clinic by dr. Giovanna Eunike",
             subcategory: "klinik medical",
             Website: "http://instagram.com/eclinicbydrgio",
             Address: "Ruko Golden Boulevard 2 Blok S-07, Jelupang, Serpong Utara, South Tangerang City, Banten 15310",
@@ -494,6 +495,7 @@ const detailsMedical = {
                 Sat: 17,
                 Sun: 0,
             },
+            place_id: "ChIJRzpEAur7aS4RhhSdtbM52Q0",
             reviewsText: [
                 {
                   "author_name": "Temmy Rahadipoetra",
@@ -590,7 +592,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Klinik Amira",
+            Nama: "AMIRA Medical Clinic",
             subcategory: "klinik medical",
             Website: "https://www.amiramedika.co.id/",
             Address: "Jl. Ciater Raya No.7A Blok A1, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -687,7 +689,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Klinik Dokter Siti Nurlaela dan Lab",
+            Nama: "Klinik Dokter Siti Nurlaela dan Laboratorium",
             subcategory: "klinik medical",
             Website: "",
             Address: "Jl. Raya Pagedangan, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339",
@@ -719,7 +721,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Dokter Tan Shot Yen",
+            Nama: "Dr. Tan Shot Yen",
             subcategory: "klinik medical",
             Website: "",
             Address: "Gedung perkantoran Bidex, Blok G no 22, BSD City (Sebelum Teras Kota mal, Jl. Pahlawan Seribu, Lengkong Gudang, Kec. Serpong, Kota Tangerang Selatan, Banten 15321",
@@ -795,6 +797,7 @@ const detailsMedical = {
             IGFollowers: "IGFollowers",
             photoURL: ""
             , allDay: false,
+            place_id: "ChIJXwYucOL7aS4RN3nnwIGm1nY",
             openingHours: {
                 Mon: 9,
                 Tue: 9,
@@ -849,7 +852,7 @@ const detailsMedical = {
               ],
         },
         {
-            Nama: "Dokter Bahtiar Suhadi",
+            Nama: "Dr Bahtiar Suhadi",
             subcategory: "klinik medical",
             Website: "",
             Address: "Komplek Anggrek Loka, Jalan Anggrek Mawar Blok C No. 1B, Sektor 2.1, BSD City, Serpong, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
@@ -912,7 +915,7 @@ const detailsMedical = {
         //     }
         // },
         {
-            Nama: "Klinik Dokter Popy Istianti",
+            Nama: "Klinik dr.Popy Istianti",
             subcategory: "klinik medical",
             Website: "http://www.klinikdrpopy.com/",
             Address: "Jalan Ciater Raya RJ 3, Nusa Loka, sektor XIV Jl. Komp. BSD No.6, Rawa Buntu, Serpong Sub-District, South Tangerang City, Banten 15310",
@@ -944,7 +947,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Dokter Ellysa Virgiana Suhadi",
+            Nama: "Dr Ellysa Virgiana Suhadi",
             subcategory: "klinik medical",
             Website: "",
             Address: "Komplek Anggrek Loka, Jalan Anggrek Mawar Blok C No. 1B, Sektor 2.1, BSD City, Serpong, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318",
@@ -976,7 +979,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Klinik Dokter Yohana",
+            Nama: "Klinik Dr Yohana",
             subcategory: "klinik medical",
             Website: "",
             Address: "Komplek BSD Sektor I-II Jakarta - Serpong Toll Rd Blok RC-3/17, Pakulonan, Tangerang, South Tangerang City, Banten 15325",
@@ -1040,7 +1043,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Klinik Raja Medika",
+            Nama: "KLINIK RAJA MEDIKA BSD",
             subcategory: "klinik medical",
             Website: "",
             Address: "Jl. Ciater Bar. Jl. Raya Viktor Bsd No.27D, Ciater, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -1072,7 +1075,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Sehat Plus Medical Clinic",
+            Nama: "Sehat Plus Medical Clinic - BSD",
             subcategory: "klinik medical",
             Website: "https://sehatplusbsd.com/",
             Address: "Ruko BSD Sektor 7, Jl. Pahlawan Seribu Blok RM No.39, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -1136,7 +1139,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Klinik Promptus",
+            Nama: "Promptus Women and Children Clinic (klinik anak,Ibu ,dan Umum,Klinik Laktasi Mpasi, Tumbuh kembang , Fisioterapi, Akupuntur)",
             subcategory: "klinik ibu & anak",
             Website: "",
             Address: "Ruko Tol Boulevard Jalan Pelayangan.blok B6~7, RW.1, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -1200,7 +1203,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Klinik Archa Medica",
+            Nama: "Archa Clinic",
             subcategory: "klinik ibu & anak",
             Website: "",
             Address: "PM88+C47, Jl. Kapten Soebijanto Djojohadikusumo, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -1424,7 +1427,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Golden Smile Dental Clinic BSD",
+            Nama: "Golden Smile Dental Clinic BSD | Klinik Dokter Gigi dan Dokter Gigi Spesialis - Escalate your smile",
             subcategory: "klinik gigi",
             Website: "http://bit.ly/3KSFKLf",
             Address: "Ruko Tol Boulevard Blok G no 19, BSD City, Kota Tangerang Selatan, Banten 15322",
@@ -1532,6 +1535,7 @@ const detailsMedical = {
             IGFollowers: "4461",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMYVC30c2n_fenc8SZawTJfCt0eVIqtMeVq2CBq=w427-h240-k-no"
             , allDay: false,
+            place_id: "ChIJIXDYNiD7aS4RI5RTxWuCYUU",
             openingHours: {
                 Mon: 9,
                 Tue: 9,
@@ -1646,7 +1650,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Dentalounge",
+            Nama: "DentaLounge",
             subcategory: "klinik gigi",
             Website: "https://www.dentalounge.co.id/en/",
             Address: "TreePark Commercial & Apartment, 2nd fl. Suite C-08B, Jl. Sunburst CBD Jl. KAV P&K II No.18 C, Lengkong Gudang, BSD, Kota Tangerang Selatan, Banten 15311",
@@ -1678,7 +1682,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Ipon Dental Care BSD",
+            Nama: "IPON Dental Care BSD",
             subcategory: "klinik gigi",
             Website: "https://ipondental.com/",
             Address: "Ruko Paris Square B2/1, Jl. Boulevard BSD Timur, BSD City, Lengkong Gudang Tim., Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -1710,7 +1714,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Klinik Gigi INI Dental Clinic BSD",
+            Nama: "INI Dental Clinic - Klinik Gigi INI Dental BSD",
             subcategory: "klinik gigi",
             Website: "http://instagram.com/inidental.clinic",
             Address: "Jl. Rawa Buntu Utara No.25 Sektor I.2, Blok V2, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -1742,7 +1746,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Audy Dental BSD",
+            Nama: "Audy Dental BSD | Klinik Dokter Gigi Spesialis",
             subcategory: "klinik gigi",
             Website: "https://www.audydental.com/",
             Address: "Ruko Golden Boulevard Blok Q No.3 BSD city, Jl. Pahlawan Seribu, Lengkong Karya, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15310",
@@ -1869,7 +1873,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Praktik Dokter Gigi drg Primiastuti",
+            Nama: "Praktik Dokter Gigi drg. Primiastuti",
             subcategory: "klinik gigi",
             Website: "",
             Address: "jalan anggrek hitam blok AA no 21 Anggrek Loka,BSD, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -1901,7 +1905,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Union Dental Clinic",
+            Nama: "UNION DENTAL CLINIC (UDC)",
             subcategory: "klinik gigi",
             Website: "https://sites.google.com/view/uniondentalclinic",
             Address: "Ruko Golden Madrid 2 Blok F-25 BSD City, Jl. Letnan Sutopo, Rawa Mekar Jaya, Serpong Sub-District, South Tangerang City, Banten 15310",
@@ -1933,7 +1937,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Ada Dental Care BSD",
+            Nama: "ADC - ADA Dental Care BSD",
             subcategory: "klinik gigi",
             Website: "",
             Address: "Jl. Letnan Sutopo No.5, Lengkong Gudang Tim., Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
@@ -2009,6 +2013,7 @@ const detailsMedical = {
             IGFollowers: "701",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipOxXPSQ_5ILRu3zDRVcHd7hWMGqoOvcTqbktiR3=w408-h272-k-no"
             , allDay: false,
+            place_id: "ChIJyRmCFFv7aS4RFpY7PElzw64",
             openingHours: {
                 Mon: 9,
                 Tue: 9,
@@ -2251,7 +2256,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Meridien Esthetic Dental",
+            Nama: "MERIDIEN Esthetic Dental",
             subcategory: "klinik gigi",
             Website: "",
             Address: "Ruko Versailles blok FB no 25, Jl. Griya Loka Raya, Rawa Buntu, Serpong Sub-District, South Tangerang City, Banten 15310",
@@ -2347,7 +2352,7 @@ const detailsMedical = {
             }
         },
         {
-            Nama: "Icon by Griya Dental Care",
+            Nama: "ICON by Griya Dental Care",
             subcategory: "klinik gigi",
             Website: "https://instagram.com/icon.griyadentalcare?utm_source=ig_profile_share&igshid=1s2otwgm2wr92",
             Address: "Ruko The Icon Business Park, Blok A10, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15340",
@@ -2711,6 +2716,7 @@ const detailsMedical = {
             IGFollowers: "2934",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipN97MTuIyjLf0fuEkilcfEa2Tj5dSZosxO_ejpm=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJsXGGYeH9aS4RxneZwNJvFdc",
             openingHours: {
                 Mon: 0,
                 Tue: 8,
@@ -2901,6 +2907,7 @@ const detailsMedical = {
             IGFollowers: "18700",
             photoURL: "https://lh5.googleusercontent.com/p/AF1QipMjhYUt_tX7mDxpOR3N4qW5g6mYg7V4C2onYt7z=w408-h544-k-no"
             , allDay: false,
+            place_id: "ChIJb1lAbS3laS4RsvMdl3b_SEc",
             openingHours: {
                 Mon: 8,
                 Tue: 8,

@@ -1070,7 +1070,7 @@ function buildContent(property, type) {
         <div class="details-container">
             <div class="details">
                 <div class="price">${property.Nama}</div>
-                <div class="time">${timeOpenProcessor(property)}</div>
+                <div class="time">${timeOpenProcessor(property)} |  ${property.phoneNo ? ` <span>${property.phoneNo}</span>` : ""}</div>
                 <div class="address">${property.Address}</div>
                 <div class="features">
                     <div id ="${property.Nama}-ratingBox">
@@ -1728,8 +1728,9 @@ function addCurrentPlaceToList(currentPlace) {
                         <span style="font-size: 0.875rem;">${currentPlace.subcategory} | ${currentPlace.Address}</span>
                     </div>
                     <div class="p-1">
-                        <span style="font-size: 0.875rem;">${timeOpenProcessor(currentPlace)}</span>
+                        <span style="font-size: 0.875rem;">${timeOpenProcessor(currentPlace)}  ${currentPlace.phoneNo ? `| <span style="font-size: 0.875rem;">${currentPlace.phoneNo}</span>` : ""}</span> 
                     </div>
+                   
                 </div>
                 <div class="flex-row d-flex" style="width:20%;">
                     <div class="d-flex align-items-center fill" style="width:100%;">
