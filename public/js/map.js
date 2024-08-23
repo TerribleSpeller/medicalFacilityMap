@@ -1796,7 +1796,6 @@ function centerMap(lat, lng) {
     map.setZoom(14);
 
 }
-
 loadGoogleMapsAPI('AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk', 'initMap');
 window.initMap = initMap;
 const checkElementsAndSetupListeners = () => {
@@ -1907,6 +1906,5 @@ const checkElementsAndSetupListeners = () => {
 
     }
 };
-
 const intervalId = setInterval(checkElementsAndSetupListeners, 1000);
 
