@@ -930,9 +930,9 @@ async function processType(type, details)  {
     for (let i = 0; i < details.info.length; i++) {
         const currentPlace = details.info[i];
         if (currentPlace.subcategory !== type) {
-            console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type);
+            //console.log("Type Mismatch: ", currentPlace.subcategory, " vs ", type);
         } else {
-            console.log("Type Match: ", currentPlace.subcategory, " vs ", type);
+            //console.log("Type Match: ", currentPlace.subcategory, " vs ", type);
             let publicArrayNumber = 0;
             for (let j = 0; j < detailsPromos.length; j++) {
                 if (detailsPromos[j].tenantName === currentPlace.Nama) {
@@ -1007,7 +1007,7 @@ async function processType(type, details)  {
             });
 
             marker.addListener("hover", (event) => {
-                console.log("Hover event");
+                // console.log("Hover event");
             });
 
             marker.name = currentPlace.Nama;
@@ -1027,7 +1027,7 @@ async function processType(type, details)  {
     }
 };
 function buildContent(property, type) {
-    console.log(property)
+    // console.log(property)
     const content = document.createElement("div");
     //console.log(property)
     content.classList.add("property");
@@ -1377,35 +1377,35 @@ async function filterMarkers(markers) {
                         switch (specificDay) {
                             case "Monday":
                                 if (marker.openingHours.Mon < specificOpeningTime || marker.closingHours.Mon > specificClosingTime) {
-                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Monday")
+                                    // console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Monday")
                                     showMarker = false;
                                 } else {
                                 }
                                 break;
                             case "Tuesday":
                                 if (marker.openingHours.Tue < specificOpeningTime || marker.closingHours.Tue > specificClosingTime) {
-                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Tuesday")
+                                    // console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Tuesday")
                                     showMarker = false;
                                 } else {
                                 }
                                 break;
                             case "Wednesday":
                                 if (marker.openingHours.Wed < specificOpeningTime || marker.closingHours.Wed > specificClosingTime) {
-                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Wednesday")
+                                    // console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Wednesday")
                                     showMarker = false;
                                 } else {
                                 }
                                 break;
                             case "Thursday":
                                 if (marker.openingHours.Thu < specificOpeningTime || marker.closingHours.Thu > specificClosingTime) {
-                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Thursday")
+                                    // console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Thursday")
                                     showMarker = false;
                                 } else {
                                 }
                                 break;
                             case "Friday":
                                 if (marker.openingHours.Fri < specificOpeningTime || marker.closingHours.Fri > specificClosingTime) {
-                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Friday")
+                                    // console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Friday")
 
                                     showMarker = false;
                                 } else {
@@ -1413,14 +1413,14 @@ async function filterMarkers(markers) {
                                 break;
                             case "Saturday":
                                 if (marker.openingHours.Sat < specificOpeningTime || marker.closingHours.Sat > specificClosingTime) {
-                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Saturday")
+                                    // console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Saturday")
                                     showMarker = false;
                                 } else {
                                 }
                                 break;
                             case "Sunday":
                                 if (marker.openingHours.Sun < specificOpeningTime || marker.closingHours.Sun > specificClosingTime) {
-                                    console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Sunday")
+                                    // console.log("Checking for Opening Hours after:", specificOpeningTime, " and Closing Hours before:", specificClosingTime, "on Sunday")
                                     showMarker = false;
                                 } else {
                                 }
@@ -1587,8 +1587,8 @@ async function getDirections(place, lat, lng) {
 
                 totalDistance = (totalDistance / 1000).toFixed(3);
                 let totalDurationHour = (totalDuration / 3600).toFixed(1);
-                console.log(`Total Distance: ${totalDistance} kms`);
-                console.log(`Total Duration: ${totalDurationHour} hours`);
+                // console.log(`Total Distance: ${totalDistance} kms`);
+                // console.log(`Total Duration: ${totalDurationHour} hours`);
                 // document.getElementById("mapDistanceContainer").style.display = "block";
                 document.getElementById("mapDistanceContainer").style.height = "60px";
                 document.getElementById("mapDistanceDetails").innerHTML = `Destination: ${place.Nama}`;
@@ -1862,7 +1862,7 @@ const checkElementsAndSetupListeners = () => {
 
         specificTimeCheck.addEventListener("change", () => {
             openingHoursFilter = "specificTime";
-            console.log(openingHoursFilter);
+            //console.log(openingHoursFilter);
 
             if (specificTimeCheck.disabled) {
                 specificDayCheck = false;
