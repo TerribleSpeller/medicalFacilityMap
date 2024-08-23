@@ -103,6 +103,8 @@ let totalDuration = 0;
 let promoRatingCheck = false;
 let isFocused = false;
 const mapCenter = { lat: -6.302630388, lng: 106.6505807 };
+const isMobile = window.innerWidth <= 768; //Check if they're on a small screen or mobile
+
 
 function loadGoogleMapsAPI(apiKey, callback) {
     const script = document.createElement('script');
@@ -153,16 +155,18 @@ async function initMap() {
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(dropDownCategory);
     const dropdownSubCategory = dropdownSubCategoryFunc(map);
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(dropdownSubCategory);
-    const moreFiltersCategory = moreFiltersFunc(map);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(moreFiltersCategory);
-    const promoCategory = promoFunc(map);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(promoCategory);
-    const ratingCategory = RatingFunc(map);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(ratingCategory);
-    const hourCategory = hourFunc(map);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(hourCategory);
-    const socialCategory = socialFunc(map);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(socialCategory);
+    if (!isMobile) { //Band AID solution to small screens
+        const moreFiltersCategory = moreFiltersFunc(map);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(moreFiltersCategory);
+        const promoCategory = promoFunc(map);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(promoCategory);
+        const ratingCategory = RatingFunc(map);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(ratingCategory);
+        const hourCategory = hourFunc(map);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(hourCategory);
+        const socialCategory = socialFunc(map);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(socialCategory);
+    }
     // const lessFiltersCategory = lessFiltersFunc(map);
     // map.controls[google.maps.ControlPosition.TOP_LEFT].push(lessFiltersCategory);
     const contactUs = contactUsFunc(map);
@@ -1667,7 +1671,12 @@ function selectedList(map) {
     selectedListContainerContainer.id = "selectedListContainerContainer";
     selectedListContainerContainer.classList.add("flex-row", "d-flex");
     selectedListContainerContainer.style.height = "70%";
-    selectedListContainerContainer.style.width = "40%";
+    if(isMobile) {
+        selectedListContainerContainer.style.width = "100%";
+
+    } else {
+        selectedListContainerContainer.style.width = "40%";
+    }
     selectedListContainerContainer.style.transform = "translateX(-90%)";
     selectedListContainerContainer.style.transition = "width 0.5s ease, transform 0.5s ease";
 
