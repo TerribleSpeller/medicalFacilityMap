@@ -6,7 +6,7 @@ import detailsMedical from "../public/js/detailsMedical.js";
 import detailsBeauty from "../public/js/detailsBeauty.js";
 import detailsWellness from "../public/js/detailsWellness.js";
 
-const GOOGLE_MAPS_API_KEY = 'AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk'; // Replace with your actual key
+const GOOGLE_MAPS_API_KEY = 'AIzaSyAtq0oi6PV5zq_GXKDx-A_BnOfEfVTBJXk'; 
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -71,14 +71,11 @@ async function updateAllPlaces() {
                 await updatePlaceDetails(place);
                 console.log('Updated place details:', place);
             }
-
-            // Ensure the directory exists
             const dir = path.dirname(details.file);
             if (!fs.existsSync(dir)) {
                 fs.mkdirSync(dir, { recursive: true });
             }
 
-            // Custom replacer function to remove quotes from keys
             const replacer = (key, value) => {
                 if (typeof value === 'object' && !Array.isArray(value)) {
                     return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, v]));
@@ -88,7 +85,6 @@ async function updateAllPlaces() {
 
             const arrayName = Object.keys({ detailsMedical, detailsBeauty, detailsWellness }).find(key => details.array === eval(key));
 
-            // Write the updated array back to the file
             const fileContent = `const ${arrayName} = ${JSON.stringify(details.array, replacer, 2).replace(/"([^"]+)":/g, '$1:')};\nexport default ${arrayName};`;
             fs.writeFileSync(details.file, fileContent);
         } else {
